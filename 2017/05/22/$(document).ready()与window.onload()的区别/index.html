@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="$(document).ready()的表示在DOM加载完之后执行一个函数【这里DOM加载完不代表全部文件加载完，例如图片文件，虽然图的src的地址加载好了，但是图本身还没加载完】。 与window.onload的区别：1.执行时间：  window.onload是在DOM加载完成 + DOM相关的文件下载完成 之后再执行函数。 $(document).ready()是在DOM加载完之后执行一个函">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T23:33:38.946Z">
+<meta property="og:updated_time" content="2017-09-16T01:18:49.950Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="$(document).ready()与window.onload()的区别">
 <meta name="twitter:description" content="$(document).ready()的表示在DOM加载完之后执行一个函数【这里DOM加载完不代表全部文件加载完，例如图片文件，虽然图的src的地址加载好了，但是图本身还没加载完】。 与window.onload的区别：1.执行时间：  window.onload是在DOM加载完成 + DOM相关的文件下载完成 之后再执行函数。 $(document).ready()是在DOM加载完之后执行一个函">
@@ -386,6 +386,7 @@
 <p>$(document).ready()是在DOM加载完之后执行一个函数。</p>
 <p>$(document).ready()要比window.onload先执行；有时候页面还没有完全加载完毕而用户已经在操作页面，在技术上很多情况下，只要DOM已完全加载好了，JS就可以运行去操作DOM了，没必要等到全部加载完成,所以用$(document).ready()来提前，但是当使用的JS依赖 CSS 属性值时，或者需要在元素被加载之后才能使用时（例如，取得图片的大小需要在图片被加载完后才能知道），就需要将这样的JS放到load事件中，以免因为贪图快而带来麻烦。</p>
 </blockquote>
+<a id="more"></a>
 <h2 id="能够添加的数量："><a href="#能够添加的数量：" class="headerlink" title="能够添加的数量："></a>能够添加的数量：</h2><blockquote>
 <p>window.onload不能同时编写多个，因为我查看W3C的时候，window.onload是一种原生的DOM的事件，决定了在window上只能添加一个，后续的会覆盖掉前面的。</p>
 <p>$(document).ready()可以同时编写多个，我查看jQuery中文档，他是这么介绍的.ready()方法只能被匹配当前文档的jQuery对象调用，也就是说他是jQuery的方法，本质是一个函数，就可以执行多次。</p>

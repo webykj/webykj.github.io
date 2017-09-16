@@ -114,7 +114,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://oub61fw66.bkt.clouddn.com/%E5%86%92%E6%B3%A1.png">
 <meta property="og:image" content="http://oub61fw66.bkt.clouddn.com/%E4%BA%8B%E4%BB%B6%E6%8D%95%E8%8E%B7.jpg">
-<meta property="og:updated_time" content="2017-09-15T13:55:48.790Z">
+<meta property="og:updated_time" content="2017-09-16T01:21:25.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery中的事件冒泡">
 <meta name="twitter:description" content="什么是冒泡1234&amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt; 外层div元素    &amp;lt;span&amp;gt;内层span元素&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div id=&amp;quot;msg&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;  当点击span元素时,会输出内层span元素被点击，外层div元素被点击，body元素被点击3条记录。这就是由于">
@@ -386,6 +386,7 @@
 <blockquote>
 <p>当点击span元素时,会输出内层span元素被点击，外层div元素被点击，body元素被点击3条记录。这就是由于事件冒泡引起的。</p>
 </blockquote>
+<a id="more"></a>
 <h2 id="冒泡过程"><a href="#冒泡过程" class="headerlink" title="冒泡过程"></a>冒泡过程</h2><p><img src="http://oub61fw66.bkt.clouddn.com/%E5%86%92%E6%B3%A1.png" alt="&quot;冒泡过程&quot;"></p>
 <h2 id="停止事件冒泡"><a href="#停止事件冒泡" class="headerlink" title="停止事件冒泡"></a>停止事件冒泡</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(&apos;span&apos;).bind(&apos;click&apos;, function (event) &#123; //event:事件对象</div><div class="line"> 	 var txt = $(&apos;#msg&apos;).html() + &apos;&lt;p&gt;内层span元素被点击&lt;/p&gt;&apos;;</div><div class="line">    $(&apos;#msg&apos;).html(txt);</div><div class="line">    event.stopPropagation(); //停止事件冒泡</div><div class="line">&#125;);</div><div class="line">//这样点击span时，只会输出1条记录。</div></pre></td></tr></table></figure>
 <h2 id="阻止默认行为"><a href="#阻止默认行为" class="headerlink" title="阻止默认行为"></a>阻止默认行为</h2><blockquote>

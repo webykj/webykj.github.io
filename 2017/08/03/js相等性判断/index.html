@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="关于 JS 相等性判断，很容易想到严格相等（===）和非严格相等（==），前者在比较前不会进行隐式转换，即若比较的两个值不是相同的类型，比较结果一定是不等的。而后者在进行比较前可能会根据具体情况进行相应的类型转换然后再按照严格比较规则进行比较。 通常情况下使用严格相等是没有问题的，但存在两个例外。一个是+0和-0的比较，另一个是NaN的比较。 在严格相等中，+0 === -0 返回 true，Na">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T14:07:04.785Z">
+<meta property="og:updated_time" content="2017-09-16T01:26:19.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS 相等性判断">
 <meta name="twitter:description" content="关于 JS 相等性判断，很容易想到严格相等（===）和非严格相等（==），前者在比较前不会进行隐式转换，即若比较的两个值不是相同的类型，比较结果一定是不等的。而后者在进行比较前可能会根据具体情况进行相应的类型转换然后再按照严格比较规则进行比较。 通常情况下使用严格相等是没有问题的，但存在两个例外。一个是+0和-0的比较，另一个是NaN的比较。 在严格相等中，+0 === -0 返回 true，Na">
@@ -382,6 +382,7 @@
         <p>关于 JS 相等性判断，很容易想到严格相等（===）和非严格相等（==），前者在比较前不会进行隐式转换，即若比较的两个值不是相同的类型，比较结果一定是不等的。而后者在进行比较前可能会根据具体情况进行相应的类型转换然后再按照严格比较规则进行比较。</p>
 <p>通常情况下使用严格相等是没有问题的，但存在两个例外。一个是+0和-0的比较，另一个是NaN的比较。</p>
 <p>在严格相等中，+0 === -0 返回 true，NaN === NaN 返回 false，这与直观判断是不一致的。为了避免这类特殊情况，可以通过 ES6 新特性 Object.is 来进行判断。代码如下：</p>
+<a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">if (!Object.is) &#123;</div><div class="line">  Object.is = function(x, y) &#123;</div><div class="line">    // SameValue algorithm</div><div class="line">    if (x === y) &#123; // Steps 1-5, 7-10</div><div class="line">      // Steps 6.b-6.e: +0 != -0</div><div class="line">      return x !== 0 || 1 / x === 1 / y;</div><div class="line">    &#125; else &#123;</div><div class="line">      // Step 6.a: NaN == NaN</div><div class="line">      return x !== x &amp;&amp; y !== y;</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Polyfill 也很容易实现，对于+0和-0比较，首先严格相等，再判断倒数是否不相等即可，因为+0/0结果是Infinity，-0/0结果是-Infinity。而对于NaN比较问题，只需要判断二者分别不等于自身即可。（isNaN仅可判断当前数是否是NaN）</p>
 <h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul>

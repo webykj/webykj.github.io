@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="call/apply/bind方法的来源: call,apply,bind这三个方法都是继承自Function.prototype中的，属于实例方法。  123console.log(Function.prototype.hasOwnProperty(&amp;apos;call&amp;apos;)) //trueconsole.log(Function.prototype.hasOwnProperty(&amp;ap">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T23:38:34.417Z">
+<meta property="og:updated_time" content="2017-09-16T01:22:24.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中call,apply,bind联系与区别">
 <meta name="twitter:description" content="call/apply/bind方法的来源: call,apply,bind这三个方法都是继承自Function.prototype中的，属于实例方法。  123console.log(Function.prototype.hasOwnProperty(&amp;apos;call&amp;apos;)) //trueconsole.log(Function.prototype.hasOwnProperty(&amp;ap">
@@ -383,6 +383,7 @@
 <p>call,apply,bind这三个方法都是继承自Function.prototype中的，属于实例方法。</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">console.log(Function.prototype.hasOwnProperty(&apos;call&apos;)) //true</div><div class="line">console.log(Function.prototype.hasOwnProperty(&apos;apply&apos;)) //true</div><div class="line">console.log(Function.prototype.hasOwnProperty(&apos;bind&apos;)) //true</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="Function-prototype-call"><a href="#Function-prototype-call" class="headerlink" title="Function.prototype.call()"></a>Function.prototype.call()</h2><p>函数实例的call方法，可以指定该函数内部this的指向，然后在所指定的作用域中，调用该函数。并且会立即执行该函数。如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var zhangsan = &#123;</div><div class="line">	age: 20  //;会报错Uncaught SyntaxError: Unexpected token</div><div class="line">&#125;;</div><div class="line">var age = 22;</div><div class="line">function a() &#123;</div><div class="line">	console.log(this.age);</div><div class="line">&#125;</div><div class="line">a(); //22</div><div class="line">a.call(); //22</div><div class="line">a.call(null); //22</div><div class="line">a.call(undefined); //22</div><div class="line">a.call(this); //22</div><div class="line">a.call(zhangsan); //20</div></pre></td></tr></table></figure>
 <p>上述代码中，this如果指向全局对象，则返回22,否则返回20。</p>

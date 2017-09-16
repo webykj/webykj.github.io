@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T23:37:32.638Z">
+<meta property="og:updated_time" content="2017-09-16T01:26:45.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="setTimeout与setInterval的使用">
 <meta name="twitter:description" content="setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过">
@@ -380,7 +380,7 @@
 
       
         <blockquote>
-<p>setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过创建一个函数循环重复调用setTimeout，以实现重复的操作：</p>
+<p>setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过创建一个函数循环重复调用setTimeout，以实现重复的操作：<br><a id="more"></a></p>
 </blockquote>
 <h2 id="setTimeOut"><a href="#setTimeOut" class="headerlink" title="setTimeOut"></a>setTimeOut</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">showTime();</div><div class="line">function showTime()&#123;</div><div class="line">    var today = new Date();</div><div class="line">    alert(&quot;The time is: &quot; + today.toString());</div><div class="line">    setTimeout(&quot;showTime()&quot;, 5000);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="setInterval"><a href="#setInterval" class="headerlink" title="setInterval"></a>setInterval</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">setInterval(&quot;showTime()&quot;, 5000);</div><div class="line">function showTime()&#123;</div><div class="line">    var today = new Date();</div><div class="line">    alert(&quot;The time is: &quot; + today.toString());</div><div class="line">&#125;</div></pre></td></tr></table></figure>

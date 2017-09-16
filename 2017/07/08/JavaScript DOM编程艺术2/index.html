@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="图片库改进：如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。 Javascript与HTML标记分离：element.event = function(){…}，这里的event不限onclick、onke">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T13:51:08.242Z">
+<meta property="og:updated_time" content="2017-09-16T01:25:45.032Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《JavaScript DOM编程艺术》【二】">
 <meta name="twitter:description" content="图片库改进：如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。 Javascript与HTML标记分离：element.event = function(){…}，这里的event不限onclick、onke">
@@ -381,6 +381,7 @@
       
         <h2 id="图片库改进："><a href="#图片库改进：" class="headerlink" title="图片库改进："></a>图片库改进：</h2><p>如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。<br>结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。</p>
 <p>Javascript与HTML标记分离：element.event = function(){…}，这里的event不限onclick、onkeypress。</p>
+<a id="more"></a>
 <h2 id="共享onload事件"><a href="#共享onload事件" class="headerlink" title="共享onload事件"></a>共享onload事件</h2><p>网页加载完毕时会触发一个onload事件，这个事件与window对象相关联。即window.onload = function(){…}。<br>若需要绑定的函数较多时，一个弹性的解决方案是addLoadEvent，代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function addLoadEvent(func) &#123;  </div><div class="line">    var oldonload = window.onload;</div><div class="line">    if(typeof window.onload != &apos;function&apos;) &#123;  </div><div class="line">        window.onload = func;  </div><div class="line">    &#125; else&#123;</div><div class="line">        window.onload = function() &#123;</div><div class="line">            oldonload();</div><div class="line">            func();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>未完待续。。。</p>

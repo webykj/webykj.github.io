@@ -381,15 +381,15 @@
 
       
         
-          
-            <p>今天在写页面的时候遇到个小bug，比如设置字体为10px甚至8px。但按照常规设置字体大小后，在chrome下浏览页面会觉得不如想象中小。没错，默认情况下chrome中的字号不能小于12px。</p>
+          <p>今天在写页面的时候遇到个小bug，比如设置字体为10px甚至8px。但按照常规设置字体大小后，在chrome下浏览页面会觉得不如想象中小。没错，默认情况下chrome中的字号不能小于12px。</p>
 <p>查看有关资料后，找到解决办法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.fz10 &#123;</div><div class="line">-webkit-text-size-adjust:none; </div><div class="line">font-size:10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>就是这个属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-text-size-adjust:none;</div></pre></td></tr></table></figure></p>
-<p>设置之后，chrome下的字体就不会有12px的限制了。</p>
-<p>另：中文字体小于12px后会变得难以阅读，一般也不常用。小于12px的字体应该只应用于英文段落或数字。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/09/google无法显示12px字体/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -528,20 +528,16 @@
 
       
         
-          
-            <p>一个网站，logo是肯定少不了的。最常用的就是图片logo或直接打几个字当作logo。</p>
+          <p>一个网站，logo是肯定少不了的。最常用的就是图片logo或直接打几个字当作logo。</p>
 <p>毫无疑问，图片logo远比文字好看，图片可以色彩缤纷变幻无穷，而文字变来变去都那样。但直接用文字logo的还是有很多，因为纯文字更利于搜索引擎识别，图片就不行了。</p>
 <p>有没有两全其美的方法呢？有的人使用这种：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/logo.png&quot; title=&quot;图片说明&quot; alt=&quot;图片说明&quot;/&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
-<p>搜索引擎无法看到图片，但可以看到图片说明，这样也就相当于文字了————这也是SEO中强调要给图片加上alt的原因。</p>
-<p>但其实这种方法并不完美，很多人都不喜欢加alt标记，而且这样对搜索引擎到底有没有妨害也难说清。下面介绍一种国际国内通用的方法.</p>
-<p>html代码，非常简单：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;这是logo&lt;/a&gt;</div><div class="line"></div><div class="line">.logo&#123;background:url(images/logo.png) no-repeat;/*把你的logo图片设成背景图*/</div><div class="line">height:60px; width:150px; /*设置宽高*/</div><div class="line">text-indent:-9999px; /*设置文字缩进*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>CSS代码最关键的一步就是最后的text-indent，text-indent的意思是文字缩进，它的单位一般是正数，用来将段落前空格。但这里把它的单位设为了负值，-9999px，于是原本在A标签里面的文字就被缩到不知道哪儿去了。</p>
-<p>这样一来，用户看到的就是图片logo（背景图），而搜索引擎看到的却是正宗的文字，一举两得。</p>
-<p>举一反三，这种方法可以用来制作图片导航栏和标题栏，但我不推荐哈，因为这两者需要做的图片太多了，麻烦，而且修改起来更麻烦。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/03/完美Logo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -680,9 +676,14 @@
 
       
         
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">text-decoration:overline/underline/line-through/blink[浏览器不支持]</div><div class="line">font-style:iatlic/oblique</div><div class="line">//斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。 通常情况下，两种效果在浏览器中看上去完全一样。</div><div class="line">overflow:hidden; white-space:nowrap; text-overflow:ellipsis;</div><div class="line">//文字溢出隐藏并显示省略号。</div><div class="line">//自定义文本选中</div><div class="line">::selection&#123;color:#fff; background:#333;&#125;</div><div class="line">::-moz-selection&#123;color:#fff;background:#333;&#125;</div><div class="line">//引用自定义字体</div><div class="line">@font-face</div><div class="line">&#123;</div><div class="line">font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;);//IE9+</div><div class="line">&#125;</div><div class="line">div&#123;font-family:xujinglei; font-size:18px; &#125;</div></pre></td></tr></table></figure>
-          
+          <p>这里总结一些常用的CSS<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/04/12/css总结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -974,16 +975,15 @@
 
       
         
-          
-            <p>a:link,visited,hover,active.A标签4状态排序原则</p>
+          <p>a:link,visited,hover,active.A标签4状态排序原则</p>
 <p>HTML中A标签有4种状态，link,visited,hover,active，不过如果写CSS的时候排序错误就会导致状态失效或错乱。</p>
-<p>A标签4种状态的排序规律符合一个原则，叫“爱恨原则”，由某国外友人提出，如下：</p>
-<p>LoVe/HAte</p>
-<p>以上分别是爱与讨厌的单词，估计绝大部分人都记得。其中加亮的字母即是A标签4种状态的首字母。怎么样？如此来记，就一目了然了吧？</p>
-<p>感谢原作者的分享，虽然我不知道你是谁。</p>
-<p>不过，我也有一个方法“LVHA”:<br>LV：熟悉吗？那不是某个名牌吗。。。<br>HA: 哈哈，记住了没。。。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/09/20/a标签4种状态/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

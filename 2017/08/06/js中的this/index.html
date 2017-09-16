@@ -104,18 +104,18 @@
 
 
 
-<meta name="description" content="作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：  作为函数调用 作为对象方法调用 作为构造函数调用  1234567891011var n = &amp;quot;Hello World!&amp;quot;;function example()&amp;#123;  console.log(this.n);&amp;#125;example();       //">
+<meta name="description" content="作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：  作为函数调用 作为对象方法调用 作为构造函数调用">
 <meta name="keywords" content="ittech">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈JavaScript中this">
 <meta property="og:url" content="http://yoursite.com/2017/08/06/js中的this/index.html">
 <meta property="og:site_name" content="Hero">
-<meta property="og:description" content="作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：  作为函数调用 作为对象方法调用 作为构造函数调用  1234567891011var n = &amp;quot;Hello World!&amp;quot;;function example()&amp;#123;  console.log(this.n);&amp;#125;example();       //">
+<meta property="og:description" content="作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：  作为函数调用 作为对象方法调用 作为构造函数调用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T14:08:32.750Z">
+<meta property="og:updated_time" content="2017-09-16T01:26:27.356Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈JavaScript中this">
-<meta name="twitter:description" content="作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：  作为函数调用 作为对象方法调用 作为构造函数调用  1234567891011var n = &amp;quot;Hello World!&amp;quot;;function example()&amp;#123;  console.log(this.n);&amp;#125;example();       //">
+<meta name="twitter:description" content="作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：  作为函数调用 作为对象方法调用 作为构造函数调用">
 
 
 
@@ -385,6 +385,7 @@
 <li>作为对象方法调用</li>
 <li>作为构造函数调用</li>
 </ul>
+<a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var n = &quot;Hello World!&quot;;</div><div class="line">function example()&#123;</div><div class="line">  console.log(this.n);</div><div class="line">&#125;</div><div class="line">example();       //Hello World!</div><div class="line">var n = &apos;Hello World!&apos;;</div><div class="line">function example()&#123;</div><div class="line">  this.n=0;</div><div class="line">&#125;</div><div class="line">example();</div><div class="line">console.log(n);  //0</div></pre></td></tr></table></figure>
 <p><strong>结论</strong>：当函数直接调用时，该函数的this关键字指向的就是全局对象window。</p>
 <h2 id="作为对象方法调用"><a href="#作为对象方法调用" class="headerlink" title="作为对象方法调用"></a>作为对象方法调用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">function getAge()&#123;</div><div class="line">    var y = new Date().getFullYear();</div><div class="line">    return y - this.birth;</div><div class="line">&#125;</div><div class="line">var zhangsan = &#123;</div><div class="line">    name: &apos;张三&apos;,</div><div class="line">    birth: 1990,</div><div class="line">    age: getAge</div><div class="line">&#125;;</div><div class="line">console.log(zhangsan.age());//27</div><div class="line">console.log(getAge());   //NaN</div><div class="line">var fn = zhangsan.age;</div><div class="line">console.log(fn());       //NaN</div><div class="line">var name = &apos;Akita&apos;;</div><div class="line">var dogs = &#123;</div><div class="line">  name:&apos;Collie&apos;,</div><div class="line">  showName: function()&#123;</div><div class="line">    console.log(this.name);</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line">console.log(dogs.showName());  //Collie</div><div class="line">var otherNmae = dogs.showName;</div><div class="line">console.log(otherName());      //Akita</div></pre></td></tr></table></figure>

@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！ 看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，ch">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T23:47:51.484Z">
+<meta property="og:updated_time" content="2017-09-16T01:26:38.289Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="document.body.scrollTop与document.documentElement.scrollTop的兼容">
 <meta name="twitter:description" content="这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！ 看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，ch">
@@ -381,7 +381,7 @@
       
         <p>这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！</p>
 <p>看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，chrome也只认识document.body.scrollTop.</p>
-<p>由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？</p>
+<p>由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？<br><a id="more"></a></p>
 <p>解决办法：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//方法一：</div><div class="line">var sTop=document.body.scrollTop+document.documentElement.scrollTop;</div><div class="line">//方法二：</div><div class="line">function getscroll()&#123;</div><div class="line">	  	 var scrollTop=document.documentElement.scrollTop || </div><div class="line">	  	 window.pageYOffset || document.body.scrollTop;</div><div class="line">	  	 return scrollTop;</div><div class="line">	  &#125;</div></pre></td></tr></table></figure>
 <p>理由如下：</p>

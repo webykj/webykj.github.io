@@ -104,18 +104,18 @@
 
 
 
-<meta name="description" content="本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率 第二章 开发原则浏览器工作原理HTML">
+<meta name="description" content="本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率">
 <meta name="keywords" content="books">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《高性能HTML5》">
 <meta property="og:url" content="http://yoursite.com/2017/05/31/html5高性能/index.html">
 <meta property="og:site_name" content="Hero">
-<meta property="og:description" content="本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率 第二章 开发原则浏览器工作原理HTML">
+<meta property="og:description" content="本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-16T00:26:55.439Z">
+<meta property="og:updated_time" content="2017-09-16T01:25:25.589Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《高性能HTML5》">
-<meta name="twitter:description" content="本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率 第二章 开发原则浏览器工作原理HTML">
+<meta name="twitter:description" content="本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率">
 
 
 
@@ -381,6 +381,7 @@
       
         <p>本书中讨论三种性能<br>客户端（即浏览器）性能<br>服务器端和网络性能<br>开发效率</p>
 <h2 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h2><p>HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。<br>什么是高性能<br>页面加载时间<br>浏览器性能<br>网络性能<br>开发效率</p>
+<a id="more"></a>
 <h2 id="第二章-开发原则"><a href="#第二章-开发原则" class="headerlink" title="第二章 开发原则"></a>第二章 开发原则</h2><p>浏览器工作原理<br>HTML 解析为一颗 DOM 树。<br>DOM 树和 CSS 样式表结合起来构成渲染树（Firefox 中渲染树被称作框架树）。<br>根据渲染树，浏览器开始绘制。<br>改进性能<br>减少 HTML 中元素的数量<br>减少重绘（效果更明显）<br>动态改动 DOM 和 CSS 样式时有两点需要考虑<br>改动的元素在 DOM 树的深度，越深则改动就越独立，对其他节点影响越少，所以能改多深就改多深。<br>对 DOM 有多次操作，尽量合并到一次做完而不是分成一次一次地去做。<br>CSS 放到 head 标签内（避免白屏），script 放到 body 标签的尾部（避免延迟页面元素的渲染）<br>使用特性检测，而不是浏览器版本号检测。</p>
 <h2 id="第三章-性能准则"><a href="#第三章-性能准则" class="headerlink" title="第三章 性能准则"></a>第三章 性能准则</h2><p>影响页面加载时间的因素（按强弱排序）<br>减少 HTTP 请求<br>使用 CDN 加速<br>避免空的 src 或 href 属性值<br>增加过期头<br>启 GZIP 压缩<br>把 CSS 放在头部<br>把 JavaScript 放到尾部<br>避免使用 CSS 表达式<br>删除不使用的 CSS 语句<br>对 JavaScript、CSS 进行代码压缩<br>减少重绘<br>减少 HTTP 请求<br>理解并行连接<br>HTTP1.1 协议很明确限制了单个用户不能在同一时间保持2个以上的连接。大部分浏览器突破了这个限制。充分利用浏览器并发，将资源文件散列到不同的域名。但 DNS 查询耗时。<br>合并资源文件<br>使用图片精灵<br>减少重绘<br>规定图片的宽和高<br>不要用表格布局<br>定义字符集<br>不要重组 DOM</p>
 <h2 id="第四章-响应式网页设计"><a href="#第四章-响应式网页设计" class="headerlink" title="第四章 响应式网页设计"></a>第四章 响应式网页设计</h2><p>CSS3 媒介查询<br>自适应图片<br>弹性栅格</p>

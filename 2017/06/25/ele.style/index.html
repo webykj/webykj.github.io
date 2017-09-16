@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="javascript中elm.style.xxx无法获取到CSS值 示例代码如下： 12345.d1&amp;#123;color:#f00;&amp;#125;&amp;lt;div id=”d1″ class=”d1″&amp;gt;获取css值&amp;lt;/div&amp;gt;//此时使用JS的style获取他的color属性：var d1=document.getElementById(‘d1’);alert(d1.style.c">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-15T23:49:09.922Z">
+<meta property="og:updated_time" content="2017-09-16T01:23:54.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中中elm.style.xxx无法获取到CSS值">
 <meta name="twitter:description" content="javascript中elm.style.xxx无法获取到CSS值 示例代码如下： 12345.d1&amp;#123;color:#f00;&amp;#125;&amp;lt;div id=”d1″ class=”d1″&amp;gt;获取css值&amp;lt;/div&amp;gt;//此时使用JS的style获取他的color属性：var d1=document.getElementById(‘d1’);alert(d1.style.c">
@@ -383,6 +383,7 @@
 <p>示例代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.d1&#123;color:#f00;&#125;</div><div class="line">&lt;div id=”d1″ class=”d1″&gt;获取css值&lt;/div&gt;</div><div class="line">//此时使用JS的style获取他的color属性：</div><div class="line">var d1=document.getElementById(‘d1’);</div><div class="line">alert(d1.style.color);</div></pre></td></tr></table></figure>
 <p>奇怪的是，弹出一个空值，没有任何内容，也不报错。但如果用d1.style.color=”#00f”来设置d1的CSS却正确执行。</p>
+<a id="more"></a>
 <p>百思不得其解，上网一搜。</p>
 <p>解释说elm.style只能获取到elm标签上类似style=””定义的CSS属性，我靠，那怎么得到通过class来声明的属性呢？</p>
 <p>IE中用elm.currentStyle.color的语句来获得——这种方法还能接受。</p>

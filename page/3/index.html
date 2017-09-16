@@ -381,10 +381,14 @@
 
       
         
-          
-            <h2 id="ajax的封装"><a href="#ajax的封装" class="headerlink" title="ajax的封装:"></a>ajax的封装:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">function ajax(method,url,data,success)&#123;</div><div class="line">	 	var xhr;</div><div class="line">	 	try&#123;</div><div class="line">	 		//尝试执行try中的代码，如有错误，执行catch中的代码并返回错误信息</div><div class="line">	 		xhr=new XMLHttpRequest();</div><div class="line">	 		//throw new Error(&apos;手动报错&apos;);</div><div class="line">	 	&#125;catch(e)&#123;</div><div class="line">	 		xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;);</div><div class="line">	 		//alert(e);</div><div class="line">	 	&#125;</div><div class="line">	 	var btn=document.getElementById(&quot;btn&quot;);</div><div class="line">	 	btn.onclick=function ()&#123;</div><div class="line">	     	setInterval(function ()&#123;</div><div class="line">	     	var xhr=new XMLHttpRequest();</div><div class="line">	     	if(method == &quot;get&quot; &amp;&amp; data)&#123;</div><div class="line">	     		url+=&quot;?&quot;+data;</div><div class="line">	     	&#125;</div><div class="line">	     	xhr.open(method,url,true);</div><div class="line">	     	if(method == &quot;get&quot;)&#123;</div><div class="line">	     		xhr.send();</div><div class="line">	     	&#125;else&#123;</div><div class="line">	     		xhr.setRequestHeader(&apos;content-type&apos;,&apos;application/x-www-form-urlencoded&apos;);</div><div class="line">	     		xhr.send(data);</div><div class="line">	     	&#125;</div><div class="line">	     	xhr.onreadystatechange=function ()&#123;</div><div class="line">	     		if(xhr.readyState == 4)&#123;</div><div class="line">	     			if(xhr.status == 200)&#123;</div><div class="line">	     				success &amp;&amp; success(xhr.responseText)</div><div class="line">	     			&#125;else&#123;</div><div class="line">	     				alert(&quot;出错了&quot;+xhr.status);</div><div class="line">	     			&#125;</div><div class="line">	     		&#125;</div><div class="line">			&#125;;</div><div class="line">		&#125;,1000)</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="数据"><a href="#数据" class="headerlink" title="数据:"></a>数据:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">header(&apos;content-type:text.html;charset:&quot;utf-8&quot;&apos;);</div><div class="line">error_reporting(0);</div><div class="line">$news=array(</div><div class="line">	array(&quot;title&quot;=&gt;&quot;中国又一工程惊艳世界:世界最深高铁站&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;),</div><div class="line">	array(&quot;title&quot;=&gt;&quot;院士:让中国转基因鲤鱼尽快游向餐桌 &quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;),</div><div class="line">	array(&quot;title&quot;=&gt;&quot;中戏老师怒怼战狼2:一文不值心理变态&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;),</div><div class="line">	array(&quot;title&quot;=&gt;&quot;陕西一区委书记赴宴被富豪打 纪委披露&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;),</div><div class="line">	array(&quot;title&quot;=&gt;&quot;2.3公里路司机绕成30公里 滴滴愿赔1千&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;)</div><div class="line">);</div><div class="line">echo json_encode($news);</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
-          
+          <h2 id="ajax的封装"><a href="#ajax的封装" class="headerlink" title="ajax的封装:"></a>ajax的封装:</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/08/ajax的封装/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -523,14 +527,15 @@
 
       
         
-          
-            <h2 id="图片库改进："><a href="#图片库改进：" class="headerlink" title="图片库改进："></a>图片库改进：</h2><p>如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。<br>结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。</p>
+          <h2 id="图片库改进："><a href="#图片库改进：" class="headerlink" title="图片库改进："></a>图片库改进：</h2><p>如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。<br>结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。</p>
 <p>Javascript与HTML标记分离：element.event = function(){…}，这里的event不限onclick、onkeypress。</p>
-<h2 id="共享onload事件"><a href="#共享onload事件" class="headerlink" title="共享onload事件"></a>共享onload事件</h2><p>网页加载完毕时会触发一个onload事件，这个事件与window对象相关联。即window.onload = function(){…}。<br>若需要绑定的函数较多时，一个弹性的解决方案是addLoadEvent，代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function addLoadEvent(func) &#123;  </div><div class="line">    var oldonload = window.onload;</div><div class="line">    if(typeof window.onload != &apos;function&apos;) &#123;  </div><div class="line">        window.onload = func;  </div><div class="line">    &#125; else&#123;</div><div class="line">        window.onload = function() &#123;</div><div class="line">            oldonload();</div><div class="line">            func();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>未完待续。。。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/08/JavaScript DOM编程艺术2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -669,20 +674,16 @@
 
       
         
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var xhr=new XMLHttpRequest();</div><div class="line">xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true); //打开方式，地址，是否异步</div></pre></td></tr></table></figure>
+          <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var xhr=new XMLHttpRequest();</div><div class="line">xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true); //打开方式，地址，是否异步</div></pre></td></tr></table></figure>
 <p><strong>注意：</strong></p>
 <p>异步：非阻塞模式，表示前面代码不会影响后面代码的执行。<br>同步：非阻塞模式，表示前面代码会会影响后面代码的执行。<br>在选择同步还是异步的过程中，需要判断前面的代码是否会影响后面的代码，如果会，那么就必须选择同步，否则，便是异步。</p>
-<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;form action=&quot;get.php&quot; method=&quot;get&quot;&gt;</div><div class="line">    &lt;input type=&quot;text&quot; name=&quot;user&quot; value=&quot;john&quot;&gt;</div><div class="line">    &lt;input type=&quot;text&quot; name=&quot;age&quot; value=&quot;20&quot;&gt;</div><div class="line">    &lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt;</div><div class="line">    &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</div><div class="line">&lt;/form&gt;</div><div class="line">&lt;?php</div><div class="line">    header(&apos;content-type:text.html;charset:&quot;utf-8&quot;&apos;);</div><div class="line">    error_reporting(0);</div><div class="line">    /*$user=$_GET[&apos;user&apos;];</div><div class="line">    $age=$_GET[&apos;age&apos;];</div><div class="line">    $pwd=$_GET[&apos;pwd&apos;];*/</div><div class="line">    $user=$_POST[&apos;user&apos;];</div><div class="line">    $age=$_POST[&apos;age&apos;];</div><div class="line">    $pwd=$_POST[&apos;pwd&apos;];</div><div class="line">    echo &quot;&#123;$user&#125;,&#123;$age&#125;,$&#123;pwd&#125;&quot;;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
-<h2 id="区分get与post"><a href="#区分get与post" class="headerlink" title="区分get与post"></a>区分get与post</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">xxx.open(&apos;get&apos;,&apos;get.php?username=&apos;+encodeURL(&apos;张三&apos;)+&apos;&amp;age=30&apos;+new Date().getTime(),true);</div><div class="line">xxx.open(&apos;post&apos;,&apos;post.php&apos;,true);</div><div class="line">xxx.setRequestHeader(&apos;content-type&apos;,&apos;application/x-www-form-urlencoded&apos;);</div><div class="line">xxx.send(&apos;username=zhangsan&apos;&amp;age=22);</div></pre></td></tr></table></figure>
-<ul>
-<li>缓存问题需要在？后添加一个随记函数或时间戳。</li>
-<li>post,数据放在send()方法里，作为参数传递。</li>
-<li>编码问题需用encodeURL()解决。</li>
-</ul>
-<p>持续更新完善中。。。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/03/ajax中的open/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -821,8 +822,7 @@
 
       
         
-          
-            <h2 id="先看个小例子："><a href="#先看个小例子：" class="headerlink" title="先看个小例子："></a>先看个小例子：</h2><p><a href="https://webykj.github.io/insertAfter/" target="_blank" rel="external">创建insertAfter方法</a></p>
+          <h2 id="先看个小例子："><a href="#先看个小例子：" class="headerlink" title="先看个小例子："></a>先看个小例子：</h2><p><a href="https://webykj.github.io/insertAfter/" target="_blank" rel="external">创建insertAfter方法</a></p>
 <h2 id="DOM常用的5个方法："><a href="#DOM常用的5个方法：" class="headerlink" title="DOM常用的5个方法："></a>DOM常用的5个方法：</h2><ul>
 <li><p>getElementById</p>
 </li>
@@ -835,52 +835,13 @@
 <li><p>setAttribute</p>
 </li>
 </ul>
-<h2 id="DOM中的D表示文档，O表示对象，M表示模型。其中，对象分为3种："><a href="#DOM中的D表示文档，O表示对象，M表示模型。其中，对象分为3种：" class="headerlink" title="DOM中的D表示文档，O表示对象，M表示模型。其中，对象分为3种："></a>DOM中的D表示文档，O表示对象，M表示模型。其中，对象分为3种：</h2><ul>
-<li><p>用户定义的对象</p>
-</li>
-<li><p>内建对象，如Array,Math,Date等</p>
-</li>
-<li><p>宿主对象，由浏览器提供的对象，,如window.open,window.blur.</p>
-</li>
-</ul>
-<h2 id="getElementsByClassName兼容性处理："><a href="#getElementsByClassName兼容性处理：" class="headerlink" title="getElementsByClassName兼容性处理："></a>getElementsByClassName兼容性处理：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//node表示DOM树中搜索起点</div><div class="line"> function getElementsByClassName(node,classname)&#123;</div><div class="line"> 	if(node.getElementsByClassName)&#123;</div><div class="line"> 		//使用现有方法</div><div class="line"> 		return node.getElementsByClassName(classname);</div><div class="line"> 	&#125;else&#123;</div><div class="line"> 		var results=new Array();</div><div class="line"> 		var elems=node.getElementsByTagName(&quot;*&quot;);</div><div class="line"> 		for(var i=0;i&lt;elems.length;i++)&#123;</div><div class="line"> 			if(elems[i].className.indexOf(classname) != -1)&#123;</div><div class="line"> 				results[results.length]=elems[i];</div><div class="line"> 			&#125;</div><div class="line"> 		&#125;</div><div class="line"> 		return results;</div><div class="line"> 	&#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
-<h2 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h2><blockquote>
-<p>一份文档就是一颗节点树。</p>
-<p>节点分为不同类型：元素，属性，文本节点等。</p>
-<p>getElementById将返回一个对象，该对象对应着文档里的一个特定的元素节点。</p>
-<p>getElementsByTagName和getElementsByClassName将返回一个数组，分别对应文档里一组特定的元素节点。</p>
-<p>每一个节点都是一个对象。</p>
-</blockquote>
-<h2 id="获取和设置属性："><a href="#获取和设置属性：" class="headerlink" title="获取和设置属性："></a>获取和设置属性：</h2><p>getAttribute是一个函数，只有一个参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">object.getAttribute(attribute)</div><div class="line">...</div><div class="line">getAttribute不属于document对象，所以不能通过document对象调用，调用方法：</div></pre></td></tr></table></figure>
-<p>var paras=document.getElementsByTagName(“p”);<br>//方法一：<br>for(var i=0;i&lt;paras.length;i++){<br>    var title_text=paras[i].getAttribute(“title”);<br>    if(title_text!= null){<br>        alert(title_text);<br>    }<br>}<br>//方法二：<br>for(var i=0;i&lt;paras.length;i++){<br>    var title_text=paras[i].getAttribute(“title”);<br>    if(title_text) alert(title_text);<br>}<br>…</p>
-<h2 id="setAttribute"><a href="#setAttribute" class="headerlink" title="setAttribute"></a>setAttribute</h2><p>getAttribute是一个函数，有2个参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">object.setAttribute(attribute,value)</div></pre></td></tr></table></figure>
-<h2 id="用setAttribute改变原有属性的值："><a href="#用setAttribute改变原有属性的值：" class="headerlink" title="用setAttribute改变原有属性的值："></a>用setAttribute改变原有属性的值：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var paras=document.getElementsByTagName(&quot;p&quot;);</div><div class="line">for(var i=0;i&lt;prras.length;i++)&#123;</div><div class="line">	var title_text=paras[i].getAttribute(&quot;title&quot;);</div><div class="line">    if(title_text)&#123;</div><div class="line">    	paras[i].setAttribute(&quot;title&quot;,&quot;brand new title text&quot;);</div><div class="line">        alert(paras[i].getAttribute(&quot;title&quot;));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="childNodes属性："><a href="#childNodes属性：" class="headerlink" title="childNodes属性："></a>childNodes属性：</h2><p>该属性可获取任何一个元素所有的子元素，他是一个所有子元素的数组。</p>
-<p>显示body所有子元素的总个数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function countBodyChildern()&#123;</div><div class="line">	var body_element = document.getElementsByTagName(&quot;body&quot;)[0];</div><div class="line">    alert(body_element.childNodes.length);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//在页面加载时执行</div><div class="line">window.onload = countBodyChildren;</div></pre></td></tr></table></figure>
-<h2 id="nodeType属性："><a href="#nodeType属性：" class="headerlink" title="nodeType属性："></a>nodeType属性：</h2><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node.nodeType</div></pre></td></tr></table></figure>
-<blockquote>
-<p>nodetype得值是个数字，而不是像“element”,”attribute”那样的字符串。</p>
-<p>nodeType只有12种，但只有3种有实用价值：</p>
-<p>元素节点的nodeType属性值为1</p>
-<p>属性节点的nodeType属性值为2</p>
-<p>文本节点的nodeType属性值为3</p>
-</blockquote>
-<h2 id="动态改变属性值："><a href="#动态改变属性值：" class="headerlink" title="动态改变属性值："></a>动态改变属性值：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function showPic(whichpic)&#123;</div><div class="line">	var source = whichpic.getAttribute(&quot;href&quot;);</div><div class="line">    var placeholder = document.getElementById(&quot;placeholder&quot;);</div><div class="line">    placeholder.setAttribute(&quot;src&quot;,socuse);</div><div class="line">    var text = which.getAttribute(&quot;title&quot;);</div><div class="line">    var description = document.getElementById(&quot;description&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="nodeValue属性"><a href="#nodeValue属性" class="headerlink" title="nodeValue属性"></a>nodeValue属性</h2><p>改变文本节点的值：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">node.nodeValue</div><div class="line">//改变属性的值</div><div class="line">function showPic()&#123;</div><div class="line">    var source=whichpic.getAttribute(&quot;href&quot;);</div><div class="line">    var placeholder=document.getElementById(&quot;placeholder&quot;);</div><div class="line">    placeholder.setAttribute(&quot;src&quot;,source);</div><div class="line">    var text=whichpic.getAttribute(&quot;title&quot;);</div><div class="line">    var description=document.getElementById(&quot;description&quot;);</div><div class="line">    description.firstChild.nodeValue=text;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="firstChild与lastChild属性："><a href="#firstChild与lastChild属性：" class="headerlink" title="firstChild与lastChild属性："></a>firstChild与lastChild属性：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">node.firstChild</div><div class="line">node.childNodes[0]</div><div class="line">node.lastChild</div></pre></td></tr></table></figure>
-<h2 id="动态创建标记"><a href="#动态创建标记" class="headerlink" title="动态创建标记"></a>动态创建标记</h2><p>传统方法：document.write和innerHTML</p>
-<p>DOM方法：creatElement,createTextNode,appendChild和insertBefore</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">window.onload=function ()&#123;</div><div class="line">    var pra=document.createElement(&quot;p&quot;);</div><div class="line">    var div=document.getElementById(&quot;div&quot;);</div><div class="line">    div.appendChild(pra);</div><div class="line">    var txt=document.createTextNode(&quot;hello world!&quot;);</div><div class="line">    pra.appendChild(txt);</div><div class="line">&#125;</div><div class="line">//我更倾向这种写法</div><div class="line"> window.onload=function ()&#123;</div><div class="line">    var pra=document.createElement(&quot;p&quot;);</div><div class="line">    var txt1=document.createTextNode(&quot;This is &quot;);</div><div class="line">    var em=document.createElement(&quot;em&quot;);</div><div class="line">    var txt2=document.createTextNode(&quot;my&quot;);</div><div class="line">    var txt3=document.createTextNode(&quot; content.&quot;);</div><div class="line">    var div=document.getElementById(&quot;div&quot;);</div><div class="line">    pra.appendChild(txt1);</div><div class="line">    em.appendChild(txt2);</div><div class="line">    pra.appendChild(em);</div><div class="line">    pra.appendChild(txt3);</div><div class="line">    div.appendChild(pra);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="insertBefore方法，这里需要注意没有insertAfter方法，但我们可以编写它，代码如下："><a href="#insertBefore方法，这里需要注意没有insertAfter方法，但我们可以编写它，代码如下：" class="headerlink" title="insertBefore方法，这里需要注意没有insertAfter方法，但我们可以编写它，代码如下："></a>insertBefore方法，这里需要注意没有insertAfter方法，但我们可以编写它，代码如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">function insertAfter(newElement,targetElement)&#123;</div><div class="line">    var parent=targetElement.parentNode;</div><div class="line">    if(parent.lastChild==targetElement)&#123;</div><div class="line">    	parent.appendChild(newElement);</div><div class="line">    &#125;else&#123;</div><div class="line">   		parent.insertBefore(newElement,targetElement.nextSibling);</div><div class="line">    &#125;</div><div class="line">    //nextSibling表示目标元素的兄弟元素</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="最终代码如下："><a href="#最终代码如下：" class="headerlink" title="最终代码如下："></a>最终代码如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">function preparePlaceholder()&#123;</div><div class="line">    if(!document.createElement) return false;</div><div class="line">    if(!document.createTextNode) return false;</div><div class="line">    if(!document.getElementById) return false;</div><div class="line">    if(!document.getElementById(&quot;pic&quot;)) return false;</div><div class="line">    var placeholder=document.createElement(&quot;img&quot;);</div><div class="line">    placeholder.setAttribute(&quot;id&quot;,&quot;placeholder&quot;);</div><div class="line">    placeholder.setAttribute(&quot;src&quot;,&quot;img/a4.jpg&quot;);</div><div class="line">    placeholder.setAttribute(&quot;alt&quot;,&quot;This is a photo&quot;);</div><div class="line">    var description=document.createElement(&quot;p&quot;);</div><div class="line">	description.setAttribute(&quot;id&quot;,&quot;description&quot;);</div><div class="line">    var txt=document.createTextNode(&quot;Choose an pic&quot;);</div><div class="line">    description.appendChild(txt);</div><div class="line">    var gallery=document.getElementById(&quot;pic&quot;);</div><div class="line">    insertAfter(placeholder,gallery);</div><div class="line">    insertAfter(description,placeholder);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>持续更新完善中。。。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/03/JavaScript DOM编程艺术/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1019,54 +980,18 @@
 
       
         
-          
-            <p>Asynchronous JavaScript and XML（异步JavaScript和XML)，是一种创建交互式网页应用的网页开发技术。</p>
+          <p>Asynchronous JavaScript and XML（异步JavaScript和XML)，是一种创建交互式网页应用的网页开发技术。</p>
 <h2 id="AJAX工作原理："><a href="#AJAX工作原理：" class="headerlink" title="AJAX工作原理："></a>AJAX工作原理：</h2><blockquote>
 <p>AJAX的工作原理：Ajax的工作原理相当于在用户和服务器之间加了—个中间层(AJAX引擎),使用户操作与服务器响应异步化。并不是所有的用户请求都提交给服务器,像—些数据验证和数据处理等都交给Ajax引擎自己来做,只有确定需要从服务器读取新数据时再由Ajax引擎代为向服务器提交请求。</p>
 <p>Ajax其核心有JavaScript、XMLHTTPRequest、DOM对象组成，通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用JavaScript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。让我们来了解这几个对象。</p>
 </blockquote>
-<h2 id="AJAX优点："><a href="#AJAX优点：" class="headerlink" title="AJAX优点："></a>AJAX优点：</h2><ul>
-<li><p>节省用户操作，提高用户体验，减少数据请求</p>
-</li>
-<li><p>无刷新更新数据</p>
-</li>
-<li><p>异步与服务器通信</p>
-</li>
-<li><p>基于标准被广泛支持</p>
-</li>
-</ul>
-<p>。。。</p>
-<h2 id="AJAX缺点："><a href="#AJAX缺点：" class="headerlink" title="AJAX缺点："></a>AJAX缺点：</h2><ul>
-<li><p>没有了Back和History功能，即对浏览器机制的破坏</p>
-</li>
-<li><p>AJAX的安全问题</p>
-</li>
-<li><p>对搜索引擎支持较弱</p>
-</li>
-</ul>
-<p>。。。</p>
-<h2 id="Ajax适用场景"><a href="#Ajax适用场景" class="headerlink" title="Ajax适用场景"></a>Ajax适用场景</h2><ul>
-<li><p>表单验证</p>
-</li>
-<li><p>快速的用户与用户间的交流响应</p>
-</li>
-<li><p>对数据进行过滤和操纵相关数据的场景</p>
-</li>
-<li><p>普通的文本输入提示和自动完成的场景</p>
-</li>
-</ul>
-<p>。。。</p>
-<h2 id="Ajax不适用场景"><a href="#Ajax不适用场景" class="headerlink" title="Ajax不适用场景"></a>Ajax不适用场景</h2><ul>
-<li><p>搜索</p>
-</li>
-<li><p>基本的导航</p>
-</li>
-<li><p>替换大量的文本</p>
-</li>
-</ul>
-<p>。。。</p>
-<h2 id="第一个Ajax应用："><a href="#第一个Ajax应用：" class="headerlink" title="第一个Ajax应用："></a>第一个Ajax应用：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">&lt;input type=&quot;button&quot; value=&quot;提交&quot; id=&quot;btn&quot;&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    window.onload=function ()&#123;</div><div class="line">        //ie兼容问题 new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;)</div><div class="line">        var xhr;</div><div class="line">        //方法一</div><div class="line">        /*if(window.XMLHttpRequest)&#123;</div><div class="line">            xhr=new XMLHttpRequest();</div><div class="line">        &#125;else&#123;</div><div class="line">            xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;);</div><div class="line">        &#125;*/</div><div class="line">        //方法二：</div><div class="line">        try&#123;</div><div class="line">            //尝试执行try中的代码，如有错误，执行catch中的代码并返回错误信息</div><div class="line">            xhr=new XMLHttpRequest();</div><div class="line">            //throw new Error(&apos;手动报错&apos;);</div><div class="line">        &#125;catch(e)&#123;</div><div class="line">            xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;);</div><div class="line">            //alert(e);</div><div class="line">        &#125;</div><div class="line">        var btn=document.getElementById(&quot;btn&quot;);</div><div class="line">        btn.onclick=function ()&#123;</div><div class="line">            var xhr=new XMLHttpRequest();</div><div class="line">            xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true);</div><div class="line">            xhr.send();</div><div class="line">            xhr.onreadystatechange=function ()&#123;</div><div class="line">                if(xhr.readyState ==4)&#123;</div><div class="line">                	if(xhr.status ==200)&#123;</div><div class="line">                    	 alert(xhr.responseText);</div><div class="line">                    &#125;else&#123;</div><div class="line">                    	alert(&quot;出错了&quot;+xhr.status);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/01/初识ajax/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1205,16 +1130,16 @@
 
       
         
-          
-            <p>这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！</p>
+          <p>这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！</p>
 <p>看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，chrome也只认识document.body.scrollTop.</p>
-<p>由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？</p>
-<p>解决办法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//方法一：</div><div class="line">var sTop=document.body.scrollTop+document.documentElement.scrollTop;</div><div class="line">//方法二：</div><div class="line">function getscroll()&#123;</div><div class="line">	  	 var scrollTop=document.documentElement.scrollTop || </div><div class="line">	  	 window.pageYOffset || document.body.scrollTop;</div><div class="line">	  	 return scrollTop;</div><div class="line">	  &#125;</div></pre></td></tr></table></figure>
-<p>理由如下：</p>
-<p>因为document.body.scrollTop与document.documentElement.scrollTop两者有个特点，就是同时只会有一个值生效。比如document.body.scrollTop能取到值的时候，document.documentElement.scrollTop就会始终为0；反之亦然。所以，如果要得到网页的真正的scrollTop值,这两个值总会有一个恒为0，所以不用担心会对真正的scrollTop造成影响。</p>
-
-          
+<p>由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/28/scrolltop的兼容/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1353,19 +1278,17 @@
 
       
         
-          
-            <p>javascript中elm.style.xxx无法获取到CSS值</p>
+          <p>javascript中elm.style.xxx无法获取到CSS值</p>
 <p>示例代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.d1&#123;color:#f00;&#125;</div><div class="line">&lt;div id=”d1″ class=”d1″&gt;获取css值&lt;/div&gt;</div><div class="line">//此时使用JS的style获取他的color属性：</div><div class="line">var d1=document.getElementById(‘d1’);</div><div class="line">alert(d1.style.color);</div></pre></td></tr></table></figure>
 <p>奇怪的是，弹出一个空值，没有任何内容，也不报错。但如果用d1.style.color=”#00f”来设置d1的CSS却正确执行。</p>
-<p>百思不得其解，上网一搜。</p>
-<p>解释说elm.style只能获取到elm标签上类似style=””定义的CSS属性，我靠，那怎么得到通过class来声明的属性呢？</p>
-<p>IE中用elm.currentStyle.color的语句来获得——这种方法还能接受。</p>
-<p>但自诩标准的W3C获取方法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var d1 =document.getElementById(‘d1’);</div><div class="line">alert(window.getComputedStyle(d1,null).color);</div></pre></td></tr></table></figure>
-<p>要用到一个很生的JS语句：getComputedStyle。这不重要，重要的是这个语句的使用方法，居然要通过window对象调用！参数居然是两个而且第二个就算是空的也不能省略！这条语句对比起elm.style甚至elm.currentStyle都要繁琐的多，而且打乱了一般的JS编程习惯。<br>虽然通过getComputedStyle真的能取到对应的CSS值，但这个方法不得不说很是无语!</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/25/ele.style/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1504,71 +1427,16 @@
 
       
         
-          
-            <p>简单来说，情商（情绪智力）是指识别、理解自己和他人的情绪状态，并利用这些信息来解决问题和调节行为的能力。</p>
+          <p>简单来说，情商（情绪智力）是指识别、理解自己和他人的情绪状态，并利用这些信息来解决问题和调节行为的能力。</p>
 <p>情商高的人通常都擅长处理情绪，在大多数时候能做到头脑冷静、行为理智，保持愉快的心情，因此情商高的人不仅更容易受他人的欢迎，也更有可能获得成功。</p>
 <p>本测评根据你在情绪觉察、情绪管理、情绪驱动、情绪理解和社交技巧五个方面的表现，综合评估你的情商指数，有助于你更好地管理自己的情绪，获得和谐融洽的人际关系。</p>
-<h2 id="情商指数"><a href="#情商指数" class="headerlink" title="情商指数"></a>情商指数</h2><p><img src="http://oub61fw66.bkt.clouddn.com/num.png" alt="&quot;情商指数&quot;"><br>水平：较高<br>你的情绪智力指数较高，你能够妥善地处理自己的情绪，也能够合理地面对他人的情绪，在社会中能够自在地与各种各样的人相处，很少有与人闹得不愉快的情况。</p>
-<h2 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h2><h2 id="情绪智力剖析图"><a href="#情绪智力剖析图" class="headerlink" title="情绪智力剖析图"></a>情绪智力剖析图</h2><p><img src="http://oub61fw66.bkt.clouddn.com/pic.png" alt="&quot;剖析图&quot;"></p>
-<h2 id="情绪觉察"><a href="#情绪觉察" class="headerlink" title="情绪觉察"></a>情绪觉察</h2><p>你的结果：一般<br>你的情绪觉察能力一般，一般情况下你能辨别自己的情绪，但是偶尔你也判断不出这些情绪因何而起。你有时想给别人留下某种特定的印象，但是结果却出乎你的意料。</p>
-<h2 id="情绪管理"><a href="#情绪管理" class="headerlink" title="情绪管理"></a>情绪管理</h2><p>你的结果：较强<br>你的情绪管理能力较强，你能较好地处理自己的情绪，面对突出其来的强烈情绪可以较好地转移或消解，即使在压力下，也能够可以保持清醒，较快地从生活的挫折和烦恼中恢复。然而情绪管理的技巧你也没有完全熟练，偶尔就算意识到自己的不良情绪也不能很好地转移或消解。</p>
-<h2 id="情绪驱动"><a href="#情绪驱动" class="headerlink" title="情绪驱动"></a>情绪驱动</h2><p>你的结果：较强<br>你的情绪驱动能力较强，你能够进行自我激励，感到自己有能力找到实现目标的方法，无论目标是什么，都相信自己有决心而且有能力实现。你的自我激励水平随着你对工作的认可程度而变化，当你不满意自己的工作内容或待遇时，你会拒绝付出太多的激情去做事。</p>
-<h2 id="情绪理解"><a href="#情绪理解" class="headerlink" title="情绪理解"></a>情绪理解</h2><p>你的结果：较强<br>你的情绪理解能力较强，你比一般人更善于察觉他人的情绪感受，愿意倾听他人的烦恼，能够设身处地的理解他人的感受。尽管你的同情心比一般人强，但是有时你还是不能理解别人做出一些奇怪的决定或行为的原因。</p>
-<h2 id="社交技能"><a href="#社交技能" class="headerlink" title="社交技能"></a>社交技能</h2><p>你的结果：一般<br>你的社交技巧一般，在如何与他人相处这门必修课上，你掌握的技巧并不多。你在与人相处时偶尔会发生一些得罪人的情况，有时你也搞不清楚自己为什么得罪了别人。</p>
-<h2 id="情商结论"><a href="#情商结论" class="headerlink" title="情商结论"></a>情商结论</h2><p><img src="http://oub61fw66.bkt.clouddn.com/a.jpg" alt="&quot;情商结论&quot;"></p>
-<p>你的情绪智力指数较高，表明你是一个有魅力的人，在他人眼中你是称职的合作伙伴、值得信赖的伴侣。<br>在人际交往方面，你善良，在适当的时候能够对他人施以援手，有选择地关怀他人，不管是在什么社交场合，你都表现得自信从容，容易给别人留下良好的印象，赢得他人的认可和支持。</p>
-<p>在情绪处理方面，你懂得合理地表达自己的真实感受，有技巧地处理压力和冲突，能够保持冷静、随机应变，不过面对一些尴尬的社交局面你也有束手无策的时候。</p>
-<p>在工作与生活方面，你有着较强的掌控能力，比较了解自己应该从事什么样的工作，适合什么样的伴侣。</p>
-<blockquote>
-<p>☆ 你对情绪的觉察能力一般，表明你对自己的情绪不太敏感，有时会陷入莫名其妙的情绪当中，比如突如其来的愤怒或忧伤等。</p>
-</blockquote>
-<p>你有时会有难以准确描述自己的情绪感受的状况，不善于表达自己的情绪，在选择表达情绪的方式和场合时可能会出现错误。</p>
-<p>在人际交往中，你的情绪不太稳定，容易激动，行为不够理智，容易被情绪支配，做出让自己事后回想起来后悔的事。</p>
-<blockquote>
-<p>☆ 你的情绪管理能力较强，表明你能够调节和处理自己的情绪，在压力面前，能够通过一定的方法让自己保持冷静和理智，不会轻易被情绪所控。</p>
-</blockquote>
-<p>你是自己情绪的主人，你懂得在合适的时间、地点，用合适的方式表达情绪，以比一般人更为乐观的心态面对生活中出现的困难和挫折，能够自己缓解紧张、焦虑、沮丧、愤怒等不良的心理状态。</p>
-<p>在人际交往中，你显得比较成熟，懂得设置自己的界限，能够坚持自己的立场和原则。遇到不公平的对待时，能够表达自己的态度，有驱散紧张尴尬的气氛的能力，但是有时不够灵活。</p>
-<blockquote>
-<p>☆ 你的情绪驱动能力较强，表明你有一定的内在动力，你能够为了满足自己内心对成功的渴望，通过一定的努力，把事情做得更好。</p>
-</blockquote>
-<p>你是一个行动派，当你从事你感兴趣的工作时，总是能专注于当前任务，发自内心地认真和负责，对不断变化的任务要求反应自如。</p>
-<p>你在遇到逆境时能坚持，调整情绪，恢复活力，具有较强的心理韧性。</p>
-<p>在别人眼中，你是一个有上进心、进取心的人，对生活和工作都保持一定的热情，知道如何调动自己的积极情绪，能够发挥自己的潜能。</p>
-<blockquote>
-<p>☆ 你的情绪理解能力较强，表明你有较好的观察力，能够准确地感知和识别他人的情绪和身体语言。</p>
-</blockquote>
-<p>你和别人打交道不会有太大的困难，因为你能领会他人的反应和感受，并且可以通过观察别人的非语言信息，如：身体动作、面部表情和眼神交流等，感知到别人细微的情绪变化。</p>
-<p>你能够认真倾听和理解他人的处境和困扰，并考虑他人的情绪感受，提供有价值的信息反馈，获得他人的信任。</p>
-<p>在人际交往中，你具有同情心，即使与自己的观念不一致的人也能和平相处。当你察觉到别人的真正需要，会主动劝服和安慰别人。尽管遇到你不能理解的人，你也能想到人无完人，不过分苛求。</p>
-<blockquote>
-<p>☆ 你的社交技巧水平一般，表明你在建立和维护与周围人的关系上表现一般，有时会导致一些人际冲突。</p>
-</blockquote>
-<p>由于你在判断应该在什么场合什么时间下说什么、做什么、会对别人有什么影响的时候准确性不足，导致你的人际交往不太顺畅。</p>
-<p>在人际交往中，你显得不太合群，不懂得察言观色，也不知道如何与陌生人闲聊，待人接物的能力有待提高，可能会造成别人的疏远或排斥。</p>
-<h2 id="提升建议"><a href="#提升建议" class="headerlink" title="提升建议"></a>提升建议</h2><p><img src="http://oub61fw66.bkt.clouddn.com/b.jpg" alt="&quot;提升建议&quot;"></p>
-<blockquote>
-<p>☆ 你的情绪觉察能力弱，针对你的情绪觉察能力，建议你先学会了解并接纳自己的情绪。</p>
-</blockquote>
-<p>每当自己觉得思绪混乱，情绪快要失控的时候，先学会冷静下来，转移注意力，不要让情绪赶走你的理性，事后在纸上写下你刚才的想法，并加以评论。看看自己刚才是感到的哪一种情绪以及自己为什么会有这样的情绪。</p>
-<p>将你的想法从头脑中的搬到纸上，是将抽象的观念具体化的过程，这样能让你对自己的情绪有更加清晰的认识，而不是在脑不是在脑子里被追得团团转。</p>
-<blockquote>
-<p>☆ 你的情绪管理能力较强，表明你是一个能够熟练地处理情绪的人。如果你想进一步增强你的情绪管理能力，当你发现自己存在不良的情绪，你可以寻找合理的渠道宣泄。</p>
-</blockquote>
-<p>例如适当地向朋友家人倾诉或自己消解；当你发现自己在不适当的时候出现了不适当的情绪时，可以选择转移自己的注意力，想想其他事情，让自己迅速冷静下来。</p>
-<blockquote>
-<p>☆ 你的情绪驱动能力较强，表明你有进取心，容易成为一个出色的领导者。如果你想进一步增强你的情绪驱动能力，你可以从选择一份让你感觉到“有价值”的工作开始。</p>
-</blockquote>
-<p>当你发现自己缺乏前进的动力时，不妨停下来稍作休整，旅行、烹饪、玩游戏，这样你更容易找回朝着梦想前进的热情和动力。</p>
-<blockquote>
-<p>☆ 你的情绪理解能力较强，表明你能够较好地察觉他人的情绪和感受。如果你想进一步提强你的情绪理解能力，你可以更进一步地提强换位思考的能力。</p>
-</blockquote>
-<p>当你不能理解他人的做法时，你可以做出更多的尝试和努力去理解，比如设想自己站在别人的位置上会怎么做，比如多接触这个你不理解的人，了解他真正的想法。</p>
-<p>你的社交技巧水平一般，表明你与人建立融洽关系的能力不足，人际关系一般。针对你的社交技巧水平，建议你学一些待人接物的技巧，提高自己受欢迎的程度。</p>
-<p>在与人交谈时，可以多说一些贴心的话，如：“你过得如何？”“你感觉怎样？”“你真好”“和你在一起我感觉很开心”“非常感谢你的帮助”“很抱歉，给你添麻烦了”等，同时配合积极的眼神接触和微笑。</p>
-<p>平时在生活中，可以多观察别人的需要，提供及时的帮助和支持。提供食物或饮料、一张个性化的卡片、一个体贴的礼物、一个需要支持、移情清单、参与共同创建一种更亲密关系的活动。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/25/EQ/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1707,21 +1575,14 @@
 
       
         
-          
-            <p>关于em这个字体单位，我一直比较纠结。只知道它是一种相对长度单位，默认1em=16px(即浏览器默认字体大小）。<br>但em使用时并不是简单的1em=16px这么算，以下为引用内容：</p>
-<blockquote>
-<p>任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。<br>看了这个我非常纳闷，默认1em＝16px，但这却不合设计者的要求，又手动调整为1em＝10px，这样12px=1.2em。。。这样绕来绕去的，不如直接设置为12px得了。使用em据说是它可以自动调整，对用户体验好，但我觉得，与其让它自动调整，不如就把字体设置大点。</p>
-</blockquote>
-<p>看到有些文章推荐网页使用em作为字体单位，并列举了这样做的几点好处，其中有一条是“国外的大部分网站能够调整的原因在于其使用了em作为字体单位”，但网页设计者们不要忘了，国外都是英文网站,英文默认10px就可以阅读，而汉字则要12px以上才能看清楚，所以适合的才是最好的。</p>
-<p>我们按照上文引用中的用法，来做个测试：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">body&#123;font-size:62.5%;&#125;</div><div class="line">p&#123;font-size:1.2em;text-indent:2.4em;width:600px;&#125;</div></pre></td></tr></table></figure>
-<p>在firefox截图如下：</p>
-<p><img src="http://oub61fw66.bkt.clouddn.com/em.jpg" alt="&quot;em&quot;"></p>
-<p>可以很明显地看到字体由于小于12px而模糊不清。如果你网页上大段大段的文字都是这个样子，用户感觉是很糟糕的。</p>
-<p>注：IE及chrome正常，都为12px左右，其中chrome有一个bug：不能显示12px以下大小的字体，所以到底兼容性如何还是未知数。</p>
-<p>鉴于em使用的麻烦度与不兼容性，我觉得网页字体还是不要用em的好，要用就把它相对设大点，以免出现上图的情况。另外，如果觉得小字体对用户不好的话，就设置font-size:14px吧，这样在什么分辨率下都足以看清了。</p>
-
-          
+          <p>关于em这个字体单位，我一直比较纠结。只知道它是一种相对长度单位，默认1em=16px(即浏览器默认字体大小）。<br>但em使用时并不是简单的1em=16px这么算，以下为引用内容：<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/20/em的使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1860,16 +1721,14 @@
 
       
         
-          
-            <p>假设一div已经设置 position:relative及padding:30px，然后要在里面放置一position:absolute的元素，并设置它left:0;top:0——这种效果可用来实现左头像右内容的布局。</p>
-<p>在Firefox等标准浏览器下，绝对定位的元素此时真的是左0上0，顶着父div的边，但IE下却是左30上30，只因为父div设置了padding为30。</p>
-<p>这个问题很要命，那么解决办法呢？</p>
-<blockquote>
-<p>只要为父div加上zoom:1，触发其hasLayout，即可在IE下实现和标准浏览器下一样的样式了。<br>此解决方案适合绝大部分情况。</p>
-</blockquote>
-<p>每发现IE一个无厘头BUG，都会让我对IE的恨加深一层。兼容问题，’您’辛苦了…</p>
-
-          
+          <p>假设一div已经设置 position:relative及padding:30px，然后要在里面放置一position:absolute的元素，并设置它left:0;top:0——这种效果可用来实现左头像右内容的布局。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/19/absolute问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
