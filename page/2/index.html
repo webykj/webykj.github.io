@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="一个前端小白的进阶史">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hero">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Hero">
+<meta property="og:description" content="一个前端小白的进阶史">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hero">
+<meta name="twitter:description" content="一个前端小白的进阶史">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
+
+
+
+
+
+  <title>Hero</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband">
+		<a href="https://github.com/webykj"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hero</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一枚前端攻城狮</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-ittech">
+          <a href="/categories/ittech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-back-yard">
+          <a href="/categories/back-yard" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
+            
+            后花园
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/categories/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            我的书单
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/categories/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/12/初识vue/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/12/初识vue/" itemprop="url">初识Vue</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-12T19:09:50+08:00">
+                2017-08-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="诞生背景"><a href="#诞生背景" class="headerlink" title="诞生背景"></a>诞生背景</h2><blockquote>
+<p>由于手机的迅速普及及性能的大幅提升，导致移动端需求的大量增加，产生了一种叫Webapp的东西，即移动端网页应用。</p>
+</blockquote>
+<h2 id="什么是MVVM框架"><a href="#什么是MVVM框架" class="headerlink" title="什么是MVVM框架"></a>什么是MVVM框架</h2><p>MVVM可以拆分成：View — ViewModel — Model三部分，如图所示：<br><img src="http://oub61fw66.bkt.clouddn.com/mvvm.png" alt="&#39;MVVM&#39;"><br>View和Model可以通过ViewModel动态进行数据传输，不再需要手动更改。</p>
+<p>Vue的核心</p>
+<p>通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。由于使用了ES5的Object.defineProperty特性，使得无法兼容IE8及以下版本浏览器。</p>
+<p>Vue的数据驱动：数据改变驱动了视图的自动更新，传统的做法你得手动改变DOM来改变视图，vue只需要改变数据，就会自动改变视图，再也不用你去操心DOM的更新了，这就是MVVM思想的实现。</p>
+<p>视图组件化：把整一个网页的拆分成一个个区块，每个区块我们可以看作成一个组件。网页由多个组件拼接或者嵌套组成。如图所示：</p>
+<p><img src="http://oub61fw66.bkt.clouddn.com/page.png" alt="&#39;组件化开发&#39;"></p>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><ul>
+<li>替代jquery频繁操作DOM更新页面</li>
+<li>对相同部分进行封装，提升开发效率</li>
+</ul>
+<h2 id="一个实例"><a href="#一个实例" class="headerlink" title="一个实例"></a>一个实例</h2><blockquote>
+<p>步骤：new Vue()–&gt;设置数据data–&gt;挂载元素–&gt;成功渲染</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;app&quot;&gt;</div><div class="line">     &lt;card&gt;&lt;/card&gt;</div><div class="line">     &lt;card&gt;&lt;/card&gt;</div><div class="line">     &lt;card&gt;&lt;/card&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script&gt;</div><div class="line">Vue.component(&apos;card&apos;,&#123;</div><div class="line">    template:`&lt;div&gt;</div><div class="line">        &lt;img src=&quot;img/pic.png&quot; alt=&quot;&quot;&gt;</div><div class="line">        &lt;h2&gt;这是个标题&lt;/h2&gt;</div><div class="line">        &lt;p&gt;这里是描述&lt;/p&gt;</div><div class="line">        &lt;button&gt;这是个按钮&lt;/button&gt;</div><div class="line">    &lt;/div&gt;`</div><div class="line">&#125;);</div><div class="line">new Vue(&#123;</div><div class="line">   el:&quot;#app&quot;</div><div class="line">&#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/11/ES61/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/11/ES61/" itemprop="url">ES6增加的扩展</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-11T19:09:50+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="ECMAScript是什么"><a href="#ECMAScript是什么" class="headerlink" title="ECMAScript是什么"></a>ECMAScript是什么</h2><blockquote>
+<p>JavaScript是JavaScript的重要组成部分。简单一句话，ESMAScript是JavaScript的语法规范。与DOM,BOM成为JavaScript的3驾马车。不仅如此，它还定义了语法，类型，原型和继承及内置对象和函数标准库。</p>
+</blockquote>
+<h2 id="ECMAScript-和-JavaScript-的关系"><a href="#ECMAScript-和-JavaScript-的关系" class="headerlink" title="ECMAScript 和 JavaScript 的关系"></a>ECMAScript 和 JavaScript 的关系</h2><blockquote>
+<p>ECMAScript是JavaScript的基础标准部分，前者是后者的规格，后者是前者的一种实现。</p>
+</blockquote>
+<h2 id="ES6-与-ECMAScript-2015-的关系"><a href="#ES6-与-ECMAScript-2015-的关系" class="headerlink" title="ES6 与 ECMAScript 2015 的关系"></a>ES6 与 ECMAScript 2015 的关系</h2><blockquote>
+<p>ES6是一个泛指，是5.1版以后的 JavaScript 的下一代标准，涵盖了ES2015、ES2016、ES2017等.而ES2015 则是正式名称，特指该年发布的正式版本的语言标准。</p>
+</blockquote>
+<h2 id="let命令"><a href="#let命令" class="headerlink" title="let命令"></a>let命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;var a=10; let b=1;&#125;</div><div class="line">a  //10</div><div class="line">b // ReferenceError: b is not defined.</div></pre></td></tr></table></figure>
+<p>表明let只在它所在的代码块起作用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">var a = [];</div><div class="line">for (var i = 0; i &lt; 10; i++) &#123;</div><div class="line">  a[i] = function () &#123;</div><div class="line">    console.log(i);</div><div class="line">  &#125;;</div><div class="line">&#125;</div><div class="line">a[6](); // 10</div><div class="line">//i在全局范围内部都有效</div><div class="line">var b=[];</div><div class="line">for(let i=0;i&lt;10;i++)&#123;</div><div class="line">	b[i] = function () &#123;</div><div class="line">    	console.log(i)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">b[6](); // 6</div><div class="line">//i只在本轮循环中有效</div><div class="line">for (let i = 0; i &lt; 3; i++) &#123;</div><div class="line">  let i = &apos;abc&apos;;</div><div class="line">  console.log(i);</div><div class="line">&#125;</div><div class="line">// abc</div><div class="line">// abc</div><div class="line">// abc</div><div class="line">//输出了3次abc。表明函数内部的变量i与循环变量i不在同一个作用域，有各自单独的作用域。</div></pre></td></tr></table></figure>
+<h2 id="let不存在变量提升"><a href="#let不存在变量提升" class="headerlink" title="let不存在变量提升"></a>let不存在变量提升</h2><p>var命令的变量可在声明前使用，值为undefined<br>let命令的变量必须先声明在使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">console.log(foo);</div><div class="line">var foo=2;</div><div class="line">//undefined</div><div class="line">console.log(bar);</div><div class="line">let bar=2;</div><div class="line">//ReferenceError: bar is not defined</div></pre></td></tr></table></figure>
+<h3 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h3><blockquote>
+<p>ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。</p>
+<p>只要块级作用域中存在let命令，所声明的变量就绑定之歌区域，不再受外部影响</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">//使用let命令声明变量之前，该变量不可用</div><div class="line">if (true) &#123;</div><div class="line">  // TDZ开始</div><div class="line">  tmp = &apos;abc&apos;; // ReferenceError</div><div class="line">  console.log(tmp); // ReferenceError</div><div class="line">  let tmp; // TDZ结束</div><div class="line">  console.log(tmp); // undefined</div><div class="line">  tmp = 123;</div><div class="line">  console.log(tmp); // 123</div><div class="line">&#125;</div><div class="line">// 不报错</div><div class="line">var x = x;</div><div class="line">// 报错</div><div class="line">let x = x;</div><div class="line">// ReferenceError: x is not defined</div></pre></td></tr></table></figure>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><blockquote>
+<p>ES6 规定暂时性死区和let、const语句不出现变量提升，主要是为了减少运行时错误，防止在变量声明前就使用这个变量，从而导致意料之外的行为。</p>
+<p>暂时性死区的本质就是，只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量。</p>
+<p>用let声明的变量只在块级作用域起作用，适用于for循坏。在同一个代码块中，不可声明相同的变量，不可重复声明函数内的参数。</p>
+</blockquote>
+<h2 id="不允许重复声明"><a href="#不允许重复声明" class="headerlink" title="不允许重复声明"></a>不允许重复声明</h2><p>let不允许在相同作用域内，重复声明同一个变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">// 报错</div><div class="line">function () &#123;</div><div class="line">  let a = 10;</div><div class="line">  var a = 1;</div><div class="line">&#125;</div><div class="line">// 报错</div><div class="line">function () &#123;</div><div class="line">  let a = 10;</div><div class="line">  let a = 1;</div><div class="line">&#125;</div><div class="line">function func(arg) &#123;</div><div class="line">  let arg; // 报错</div><div class="line">&#125;</div><div class="line">function func(arg) &#123;</div><div class="line">  &#123;</div><div class="line">    let arg; // 不报错</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h2><p>存在原因一：内层变量可能会覆盖外层变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var tmp=new Date();</div><div class="line">function f()&#123;</div><div class="line">	console.log(tmp);</div><div class="line">	if(false)&#123;</div><div class="line">		var tmp=&quot;hello wrold!&quot;;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">f();</div><div class="line">//由于变量提升，导致内层变量覆盖外层变量，使得输出结果为undefined</div></pre></td></tr></table></figure>
+<p>存在原因二：用来计数的循环变量泄露为全局变量。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var s = &apos;hello&apos;;</div><div class="line">for (var i = 0; i &lt; s.length; i++) &#123;</div><div class="line">  console.log(s[i]);</div><div class="line">&#125;</div><div class="line">console.log(i); // 5</div><div class="line">//变量i用于控制循环，但循环结束后，并没有消失，而成为了全局变量。</div></pre></td></tr></table></figure></p>
+<h2 id="ES6块级作用域"><a href="#ES6块级作用域" class="headerlink" title="ES6块级作用域"></a>ES6块级作用域</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function f1() &#123;</div><div class="line">  let n = 5;</div><div class="line">  if (true) &#123;</div><div class="line">    let n = 10;</div><div class="line">  &#125;</div><div class="line">  console.log(n); // 5</div><div class="line">&#125;</div><div class="line">//表示外层代码块不受内层块级代码快的影响，若使用var声明，结果为10</div></pre></td></tr></table></figure>
+<h2 id="const-命令"><a href="#const-命令" class="headerlink" title="const 命令"></a>const 命令</h2><blockquote>
+<p>const声明一个只读的常量。一旦声明，常量的值就不能改变。要注意声明引用类型的常量时，是传址赋值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">const PI = 3.1415;</div><div class="line">PI // 3.1415</div><div class="line">PI = 3;</div><div class="line">// TypeError: Assignment to constant variable.</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h2><ul>
+<li>对于const来说，只声明不赋值，就会报错。</li>
+<li>const的作用域与let命令相同：只在声明所在的块级作用域内有效。</li>
+<li>const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。</li>
+<li>const声明的常量，也与let一样不可重复声明。</li>
+</ul>
+<h2 id="本质："><a href="#本质：" class="headerlink" title="本质："></a>本质：</h2><blockquote>
+<p>const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。</p>
+</blockquote>
+<h2 id="顶层对象的属性"><a href="#顶层对象的属性" class="headerlink" title="顶层对象的属性"></a>顶层对象的属性</h2><blockquote>
+<p>顶层对象，在浏览器环境指的是window对象，在Node指的是global对象。ES5之中，顶层对象的属性与全局变量是等价的。</p>
+<p>var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性,换言之，从ES6开始，全局变量将逐步与顶层对象的属性脱钩。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var a = 1;</div><div class="line">window.a // 1</div><div class="line">let b = 1;</div><div class="line">window.b // undefined</div><div class="line"></div><div class="line">//以上可看出全局变量a由var命令声明，所以它是顶层对象的属性；全局变量b由let命令声明，所以它不是顶层对象的属性，返回undefined。</div></pre></td></tr></table></figure>
+<p>不断加深理解并加以完善。。。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/09/战狼/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/09/战狼/" itemprop="url">战狼I VS 战狼II</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-09T19:09:50+08:00">
+                2017-08-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/back-yard/" itemprop="url" rel="index">
+                    <span itemprop="name">back-yard</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="战狼I-VS-战狼II"><a href="#战狼I-VS-战狼II" class="headerlink" title="战狼I VS 战狼II"></a>战狼I VS 战狼II</h3><p>坦率的讲，我更欣赏I,也看了好几遍了，真是百看不厌呢！今天，看了下新出的战狼II,坦率的讲，有点失望，难道是自己的期望过高了吗？我想，没有吧！II给我的感觉就是一切都在主角的掌控中，无论是开篇遇到海盗，一个人救了整个船上的人。还是之后与恐怖份子的斗争中，都以开了挂的存在呢？这种超能，恐怕也只有电影，电视中存在吧。II给我最震撼的地方在于结尾时的：</p>
+<blockquote>
+<p>中华人民共和过公民：当你在海外遭遇危险，不要放弃！请记住，在你身后，有一个强大的祖国！</p>
+</blockquote>
+<p>说到这里，就不得不提下今年的八一阅兵，当3架歼-20出现在画面中，让我深深的感觉到国家的强大。愿祖国繁荣昌盛。同时，也祝自己以后在技术路上有所成就！</p>
+<p>以后这里就是我的电影家了。。。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/08/驾照/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/08/驾照/" itemprop="url">我待驾照如初恋</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T19:09:50+08:00">
+                2017-08-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/back-yard/" itemprop="url" rel="index">
+                    <span itemprop="name">back-yard</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在经过一年多的折腾后，可算把驾照考下了。</p>
+<ul>
+<li>2016-6-25考科一</li>
+<li>2017-01-09考科二</li>
+<li>2017-07-28考科三</li>
+<li>2017-08-08考科四<br><img src="http://oub61fw66.bkt.clouddn.com/jz.jpg" alt="&quot;我待驾照如初恋&quot;"></li>
+</ul>
+<p>这时间跨度可真不短啊，不过也都是一次性通过，少了好多麻烦！</p>
+<h2 id="时间回到科目一："><a href="#时间回到科目一：" class="headerlink" title="时间回到科目一："></a>时间回到科目一：</h2><p>首先，早上6、7点钟出发赶往考点，之后排队准备进行考试，好不容易该我考试了，心里窃喜，不过考的时候我傻眼了，TMD我前十道题错了3道，这就着实吓到了我，我仔细检查，跟我在驾考宝典上一样啊。这可怎么办，在来2个X我就拜拜了。这时，我跑到窗口向工作人员询问，才得知，那是系统故障，只要电脑不给你提示错误那答案就是正确的。我深吸一口气，平静一下我的小心脏。回到原位继续答题。一路也还顺畅。考试结果还不错98！之后签字离开这个是非之地。请原谅我这样表达，那个小插曲，着实让我不爽！</p>
+<h2 id="时间回到科目二："><a href="#时间回到科目二：" class="headerlink" title="时间回到科目二："></a>时间回到科目二：</h2><p>啊！寒假了。考试走起想到这里，拿起手机138XXX打过去：“喂，教练，给咱约科二吧”。之后就等消息练车，恩，感觉还不错。准备战斗。说到这里又让我想起了科目一，哎！满满的心酸啊！适应场地得晚上适应啊！黑灯瞎火的，倒库就挂了，我硬是把前一个车库的线当成出库线，半坡还好，S那可就惨了，一路压着冲过去，侧方直接就跳过了。就这样，60大洋没了。第二天，早起再次熟悉考场，绕了一圈出来准备待考。哎~轮到我了，11车，上车踩离合挂一档，起步。恩，进入倒库项目，深户一口气，平复下小心脏。这是却发现安全带没系，这要是点了开始，可不直接说拜拜。系好安全帯，开始考试。倒库合格，下一项，半坡熄火，距离不够-20。啊，危险了，就这样就如S弯，压线，请将车开会起点从新考试。恩，这一步，已经在我心中预演了好几遍了。从新进入考试，经过前面教训，我过关斩将，到了S弯，看着后视镜，额，线呢，完了完了，再看，哦来了，就这样扭出S弯，进行下一项，考试合格。请将车开会起点。好开森，100有木有，签字走人。</p>
+<h2 id="时间回到科目三："><a href="#时间回到科目三：" class="headerlink" title="时间回到科目三："></a>时间回到科目三：</h2><p>科三考试还算顺畅，提前练了3个课时，果断100通过。可能是前面被虐的有经验了吧！其实，我挺幸运的，路线熟悉，车也不错，关键系统在我考的时候没出故障。我亲眼看见与我同车的2人系统故障说拜拜。</p>
+<h2 id="时间回到科目四："><a href="#时间回到科目四：" class="headerlink" title="时间回到科目四："></a>时间回到科目四：</h2><p>5:30闹钟响起，起床赶往考场，恩。很好，不像可以那样电脑有问题，是新电脑。很快考完了，98！和可以一样，有木有。准备签字，这是却把我吓了一跳，没拍到正脸，取消成绩从考，我的天，要不要这样。就在我发愣时，监考员说，签字。可能是勉强可以吧！哎~心累。至此，考试结束。</p>
+<p>特此写篇博客记录下我的成长！</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/06/js中的this/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/06/js中的this/" itemprop="url">浅谈JavaScript中this</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-06T17:29:50+08:00">
+                2017-08-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="作为函数调用"><a href="#作为函数调用" class="headerlink" title="作为函数调用"></a>作为函数调用</h2><p>this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式：</p>
+<ul>
+<li>作为函数调用</li>
+<li>作为对象方法调用</li>
+<li>作为构造函数调用</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var n = &quot;Hello World!&quot;;</div><div class="line">function example()&#123;</div><div class="line">  console.log(this.n);</div><div class="line">&#125;</div><div class="line">example();       //Hello World!</div><div class="line">var n = &apos;Hello World!&apos;;</div><div class="line">function example()&#123;</div><div class="line">  this.n=0;</div><div class="line">&#125;</div><div class="line">example();</div><div class="line">console.log(n);  //0</div></pre></td></tr></table></figure>
+<p><strong>结论</strong>：当函数直接调用时，该函数的this关键字指向的就是全局对象window。</p>
+<h2 id="作为对象方法调用"><a href="#作为对象方法调用" class="headerlink" title="作为对象方法调用"></a>作为对象方法调用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">function getAge()&#123;</div><div class="line">    var y = new Date().getFullYear();</div><div class="line">    return y - this.birth;</div><div class="line">&#125;</div><div class="line">var zhangsan = &#123;</div><div class="line">    name: &apos;张三&apos;,</div><div class="line">    birth: 1990,</div><div class="line">    age: getAge</div><div class="line">&#125;;</div><div class="line">console.log(zhangsan.age());//27</div><div class="line">console.log(getAge());   //NaN</div><div class="line">var fn = zhangsan.age;</div><div class="line">console.log(fn());       //NaN</div><div class="line">var name = &apos;Akita&apos;;</div><div class="line">var dogs = &#123;</div><div class="line">  name:&apos;Collie&apos;,</div><div class="line">  showName: function()&#123;</div><div class="line">    console.log(this.name);</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line">console.log(dogs.showName());  //Collie</div><div class="line">var otherNmae = dogs.showName;</div><div class="line">console.log(otherName());      //Akita</div></pre></td></tr></table></figure>
+<blockquote>
+<p>结论：当使用obj.xxx()的形式调用函数时，里面的this关键字指向的就是对象本身。但是需要注意：在对象方法内部再次定义一个方法，该方法的this关键字又会重新指向全局对象window！这点需要特别注意比如下面这段代码：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var zhangsan = &#123;</div><div class="line">  name: &apos;张三&apos;,</div><div class="line">  birth: 1990,</div><div class="line">  age: function()&#123;</div><div class="line">    function getAgeFromBirth()&#123;</div><div class="line">      var y = new Date().getFullYear();</div><div class="line">      return y - this.birth;</div><div class="line">    &#125;</div><div class="line">    return getAgeFromBirth();</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line">console.log(zhangsan.age());    //NaN</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在 strict 模式下你会得到的错误就不是 NaN，而是TypeError：Cannot read property ‘birth’ of undefined。</p>
+</blockquote>
+<h2 id="作为构造函数调用"><a href="#作为构造函数调用" class="headerlink" title="作为构造函数调用"></a>作为构造函数调用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function Student(name)&#123;</div><div class="line">  this.name=name;</div><div class="line">&#125;</div><div class="line">var xiaoming = new Student(&apos;小明&apos;);</div><div class="line">console.log(xiaoming.name);       //小明</div></pre></td></tr></table></figure>
+<h2 id="指定-this-指向"><a href="#指定-this-指向" class="headerlink" title="指定 this 指向"></a>指定 this 指向</h2><blockquote>
+<p>指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function getAge() &#123;</div><div class="line">    var y = new Date().getFullYear();</div><div class="line">    return y - this.birth;</div><div class="line">&#125;</div><div class="line">var xiaoming = &#123;</div><div class="line">    name: &apos;张三&apos;,</div><div class="line">    birth: 1990,</div><div class="line">    age: getAge</div><div class="line">&#125;;</div><div class="line">zhangsan.age();                 // 25</div><div class="line">getAge.apply(zhangsan, []);     // 25</div></pre></td></tr></table></figure>
+<p>利用apply()将getAge()的this指向了xiaoming这个对象，因此函数执行正确。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/js相等性判断/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/03/js相等性判断/" itemprop="url">JS 相等性判断</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-03T19:09:50+08:00">
+                2017-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>关于 JS 相等性判断，很容易想到严格相等（===）和非严格相等（==），前者在比较前不会进行隐式转换，即若比较的两个值不是相同的类型，比较结果一定是不等的。而后者在进行比较前可能会根据具体情况进行相应的类型转换然后再按照严格比较规则进行比较。</p>
+<p>通常情况下使用严格相等是没有问题的，但存在两个例外。一个是+0和-0的比较，另一个是NaN的比较。</p>
+<p>在严格相等中，+0 === -0 返回 true，NaN === NaN 返回 false，这与直观判断是不一致的。为了避免这类特殊情况，可以通过 ES6 新特性 Object.is 来进行判断。代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">if (!Object.is) &#123;</div><div class="line">  Object.is = function(x, y) &#123;</div><div class="line">    // SameValue algorithm</div><div class="line">    if (x === y) &#123; // Steps 1-5, 7-10</div><div class="line">      // Steps 6.b-6.e: +0 != -0</div><div class="line">      return x !== 0 || 1 / x === 1 / y;</div><div class="line">    &#125; else &#123;</div><div class="line">      // Step 6.a: NaN == NaN</div><div class="line">      return x !== x &amp;&amp; y !== y;</div><div class="line">    &#125;</div><div class="line">  &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Polyfill 也很容易实现，对于+0和-0比较，首先严格相等，再判断倒数是否不相等即可，因为+0/0结果是Infinity，-0/0结果是-Infinity。而对于NaN比较问题，只需要判断二者分别不等于自身即可。（isNaN仅可判断当前数是否是NaN）</p>
+<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><ul>
+<li>JavaScript 提供三种不同的比较操作符：严格相等、非严格相等、Object.is。</li>
+<li>ES2015标准提供以下四种比较操作符：严格相等、非严格相等、零值相等、同值相等。</li>
+<li>同值相等参考JavaScript 中相等性判断中 Object.defineProperty 实例，当试图对不可变属性进行修改时可能会发生错误。同值相等由 Object.is 方法提供。</li>
+<li>零值相等和同值相等类似，不过会认为 +0 与 -0 相等。</li>
+</ul>
+<h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><ul>
+<li><p><a href="https://developer.mozilla.org/zh-CN/zhCN/docs/Web/JavaScript/Equality_comparisons_and_sameness" target="_blank" rel="external">JavaScript 中相等性判断</a></p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/zhCN/docs/Web/JavaScript/Reference/Global_Objects/Object/is" target="_blank" rel="external">Object.is</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/25107117" target="_blank" rel="external">从 V8 的单元测试源码看“同值相等”</a></p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/28/我与书的故事/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/28/我与书的故事/" itemprop="url">我和书的故事</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-28T15:09:50+08:00">
+                2017-07-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/books/" itemprop="url" rel="index">
+                    <span itemprop="name">books</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>开卷有益，书，带给我们知识的时候，也逐渐强壮了我们的心智。在我的书单中，不仅限于专业书，更多的是我个人喜欢的方面。哈哈，暴露了我的读书观，不过也罢，实话实说嘛。专业书开拓了我的专业广度与深度。比如《JavaScriptDOM编程艺术》这本，我知道了“insertAfter”,以前只知道它不向insertBefore那样，本身就存在的直接用就可以，这是就需要自己创建。在我的书单中，《富爸爸，穷爸爸》，《富同学，穷同学》，《赚未来十年的钱》，《优秀的人都敢对自己下狠手》,《基金投资》等启蒙了我的金钱观，价值观。总之，每本书，在你读完后，总会有几个地方不时出现在你的脑海中，引起你的思考。每本书之间思维的碰撞，终将深刻地影响这你的行为。</p>
+<h2 id="弗朗西斯·培根在《论读书》里说道："><a href="#弗朗西斯·培根在《论读书》里说道：" class="headerlink" title="弗朗西斯·培根在《论读书》里说道："></a>弗朗西斯·培根在《论读书》里说道：</h2><blockquote>
+<p>有些书只需浅尝，有些书可以狼吞，有些书要细嚼慢咽，慢慢消化。也就是说，有的书只需选读，有的书只需浏览，有的书却必须全部精读。有的书不必去读原文，读读它们的节本就够了，但这仅限于内容不大重要的二流书籍：否则，删节过的往往就像蒸馏水一样，淡而无味。</p>
+</blockquote>
+<p>现在，我把它们罗列出来，算是勉励自己。书单如下：</p>
+<ul>
+<li>《HTML5入门经典》</li>
+<li>《JavaScript从入门到精通》</li>
+<li>《单页Web应用》</li>
+<li>《代码整洁之道》</li>
+<li>《软技能，代码之外的生存指南》</li>
+<li>《驱动力》</li>
+<li>《响应式Web设计》</li>
+<li>《JavaScriptDOM编程艺术》</li>
+<li>《优秀的人都敢对自己下狠手》</li>
+<li>《富爸爸，穷爸爸》</li>
+<li>《富同学，穷同学》</li>
+<li>《赚未来十年的钱》</li>
+<li>《少有人走的路》</li>
+<li>《情商》</li>
+<li>《奇特的一生》</li>
+<li>《神奇的肌肤能量书I》</li>
+<li>《神奇的肌肤能量书II》</li>
+<li>《基金投资》</li>
+<li>《思考致富》</li>
+<li>《自控力》</li>
+<li>《管理的实践》</li>
+<li>《你的降落伞是什么颜色？》</li>
+<li>《番茄工作法图解》</li>
+<li>《把时间当做朋友》</li>
+<li>《赢》</li>
+<li>《每天最重要的2小时》</li>
+<li>《你一年的8760小时》</li>
+<li>《如何阅读一本书》</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/26/webapp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/26/webapp/" itemprop="url">Web App、Hybrid App、 Native App各自优缺点</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-26T18:09:45+08:00">
+                2017-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Web-App"><a href="#Web-App" class="headerlink" title="Web App"></a>Web App</h2><p>Web App 指采用Html5语言写出的App,无需下载安装，可以说是触屏版的网页应用。<br>优点:</p>
+<ul>
+<li>开发成本低，</li>
+<li>更新快，</li>
+<li>更新无需通知用户，不需要手动升级，</li>
+<li>能够跨多个平台和终端。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>临时性的入口</li>
+<li>无法获取系统级别的通知，提醒，动效等等</li>
+<li>用户留存率低</li>
+<li>设计受限制诸多</li>
+<li>体验较差<br><img src="http://oub61fw66.bkt.clouddn.com/app.png" alt="&#39;3种App&#39;"></li>
+</ul>
+<h2 id="Hybrid-App"><a href="#Hybrid-App" class="headerlink" title="Hybrid App"></a>Hybrid App</h2><blockquote>
+<p>Hybrid APP指的是半原生半Web的混合类App,需要下载，访问的内容是 Web。</p>
+<p>Hybrid App 极力去打造类似于Native App 的体验，但仍受限于技术，网速，等等很多因素。尚不完美。</p>
+</blockquote>
+<h2 id="Native-App"><a href="#Native-App" class="headerlink" title="Native App"></a>Native App</h2><p>Native APP 指的是原生程序，一般依托于操作系统，有很强的交互，是一个完整的App，可拓展性强。需要用户下载安装使用。<br>优点：</p>
+<ul>
+<li>打造完美的用户体验</li>
+<li>性能稳定</li>
+<li>操作速度快，上手流畅</li>
+<li>访问本地资源（通讯录，相册）</li>
+<li>设计出色的动效，转场，</li>
+<li>拥有系统级别的贴心通知或提醒</li>
+<li><p>用户留存率高<br>缺点：</p>
+</li>
+<li><p>分发成本高（不同平台有不同的开发语言和界面适配）</p>
+</li>
+<li>维护成本高（例如一款App已更新至V5版本，但仍有用户在使用V2， V3， V4版本，需要更多的开发人员维护之前的版本）</li>
+<li>更新缓慢，根据不同平台，提交–审核–上线 等等不同的流程，需要经过的流程较复杂</li>
+</ul>
+<h2 id="个人理解"><a href="#个人理解" class="headerlink" title="个人理解"></a>个人理解</h2><p>3种App都有各自的优缺点，主要还是看具体业务要求，比如说我们现在要做一个产品，主要展示些产品的特性，功能，用Native APP可能就不是最好的选择，Web App就比较适合。可能在若干年后，随着技术的发展Hybrid APP可能就是最好的选择。总之一句话，适合的才是王道。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/20/js获取ip/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/20/js获取ip/" itemprop="url">js获取访问者ip信息脚本</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-20T17:19:50+08:00">
+                2017-07-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以下是新浪脚本代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;src=&quot;http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">//&lt;![CDATA[</div><div class="line">        alert([</div><div class="line">        remote_ip_info.country,</div><div class="line">        remote_ip_info.province,</div><div class="line">        remote_ip_info.city,</div><div class="line">        remote_ip_info.isp,</div><div class="line">        remote_ip_info.start,</div><div class="line">        remote_ip_info.end</div><div class="line">        ].join(&apos;&apos;));</div><div class="line">//]]&gt;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>知乎讨论:<br><a href="https://www.zhihu.com/question/20675353" target="_blank" rel="external">怎样用 JavaScript 程序获取客户的 IP 地址？</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/11/get与post区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/11/get与post区别/" itemprop="url">GET与POST区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T19:09:50+08:00">
+                2017-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="以前我们是可能是这样认为的："><a href="#以前我们是可能是这样认为的：" class="headerlink" title="以前我们是可能是这样认为的："></a>以前我们是可能是这样认为的：</h2><ul>
+<li><p>GET使用URL或Cookie传参。而POST将数据放在BODY中。</p>
+</li>
+<li><p>GET的URL会有长度上的限制，则POST的数据则可以非常大。</p>
+</li>
+<li><p>POST比GET安全，因为数据在地址栏上不可见。</p>
+</li>
+</ul>
+<p>可是，经过查证，They’re wrong，我也感觉不可思议，以前我就这样认为啊！</p>
+<h2 id="GET和POST与数据如何传递没有关系"><a href="#GET和POST与数据如何传递没有关系" class="headerlink" title="GET和POST与数据如何传递没有关系"></a>GET和POST与数据如何传递没有关系</h2><ul>
+<li><p>GET和POST是由HTTP协议定义的。在HTTP协议中，Method和Data（URL， Body， Header）是正交的两个概念，也就是说，使用哪个Method与应用层的数据如何传输是没有相互关系的。</p>
+</li>
+<li><p>HTTP没有要求，如果Method是POST数据就要放在BODY中。也没有要求，如果Method是GET，数据（参数）就一定要放在URL中而不能放在BODY中。</p>
+</li>
+</ul>
+<h2 id="HTTP协议对GET和POST都没有对长度的限制"><a href="#HTTP协议对GET和POST都没有对长度的限制" class="headerlink" title="HTTP协议对GET和POST都没有对长度的限制"></a>HTTP协议对GET和POST都没有对长度的限制</h2><blockquote>
+<p>HTTP协议明确地指出了，HTTP头和Body都没有长度的要求。而对于URL长度上的限制，有两方面的原因造成：</p>
+</blockquote>
+<ul>
+<li><p>浏览器。据说早期的浏览器会对URL长度做限制。据说IE对URL长度会限制在2048个字符内（流传很广，而且无数同事都表示认同）。但我自己试了一下，我构造了90K的URL通过IE9访问live.com，是正常的。网上的东西，哪怕是Wikipedia上的，也不能信。</p>
+</li>
+<li><p>服务器。URL长了，对服务器处理也是一种负担。原本一个会话就没有多少数据，现在如果有人恶意地构造几个几M大小的URL，并不停地访问你的服务器。服务器的最大并发数显然会下降。另一种攻击方式是，把告诉服务器Content-Length是一个很大的数，然后只给服务器发一点儿数据，嘿嘿，服务器你就傻等着去吧。哪怕你有超时设置，这种故意的次次访问超时也能让服务器吃不了兜着走。有鉴于此，多数服务器出于安全啦、稳定啦方面的考虑，会给URL长度加限制。但是这个限制是针对所有HTTP请求的，与GET、POST没有关系。</p>
+</li>
+</ul>
+<p><strong>安全不安全和GET、POST可能并不是我们认为的那种关系。</strong></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/images/avatar.gif"
+              alt="Webykj" />
+          
+            <p class="site-author-name" itemprop="name">Webykj</p>
+            <p class="site-description motion-element" itemprop="description">一个前端小白的进阶史</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives">
+            
+                <span class="site-state-item-count">45</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Webykj</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
