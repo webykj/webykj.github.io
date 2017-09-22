@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[面试，你必须做的]]></title>
+    <url>%2F2017%2F09%2F17%2Fjob%2F</url>
+    <content type="text"><![CDATA[面试前 人脉的积累【六度分割现象】狠重要。 简历的准备，推荐star法则。 模拟面试中可能遇到的问题。 面试时 展现出你的热情。 展现出自己解决问题的能力。 对公司产品的理解。 给面试官留下深刻印象。 起步 自我介绍–请介绍下自己。 谈谈你的优势。 技术HTML篇 行元素，块元素，空元素？ 页面导入样式时，使用link和@import有什么区别？ title与h1的区别、b与strong的区别、i与em的区别？ Doctype作用？标准模式与兼容模式各有什么区别? HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？ 网页验证码是干嘛的，是为了解决什么安全问题？ html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？ 谈谈你对HTML语义化的理解？ 谈谈你对渐进增强，优雅降级的理解？ HTML5离线存储怎么使用，能不能解释下原理？ 请描述一下 cookies，sessionStorage 和 localStorage 的区别？ CSS篇 介绍下CSS盒模型。 CSS选择器，哪些属性可继承？ CSS优先级如何计算？ CSS3新增伪类，新特性？ 如何水平垂直居中一个div？ display有哪些值，并说出它们的作用。？ position的值relative和absolute定位原点是？ 解释下CSS3弹性盒模型及适用场景？ CSS创建一个三角形原理？ 经常遇到的CSS兼容性问题，解决办法，常用hack？ CSS定义的权重？ zoom:1清除浮动原理？ 如何修改chrome记住密码后自动填充表单的黄色背景 ？ JavaScript篇 基本数据类型【symbol】？ js内置对象？ 写js的基本规范？ null，undefined 的区别？ call,apply，bind区别及联系？ 什么是window对象? 什么是document对象？ 谈谈原型，原型链，都有什么特点？ 如何实现数组的随机排序？ js如何实现继承？ js创建对象的几种方式？ js延迟加载？ js代码中的”use strict”;是什么意思 ? 使用它区别是什么？ 谈谈你对闭包的理解？ 谈谈你对JSON的理解？ 谈谈你对this的理解？ AJAX是什么，如何创建一个AJAX？ 如何解决跨域？ jQuery篇 Jquery与jQuery UI 有啥区别？ jQuery和Zepto的区别？各自的使用场景？ 针对 jQuery 的优化方法？ jQuery如何同时绑定多个函数？ 其他 node.js适用场景？ ES6相关，Object.is() 与原来的比较操作符“ ===”、“ ==”的区别？ 前端性能优化 http状态码，分别代表什么意思？ 一个页面从url输入到页面加载完成都发生了什么？ 答案请移步]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>job</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《认知突围》]]></title>
+    <url>%2F2017%2F09%2F16%2F%E8%AE%A4%E7%9F%A5%E7%AA%81%E5%9B%B4%2F</url>
+    <content type="text"><![CDATA[什么是均值回归均值回归，指的是无论是低于或高于真实价值的状态，都有向真实价值回归的趋势，其回归趋势的强度就类似于弹簧，偏离中心越远，强度就越大。 认知清单 我们的大脑不靠谱，我们惯用切片思维，为了获得更好的情绪体验，我们会创造自我，自欺欺人。 我们的记忆是被自我意识改造过程后的记忆。 我们对自己的评价总是构建在其他反馈的基础之上，所以我们不是不会客观地评价自己，而是不想客观地评价自己。 懒惰、放纵、自制力不足，根源都在于认知能力受限，看不到某事物能带来的巨大收益，因此就不足以产生足够的动力。广义上来讲，认知也是一种智慧。 机会并没有那么依赖运气，机会之所以没有青睐你，是因为你并不具备开启它的条件。 先做起来，让自己变得更好，“意外好运”才有更大的概率降临。 势力是刻进人类基因里的，它并不是一个贬义词，势力贯穿了人类各种行为的始终。 获得好人缘的正确方式是拥有更多的正面资源。 知识层次 底层知识是最基础的信息知识。 第二层知识叫加工知识。 第三层知识叫体系知识。 最高一层，也是最难得到的就是智慧了。 扯扯人生 人生没有起跑线，也没有假想的跑道。如果要用游戏来表示，应该是一个自由度最高的游戏。 人生最大意义在于体验，总是体验重复和 相似的风景，其实在人生的时间利用率上是吃亏的。 说不想努力的人，不是不想要努力后的结果，而是惧怕努力要付出的成本。 努力有着许多“坑”，并非仅是看上去努力就能达成目标。 很多“坑”是达到一定高度前不可避免的，那么踩“坑”其实是越早越好，越早损失越少。 格局是每个人的认知层次，下层没法看清上层的世界。 学习和职场一样，长期来看，都是专注自身最划算。 提升格局首先要勇于打破自己的积累，看得到往上有更高层次。 合理分配投资和消费的比例，合理安排投资和消费的时间点，是提高人生使用效率的两大关键。 幸福源于比较，但不论是跟他人比较还是跟自己比较，这都是大脑能调整的事。 什么是知识能被称为知识的必须满足以下条件，即客观的，能被验证的，相对正确的。 情商最终情商的高低，是以有没有达到你预想的目标为依据的，而不是以你有没有做些特定的事为判定准则的。 如何对待金钱 人格决定钱格，金钱影响道德。 渴望程度决定努力车程度，正确方向上的努力程度决定成绩。 花钱比省钱更符合道德标准。 无节制地省钱是错误的金钱观，无节制地花钱也一样。 在开源和节流产生冲突的时候，通常情况下，坚定地站在开源这一边。 不同种类的劳动，产生的价值当然是不同的，但考虑到边际，同样劳动产生的价值也是不同的。 不可替代性和稀缺性才是最大的价值，而金钱是这种价值的外在表现形式。 让别人挣到钱就是让自己挣到钱。 风险盈利并不等同于赌博，风险思维是一种策略，赌博思维是纯凭运气。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jQuery中的事件冒泡]]></title>
+    <url>%2F2017%2F09%2F07%2FjQuery%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1%2F</url>
+    <content type="text"><![CDATA[什么是冒泡1234&lt;div id=&quot;content&quot;&gt; 外层div元素 &lt;span&gt;内层span元素&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;msg&quot;&gt;&lt;/div&gt; 当点击span元素时,会输出内层span元素被点击，外层div元素被点击，body元素被点击3条记录。这就是由于事件冒泡引起的。 冒泡过程 停止事件冒泡123456$(&apos;span&apos;).bind(&apos;click&apos;, function (event) &#123; //event:事件对象 var txt = $(&apos;#msg&apos;).html() + &apos;&lt;p&gt;内层span元素被点击&lt;/p&gt;&apos;; $(&apos;#msg&apos;).html(txt); event.stopPropagation(); //停止事件冒泡&#125;);//这样点击span时，只会输出1条记录。 阻止默认行为 event.preventDefault(); 可以改写为：return false;也可以把事件冒泡中的event.stopPropagation(); 改写为：return false; $(function () { $(ele).bind(&apos;click&apos;, function (event) { var username = $(&apos;#username&apos;).val(); //获取元素的值 if (username == &quot;&quot;) { alert(&apos;文本框的值不能为空&apos;); //event.preventDefault(); //阻止默认行为（表单提交） return false; } }); }); 事件捕获 参考文章1 参考文章2]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《JavaScript核心及实践》]]></title>
+    <url>%2F2017%2F09%2F05%2FJavaScript%E6%A0%B8%E5%BF%83%E5%8F%8A%E5%AE%9E%E8%B7%B5%2F</url>
+    <content type="text"><![CDATA[JavaScript语言特性 JavaScript是一门动态的，弱类型，基于原型的动态语言。用一句话“一切皆对象”描述在好不过了。 动态性指要为属性赋值时，不必先创建一个字段，只需在使用时赋值即可。弱类型指数据类型无需声明时指定，解释器会根据上下文进行实例化。 对象与JSON JSON是JavaScript中对象的字面量，是对象的表示方法，通过使用JSON，可以减少中间变量，使代码更加清晰直观。使用JSON，可以动态创建对象，而不必通过类来实例化，提高了编码效率。 原型对象与原型链 原型是JavaScript特有的概念，通过原型，可以实现继承，从而体现对象的层次关系。由于本身基于原型，使得每个对象都有一个prototype值，而这个prototype本身就是就是一个对象，因此本身就有自己的原型，这样就构成了一个链结构。 当访问一个属性时，解析器需要从下向上遍历这个链结构，直到该属性，若此对象没有该属性，则返回undefined。比如下面的例子： 1234567891011121314151617181920//声明一个对象basefunction Base(name)&#123; this.name=name; this.getName=function ()&#123; return this.name; &#125;&#125;//声明一个childfunction Child(id)&#123; this.id=id; this.getId=function ()&#123; return this.id; &#125;&#125;//将child原型指向base对象Child.prototype=new Base(&quot;base&quot;);//实例化child对象var c=new Child(&quot;child&quot;);console.log(c.getId());console.log(c.getName()); //通过原型继承到getName方法 继承与重载123456789101112function person(name,age)&#123; this.name=name; this.age=age; this.getName=function ()&#123; return this.name; &#125; this.getAge=function ()&#123; return this.age; &#125;&#125;var Tom=new person(&quot;Tom&quot;,22);var Alice=new person(&quot;Alice&quot;,20); 通过原型链，可以实现继承/重载等面向JavaScript代码，当然这个机制并非基于类，而是基于原型。 this指针 在JavaScript中，this表示当前上下文，是对调用者的引用。这里要注意，this值并非函数如何声明而确定，而是在调用时确定。 使用对象1234567891011121314151617181920212223242526272829function address(street,num)&#123; this.street=street || &quot;This is a road&quot;; this.num=num || 22; this.toString=function ()&#123; return this.street+this.num; &#125;&#125;function person(name,age,addr)&#123; this.name=name || &quot;unknown&quot;; this.age=age; this.addr=addr || new address(null,null); this.getname=function ()&#123; return this.name; &#125; this.getage=function ()&#123; return this.age; &#125; this.getaddr=function ()&#123; return this.addr.toString(); &#125;&#125;var John=new person(&apos;John&apos;,22,new address(&quot;road&quot;,&quot;111&quot;));var Alice=new person(&apos;Alice&apos;,12);console.log(John.getname());console.log(John.getage());console.log(John.getaddr());console.log(Alice.getname());console.log(Alice.getage());console.log(Alice.getaddr()); JSON及其使用12345678910111213141516171819202122232425//对象表示法var obj=&#123; name:&quot;张三&quot;, age:&quot;22&quot;, birthday: new Date(1999,9,9), addr:&#123; street:&quot;road&quot;, num:222 &#125;&#125;//多个返回值function position(left,top)&#123; this.left=left; this.top=top; return &#123;x:this.left,y:this.top&#125;&#125;var pos=position(3,4);//遍历js对象var style=&#123; border:&quot;1px solid red&quot;, color: &quot;orange&quot;&#125;for(var i in style)&#123; $(&apos;ele&apos;).css(i,style[i])&#125; 未完待续。。。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6【三】]]></title>
+    <url>%2F2017%2F09%2F01%2FES63%2F</url>
+    <content type="text"><![CDATA[ES6为数组做的扩展Array.of()函数 作用：将一组值，转换成数组。 Array.from()函数 作用：可以将类似数组的对象或者可遍历的对象转换成真正的数组。 123let str = &apos;hello&apos;;Array.from(str);//结果：[&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;] find()函数 作用: 找出数组中符合条件的第一个元素。若数组中没有符合条件的函数，则返回undefind findIndex()函数 作用： 返回符合条件的第一个数组成员的位置。若没有元素符合条件，则返回-1 fill()函数 用指定的值，填充到数组。 123let arr = [1,2,3];arr.fill(4,1,3);//结果：[1,4,4] 注意：第2个参数和第3个参数的意思是：从位置1的元素开始填充数字4，截止到位置3之前，所以是位置1和位置2的元素被数字4填充了。 entries()函数 作用： 对数组的键值对进行遍历，返回一个遍历器，可以用for..of对其进行遍历。 123456for(let [i,v] of [&apos;a&apos;, &apos;b&apos;].entries()) &#123; console.log(i,v); &#125; //0 &quot;a&quot; //1 &quot;b&quot; keys()函数 作用： 对数组的索引键进行遍历，返回一个遍历器。 123456for(let index of [&apos;a&apos;, &apos;b&apos;].keys()) &#123; console.log(index); &#125; //0 //1 values()函数 对数组的元素进行遍历，返回一个遍历器。 123456for(let value of [&apos;a&apos;, &apos;b&apos;].values()) &#123; console.log(value); &#125; //a //b 数组推导 用简洁的写法，直接通过现有的数组生成新数组。 1234var array1 = [1, 2, 3, 4]; var array2 = [for(i of array1) if(i&gt;3) i]; console.log(array2); //结果： [4] 小结 ES6为数组带来了很多很实用的方法：Array.of( )、Array.from( )、find( )、findIndex( )、fill( )、entries( )、values()，不仅如此，还带来一个更简洁的语法：数组推导，能让我们更方便地生成一个新数组。 ES6为对象带来的扩展 属性简写 12345678910111213141516171819202122232425262728var name = &quot;Zhangsan&quot;; var age = 12; //传统写法 var person = &#123; &quot;name&quot;:name, &quot;age&quot;:age &#125;; console.log(person); //结果：&#123;name: &quot;Zhangsan&quot;, age: 12&#125; //ES6写法 var person = &#123;name,age&#125;; console.log(person); //结果：&#123;name: &quot;Zhangsan&quot;, age: 12&#125;方法简写//传统的表示法 var person = &#123; say:function()&#123; alert(&apos;这是传统的表示法&apos;); &#125; &#125;; //ES6的表示法 var person = &#123; say()&#123; alert(&apos;这是ES6的表示法&apos;); &#125; &#125;; 属性名可以是表达式1234567891011121314var f = &quot;first&quot;; var n = &quot;Name&quot;; var s = &quot;say&quot;; var h = &quot;Hello&quot;; var person = &#123; [ f+n ] : &quot;Zhang&quot;, [ s+h ]()&#123; return &quot;你好吗？&quot;; &#125; &#125;; console.log(person.firstName); //结果：Zhang console.log(person.sayHello()); //结果：你好吗？ Object.is( )函数 作用: 比较两个值是否严格相等，或者说全等。 Object.assign()函数 将源对象的属性赋值到目标对象上。对象的属性出现了相同的名字,后面的属性值会覆盖前面的属性值 123456789 //目标对象let target = &#123;&quot;a&quot;:1&#125;;//源对象let origin1 = &#123;&quot;b&quot;:2,&quot;c&quot;:3&#125;;//源对象let origin2 = &#123;&quot;d&quot;:4,&quot;e&quot;:5&#125;;Object.assign(target,origin1,origin2);console.log(target);//结果 &#123;a: 1, b: 2, c: 3, d: 4, e: 5&#125; Object.getPrototypeOf( )函数 作用： 获取一个对象的prototype属性。 Object.setPrototypeOf()函数1234567891011121314151617181920212223//自定义一个Person类（函数） function Person()&#123; &#125; //函数都有一个预属性prototype对象 Person.prototype = &#123; //给prototype对象添加一个say方法 say()&#123; console.log(&apos;hello&apos;); &#125; &#125;; //实例化Person对象，赋值给变量allen let allen = new Person(); //调用类的say方法 allen.say(); //结果：打印出hello //使用Object.setPrototypeOf Object.setPrototypeOf( allen, &#123;say()&#123;console.log(&apos;hi&apos;)&#125; &#125;); //再次调用类的say方法 allen.say(); //结果：打印出hi javascript的面向对象 Javascript本身不是一种面向对象的编程语言,但可以模拟。 步骤：1、构造函数；2、给prototype对象添加属性和方法；3、实例化；4、通过实例化后的对象调用类的方法或者属性。 12345678910111213141516//构造函数模拟创建一个Dog类 function Dog(name)&#123; this.name = name; &#125; //把一些属性和方法，定义在prototype对象上 Dog.prototype = &#123; &quot;type&quot;:&quot;动物&quot;, &quot;say&quot;:function()&#123; alert(&quot;名字叫&quot;+this.name); &#125; &#125;; //实例化 var dog = new Dog(&apos;旺财&apos;); //调用say方法 dog.say(); //结果：名字叫旺财 小结 ES6给我们带来的新特性包括：简洁的表示法，属性名方法可以是表达式、Object.is( ) 函数、Object.assgin( ) 函数、Object.setPrototypeOf( ) 函数，Object.getPrototypeOf() 函数。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6【二】]]></title>
+    <url>%2F2017%2F08%2F28%2FES62%2F</url>
+    <content type="text"><![CDATA[解构赋值 ES6允许按照一定格式，从数组和对象中提取值，对变量进行赋值，这就被称为解构。 数组的解构赋值 解构赋值可嵌套 1var [a,b,c]=[1,2,3] 不完全解构，在解构赋值中，赋值失败，变量的值变成undefined,不会抛出异常。 1var [a,b,c]=[1,2] 允许设定默认值 当新值为undefined时，不会覆盖默认值 1var [a,b,c=3]=[1,2,4] //可被覆盖 对象的解构赋值12var [a,b,c]=&#123;&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3&#125;//对象的解构赋值不会受到属性排序的影响，数组则会受影响。 可被嵌套 1var &#123;a:&#123;b&#125;&#125;=&#123;&quot;a&quot;:&#123;&quot;b&quot;:1&#125;&#125; 可以设定默认值 1var &#123;a,b=2&#125;=&#123;&quot;a&quot;:1&#125; 字符串的解构赋值1var [a,b,c,d,e]=&quot;我是攻城狮&quot;; 解构赋值用途 交换变量的值 123var x=1;var y=2;[x,y]=[y,x] 提取函数返回的多个值 1234function ()&#123; return &#123;&quot;name&quot;:&quot;张三&quot;，&quot;age&quot;:21&#125;&#125;var &#123;name,age&#125;=demo(); 定义函数参数 123456function (a,b,c)&#123; console.log(&quot;name&quot;+a); console.log(&quot;age&quot;+b); console.log(&quot;sex&quot;+c);&#125;demo(&#123;a:&quot;张三&quot;,b:&quot;21&quot;,c:&quot;man&quot;&#125;) 设定函数参数的默认值 1234function (&#123;age=21&#125;)&#123; console.log(&quot;年龄&quot;+age);&#125;demo(&#123;&#125;) 小结 解构赋值是一种全新的变量赋值方式，主要可利用数组解构赋值和对象解构赋值，主要用途：交换变量值，提取函数返回值，函数参数定义，默认值设定等。 ES6字符串新特性 ES6给字符串带来了很多实用性的扩展：模板字符串，标签模板，repeat函数、includes函数，startsWith函数，endsWith函数，codePointAt函数，String.fromCodePoint函数，String.raw函数。 模板字符串123456let name = &quot;Jacky&quot;;let occupation = &quot;doctor&quot;;let str = `He is $&#123;name&#125;,he is a $&#123;occupation&#125;`;//不再需要通过+，“”进行拼接了let str = `write once , run anywhere`; ${ }中可以放任意的javascript表达式，如运算表达式，对象的属性，函数的调用。repeat函数 repeat( )函数：将目标字符串重复N次，返回一个新的字符串，不影响目标字符串。 includes函数 判断字符串中是否含有指定的子字符串，返回true表示含有和false表示未含有。第二个参数选填，表示开始搜索的位置，从0开始。 startsWith函数 判断指定的子字符串是否出现在目标字符串的开头位置，第二个参数选填，表示开始搜索的位置。 endsWith函数 判断子字符串是否出现在目标字符串的尾部位置，第二个参数选填，表示针对前N个字符。 codePointAt函数与String.fromCodePoint函数String.raw函数 返回字符串最原始的样貌，无视转义符的存在。 什么是Unicode编码 Unicode（中文：万国码、国际码、统一码、单一码）是计算机科学领域里的一项业界标准。它对世界上大部分的文字系统进行了整理、编码，使得电脑可以用更为简单的方式来呈现和处理文字。 ES6数值新特性 传统isNaN会将非数值转化为数值在判断，而Number. isNaN只对数值类型有效，其余类型一律返回false 12console.log(isNaN(&apos;abc&apos;)); //trueconsole.log(Number.isNaN(&apos;abc&apos;)) //false 使用Number.isNaN是要注意，返回false时，不一定就是一个数值，有可能是一个非数值类型的参数。 Number.isFinite函数 用来检查一个数值是否非无穷。对，真就是假，假就是真。 123console.log(Number.isFinite(1)); //trueconsole.log(Number.isFinite(Infinity)); //falseconsole.log(Number.isFinite(&apos;abc&apos;)); //false 注意：与Number.isNaN一样，Number.isFinite函数返回false的时候，参数不一定就是一个有穷的数值类型，也有可能是一个非数值类型的参数。 Number.parseInt函数 解析一个字符串，返回一个整数，作用无任何变化。 Number.parseFloat函数 解析一个字符串，返回一个浮点数，作用无任何变化。 Number.isInteger函数 用来判断是否是一个整数，这里要注意一点，若小数点后都是0的浮点数，返回都是true 极小常量【约等于0.00000000000000022204】用来计算误差，若误差小于这个数，表示误差可被接受。 安全整数 能够准确表示的整数范围在-2^53到2^53之间 ES6Math对象扩展Math.trunc函数 用于去除一个数的小数部分，返回整数 Math.sign函数 用于判断一个数是整数，负数，还是0。非数值类型的参数返回NaN 1234Math.sign(3); //结果：1Math.sign(-3); //结果：-1Math.sign(0); //结果：0Math.sign(&apos;abc&apos;); //结果：NaN Math.cbrt函数 用于计算一个数的立方根。 其他一些函数Math.acosh(x) 返回 x 的反双曲余弦。Math.asinh(x) 返回 x 的反双曲正弦。Math.atanh(x) 返回 x 的反双曲正切。Math.clz32(x) 返回 x 的 32 位二进制整数表示形式的前导 0 的个数。Math.sinh(x) 返回x的双曲正弦。Math.cosh(x) 返回 x 的双曲余弦。Math.expm1(x) 返回 e?x - 1。Math.fround(x) 返回 x 的单精度浮点数形式。Math.hypot(…values) 返回所有参数的平方和的平方根。Math.imul(x, y) 返回两个参数以 32 位整数形式相乘的结果。Math.log1p(x) 返回 1 + x 的自然对数。Math.log10(x) 返回以 10 为底的x的对数。Math.log2(x) 返回以 2 为底的 x 的对数。Math.tanh(x) 返回 x 的双曲正切。 小结 ES6对Number对象新增了isInteger函数、极小常量Number.EPSILON、安全整数。将window对象下的4个函数【Number.isNaN Number.isFinite Number.parseInt Number.isInteger】移植到了Number对象。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JSONP]]></title>
+    <url>%2F2017%2F08%2F26%2Fjsonp%2F</url>
+    <content type="text"><![CDATA[JSONP的原理：[json with padding] 引入文件通过回调函数将获取到的数据当成参数传递给回调函数中的变量。 跨域问题： 域顾名思义就是域名，跨域表示一个域名下的文件访问另一个域名下的资源。解决跨域问题的方法[由于AJAX存在跨域限制] 通过JSONP，也就是script标签 通过服务器中转 通过flash,创建一个xml文件 1234567891011function fn(a)&#123; console.log(a.s[0])&#125;window.onload=function ()&#123; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; var olink=document.createElement(&quot;script&quot;); olink.src=&quot;http://suggestion.baidu.com/su?wd=a&amp;cb=fn&quot;; document.body.appendChild(olink); &#125;&#125;]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>jsonp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《程序员的自我修养》]]></title>
+    <url>%2F2017%2F08%2F25%2F%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%2F</url>
+    <content type="text"><![CDATA[这两天，看完了这本书，作者以他多年一线编程经验告诉后人作为一个软件开发人员应注意的地方。其中，提到了很多中肯的建议。这里，我仅摘录自己比较有感触的，并谈谈自己的理解。 天才与普通人 漫画描述1：一个普通人每天都很努力，他头顶上显示的能力槽也在慢慢地增长。而图中的另一个天才，则整天不务正业，当然他头上的能力槽也几乎没有增长。 漫画描述2：经过了长时间的努力，普通人头顶上的能力槽慢慢接近了满格，此时那个天才醒悟并开始了努力。 漫画描述3：又过了一段时间，普通人头顶上的能力槽终于满格了，但此时天才头顶上的能力槽却早已爆表，高出了那个普通人很大一截，那个努力的普通人只好无奈地抬头仰望着那位天才。 漫画描述4：但当普通人默默回过头来，却惊讶地发现有更多的人正同样充满敬意地仰望着他，因为此时的他也早已成为了大多数人眼中的那个佼佼者。 这组漫画非常发人深省，优秀的程序员往往会被同天才或高智商的人联系在一起，但我想告诉你，你周围所看到的那些天才（身边的优秀程序员）只是在你没看到的时候花了更多时间工作或者学习而已，当你也坚持这么做时，你也会变得和他们一样优秀。 常听人说，人与人之间的差距在周末，由此可见，付出的多少决定你能走多远，我想，这句话适用于任何地方。比如说，像我们这些做技术的，没有亲身编码实践，妄图希望看一些技术博客，书籍就获得个人编码能力的提高。这是不存在的，固然它可以开拓我们的视野，但实践得真知，通过亲自编码加深个人的理解，才是我们最应坚持的。 基础打牢了吗基础的重要性不言而喻，房子没打好基础会面临坍塌的风险，技术基础没打好，会面临失业的风险。这绝不是危言耸听，一个没有良好基础的技术人员所掌握的技术都是虚无缥缈的，这就需要我们不时的回看过去的代码可能现在看来它也不过如此吗？真的是这样吗？了解原理吗？网上有个段子说“我们只是代码的搬运工”，没有自己的理解，不懂得原理，只知道这样做可以完成项目。我觉得这是可悲的。技术，出自基础，结于基础。 遵循最佳实践不知大家发现了没，随着互联网的高速发展，技术更是日新月异，框架被源源不断的开发出来，这就需要开发人员找到一个适合自己的学习方式。对于我个人而言，我更偏向于在打牢基础后适时学习一些框架，要明白框架是学不完的，这就需要我们进行取舍。具体到每天的TO DO LIST上。现在，除每天必做任务阅读，英语外，我每天只写3-5件需要完成的任务，决不能超过这个范围，不然就是为完成任务而完成了，也不会深入思考为什么要这样，是否还有其他方式。而这个，是我在将近1年的时间中摸索出来的，并且在日后还会不断完善。总而言之一句话，我始终相信”实践得真知“。 保持好奇心并乐于探索新事物这点，我觉得自己做的还算不错的。在技术上，我会关注一些前辈的博客，公众号，时常逛逛前端优质社区，如div.io,技匠社等,虽然其中有些内容看不透彻，但自己还是乐在其中。时常觉得自己周围有一群优秀的人，便会不断激励自己。同样，在生活中，我还关注了Spenser,stormzhang,秦小明等优质公号，从他们的言语中，会时不时的触发大脑神经，原来事情是这样的。有时候会觉得当事情发展到一定阶段时，一切都是水到渠成的，并没有过多的神秘可言。 睡眠使你更加强大曾经，我是个夜猫子，没有11.30之前睡过觉，大概从今年年初的时候，突然意识到自己不能这样下去了。无论是对身体还是白天的学习都是白害而无一利的。现在，我10.30就基本进入睡眠状态了，偶尔会11点多睡觉，但这种情况基本可以忽略不计。每天6点准时起床，制定今日计划，开始一天的生活。 你不应该成为一匹独狼学会与人合作是每个人都应进修的课程，无论个人能力多么强大，在团队面前都是渺小的，没有团队的支持，一切将寸步难行。在团队合作中，成员之间可能会因价值观，思考角度不同产生隔阂，但这并不是无解的，一位优秀的领导者，会统筹成员之间所擅长的东西，达到1+1&gt;&gt;2的效果。 程序员更加国际化在《驱动力》一书中，为我们描述了这样一幅景象，程序员就职若干公司，在家完成工作，这样省去通勤时间，提高开发效率。程序员成为一个单独的个体，可能早上在这家公司工作，下午在另一所公司，晚上进行跨国合作完成项目。Google就已经尝试这种做法，我不知道这样的愿景在近几年会出现在中国，但我相信，在未来一定会出现。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[实用jq代码片段【一】]]></title>
+    <url>%2F2017%2F08%2F23%2F47-%E5%AE%9E%E7%94%A8jq%E4%BB%A3%E7%A0%811%2F</url>
+    <content type="text"><![CDATA[链式操作1234567$(document).ready(function()&#123; $(&quot;button&quot;).click(function()&#123; $(&quot;#p1&quot;).slideUp(2000).slideDown(2000).css(&quot;color&quot;,&quot;red&quot;); $(&quot;#div-log&quot;).html(&quot;&lt;p&gt;&quot;+&quot;实现链式（Chaining）操作&quot;+&quot;&lt;/p&gt;&quot;); //类似于+= &#125;);&#125;); 区分客户区，页面区，屏幕区 三者的X轴没什么说的，都一样，主要区别在于Y轴上，客户区，屏幕区的最大值固定，不会随着页面的滚动改变。页面区会随着滚动条的改变而变化。 123456789101112131415161718192021222324252627282930313233//客户区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getclient(e); &#125;);&#125;);function getclient(e)&#123; x=e.clientX; //当前可视窗口的距离 y=e.clientY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//屏幕区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getscreen(e); &#125;);&#125;);function getscreen(e)&#123; x=e.screenX; //屏幕的左上角为参考点距离屏幕边缘的距离 y=e.screenY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//页面区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getpage(e); &#125;);&#125;);function getpage(e)&#123; x=e.pageX; //相对于当前页面中的坐标（会随着滚动条的滚动而变化） y=e.pageY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125; 左右自适应高度：1234567891011function $(id)&#123; return document.getElementById(id);&#125;(function autoheight()&#123; if($(&apos;left&apos;).offsetHeight&gt;=$(&apos;right&apos;).offsetHeight)&#123; $(&apos;right&apos;).style.height=$(&apos;left&apos;).offsetHeight+&quot;px&quot;; &#125;else&#123; $(&apos;left&apos;).style.height=$(&apos;right&apos;).offsetHeight+&quot;px&quot;; &#125;&#125;)()//需要注意的是必须自调用函数。 callback()函数 callback()函数在当前效果100%完成之后执行。在一个涉及动画的函数之后来执行语句，用callback()函数。 1234567$(document).ready(function ()&#123; $(&apos;button&apos;).click(function ()&#123; $(&apos;p&apos;).hide(1000,function ()&#123; alert(&quot;回调函数过程，激活一个提示框&quot;); &#125;); &#125;);&#125;); 在新窗口打开链接123456789$(document).ready(function ()&#123; $(&apos;.url&apos;).attr(&#123;target:&quot;_blank&quot;&#125;) $(&apos;a[rel=ext]&apos;).click(function ()&#123; $(this).attr(&apos;target&apos;,&apos;_blank&apos;) &#125;);&#125;);function openurl()&#123; window.open(&apos;http://www.microsoft.com&apos;);&#125; 页面淡入淡出1234567$(document).ready(function ()&#123; $(&apos;#fade&apos;).click(function ()&#123; $(&apos;#div-fade&apos;).fadeToggle(1000); $(&apos;#div-fade&apos;).fadeToggle(1000); $(&quot;#div-fade&quot;).fadeTo(1000,0.2); &#125;);&#125;); 折叠展开123456$(document).ready(function()&#123; $(&quot;.help h3&quot;).click(function()&#123; $(this).next(&quot;p&quot;).slideToggle(&quot;fast&quot;).siblings(&quot;p:visible&quot;).slideUp(&quot;fast&quot;);//siblings表示取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合 &#125;);&#125;); 未完待续。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6总结]]></title>
+    <url>%2F2017%2F08%2F21%2Fes6%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[ES6新特性 let关键字，用于声明只在块级作用域起作用的变量 const，用于声明一个常亮 结构赋值，一种新的变量赋值方式，常用于交换变量值，提取函数返回值，设置默认值。 symbol数据类型，用于定义一个独一无二的值。 proxy代理，用于编写函数，来拦截目标对象的操作。 for…of遍历，可遍历具有iterator 接口的数据结构。 Set结构，用于存储不重复成员值的的集合。 Map结构，键名可以是任何类型的键值对集合。 Promise对象，更合理、规范地处理异步操作。 Class类定义类和更简便地实现类的继承。 关于Set结构1234let s=new Set();s.add([1]);s.add([1]);console.log(s.size); //2 Set结构不会存储相同的值，但这个例子中，2个数组[1]并不是同一个值，存储在不同的内存中，因此并不是相同的值。 Map结构12345let map = new Map();map.set([1],&quot;ES6&quot;);let con = map.get([1]);console.log(con); //undefined 2个数组并不是同一个数组，只不过数值都是1。可通过以下代码实现。 123456let map = new Map();let arr = [1];map.set(arr,&quot;ES6&quot;);let con = map.get(arr);console.log(con); //ES6]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[致自己]]></title>
+    <url>%2F2017%2F08%2F20%2F%E8%87%B4%E8%87%AA%E5%B7%B1%2F</url>
+    <content type="text"><![CDATA[拿什么拯救我这颗躁动的心，我不甘平庸，却流于平庸。难道这就是人们常说的浮躁吗？常听人们说现在的年轻人都比较浮躁，有时候我也反思自己。我不知道自己该归于哪一类，对于这一点，我认为，去到外面看看，体验下真实的世界，也许，就会得到结果。比如说租房，这几天自己就在找房子，或多或少有些收获吧！[声明一下]这里租房并不是没地方住，只是想更多的了解下，当然遇到好的也会蛊惑自己要不要搬来住，哈哈，就是这样。我理想的房子应该是和房东直接商量，这样，不光性价比更高，住户也比较优质，毕竟是房东直接来谈的。对于中介，二房东就呵呵了。不可否认的是，有时候他们手中的房源更多，能快速替你找到适合自己的，但租金就肯定要的多一些了。毕竟人家为你提供服务，省去自己找房子的麻烦了。都是挺不错的，看自己站在什么角度。总而言之一句话，自己发展的阶段决定了自己可接受怎样的服务，是选择花钱买时间还是拿时间换钱。 再比如说，找工作这件事，有时候投简历并不是为了一份工作，可能是想要了解自己现有水平和市场的差距，以备明确自己的方向，也有可能是《钱没给到位，受委屈了》职场上的委屈可以拿钱来补偿，这一点，个人还是比较赞同的。人与人，与公司之间本身就是一种价值交换。这无可厚非，任何人都不能站在道义的制高点去评判他人。说到这里，让我想起了曾经看到的一篇文章，《把自己当做一个企业去思考》大致讲的是，我们不能为了一份工资去工作，虽然它是生活的保障，但这样，并不能发挥自己真正的潜力。对于潜力，相信每个人都有所体会，人在绝境时的爆发时的潜能是任何人无法想象的。好了，时间也不早了，就这样吧！与君共勉。]]></content>
+      <categories>
+        <category>about</category>
+      </categories>
+      <tags>
+        <tag>about</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[个人后花园的第一步]]></title>
+    <url>%2F2017%2F08%2F20%2F%E4%B8%AA%E4%BA%BA%E5%90%8E%E8%8A%B1%E5%9B%AD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5%2F</url>
+    <content type="text"><![CDATA[在开始正题之前，我觉得我有必要说个事情，我推荐个JS前端开发联盟群。群号【76099500】，声明一下，这是个跳板群，无论是这个群还是其他高级群前辈们挺多的，技术氛围也是挺浓的，适合技术人。。。是的，今天我开通了后花园，灵感就是来自‘JS前端开发联盟群’,希望给自己一定的约束。主要分为2块，周结与月报。我会不断回顾过去，总结过去，并不断制定下一阶段的学习情况。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>后花园</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[前端开发网站收录]]></title>
+    <url>%2F2017%2F08%2F17%2Fweb%E5%89%8D%E7%AB%AF%2F</url>
+    <content type="text"><![CDATA[程序员垂直导航 程序员垂直导航 前端导航 面试 MD文件简历在线编辑器 前端社区 大前端 技匠社 百度前端技术社区 720云 前端收录 Glup中文网 手册网 Node爱好者 JQuery在线手册 w3cplus 前端学习网站推荐 极客标签 码农周刊 前端周刊 慕课网 div.io Hacker News Hacker News InfoQ w3cplus Stack Overflow w3school mozilla 优秀博客 前端英雄榜 前端名录 开发工具 网站载入速度测试 多种MD文件编辑器 MD文件编辑器 开发教程SVG教程]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[家]]></title>
+    <url>%2F2017%2F08%2F13%2F%E5%AE%B6%2F</url>
+    <content type="text"><![CDATA[故乡，之所以亲切，是因为那里有最亲的人，爱你的，你爱的，一家人坐在一起，彼此诉说着心中的牵挂。妈妈妈的唠叨在此时不再是唠叨，是关心。每次回到家，爸妈最关心的还是自己在外面过得怎样。而不会问你学的怎样。可能，在他们的心中，子女的健康超越一切。这2年，大姐，二姐都已成家，一家人见面可能也只有过年那几天了。从我放假到现在也有32天了，在这一个月的时间中，我能深深的感觉到家变得冷清了。虽然2个姐姐时常回来待几天，可这，跟之间相比，每年暑假，都是最热闹的。在之前，这些自己都根本不会想。也许正应了那句“失去时才知拥有”。 我无法想象，在未来若干年后，“空巢”会不会发生在我身上。于是，我暗暗发誓，绝对不让这种事在我头上发生。加油吧！少年，未来属于爱拼的你。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>家</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初识Vue]]></title>
+    <url>%2F2017%2F08%2F12%2F%E5%88%9D%E8%AF%86vue%2F</url>
+    <content type="text"><![CDATA[诞生背景 由于手机的迅速普及及性能的大幅提升，导致移动端需求的大量增加，产生了一种叫Webapp的东西，即移动端网页应用。 什么是MVVM框架MVVM可以拆分成：View — ViewModel — Model三部分，如图所示：View和Model可以通过ViewModel动态进行数据传输，不再需要手动更改。 Vue的核心通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。由于使用了ES5的Object.defineProperty特性，使得无法兼容IE8及以下版本浏览器。 Vue的数据驱动：数据改变驱动了视图的自动更新，传统的做法你得手动改变DOM来改变视图，vue只需要改变数据，就会自动改变视图，再也不用你去操心DOM的更新了，这就是MVVM思想的实现。 视图组件化：把整一个网页的拆分成一个个区块，每个区块我们可以看作成一个组件。网页由多个组件拼接或者嵌套组成。如图所示： 适用场景 替代jquery频繁操作DOM更新页面 对相同部分进行封装，提升开发效率 一个实例 步骤：new Vue()–&gt;设置数据data–&gt;挂载元素–&gt;成功渲染 123456789101112131415161718&lt;div id=&quot;app&quot;&gt; &lt;card&gt;&lt;/card&gt; &lt;card&gt;&lt;/card&gt; &lt;card&gt;&lt;/card&gt;&lt;/div&gt;&lt;script&gt;Vue.component(&apos;card&apos;,&#123; template:`&lt;div&gt; &lt;img src=&quot;img/pic.png&quot; alt=&quot;&quot;&gt; &lt;h2&gt;这是个标题&lt;/h2&gt; &lt;p&gt;这里是描述&lt;/p&gt; &lt;button&gt;这是个按钮&lt;/button&gt; &lt;/div&gt;`&#125;);new Vue(&#123; el:&quot;#app&quot;&#125;);&lt;/script&gt;]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6增加的扩展]]></title>
+    <url>%2F2017%2F08%2F11%2FES61%2F</url>
+    <content type="text"><![CDATA[ECMAScript是什么 JavaScript是JavaScript的重要组成部分。简单一句话，ESMAScript是JavaScript的语法规范。与DOM,BOM成为JavaScript的3驾马车。不仅如此，它还定义了语法，类型，原型和继承及内置对象和函数标准库。 ECMAScript 和 JavaScript 的关系 ECMAScript是JavaScript的基础标准部分，前者是后者的规格，后者是前者的一种实现。 ES6 与 ECMAScript 2015 的关系 ES6是一个泛指，是5.1版以后的 JavaScript 的下一代标准，涵盖了ES2015、ES2016、ES2017等.而ES2015 则是正式名称，特指该年发布的正式版本的语言标准。 let命令123&#123;var a=10; let b=1;&#125;a //10b // ReferenceError: b is not defined. 表明let只在它所在的代码块起作用 123456789101112131415161718192021222324var a = [];for (var i = 0; i &lt; 10; i++) &#123; a[i] = function () &#123; console.log(i); &#125;;&#125;a[6](); // 10//i在全局范围内部都有效var b=[];for(let i=0;i&lt;10;i++)&#123; b[i] = function () &#123; console.log(i) &#125;&#125;b[6](); // 6//i只在本轮循环中有效for (let i = 0; i &lt; 3; i++) &#123; let i = &apos;abc&apos;; console.log(i);&#125;// abc// abc// abc//输出了3次abc。表明函数内部的变量i与循环变量i不在同一个作用域，有各自单独的作用域。 let不存在变量提升var命令的变量可在声明前使用，值为undefinedlet命令的变量必须先声明在使用。 123456console.log(foo);var foo=2;//undefinedconsole.log(bar);let bar=2;//ReferenceError: bar is not defined 暂时性死区 ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。 只要块级作用域中存在let命令，所声明的变量就绑定之歌区域，不再受外部影响 123456789101112131415//使用let命令声明变量之前，该变量不可用if (true) &#123; // TDZ开始 tmp = &apos;abc&apos;; // ReferenceError console.log(tmp); // ReferenceError let tmp; // TDZ结束 console.log(tmp); // undefined tmp = 123; console.log(tmp); // 123&#125;// 不报错var x = x;// 报错let x = x;// ReferenceError: x is not defined 小结 ES6 规定暂时性死区和let、const语句不出现变量提升，主要是为了减少运行时错误，防止在变量声明前就使用这个变量，从而导致意料之外的行为。 暂时性死区的本质就是，只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量。 用let声明的变量只在块级作用域起作用，适用于for循坏。在同一个代码块中，不可声明相同的变量，不可重复声明函数内的参数。 不允许重复声明let不允许在相同作用域内，重复声明同一个变量。 123456789101112131415161718// 报错function () &#123; let a = 10; var a = 1;&#125;// 报错function () &#123; let a = 10; let a = 1;&#125;function func(arg) &#123; let arg; // 报错&#125;function func(arg) &#123; &#123; let arg; // 不报错 &#125;&#125; 块级作用域存在原因一：内层变量可能会覆盖外层变量。 123456789var tmp=new Date();function f()&#123; console.log(tmp); if(false)&#123; var tmp=&quot;hello wrold!&quot;; &#125;&#125;f();//由于变量提升，导致内层变量覆盖外层变量，使得输出结果为undefined 存在原因二：用来计数的循环变量泄露为全局变量。123456var s = &apos;hello&apos;;for (var i = 0; i &lt; s.length; i++) &#123; console.log(s[i]);&#125;console.log(i); // 5//变量i用于控制循环，但循环结束后，并没有消失，而成为了全局变量。 ES6块级作用域12345678function f1() &#123; let n = 5; if (true) &#123; let n = 10; &#125; console.log(n); // 5&#125;//表示外层代码块不受内层块级代码快的影响，若使用var声明，结果为10 const 命令 const声明一个只读的常量。一旦声明，常量的值就不能改变。要注意声明引用类型的常量时，是传址赋值1234const PI = 3.1415;PI // 3.1415PI = 3;// TypeError: Assignment to constant variable. 小结： 对于const来说，只声明不赋值，就会报错。 const的作用域与let命令相同：只在声明所在的块级作用域内有效。 const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。 const声明的常量，也与let一样不可重复声明。 本质： const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。 顶层对象的属性 顶层对象，在浏览器环境指的是window对象，在Node指的是global对象。ES5之中，顶层对象的属性与全局变量是等价的。 var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性,换言之，从ES6开始，全局变量将逐步与顶层对象的属性脱钩。 123456var a = 1;window.a // 1let b = 1;window.b // undefined//以上可看出全局变量a由var命令声明，所以它是顶层对象的属性；全局变量b由let命令声明，所以它不是顶层对象的属性，返回undefined。 不断加深理解并加以完善。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[战狼I VS 战狼II]]></title>
+    <url>%2F2017%2F08%2F09%2F%E6%88%98%E7%8B%BC%2F</url>
+    <content type="text"><![CDATA[战狼I VS 战狼II坦率的讲，我更欣赏I,也看了好几遍了，真是百看不厌呢！今天，看了下新出的战狼II,坦率的讲，有点失望，难道是自己的期望过高了吗？我想，没有吧！II给我的感觉就是一切都在主角的掌控中，无论是开篇遇到海盗，一个人救了整个船上的人。还是之后与恐怖份子的斗争中，都以开了挂的存在呢？这种超能，恐怕也只有电影，电视中存在吧。II给我最震撼的地方在于结尾时的： 中华人民共和过公民：当你在海外遭遇危险，不要放弃！请记住，在你身后，有一个强大的祖国！ 说到这里，就不得不提下今年的八一阅兵，当3架歼-20出现在画面中，让我深深的感觉到国家的强大。愿祖国繁荣昌盛。同时，也祝自己以后在技术路上有所成就！ 以后这里就是我的电影家了。。。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>movies</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我待驾照如初恋]]></title>
+    <url>%2F2017%2F08%2F08%2F%E9%A9%BE%E7%85%A7%2F</url>
+    <content type="text"><![CDATA[在经过一年多的折腾后，可算把驾照考下了。 2016-6-25考科一 2017-01-09考科二 2017-07-28考科三 2017-08-08考科四 这时间跨度可真不短啊，不过也都是一次性通过，少了好多麻烦！ 时间回到科目一：首先，早上6、7点钟出发赶往考点，之后排队准备进行考试，好不容易该我考试了，心里窃喜，不过考的时候我傻眼了，TMD我前十道题错了3道，这就着实吓到了我，我仔细检查，跟我在驾考宝典上一样啊。这可怎么办，在来2个X我就拜拜了。这时，我跑到窗口向工作人员询问，才得知，那是系统故障，只要电脑不给你提示错误那答案就是正确的。我深吸一口气，平静一下我的小心脏。回到原位继续答题。一路也还顺畅。考试结果还不错98！之后签字离开这个是非之地。请原谅我这样表达，那个小插曲，着实让我不爽！ 时间回到科目二：啊！寒假了。考试走起想到这里，拿起手机138XXX打过去：“喂，教练，给咱约科二吧”。之后就等消息练车，恩，感觉还不错。准备战斗。说到这里又让我想起了科目一，哎！满满的心酸啊！适应场地得晚上适应啊！黑灯瞎火的，倒库就挂了，我硬是把前一个车库的线当成出库线，半坡还好，S那可就惨了，一路压着冲过去，侧方直接就跳过了。就这样，60大洋没了。第二天，早起再次熟悉考场，绕了一圈出来准备待考。哎~轮到我了，11车，上车踩离合挂一档，起步。恩，进入倒库项目，深户一口气，平复下小心脏。这是却发现安全带没系，这要是点了开始，可不直接说拜拜。系好安全帯，开始考试。倒库合格，下一项，半坡熄火，距离不够-20。啊，危险了，就这样就如S弯，压线，请将车开会起点从新考试。恩，这一步，已经在我心中预演了好几遍了。从新进入考试，经过前面教训，我过关斩将，到了S弯，看着后视镜，额，线呢，完了完了，再看，哦来了，就这样扭出S弯，进行下一项，考试合格。请将车开会起点。好开森，100有木有，签字走人。 时间回到科目三：科三考试还算顺畅，提前练了3个课时，果断100通过。可能是前面被虐的有经验了吧！其实，我挺幸运的，路线熟悉，车也不错，关键系统在我考的时候没出故障。我亲眼看见与我同车的2人系统故障说拜拜。 时间回到科目四：5:30闹钟响起，起床赶往考场，恩。很好，不像可以那样电脑有问题，是新电脑。很快考完了，98！和可以一样，有木有。准备签字，这是却把我吓了一跳，没拍到正脸，取消成绩从考，我的天，要不要这样。就在我发愣时，监考员说，签字。可能是勉强可以吧！哎~心累。至此，考试结束。 特此写篇博客记录下我的成长！]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>驾照</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[浅谈JavaScript中this]]></title>
+    <url>%2F2017%2F08%2F06%2Fjs%E4%B8%AD%E7%9A%84this%2F</url>
+    <content type="text"><![CDATA[作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式： 作为函数调用 作为对象方法调用 作为构造函数调用 1234567891011var n = &quot;Hello World!&quot;;function example()&#123; console.log(this.n);&#125;example(); //Hello World!var n = &apos;Hello World!&apos;;function example()&#123; this.n=0;&#125;example();console.log(n); //0 结论：当函数直接调用时，该函数的this关键字指向的就是全局对象window。 作为对象方法调用1234567891011121314151617181920212223function getAge()&#123; var y = new Date().getFullYear(); return y - this.birth;&#125;var zhangsan = &#123; name: &apos;张三&apos;, birth: 1990, age: getAge&#125;;console.log(zhangsan.age());//27console.log(getAge()); //NaNvar fn = zhangsan.age;console.log(fn()); //NaNvar name = &apos;Akita&apos;;var dogs = &#123; name:&apos;Collie&apos;, showName: function()&#123; console.log(this.name); &#125;&#125;;console.log(dogs.showName()); //Collievar otherNmae = dogs.showName;console.log(otherName()); //Akita 结论：当使用obj.xxx()的形式调用函数时，里面的this关键字指向的就是对象本身。但是需要注意：在对象方法内部再次定义一个方法，该方法的this关键字又会重新指向全局对象window！这点需要特别注意比如下面这段代码： 123456789101112var zhangsan = &#123; name: &apos;张三&apos;, birth: 1990, age: function()&#123; function getAgeFromBirth()&#123; var y = new Date().getFullYear(); return y - this.birth; &#125; return getAgeFromBirth(); &#125;&#125;;console.log(zhangsan.age()); //NaN 在 strict 模式下你会得到的错误就不是 NaN，而是TypeError：Cannot read property ‘birth’ of undefined。 作为构造函数调用12345function Student(name)&#123; this.name=name;&#125;var xiaoming = new Student(&apos;小明&apos;);console.log(xiaoming.name); //小明 指定 this 指向 指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。 1234567891011function getAge() &#123; var y = new Date().getFullYear(); return y - this.birth;&#125;var xiaoming = &#123; name: &apos;张三&apos;, birth: 1990, age: getAge&#125;;zhangsan.age(); // 25getAge.apply(zhangsan, []); // 25 利用apply()将getAge()的this指向了xiaoming这个对象，因此函数执行正确。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS 相等性判断]]></title>
+    <url>%2F2017%2F08%2F03%2Fjs%E7%9B%B8%E7%AD%89%E6%80%A7%E5%88%A4%E6%96%AD%2F</url>
+    <content type="text"><![CDATA[关于 JS 相等性判断，很容易想到严格相等（===）和非严格相等（==），前者在比较前不会进行隐式转换，即若比较的两个值不是相同的类型，比较结果一定是不等的。而后者在进行比较前可能会根据具体情况进行相应的类型转换然后再按照严格比较规则进行比较。 通常情况下使用严格相等是没有问题的，但存在两个例外。一个是+0和-0的比较，另一个是NaN的比较。 在严格相等中，+0 === -0 返回 true，NaN === NaN 返回 false，这与直观判断是不一致的。为了避免这类特殊情况，可以通过 ES6 新特性 Object.is 来进行判断。代码如下： 123456789101112if (!Object.is) &#123; Object.is = function(x, y) &#123; // SameValue algorithm if (x === y) &#123; // Steps 1-5, 7-10 // Steps 6.b-6.e: +0 != -0 return x !== 0 || 1 / x === 1 / y; &#125; else &#123; // Step 6.a: NaN == NaN return x !== x &amp;&amp; y !== y; &#125; &#125;;&#125; Polyfill 也很容易实现，对于+0和-0比较，首先严格相等，再判断倒数是否不相等即可，因为+0/0结果是Infinity，-0/0结果是-Infinity。而对于NaN比较问题，只需要判断二者分别不等于自身即可。（isNaN仅可判断当前数是否是NaN） 总结： JavaScript 提供三种不同的比较操作符：严格相等、非严格相等、Object.is。 ES2015标准提供以下四种比较操作符：严格相等、非严格相等、零值相等、同值相等。 同值相等参考JavaScript 中相等性判断中 Object.defineProperty 实例，当试图对不可变属性进行修改时可能会发生错误。同值相等由 Object.is 方法提供。 零值相等和同值相等类似，不过会认为 +0 与 -0 相等。 参考： JavaScript 中相等性判断 Object.is 从 V8 的单元测试源码看“同值相等”]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我和书的故事]]></title>
+    <url>%2F2017%2F07%2F28%2F%E6%88%91%E4%B8%8E%E4%B9%A6%E7%9A%84%E6%95%85%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[开卷有益，书，带给我们知识的时候，也逐渐强壮了我们的心智。在我的书单中，不仅限于专业书，更多的是我个人喜欢的方面。哈哈，暴露了我的读书观，不过也罢，实话实说嘛。专业书开拓了我的专业广度与深度。比如《JavaScriptDOM编程艺术》这本，我知道了“insertAfter”,以前只知道它不向insertBefore那样，本身就存在的直接用就可以，这是就需要自己创建。在我的书单中，《富爸爸，穷爸爸》，《富同学，穷同学》，《赚未来十年的钱》，《优秀的人都敢对自己下狠手》,《基金投资》等启蒙了我的金钱观，价值观。总之，每本书，在你读完后，总会有几个地方不时出现在你的脑海中，引起你的思考。每本书之间思维的碰撞，终将深刻地影响这你的行为。 弗朗西斯·培根在《论读书》里说道： 有些书只需浅尝，有些书可以狼吞，有些书要细嚼慢咽，慢慢消化。也就是说，有的书只需选读，有的书只需浏览，有的书却必须全部精读。有的书不必去读原文，读读它们的节本就够了，但这仅限于内容不大重要的二流书籍：否则，删节过的往往就像蒸馏水一样，淡而无味。 现在，我把它们罗列出来，算是勉励自己。书单如下： 《HTML5入门经典》 《JavaScript从入门到精通》 《单页Web应用》 《代码整洁之道》 《软技能，代码之外的生存指南》 《驱动力》 《响应式Web设计》 《JavaScriptDOM编程艺术》 《优秀的人都敢对自己下狠手》 《富爸爸，穷爸爸》 《富同学，穷同学》 《赚未来十年的钱》 《少有人走的路》 《情商》 《奇特的一生》 《神奇的肌肤能量书I》 《神奇的肌肤能量书II》 《基金投资》 《思考致富》 《自控力》 《管理的实践》 《你的降落伞是什么颜色？》 《番茄工作法图解》 《把时间当做朋友》 《赢》 《每天最重要的2小时》 《你一年的8760小时》 《如何阅读一本书》]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Web App、Hybrid App、 Native App各自优缺点]]></title>
+    <url>%2F2017%2F07%2F26%2Fwebapp%2F</url>
+    <content type="text"><![CDATA[Web AppWeb App 指采用Html5语言写出的App,无需下载安装，可以说是触屏版的网页应用。优点: 开发成本低， 更新快， 更新无需通知用户，不需要手动升级， 能够跨多个平台和终端。 缺点： 临时性的入口 无法获取系统级别的通知，提醒，动效等等 用户留存率低 设计受限制诸多 体验较差 Hybrid App Hybrid APP指的是半原生半Web的混合类App,需要下载，访问的内容是 Web。 Hybrid App 极力去打造类似于Native App 的体验，但仍受限于技术，网速，等等很多因素。尚不完美。 Native AppNative APP 指的是原生程序，一般依托于操作系统，有很强的交互，是一个完整的App，可拓展性强。需要用户下载安装使用。优点： 打造完美的用户体验 性能稳定 操作速度快，上手流畅 访问本地资源（通讯录，相册） 设计出色的动效，转场， 拥有系统级别的贴心通知或提醒 用户留存率高缺点： 分发成本高（不同平台有不同的开发语言和界面适配） 维护成本高（例如一款App已更新至V5版本，但仍有用户在使用V2， V3， V4版本，需要更多的开发人员维护之前的版本） 更新缓慢，根据不同平台，提交–审核–上线 等等不同的流程，需要经过的流程较复杂 个人理解3种App都有各自的优缺点，主要还是看具体业务要求，比如说我们现在要做一个产品，主要展示些产品的特性，功能，用Native APP可能就不是最好的选择，Web App就比较适合。可能在若干年后，随着技术的发展Hybrid APP可能就是最好的选择。总之一句话，适合的才是王道。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>App</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js获取访问者ip信息脚本]]></title>
+    <url>%2F2017%2F07%2F20%2Fjs%E8%8E%B7%E5%8F%96ip%2F</url>
+    <content type="text"><![CDATA[以下是新浪脚本代码 12345678910111213&lt;script type=&quot;text/javascript&quot;src=&quot;http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;//&lt;![CDATA[ alert([ remote_ip_info.country, remote_ip_info.province, remote_ip_info.city, remote_ip_info.isp, remote_ip_info.start, remote_ip_info.end ].join(&apos;&apos;));//]]&gt;&lt;/script&gt; 知乎讨论:怎样用 JavaScript 程序获取客户的 IP 地址？]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[GET与POST区别]]></title>
+    <url>%2F2017%2F07%2F11%2Fget%E4%B8%8Epost%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[以前我们是可能是这样认为的： GET使用URL或Cookie传参。而POST将数据放在BODY中。 GET的URL会有长度上的限制，则POST的数据则可以非常大。 POST比GET安全，因为数据在地址栏上不可见。 可是，经过查证，They’re wrong，我也感觉不可思议，以前我就这样认为啊！ GET和POST与数据如何传递没有关系 GET和POST是由HTTP协议定义的。在HTTP协议中，Method和Data（URL， Body， Header）是正交的两个概念，也就是说，使用哪个Method与应用层的数据如何传输是没有相互关系的。 HTTP没有要求，如果Method是POST数据就要放在BODY中。也没有要求，如果Method是GET，数据（参数）就一定要放在URL中而不能放在BODY中。 HTTP协议对GET和POST都没有对长度的限制 HTTP协议明确地指出了，HTTP头和Body都没有长度的要求。而对于URL长度上的限制，有两方面的原因造成： 浏览器。据说早期的浏览器会对URL长度做限制。据说IE对URL长度会限制在2048个字符内（流传很广，而且无数同事都表示认同）。但我自己试了一下，我构造了90K的URL通过IE9访问live.com，是正常的。网上的东西，哪怕是Wikipedia上的，也不能信。 服务器。URL长了，对服务器处理也是一种负担。原本一个会话就没有多少数据，现在如果有人恶意地构造几个几M大小的URL，并不停地访问你的服务器。服务器的最大并发数显然会下降。另一种攻击方式是，把告诉服务器Content-Length是一个很大的数，然后只给服务器发一点儿数据，嘿嘿，服务器你就傻等着去吧。哪怕你有超时设置，这种故意的次次访问超时也能让服务器吃不了兜着走。有鉴于此，多数服务器出于安全啦、稳定啦方面的考虑，会给URL长度加限制。但是这个限制是针对所有HTTP请求的，与GET、POST没有关系。 安全不安全和GET、POST可能并不是我们认为的那种关系。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>get&amp;&amp;post</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用Git命令收录]]></title>
+    <url>%2F2017%2F07%2F09%2Fgit%2F</url>
+    <content type="text"><![CDATA[Git命令速查表 生成SSH 1$ ssh-keygen -t ras -C &quot;email@xxx&quot; 设置用户名 12$ git config --global user.name &quot;webykj&quot;$ git config --global user.email &quot;stormykj@163.com&quot; 初始化当前项目 1$ git init 在该目录下新建一个文件，然后查看，将修改添加到暂存区 12345echo &quot;# test&quot; &gt;&gt; README.mdgit add * //将工作区所有修改添加到暂存区git add . //将工作区所有修改添加到暂存区git add filename //将指定文件添加到暂存区git status //列出变更文件 将暂存区修改添加到本地仓库 1git commit -m &apos;备注信息&apos; 创建仓库，并将上诉改动push到远程 12git remote add origin https://github.com/webykj/test.gitgit push -u origin master 去除push时每次都要输入账号密码 12git remote rm origin //移除git remote add origin git@github.com:gitname/test.git //添加 从远程clone项目 1git clone url 放弃暂存区修改 12345git checkout -- filename //放弃暂存区修改（修改不在）git rm --cached filename //放弃add（修改还在，但产生一条delete记录）git reset HEAD filename //同上（没有delete记录）git stash //暂时放弃未提交的修改git stash pop //恢复 分支操作 1234567891011121314151617/*查看分支*/git branch //所有本地分支git branch -r //所有远程分支git branch -a //所有远程分支和本地分支/*创建分支*/ git branch branchName //留在当前分支git checkout -b branchName //创建并切换分支git branch --set-upstream-to=&lt;remote&gt;/branchName //建立本地分支与远程分支的追踪关系git branch --track branchName [remote branch] //新建一个分支，并与远程建立追踪关系 git checkout branchName //切到指定分支 /*分支合并*/ git pull origin branch //取回远程更新并与本地分支合并 git fetch origin branch //取回远程更新 git merge branch //合并指定分支到当前分支(产生提交记录) git rebase branch //合并指定分支到当前分支(不产生提交记录，比较适合有强迫症的) git cherry-pick commitId //将与commitId对应的提交合进当前分支]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[AJAX的封装]]></title>
+    <url>%2F2017%2F07%2F08%2Fajax%E7%9A%84%E5%B0%81%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[ajax的封装: 123456789101112131415161718192021222324252627282930313233343536function ajax(method,url,data,success)&#123; var xhr; try&#123; //尝试执行try中的代码，如有错误，执行catch中的代码并返回错误信息 xhr=new XMLHttpRequest(); //throw new Error(&apos;手动报错&apos;); &#125;catch(e)&#123; xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;); //alert(e); &#125; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; setInterval(function ()&#123; var xhr=new XMLHttpRequest(); if(method == &quot;get&quot; &amp;&amp; data)&#123; url+=&quot;?&quot;+data; &#125; xhr.open(method,url,true); if(method == &quot;get&quot;)&#123; xhr.send(); &#125;else&#123; xhr.setRequestHeader(&apos;content-type&apos;,&apos;application/x-www-form-urlencoded&apos;); xhr.send(data); &#125; xhr.onreadystatechange=function ()&#123; if(xhr.readyState == 4)&#123; if(xhr.status == 200)&#123; success &amp;&amp; success(xhr.responseText) &#125;else&#123; alert(&quot;出错了&quot;+xhr.status); &#125; &#125; &#125;; &#125;,1000) &#125;&#125; 数据:123456789101112&lt;?phpheader(&apos;content-type:text.html;charset:&quot;utf-8&quot;&apos;);error_reporting(0);$news=array( array(&quot;title&quot;=&gt;&quot;中国又一工程惊艳世界:世界最深高铁站&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;院士:让中国转基因鲤鱼尽快游向餐桌 &quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;中戏老师怒怼战狼2:一文不值心理变态&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;陕西一区委书记赴宴被富豪打 纪委披露&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;2.3公里路司机绕成30公里 滴滴愿赔1千&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;));echo json_encode($news);?&gt;]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>AJAX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《JavaScript DOM编程艺术》【二】]]></title>
+    <url>%2F2017%2F07%2F08%2FJavaScript%20DOM%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF2%2F</url>
+    <content type="text"><![CDATA[图片库改进：如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。 Javascript与HTML标记分离：element.event = function(){…}，这里的event不限onclick、onkeypress。 共享onload事件网页加载完毕时会触发一个onload事件，这个事件与window对象相关联。即window.onload = function(){…}。若需要绑定的函数较多时，一个弹性的解决方案是addLoadEvent，代码如下： 1234567891011function addLoadEvent(func) &#123; var oldonload = window.onload; if(typeof window.onload != &apos;function&apos;) &#123; window.onload = func; &#125; else&#123; window.onload = function() &#123; oldonload(); func(); &#125; &#125;&#125; 未完待续。。。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[AJAX中open()方法与表单]]></title>
+    <url>%2F2017%2F07%2F03%2Fajax%E4%B8%AD%E7%9A%84open%2F</url>
+    <content type="text"><![CDATA[12var xhr=new XMLHttpRequest();xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true); //打开方式，地址，是否异步 注意： 异步：非阻塞模式，表示前面代码不会影响后面代码的执行。同步：非阻塞模式，表示前面代码会会影响后面代码的执行。在选择同步还是异步的过程中，需要判断前面的代码是否会影响后面的代码，如果会，那么就必须选择同步，否则，便是异步。 表单1234567891011121314151617&lt;form action=&quot;get.php&quot; method=&quot;get&quot;&gt; &lt;input type=&quot;text&quot; name=&quot;user&quot; value=&quot;john&quot;&gt; &lt;input type=&quot;text&quot; name=&quot;age&quot; value=&quot;20&quot;&gt; &lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt; &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;&lt;/form&gt;&lt;?php header(&apos;content-type:text.html;charset:&quot;utf-8&quot;&apos;); error_reporting(0); /*$user=$_GET[&apos;user&apos;]; $age=$_GET[&apos;age&apos;]; $pwd=$_GET[&apos;pwd&apos;];*/ $user=$_POST[&apos;user&apos;]; $age=$_POST[&apos;age&apos;]; $pwd=$_POST[&apos;pwd&apos;]; echo &quot;&#123;$user&#125;,&#123;$age&#125;,$&#123;pwd&#125;&quot;;?&gt; 区分get与post1234xxx.open(&apos;get&apos;,&apos;get.php?username=&apos;+encodeURL(&apos;张三&apos;)+&apos;&amp;age=30&apos;+new Date().getTime(),true);xxx.open(&apos;post&apos;,&apos;post.php&apos;,true);xxx.setRequestHeader(&apos;content-type&apos;,&apos;application/x-www-form-urlencoded&apos;);xxx.send(&apos;username=zhangsan&apos;&amp;age=22); 缓存问题需要在？后添加一个随记函数或时间戳。 post,数据放在send()方法里，作为参数传递。 编码问题需用encodeURL()解决。 持续更新完善中。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>AJAX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《JavaScript DOM编程艺术》【一】]]></title>
+    <url>%2F2017%2F07%2F03%2FJavaScript%20DOM%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%2F</url>
+    <content type="text"><![CDATA[先看个小例子：创建insertAfter方法 DOM常用的5个方法： getElementById getElementsByTagName gettElemensByClassName getAttribute setAttribute DOM中的D表示文档，O表示对象，M表示模型。其中，对象分为3种： 用户定义的对象 内建对象，如Array,Math,Date等 宿主对象，由浏览器提供的对象，,如window.open,window.blur. getElementsByClassName兼容性处理：12345678910111213141516//node表示DOM树中搜索起点 function getElementsByClassName(node,classname)&#123; if(node.getElementsByClassName)&#123; //使用现有方法 return node.getElementsByClassName(classname); &#125;else&#123; var results=new Array(); var elems=node.getElementsByTagName(&quot;*&quot;); for(var i=0;i&lt;elems.length;i++)&#123; if(elems[i].className.indexOf(classname) != -1)&#123; results[results.length]=elems[i]; &#125; &#125; return results; &#125; &#125; 小结： 一份文档就是一颗节点树。 节点分为不同类型：元素，属性，文本节点等。 getElementById将返回一个对象，该对象对应着文档里的一个特定的元素节点。 getElementsByTagName和getElementsByClassName将返回一个数组，分别对应文档里一组特定的元素节点。 每一个节点都是一个对象。 获取和设置属性：getAttribute是一个函数，只有一个参数： 123object.getAttribute(attribute)...getAttribute不属于document对象，所以不能通过document对象调用，调用方法： var paras=document.getElementsByTagName(“p”);//方法一：for(var i=0;i&lt;paras.length;i++){ var title_text=paras[i].getAttribute(“title”); if(title_text!= null){ alert(title_text); }}//方法二：for(var i=0;i&lt;paras.length;i++){ var title_text=paras[i].getAttribute(“title”); if(title_text) alert(title_text);}… setAttributegetAttribute是一个函数，有2个参数： 1object.setAttribute(attribute,value) 用setAttribute改变原有属性的值：12345678var paras=document.getElementsByTagName(&quot;p&quot;);for(var i=0;i&lt;prras.length;i++)&#123; var title_text=paras[i].getAttribute(&quot;title&quot;); if(title_text)&#123; paras[i].setAttribute(&quot;title&quot;,&quot;brand new title text&quot;); alert(paras[i].getAttribute(&quot;title&quot;)); &#125;&#125; childNodes属性：该属性可获取任何一个元素所有的子元素，他是一个所有子元素的数组。 显示body所有子元素的总个数： 1234567function countBodyChildern()&#123; var body_element = document.getElementsByTagName(&quot;body&quot;)[0]; alert(body_element.childNodes.length);&#125;//在页面加载时执行window.onload = countBodyChildren; nodeType属性：语法： 1node.nodeType nodetype得值是个数字，而不是像“element”,”attribute”那样的字符串。 nodeType只有12种，但只有3种有实用价值： 元素节点的nodeType属性值为1 属性节点的nodeType属性值为2 文本节点的nodeType属性值为3 动态改变属性值：1234567function showPic(whichpic)&#123; var source = whichpic.getAttribute(&quot;href&quot;); var placeholder = document.getElementById(&quot;placeholder&quot;); placeholder.setAttribute(&quot;src&quot;,socuse); var text = which.getAttribute(&quot;title&quot;); var description = document.getElementById(&quot;description&quot;);&#125; nodeValue属性改变文本节点的值： 12345678910node.nodeValue//改变属性的值function showPic()&#123; var source=whichpic.getAttribute(&quot;href&quot;); var placeholder=document.getElementById(&quot;placeholder&quot;); placeholder.setAttribute(&quot;src&quot;,source); var text=whichpic.getAttribute(&quot;title&quot;); var description=document.getElementById(&quot;description&quot;); description.firstChild.nodeValue=text;&#125; firstChild与lastChild属性：123node.firstChildnode.childNodes[0]node.lastChild 动态创建标记传统方法：document.write和innerHTML DOM方法：creatElement,createTextNode,appendChild和insertBefore 123456789101112131415161718192021window.onload=function ()&#123; var pra=document.createElement(&quot;p&quot;); var div=document.getElementById(&quot;div&quot;); div.appendChild(pra); var txt=document.createTextNode(&quot;hello world!&quot;); pra.appendChild(txt);&#125;//我更倾向这种写法 window.onload=function ()&#123; var pra=document.createElement(&quot;p&quot;); var txt1=document.createTextNode(&quot;This is &quot;); var em=document.createElement(&quot;em&quot;); var txt2=document.createTextNode(&quot;my&quot;); var txt3=document.createTextNode(&quot; content.&quot;); var div=document.getElementById(&quot;div&quot;); pra.appendChild(txt1); em.appendChild(txt2); pra.appendChild(em); pra.appendChild(txt3); div.appendChild(pra);&#125; insertBefore方法，这里需要注意没有insertAfter方法，但我们可以编写它，代码如下：123456789function insertAfter(newElement,targetElement)&#123; var parent=targetElement.parentNode; if(parent.lastChild==targetElement)&#123; parent.appendChild(newElement); &#125;else&#123; parent.insertBefore(newElement,targetElement.nextSibling); &#125; //nextSibling表示目标元素的兄弟元素&#125; 最终代码如下：1234567891011121314151617function preparePlaceholder()&#123; if(!document.createElement) return false; if(!document.createTextNode) return false; if(!document.getElementById) return false; if(!document.getElementById(&quot;pic&quot;)) return false; var placeholder=document.createElement(&quot;img&quot;); placeholder.setAttribute(&quot;id&quot;,&quot;placeholder&quot;); placeholder.setAttribute(&quot;src&quot;,&quot;img/a4.jpg&quot;); placeholder.setAttribute(&quot;alt&quot;,&quot;This is a photo&quot;); var description=document.createElement(&quot;p&quot;); description.setAttribute(&quot;id&quot;,&quot;description&quot;); var txt=document.createTextNode(&quot;Choose an pic&quot;); description.appendChild(txt); var gallery=document.getElementById(&quot;pic&quot;); insertAfter(placeholder,gallery); insertAfter(description,placeholder);&#125; 持续更新完善中。。。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初识AJAX]]></title>
+    <url>%2F2017%2F07%2F01%2F%E5%88%9D%E8%AF%86ajax%2F</url>
+    <content type="text"><![CDATA[Asynchronous JavaScript and XML（异步JavaScript和XML)，是一种创建交互式网页应用的网页开发技术。 AJAX工作原理： AJAX的工作原理：Ajax的工作原理相当于在用户和服务器之间加了—个中间层(AJAX引擎),使用户操作与服务器响应异步化。并不是所有的用户请求都提交给服务器,像—些数据验证和数据处理等都交给Ajax引擎自己来做,只有确定需要从服务器读取新数据时再由Ajax引擎代为向服务器提交请求。 Ajax其核心有JavaScript、XMLHTTPRequest、DOM对象组成，通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用JavaScript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。让我们来了解这几个对象。 AJAX优点： 节省用户操作，提高用户体验，减少数据请求 无刷新更新数据 异步与服务器通信 基于标准被广泛支持 。。。 AJAX缺点： 没有了Back和History功能，即对浏览器机制的破坏 AJAX的安全问题 对搜索引擎支持较弱 。。。 Ajax适用场景 表单验证 快速的用户与用户间的交流响应 对数据进行过滤和操纵相关数据的场景 普通的文本输入提示和自动完成的场景 。。。 Ajax不适用场景 搜索 基本的导航 替换大量的文本 。。。 第一个Ajax应用：12345678910111213141516171819202122232425262728293031323334353637&lt;input type=&quot;button&quot; value=&quot;提交&quot; id=&quot;btn&quot;&gt;&lt;script&gt; window.onload=function ()&#123; //ie兼容问题 new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;) var xhr; //方法一 /*if(window.XMLHttpRequest)&#123; xhr=new XMLHttpRequest(); &#125;else&#123; xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;); &#125;*/ //方法二： try&#123; //尝试执行try中的代码，如有错误，执行catch中的代码并返回错误信息 xhr=new XMLHttpRequest(); //throw new Error(&apos;手动报错&apos;); &#125;catch(e)&#123; xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;); //alert(e); &#125; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; var xhr=new XMLHttpRequest(); xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true); xhr.send(); xhr.onreadystatechange=function ()&#123; if(xhr.readyState ==4)&#123; if(xhr.status ==200)&#123; alert(xhr.responseText); &#125;else&#123; alert(&quot;出错了&quot;+xhr.status); &#125; &#125; &#125; &#125; &#125;&lt;/script&gt;]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>AJAX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[document.body.scrollTop与document.documentElement.scrollTop的兼容]]></title>
+    <url>%2F2017%2F06%2F28%2Fscrolltop%E7%9A%84%E5%85%BC%E5%AE%B9%2F</url>
+    <content type="text"><![CDATA[这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！ 看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，chrome也只认识document.body.scrollTop. 由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？ 解决办法： 12345678//方法一：var sTop=document.body.scrollTop+document.documentElement.scrollTop;//方法二：function getscroll()&#123; var scrollTop=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; return scrollTop; &#125; 理由如下： 因为document.body.scrollTop与document.documentElement.scrollTop两者有个特点，就是同时只会有一个值生效。比如document.body.scrollTop能取到值的时候，document.documentElement.scrollTop就会始终为0；反之亦然。所以，如果要得到网页的真正的scrollTop值,这两个值总会有一个恒为0，所以不用担心会对真正的scrollTop造成影响。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[今天咋也来谈谈EQ]]></title>
+    <url>%2F2017%2F06%2F25%2FEQ%2F</url>
+    <content type="text"><![CDATA[简单来说，情商（情绪智力）是指识别、理解自己和他人的情绪状态，并利用这些信息来解决问题和调节行为的能力。 情商高的人通常都擅长处理情绪，在大多数时候能做到头脑冷静、行为理智，保持愉快的心情，因此情商高的人不仅更容易受他人的欢迎，也更有可能获得成功。 本测评根据你在情绪觉察、情绪管理、情绪驱动、情绪理解和社交技巧五个方面的表现，综合评估你的情商指数，有助于你更好地管理自己的情绪，获得和谐融洽的人际关系。 情商指数水平：较高你的情绪智力指数较高，你能够妥善地处理自己的情绪，也能够合理地面对他人的情绪，在社会中能够自在地与各种各样的人相处，很少有与人闹得不愉快的情况。 影响因素情绪智力剖析图 情绪觉察你的结果：一般你的情绪觉察能力一般，一般情况下你能辨别自己的情绪，但是偶尔你也判断不出这些情绪因何而起。你有时想给别人留下某种特定的印象，但是结果却出乎你的意料。 情绪管理你的结果：较强你的情绪管理能力较强，你能较好地处理自己的情绪，面对突出其来的强烈情绪可以较好地转移或消解，即使在压力下，也能够可以保持清醒，较快地从生活的挫折和烦恼中恢复。然而情绪管理的技巧你也没有完全熟练，偶尔就算意识到自己的不良情绪也不能很好地转移或消解。 情绪驱动你的结果：较强你的情绪驱动能力较强，你能够进行自我激励，感到自己有能力找到实现目标的方法，无论目标是什么，都相信自己有决心而且有能力实现。你的自我激励水平随着你对工作的认可程度而变化，当你不满意自己的工作内容或待遇时，你会拒绝付出太多的激情去做事。 情绪理解你的结果：较强你的情绪理解能力较强，你比一般人更善于察觉他人的情绪感受，愿意倾听他人的烦恼，能够设身处地的理解他人的感受。尽管你的同情心比一般人强，但是有时你还是不能理解别人做出一些奇怪的决定或行为的原因。 社交技能你的结果：一般你的社交技巧一般，在如何与他人相处这门必修课上，你掌握的技巧并不多。你在与人相处时偶尔会发生一些得罪人的情况，有时你也搞不清楚自己为什么得罪了别人。 情商结论 你的情绪智力指数较高，表明你是一个有魅力的人，在他人眼中你是称职的合作伙伴、值得信赖的伴侣。在人际交往方面，你善良，在适当的时候能够对他人施以援手，有选择地关怀他人，不管是在什么社交场合，你都表现得自信从容，容易给别人留下良好的印象，赢得他人的认可和支持。 在情绪处理方面，你懂得合理地表达自己的真实感受，有技巧地处理压力和冲突，能够保持冷静、随机应变，不过面对一些尴尬的社交局面你也有束手无策的时候。 在工作与生活方面，你有着较强的掌控能力，比较了解自己应该从事什么样的工作，适合什么样的伴侣。 ☆ 你对情绪的觉察能力一般，表明你对自己的情绪不太敏感，有时会陷入莫名其妙的情绪当中，比如突如其来的愤怒或忧伤等。 你有时会有难以准确描述自己的情绪感受的状况，不善于表达自己的情绪，在选择表达情绪的方式和场合时可能会出现错误。 在人际交往中，你的情绪不太稳定，容易激动，行为不够理智，容易被情绪支配，做出让自己事后回想起来后悔的事。 ☆ 你的情绪管理能力较强，表明你能够调节和处理自己的情绪，在压力面前，能够通过一定的方法让自己保持冷静和理智，不会轻易被情绪所控。 你是自己情绪的主人，你懂得在合适的时间、地点，用合适的方式表达情绪，以比一般人更为乐观的心态面对生活中出现的困难和挫折，能够自己缓解紧张、焦虑、沮丧、愤怒等不良的心理状态。 在人际交往中，你显得比较成熟，懂得设置自己的界限，能够坚持自己的立场和原则。遇到不公平的对待时，能够表达自己的态度，有驱散紧张尴尬的气氛的能力，但是有时不够灵活。 ☆ 你的情绪驱动能力较强，表明你有一定的内在动力，你能够为了满足自己内心对成功的渴望，通过一定的努力，把事情做得更好。 你是一个行动派，当你从事你感兴趣的工作时，总是能专注于当前任务，发自内心地认真和负责，对不断变化的任务要求反应自如。 你在遇到逆境时能坚持，调整情绪，恢复活力，具有较强的心理韧性。 在别人眼中，你是一个有上进心、进取心的人，对生活和工作都保持一定的热情，知道如何调动自己的积极情绪，能够发挥自己的潜能。 ☆ 你的情绪理解能力较强，表明你有较好的观察力，能够准确地感知和识别他人的情绪和身体语言。 你和别人打交道不会有太大的困难，因为你能领会他人的反应和感受，并且可以通过观察别人的非语言信息，如：身体动作、面部表情和眼神交流等，感知到别人细微的情绪变化。 你能够认真倾听和理解他人的处境和困扰，并考虑他人的情绪感受，提供有价值的信息反馈，获得他人的信任。 在人际交往中，你具有同情心，即使与自己的观念不一致的人也能和平相处。当你察觉到别人的真正需要，会主动劝服和安慰别人。尽管遇到你不能理解的人，你也能想到人无完人，不过分苛求。 ☆ 你的社交技巧水平一般，表明你在建立和维护与周围人的关系上表现一般，有时会导致一些人际冲突。 由于你在判断应该在什么场合什么时间下说什么、做什么、会对别人有什么影响的时候准确性不足，导致你的人际交往不太顺畅。 在人际交往中，你显得不太合群，不懂得察言观色，也不知道如何与陌生人闲聊，待人接物的能力有待提高，可能会造成别人的疏远或排斥。 提升建议 ☆ 你的情绪觉察能力弱，针对你的情绪觉察能力，建议你先学会了解并接纳自己的情绪。 每当自己觉得思绪混乱，情绪快要失控的时候，先学会冷静下来，转移注意力，不要让情绪赶走你的理性，事后在纸上写下你刚才的想法，并加以评论。看看自己刚才是感到的哪一种情绪以及自己为什么会有这样的情绪。 将你的想法从头脑中的搬到纸上，是将抽象的观念具体化的过程，这样能让你对自己的情绪有更加清晰的认识，而不是在脑不是在脑子里被追得团团转。 ☆ 你的情绪管理能力较强，表明你是一个能够熟练地处理情绪的人。如果你想进一步增强你的情绪管理能力，当你发现自己存在不良的情绪，你可以寻找合理的渠道宣泄。 例如适当地向朋友家人倾诉或自己消解；当你发现自己在不适当的时候出现了不适当的情绪时，可以选择转移自己的注意力，想想其他事情，让自己迅速冷静下来。 ☆ 你的情绪驱动能力较强，表明你有进取心，容易成为一个出色的领导者。如果你想进一步增强你的情绪驱动能力，你可以从选择一份让你感觉到“有价值”的工作开始。 当你发现自己缺乏前进的动力时，不妨停下来稍作休整，旅行、烹饪、玩游戏，这样你更容易找回朝着梦想前进的热情和动力。 ☆ 你的情绪理解能力较强，表明你能够较好地察觉他人的情绪和感受。如果你想进一步提强你的情绪理解能力，你可以更进一步地提强换位思考的能力。 当你不能理解他人的做法时，你可以做出更多的尝试和努力去理解，比如设想自己站在别人的位置上会怎么做，比如多接触这个你不理解的人，了解他真正的想法。 你的社交技巧水平一般，表明你与人建立融洽关系的能力不足，人际关系一般。针对你的社交技巧水平，建议你学一些待人接物的技巧，提高自己受欢迎的程度。 在与人交谈时，可以多说一些贴心的话，如：“你过得如何？”“你感觉怎样？”“你真好”“和你在一起我感觉很开心”“非常感谢你的帮助”“很抱歉，给你添麻烦了”等，同时配合积极的眼神接触和微笑。 平时在生活中，可以多观察别人的需要，提供及时的帮助和支持。提供食物或饮料、一张个性化的卡片、一个体贴的礼物、一个需要支持、移情清单、参与共同创建一种更亲密关系的活动。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>EQ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript中中elm.style.xxx无法获取到CSS值]]></title>
+    <url>%2F2017%2F06%2F25%2Fele.style%2F</url>
+    <content type="text"><![CDATA[javascript中elm.style.xxx无法获取到CSS值 示例代码如下： 12345.d1&#123;color:#f00;&#125;&lt;div id=”d1″ class=”d1″&gt;获取css值&lt;/div&gt;//此时使用JS的style获取他的color属性：var d1=document.getElementById(‘d1’);alert(d1.style.color); 奇怪的是，弹出一个空值，没有任何内容，也不报错。但如果用d1.style.color=”#00f”来设置d1的CSS却正确执行。 百思不得其解，上网一搜。 解释说elm.style只能获取到elm标签上类似style=””定义的CSS属性，我靠，那怎么得到通过class来声明的属性呢？ IE中用elm.currentStyle.color的语句来获得——这种方法还能接受。 但自诩标准的W3C获取方法如下： 12var d1 =document.getElementById(‘d1’);alert(window.getComputedStyle(d1,null).color); 要用到一个很生的JS语句：getComputedStyle。这不重要，重要的是这个语句的使用方法，居然要通过window对象调用！参数居然是两个而且第二个就算是空的也不能省略！这条语句对比起elm.style甚至elm.currentStyle都要繁琐的多，而且打乱了一般的JS编程习惯。虽然通过getComputedStyle真的能取到对应的CSS值，但这个方法不得不说很是无语!]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网页字体em的使用]]></title>
+    <url>%2F2017%2F06%2F20%2Fem%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[关于em这个字体单位，我一直比较纠结。只知道它是一种相对长度单位，默认1em=16px(即浏览器默认字体大小）。但em使用时并不是简单的1em=16px这么算，以下为引用内容： 任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。看了这个我非常纳闷，默认1em＝16px，但这却不合设计者的要求，又手动调整为1em＝10px，这样12px=1.2em。。。这样绕来绕去的，不如直接设置为12px得了。使用em据说是它可以自动调整，对用户体验好，但我觉得，与其让它自动调整，不如就把字体设置大点。 看到有些文章推荐网页使用em作为字体单位，并列举了这样做的几点好处，其中有一条是“国外的大部分网站能够调整的原因在于其使用了em作为字体单位”，但网页设计者们不要忘了，国外都是英文网站,英文默认10px就可以阅读，而汉字则要12px以上才能看清楚，所以适合的才是最好的。 我们按照上文引用中的用法，来做个测试： 12body&#123;font-size:62.5%;&#125;p&#123;font-size:1.2em;text-indent:2.4em;width:600px;&#125; 在firefox截图如下： 可以很明显地看到字体由于小于12px而模糊不清。如果你网页上大段大段的文字都是这个样子，用户感觉是很糟糕的。 注：IE及chrome正常，都为12px左右，其中chrome有一个bug：不能显示12px以下大小的字体，所以到底兼容性如何还是未知数。 鉴于em使用的麻烦度与不兼容性，我觉得网页字体还是不要用em的好，要用就把它相对设大点，以免出现上图的情况。另外，如果觉得小字体对用户不好的话，就设置font-size:14px吧，这样在什么分辨率下都足以看清了。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[AJAX总结]]></title>
+    <url>%2F2017%2F06%2F20%2Fajax%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[什么是AJAX AJAX = 异步 JavaScript 和 XML，是一种用于创建快速动态网页的技术，可实现局部刷新。主要应用于表单验证、按需获取数据、自动刷新页面。 标准XmlHttpRequest的属性 onreadystatechange: 每个状态改变时都会触发这个事件处理器，通常指向一个JavaScript函数; readyState: 请求的状态。有5个可取值：0=未初始化，1=正在加载，2=已加载，3=交互中，4=完成; responseText: 服务器的响应，表示为一个串; responseXML: 服务器的响应，表示为XML。这个对象可以解析为一个DOM对象; status: 服务器的HTTP状态码（200对应OK，404表示Not Found(未找到)，等等); statusText: HTTP状态码的相应文本(OK或Not Found等等). XmlHttpRequest的方法 abort(): 停止当前请求; getAllResponseHeaders(): 把HTTP请求的所有响应作为键/值对返回; getResponseHeader(“header”): 返回指定首部的串值; open(method, url): 建立对服务器的调用。method参数可以是GET, POST或PUT。 url参数可以是相对的或者绝对的URL。该方法还包括3个可选参数; send(content): 向服务器发送请求; setRequestHeader(header, value): 把指定首部设置为所提供的值。在设置任何首部之前必须先调用open(). AJAX常用方法 get() post() load() 只能用于静态html页面 json jsonp() 最底层： ajax第二层： load/get/post 高频使用第三层： json/jsonp jQuery中的AJAX123456789101112131415161718192021222324252627$.ajax(&#123; url:&apos;/comm/test1.php&apos;, type:&apos;POST&apos;, //GET async:true, //或false,是否异步 data:&#123; name:&apos;yang&apos;,age:25 &#125;, timeout:5000, //超时时间 dataType:&apos;json&apos;, //返回的数据格式：json/xml/html/script/jsonp/text beforeSend:function(xhr)&#123; console.log(xhr) console.log(&apos;发送前&apos;) &#125;, success:function(data,textStatus,jqXHR)&#123; console.log(data) console.log(textStatus) console.log(jqXHR) &#125;, error:function(xhr,textStatus)&#123; console.log(&apos;错误&apos;) console.log(xhr) console.log(textStatus) &#125;, complete:function()&#123; console.log(&apos;结束&apos;) &#125;&#125;) 常用参数123456789var configObj = &#123; method //数据的提交方式：get和post url //数据的提交路劲 async //是否支持异步刷新，默认是true data //需要提交的数据 dataType //服务器返回数据的类型，例如xml,String,Json等 success //请求成功后的回调函数 error //请求失败后的回调函数 &#125; JavaScript中的AJAX123456789101112131415161718192021$(&apos;#send&apos;).click(function()&#123; //请求的5个阶段，对应readyState的值 //0: 未初始化，send方法未调用； //1: 正在发送请求，send方法已调用； //2: 请求发送完毕，send方法执行完毕； //3: 正在解析响应内容； //4: 响应内容解析完毕； var data = &apos;name=yang&apos;; var xhr = new XMLHttpRequest(); //创建一个ajax对象 xhr.onreadystatechange = function(event)&#123; //对ajax对象进行监听 if(xhr.readyState == 4)&#123; //4表示解析完毕 if(xhr.status == 200)&#123; //200为正常返回 console.log(xhr) &#125; &#125; &#125;; xhr.open(&apos;POST&apos;,&apos;url&apos;,true); //建立连接，参数一：发送方式，二：请求地址，三：是否异步，true为异步 xhr.setRequestHeader(&apos;Content-type&apos;,&apos;application/x-www-form-urlencoded&apos;); //可有可无 xhr.send(data); //发送&#125;); AJAX参考文章 AJAX之XMLHttpRequest方法和属性详解]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>AJAX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[父元素padding后,子元素absolute定位偏差解决办法]]></title>
+    <url>%2F2017%2F06%2F19%2Fabsolute%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[假设一div已经设置 position:relative及padding:30px，然后要在里面放置一position:absolute的元素，并设置它left:0;top:0——这种效果可用来实现左头像右内容的布局。 在Firefox等标准浏览器下，绝对定位的元素此时真的是左0上0，顶着父div的边，但IE下却是左30上30，只因为父div设置了padding为30。 这个问题很要命，那么解决办法呢？ 只要为父div加上zoom:1，触发其hasLayout，即可在IE下实现和标准浏览器下一样的样式了。此解决方案适合绝大部分情况。 每发现IE一个无厘头BUG，都会让我对IE的恨加深一层。兼容问题，’您’辛苦了…]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript中clientX,screenX,pageX,offsetX的异同]]></title>
+    <url>%2F2017%2F06%2F19%2Fclient%E5%BC%82%E5%90%8C%2F</url>
+    <content type="text"><![CDATA[pageX/pageY:鼠标相对于整个页面的X/Y坐标。整个页面的意思指整个网页的全部，比如说网页很宽很长，宽2000px，高3000px，那pageX,pageY的最大值就是它们了。 特别说明：IE不支持！ offsetX/offsetY:得出的结果跟pageX/pageY一样，既然如此，它有什么存在价值？ 特别说明：只有IE支持！相当于IE下的pageX,pageY. screenX/screenY:顾名思义，就是鼠标在屏幕上的坐标。screenX,screenY的最大值不会超过你的屏幕分辨率。 clientX/clientY：事件发生时鼠标在浏览器内容区域的X/Y坐标（不包含滚动条）。浏览器内容区域即浏览器窗口中用来显示网页的可视区域，注意这个可视，也就是说需要拖动滚动条才能看到的区域不算。当你将浏览器窗口缩小时，clientX/clientY的最大值也会缩小，但始终，它们的最大值不会超过你浏览器可视区域。 特别说明：IE下此属性不规范，它们的最小值不是0而是2，也就是说IE下的clientX/clientY与火狐下的始终大2px 持续完善中。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vh与vw知多少]]></title>
+    <url>%2F2017%2F06%2F12%2Fvh%E4%B8%8Evw%2F</url>
+    <content type="text"><![CDATA[都知道响应式布局需要通过rem进行适配，但还需要以下一段js代码动态计算元素大小，但通过vh,vw就可直接通过css直接控制。 1234567891011(function (doc, win) &#123; let docEl = doc.documentElement let resizeEvt = &apos;orientationchange&apos; in window ? &apos;orientationchange&apos; : &apos;resize&apos; let recalc = function () &#123; var clientWidth = docEl.clientWidth if (!clientWidth) return docEl.style.fontSize = 14 * (clientWidth / 320) + &apos;px&apos;; &#125; if (!doc.addEventListener) return win.addEventListener(resizeEvt, recalc, false) doc.addEventListener(&apos;DOMContentLoaded&apos;, recalc, false) 什么是视口在客户端，视口指浏览器的可视区域；在移动端，涉及3个视口：Layout Viewport（布局视口），Visual Viewport（视觉视口），Ideal Viewport（理想视口），而这里所说的视口是布局视口。 vh/vw与%区别 最优做法——vw和rem配合使用 12345678910111213141516171819202122// rem 单位换算：定为 75px 只是方便运算，750px-75px、640-64px、1080px-108px，如此类推$vm_fontsize: 75; // iPhone 6尺寸的根元素大小基准值@function rem($px) &#123; @return ($px / $vm_fontsize ) * 1rem;&#125;// 根元素大小使用 vw 单位$vm_design: 750;html &#123; font-size: ($vm_fontsize / ($vm_design / 2)) * 100vw; // 同时，通过Media Queries 限制根元素最大最小值 @media screen and (max-width: 320px) &#123; font-size: 64px; &#125; @media screen and (min-width: 540px) &#123; font-size: 108px; &#125;&#125;// body 也增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小body &#123; max-width: 540px; min-width: 320px;&#125;]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[实用js代码片段【一】]]></title>
+    <url>%2F2017%2F06%2F03%2F%E4%BD%BF%E7%94%A8js%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%2F</url>
+    <content type="text"><![CDATA[表单验证###获取单选值 1234567891011function getSex()&#123; var value=&quot;&quot;; var radio=document.getElementsByName(&quot;gender&quot;); for(var i=0;i&lt;radio.length;i++)&#123; if(radio[i].checked==true)&#123; value=radio[i].value; break; &#125; &#125; alert(value);&#125; 过滤数字,自符1234567891011121314151617window.onload=function ()&#123; var id=document.getElementById(&apos;id&apos;); var clearNumber=function (tThis)&#123; var _v=tThis.value; tThis.value=_v.replace(/\D/g,&quot;&quot;); //过滤数字 tThis.value=_v.replace(/[^\u4e00-\u9fa5]/g,&quot;&quot;); //过滤中文 &#125; txt.onblur = function()&#123; clearNumber(this); &#125; txt.onfocus = function()&#123; clearNumber(this); &#125; txt.onkeyup = function()&#123; clearNumber(this); &#125;&#125; 限制用户输入的字符数12345678910111213141516171819window.onload=function ()&#123; var id=document.getElementById(&quot;id&quot;); clearmaxlength=function (tThis)&#123; var _v=tThis.value, _vLen=_v.length, dataLen=tThis.getAttribute(&apos;data-length&apos;), subLen=dataLen; if(_vLen&gt;dataLen) tThis.value=_v.substr(0,subLen); &#125; txt.onblur = function()&#123; clearmaxlength(this); &#125; txt.onfocus = function()&#123; clearmaxlength(this); &#125; txt.onkeyup = function()&#123; clearmaxlength(this); &#125;&#125; 回车提交12345678910window.onload=function ()&#123; var txt=document.getElementById(&quot;txt&quot;); txt.onkeyup=function (e)&#123; e= e || window.event; var keycode=e.keyCode || e.which || e.charCode; if(keycode===13)&#123; alert(&quot;回车提交成功！&quot;) &#125; &#125;&#125; 关键字过滤1234567891011121314window.onload=function ()&#123; var txtfilter=document.getElementById(&quot;id&quot;); txtfilter.onclick=function ()&#123; words=[ &quot;JavaScript&quot;, &quot;美女&quot;, /[外]&#123;1&#125;.&#123;0,3&#125;[挂]&#123;1&#125;/ ], txtLen=words.length; for(var i=0;i&lt;txtLen;i++)&#123; txtfilter.value=txtfilter.value.replace(words[i],&quot;***&quot;); &#125; &#125;&#125; 未完待续。。。 当然，你也可以查看这里。 点击查看更多]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《高性能HTML5》]]></title>
+    <url>%2F2017%2F05%2F31%2Fhtml5%E9%AB%98%E6%80%A7%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[本书中讨论三种性能客户端（即浏览器）性能服务器端和网络性能开发效率 第一章 概述HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。什么是高性能页面加载时间浏览器性能网络性能开发效率 第二章 开发原则浏览器工作原理HTML 解析为一颗 DOM 树。DOM 树和 CSS 样式表结合起来构成渲染树（Firefox 中渲染树被称作框架树）。根据渲染树，浏览器开始绘制。改进性能减少 HTML 中元素的数量减少重绘（效果更明显）动态改动 DOM 和 CSS 样式时有两点需要考虑改动的元素在 DOM 树的深度，越深则改动就越独立，对其他节点影响越少，所以能改多深就改多深。对 DOM 有多次操作，尽量合并到一次做完而不是分成一次一次地去做。CSS 放到 head 标签内（避免白屏），script 放到 body 标签的尾部（避免延迟页面元素的渲染）使用特性检测，而不是浏览器版本号检测。 第三章 性能准则影响页面加载时间的因素（按强弱排序）减少 HTTP 请求使用 CDN 加速避免空的 src 或 href 属性值增加过期头启 GZIP 压缩把 CSS 放在头部把 JavaScript 放到尾部避免使用 CSS 表达式删除不使用的 CSS 语句对 JavaScript、CSS 进行代码压缩减少重绘减少 HTTP 请求理解并行连接HTTP1.1 协议很明确限制了单个用户不能在同一时间保持2个以上的连接。大部分浏览器突破了这个限制。充分利用浏览器并发，将资源文件散列到不同的域名。但 DNS 查询耗时。合并资源文件使用图片精灵减少重绘规定图片的宽和高不要用表格布局定义字符集不要重组 DOM 第四章 响应式网页设计CSS3 媒介查询自适应图片弹性栅格 第五章 理解页面重用机制第六章 页面模板使用IE的兼容模式（通常情况下应该关闭，除非由于历史原因不得不使用），可以通过以下 meta 标签做到 1&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt; 其中，http-equiv=”X-UA-Compatible”告诉IE（IE8 以上支持）将要设置兼容模式状态。content属性确定了采用什么样的兼容模式规则。IE=edge告知浏览器不要采用兼容模式而总是采用最新版本的规则来渲染。chrome=1告诉IE如果用户安装了 Google Chrome Frame（GCF）插件，那么启用它，以 Chrome 内核的渲染方式渲染网页。 为 iPhone 使用 Viewport: 1&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt; 第七章 导航ID 属性选择器的性能是最高的（但比含标识符的选择器高的不多）。因为标识符可以重复使用，所以应该使用含标识符的选择器而不是 ID 属性选择器，牺牲这点性能是值得的。试图让所有浏览器展示完全一样的效果有时候并不是可取的。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[$(document).ready()与window.onload()的区别]]></title>
+    <url>%2F2017%2F05%2F22%2F%24(document).ready()%E4%B8%8Ewindow.onload()%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[$(document).ready()的表示在DOM加载完之后执行一个函数【这里DOM加载完不代表全部文件加载完，例如图片文件，虽然图的src的地址加载好了，但是图本身还没加载完】。 与window.onload的区别：1.执行时间： window.onload是在DOM加载完成 + DOM相关的文件下载完成 之后再执行函数。 $(document).ready()是在DOM加载完之后执行一个函数。 $(document).ready()要比window.onload先执行；有时候页面还没有完全加载完毕而用户已经在操作页面，在技术上很多情况下，只要DOM已完全加载好了，JS就可以运行去操作DOM了，没必要等到全部加载完成,所以用$(document).ready()来提前，但是当使用的JS依赖 CSS 属性值时，或者需要在元素被加载之后才能使用时（例如，取得图片的大小需要在图片被加载完后才能知道），就需要将这样的JS放到load事件中，以免因为贪图快而带来麻烦。 能够添加的数量： window.onload不能同时编写多个，因为我查看W3C的时候，window.onload是一种原生的DOM的事件，决定了在window上只能添加一个，后续的会覆盖掉前面的。 $(document).ready()可以同时编写多个，我查看jQuery中文档，他是这么介绍的.ready()方法只能被匹配当前文档的jQuery对象调用，也就是说他是jQuery的方法，本质是一个函数，就可以执行多次。 能否简写： $(document).ready()可以简写 window.onload 不能简写 $(document).ready()的简写: $(document).ready(handler) $(handler) $().ready(handler) //一般不推荐使用]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何成为一名卓越的前端工程师]]></title>
+    <url>%2F2017%2F05%2F22%2F%E5%89%8D%E7%AB%AF%E6%94%BB%E5%9F%8E%E7%8B%AE%2F</url>
+    <content type="text"><![CDATA[原文为勾三股四翻译如何成为一名卓越的前端工程师，这是篇好文章，这里仅摘录我认同部分，并践行。 我在 web 领域工作越长时间，我就越意识到区分人才和顶尖人才的并不是他们的知识——而是他们思考问题的方式。很显然，知识在很多情况下是非常重要而且关键的——但是在一个快速发展的领域，你前进和获取知识的方式 (至少在相当长的一段时间里) 会比你已经掌握的知识显得更加重要。更重要的是：你是如何运用这些知识解决每天的问题的。 人才可分为两类，技巧型和技术型，前者主要凭经验，后者则通过思考来解决问题。 别光解决问题，想想究竟发生了什么 很多人埋头写 CSS 和 JavaScript 直到程序工作起来了，然后就去做别的事情了。我通过 code review 发现这种事经常发生。 我发现很多情况下，当你遇到问题的时候，你只是解决当下的问题罢了。但是如果你永远不花时间理解问题的本源，你将一次又一次的面对相同的问题。花一些时间找出为什么，这看上去费时费力，但是我保证它会节省你未来的时间。在完全理解整个系统之后，你就不需要总去猜测和论证了。 阅读规范文档 当同一份代码在两个或更多浏览器的渲染结果不同时，你应该花些时间确定哪个效果是正确的，并且以此为标准写代码。你的解决方案应该是对未来友好的。 阅读别人的代码 自己独立解决问题绝对是个不错的方式，但是这不应该是你唯一的方式，因为它很快就会让你稳定在某个层次。阅读别人的代码会让你开阔思维，并且阅读和理解别人写的代码也是团队协作或开源贡献必须具备的能力。 我着实认为很多公司在招聘新员工的时候犯的最大错误是他们只评估应聘者从轮廓开始写新代码的能力。我几乎没有见过一场面试会要求应聘者阅读现有的代码，找出其中的问题，并修复它们。缺少这样的面试流程真的非常不好，因为你作为工程师的很多时间都花费在了在现有的代码的基础上增加或改变上门，而不是搭建新的东西。 好好利用GitHub 把你学到的东西都记录下来根据我的经验，写作、演讲、做 demo 是强迫自己完全深入理解一件事的最佳方式。就算你写的东西没有人看，整个过程也会让你受益匪浅。 比如，我现在维护的Blog! 以上这些与大家共勉。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[setTimeout与setInterval的使用]]></title>
+    <url>%2F2017%2F05%2F20%2Fsettimeout%2F</url>
+    <content type="text"><![CDATA[setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过创建一个函数循环重复调用setTimeout，以实现重复的操作： setTimeOut123456showTime();function showTime()&#123; var today = new Date(); alert(&quot;The time is: &quot; + today.toString()); setTimeout(&quot;showTime()&quot;, 5000);&#125; setInterval12345setInterval(&quot;showTime()&quot;, 5000);function showTime()&#123; var today = new Date(); alert(&quot;The time is: &quot; + today.toString());&#125; setTimeout方法不会每隔5秒钟就执行一次showTime函数，它是在每次调用setTimeout后过5秒钟再去执行showTime函数,而setInterval却可以每隔一定时间就重复执行一次那个函数。 用法： 需要每隔一个固定的时间间隔后就精确地执行某动作，那么最好使用setInterval，而如果不想由于连续调用产生互相干扰的问题，尤其是每次函数的调用需要繁重的计算以及很长的处理时间，那么最好使用setTimeout。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初识jQuery]]></title>
+    <url>%2F2017%2F05%2F17%2F%E5%88%9D%E8%AF%86jq%2F</url>
+    <content type="text"><![CDATA[jQuery中的节点操作追加元素12$(&apos;#p&apos;).append(&apos;向p中追加元素&apos;);$(&apos;追加元素到p&apos;).appendTo(&quot;#p&quot;); 前置元素12$(&apos;#a&apos;).prepend(&apos;向p中前置元素&apos;);$(&apos;前置元素到p中&apos;).appendTo(&apos;p&apos;);*/ 插入元素12$(&apos;#a&apos;).before(&apos;节点元素前插入节点元素&apos;);$(&apos;#a&apos;).after(&apos;在p之后插入元素&apos;); 插入节点元素前后必须用标签包起来123$(&quot;&lt;b&gt;插入到节点元素后&lt;/b&gt;&quot;).insertAfter(&quot;#a&quot;);$(&quot;&lt;b&gt;插入到节点元素前&lt;/b&gt;&quot;).insertBefore(&quot;#a&quot;);//区分insertAfter,insertBefore与after,before 几种删除节点的方法1234var $li=$(&quot;ul li:eq(1)&quot;).remove();$(&quot;ul&quot;).append($li);//把刚删除的元素节点从新添加到ul元素中去$(&quot;ul li&quot;).remove(&quot;li[title!=a]&quot;);//将ul元素下title属性不等于&quot;a&quot;的li元素删除 $(&quot;ul li:eq(1)&quot;).empty();//清空ul节点下第2个li元素的内容 复制节点1$(this).clone(true).appendTo(&quot;ul&quot;); 替换节点12$(&quot;p&quot;).replaceWith(&quot;&lt;strong&gt;你最不喜欢的水果是？&lt;/Strong&gt;&quot;);$(&quot;[name=&apos;rp&apos;]&quot;).replaceWith(&quot;&lt;tr&gt;&lt;td&gt;gg&lt;/td&gt;&lt;/tr&gt;&quot;); jQuery中的属性过滤器[attribute=value] 属性过滤器，全字符匹配1$(&apos;#a&apos;).attr(&apos;value&apos;,&apos;aa&apos;); [attribute!=value] 同 not([attr=”value”])1$(&quot;a&quot;).not(&quot;[href*=&apos;http://&apos;]&quot;).append(&quot;更改内容&quot;); [attribute^=value] 取出属性以指定字符串开头的元素1$(&quot;a[href^=&apos;http:&apos;]&quot;).attr(&quot;target&quot;,&quot;_blank&quot;).css(&quot;background-color&quot;,&quot;gray&quot;); [attribute$=value] 取出属性以指定字符串结尾的元素12$(&quot;a[href$=&apos;edu.cn&apos;]&quot;).css(&quot;background-color&quot;,&quot;red&quot;).append(&quot;单属性过滤器&quot;);$(&quot;a[rel=&apos;google&apos;][target=&apos;_blank&apos;]&quot;).css(&quot;background-color&quot;,&quot;green&quot;).append(&quot;多属性过滤器&quot;);]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript中call,apply,bind联系与区别]]></title>
+    <url>%2F2017%2F05%2F16%2Fcall%2F</url>
+    <content type="text"><![CDATA[call/apply/bind方法的来源: call,apply,bind这三个方法都是继承自Function.prototype中的，属于实例方法。 123console.log(Function.prototype.hasOwnProperty(&apos;call&apos;)) //trueconsole.log(Function.prototype.hasOwnProperty(&apos;apply&apos;)) //trueconsole.log(Function.prototype.hasOwnProperty(&apos;bind&apos;)) //true Function.prototype.call()函数实例的call方法，可以指定该函数内部this的指向，然后在所指定的作用域中，调用该函数。并且会立即执行该函数。如： 12345678910111213var zhangsan = &#123; age: 20 //;会报错Uncaught SyntaxError: Unexpected token&#125;;var age = 22;function a() &#123; console.log(this.age);&#125;a(); //22a.call(); //22a.call(null); //22a.call(undefined); //22a.call(this); //22a.call(zhangsan); //20 上述代码中，this如果指向全局对象，则返回22,否则返回20。 call()方法可以传递2个参数，第一个参数是函数执行时所在的作用域，第二个是函数调用时需要传递的参数。第一个参数时必须的，可以是null,undefined,this,其表示函数此时处于全局作用域，第二个参数必须一个个添加。而在apply()方法中，第二个参数必须为数组。 call()方法的应用：调用对象的原生方法或将类数组对象转换为数组1234567var obj = &#123;&#125;; console.log(obj.hasOwnProperty(&apos;toString&apos;)); //false obj.hasOwnProperty = function() &#123; return true; &#125; console.log(obj.hasOwnProperty(&apos;toString&apos;)); //true console.log(Object.prototype.hasOwnProperty.call(obj, &apos;toString&apos;)); //false hasOwnProperty是obj对象继承的方法，如果这个方法一旦被覆盖，就不会得到正确结果。call方法可以解决这个方法，它将hasOwnProperty方法的原始定义放到obj对象上执行，这样无论obj上有没有同名方法，都不会影响结果。要注意的是，hasOwnProperty是Object.prototype原生对象的方法，而call是继承自Function.prototype的方法。 Function.prototype.apply() apply方法的作用与call方法类似，也是改变this指向（函数执行时所在的作用域），然后在指定的作用域中，调用该函数。同时也会立即执行该函数。唯一的区别就是，它接收一个数组作为函数执行时的参数 call与apply的区别：12345function keith(a, b) &#123; console.log(a + b); &#125; keith.call(null, 2, 3); //5 keith.apply(null, [2, 3]); //5 有必要再说一遍：call()第二个参数必须一个个添加【可同时添加多个】，二apply()必须以数组的形式添加。 apply()应用： 找出数组中的最大数 1234var a = [2, 4, 5, 7, 8, 10];console.log(Math.max.apply(null, a)); //10console.log(Math.max.call(null,2, 4, 5, 7, 8, 10)); //10Javascript中是没有提供找出数组中最大值的方法的，使用继承自Function.prototype的apply和Math.max方法，就可以返回数组的最大值。 将数组的空元素变为undefined【利用Array构造函数将数组的空元素变成undefined。】 1console.log(Array.apply(null, [1, , 3])); // [1, undefined, 3] 空元素与undefined的区别在于，数组的forEach()会跳过空元素，但不会跳过undefined和null。 1234567var a = [1, , 3]; a.forEach(function(index) &#123; console.log(index); //1,3 ，跳过了空元素。 &#125;) Array.apply(null,a).forEach(function(index)&#123; console.log(index); ////1,undefined,3 ，将空元素设置为undefined &#125;) 利用数组对象的slice方法，可以将一个类似数组的对象（比如arguments对象）转为真正的数组。当然，slice方法的一个重要应用，就是将类似数组的对象转为真正的数组。call和apply都可以实现该应用。 1234567891011console.log(Array.prototype.slice.apply(&#123;0:1,length:1&#125;)); //[1]console.log(Array.prototype.slice.call(&#123;0:1,length:1&#125;)); //[1]console.log(Array.prototype.slice.apply(&#123;0:1,length:2&#125;)); //[1,undefined×1]console.log(Array.prototype.slice.call(&#123;0:1,length:2&#125;)); //[1,undefined×1]//n为任意数字console.log(Array.prototype.slice.apply(&#123;0:1,length:n&#125;)); //[1,undefined×(n-1)]console.log(Array.prototype.slice.call(&#123;0:1,length:n&#125;)); //[1,undefined×(n-1)]function keith(a,b,c)&#123; return arguments; &#125;console.log(Array.prototype.slice.call(keith(2,3,4))); //[2,3,4] 该方法起作用的前提：被处理的对象必须有length属性，以及相对应的数字键。 Function.prototype.bind()bind方法用于指定函数内部的this指向（执行时所在的作用域），然后返回一个新函数。bind方法并非立即执行一个函数。 123456789var keith = &#123; a: 1, count: function() &#123; console.log(this.a++); &#125; &#125;; keith.count(); //1 keith.count(); //2 keith.count(); //3 上面代码中，如果this.a指向keith对象内部的a属性，如果这个方法赋值给另外一个变量，调用时就会出错. 12345678var keith = &#123; a: 1, count: function() &#123; console.log(this.a++); &#125;&#125;;var f = keith.count;f(); //NaN 上面代码中，如果把count方法赋值给f变量，那么this对象指向不再是keith对象了，而是window对象。而window.a默认为undefined，进行递增运算之后undefined++就等于NaN。 为了解决这个问题，可以使用bind方法，将keith对象里的this绑定到keith对象上，或者是直接调用。 1234567var f = keith.count.bind(keith);f(); //1f(); //2f(); //3keith.count.bind(keith)() //1keith.count.bind(keith)() //2keith.count.bind(keith)() //3 当然，this也可以绑定到其他对象上。 1234567var obj = &#123; a: 100&#125;;var f = keith.count.bind(obj);f(); //100f(); //101f(); //102 同样，我们也可以给bind方法传递参数，第一个参数如果为null或者undefined或者this，会将函数内部的this对象指向全局环境；第二个为调用时需要的参数，并且传递参数的形式与call方法相同。 1234567function keith(a, b) &#123; return a + b;&#125;console.log(keith.apply(null,[1,4])); //5console.log(keith.call(null,1,4)); //5console.log(keith.bind(null, 1, 4)); //keith()console.log(keith.bind(null, 1, 4)()); //5 绑定回调函数的对象: 如果在回掉函数中使用this对象，那么this对象是会指向DOM对象，也就是button对象。如果要解决回调函数中this指向问题，可以用如下方法。 12345678910var o = &#123; f: function() &#123; console.log(this === o); &#125; &#125; $(&apos;#button&apos;).on(&apos;click&apos;, function() &#123; o.f.apply(o); //或者 o.f.call(o); //或者 o.f.bind(o)(); &#125;); 点击按钮以后，控制台将会显示true。由于apply方法（或者call方法）不仅绑定函数执行时所在的对象，还会立即执行函数（而bind方法不会立即执行，注意区别），因此不得不把绑定语句写在一个函数体内。 call，apply，bind方法的联系和区别:第一个参数都是指定函数内部中this的指向（函数执行时所在的作用域），然后根据指定的作用域，调用该函数。都可以在函数调用时传递参数。call，bind方法需要直接传入，而apply方法需要以数组的形式传入。call，apply方法是在调用之后立即执行函数，而bind方法没有立即执行，需要将函数再执行一遍。有点闭包的味道。改变this对象的指向问题不仅有call，apply，bind方法，也可以使用that变量来固定this的指向。[原文链接]：(http://www.cnblogs.com/Uncle-Keith/p/5822549.html)]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《赚未来十年的钱》]]></title>
+    <url>%2F2017%2F05%2F09%2F%E8%B5%9A%E6%9C%AA%E6%9D%A510%E5%B9%B4%E7%9A%84%E9%92%B1%2F</url>
+    <content type="text"><![CDATA[《赚未来十年的钱》如果你没过这本书可能认为只是本鸡汤书，其实，我没看之前也是这样认为的。但你读后，你会发现自己错了。并不是自己想的那样。强烈推荐。这本书是今年我看的所有书里面让我感触最深的！作者在经历了人生的三起三落后，从此人生走向正轨。我欣赏作者的魄力。其实，我把他当做我的偶像。恩，对，就是这样，下面进入正题。 人在年轻时候的苦不是苦，老来苦才真的可怕。 年少时的苦是历练，年老时的苦是凄惨，少一些抱怨，多一些努力付出比什么都重要。 与家人之间的关系人临死前才知道谁是对他最重要的人，希望儿子握着他的手，让他没有遗憾地死去。儿子泪流满面。 曾经，我有父亲的关系总是微妙的，这个情况在高考过后尤为激烈，由于高考失利，家人希望我复读，可我说什么也不复读，其中的难言之隐无法为外人道知。而现在，我很少与父亲争吵，觉得不值得，有什么坐下来好好沟通，即使有分歧，也不非得分个对错，父子之间是不存在什么对错的。都是彼此牵挂着对方。 什么是自由要自由首先要财务上的自由，财务上的自由首先要精神上的自由，精神上的自由要有足够的智慧看懂世界，有足够的勇气承担风险。 这里的自由归根揭底说得是对风险的把控，风险与收益永远都是正比例关系，世上哪有什么低风险高收益，除非是你自己在意淫。 套路与被套路中介的生意经是自古以来就有的，玩弄信息不对称和口才、心理。这就是很好的生意了，也没什么大的成本，租金而已。 感觉作者豁达，看得如此透彻，想想也当然如此，在生意场拼搏多年，这些都早已是家常便饭了。向这位伟大的作者致敬，哈哈~~ FreedomtochooseFreedomtochoose，我要掌握一生自决，不依靠任何人，除了妻女的爱，除了父母的爱，还有什么是我需要的吗？ 那样就足够了，这个冷酷的世界。 世上好人还是有的，只不过在庞大的人口基数面前便成为了毛毛雨了。 如何看待社会上的不公平社会的确不公平，从你出生的那一刻起，你就处在不公平中；但是，如果等你死的时候，你还在抱怨不公平，那你的一生就是失败的。 什么是真本事真正值得获得的是真本事——专业技能和人脉、财商——理财的能力。 真本事往往需要在一个行业沉下气，深耕细作，既学习专业知识，也扩大人际网络；而财商难得多，需要了解世界运转的各个方面，从政治哲学、经济学、心理学、金融实务、财会基础知识到社会现实的理解能力。 生意场生意场是个丛林。 赤裸裸的，没有同情，没有软弱，没有犹豫迟疑。左边是狼，右边是虎，脚下荆棘里游动着无数毒蛇，而秃鹫在天空中翱翔，寻找将死之人的死亡气息。 同样，任何一个行业都是如此，只不过生意场更为严峻罢了。这就需要我们努力提升自己，成为不可替代的人，或者说，替代的成本远大于再次招聘的成本。这时，话语权就在自己手上了。 作为创业者，要注意的几个要点是： A.起家的成本不能高。比如你不能上来就租赁办公室，如果是店铺则例外；不要急于注册公司，注册公司的成本极高，而且繁琐。等你慢慢起步有了现金流之后，再注册公司和寻找办公室雇用员工。 B.一切重点是现金流。现金流的正常流动，可以支撑你生存和扩展生意，如果你的现金流断裂，哪怕你的生意前景再好，你也会倒闭失去一切机会。所以在这当中，你要不惜一切代价维持现金流，哪怕是亏本。 当然你不能永远不赚钱，就像国美、京东商城可能营业不赚钱，但是巨大的现金流足以让他们活到产生大量利润的时刻。 C.找到市场的缝隙。任何市场都有机会，即使是在生产过剩，恶性竞争的时代。比如我曾经重新起步时做二手房翻新，在竞争加剧时及时转向到老建筑翻新。而在房地产市场萧条，老建筑翻新私人市场也竞争泛滥的时候，我已经能够有能力建立网络公司来进入另一个市场。而新的市场也是一个利基市场，竞争乏力。 D.融资。对于创业者，解决资金的问题有几种办法：银行贷款，私人借贷，供应商信用赊账。 其中银行贷款这种馅饼是不会掉在我们这样的小民营企业身上，银行贷款大量地流向效率缓慢的国有企业和少数大亨级的私营富豪。 关于创业，我不知道自己会不会走这条路，索性就先收录下来吧！这里，作者谈到了现金流的重要性，现阶段的我没法体会到，也就没什么观点存在了。 最后一首诗，与君共勉我是不会选择做一个普通人的。 如果我能够做到的话，我有权成为一位不寻常的人。 我寻找机会，但我不寻求安稳。 我不希望在国家的照顾下成为一名有保障的国民。 那将被人瞧不起而使我感到痛苦不堪。 我要做有意义的冒险。 我要梦想，我要创造，我要失败，我也要成功。 我拒绝用刺激来换取施舍； 我宁愿向生活挑战，而不愿过有保证的生活； 宁愿要达到目的时的激动，而不愿要乌托邦式毫无生气的平静。 我不会拿我的自由与慈善作交易，也不会拿我的尊严去与发给乞丐的食物作交易。 我决不会在任何一位大师面前发抖，也不会为任何恐吓所屈服。 我的天性是挺胸直立，骄傲而无所畏惧。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+        <tag>理财</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[chrome无法显示12px以下字体]]></title>
+    <url>%2F2017%2F05%2F09%2Fgoogle%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E5%AD%97%E4%BD%93%2F</url>
+    <content type="text"><![CDATA[今天在写页面的时候遇到个小bug，比如设置字体为10px甚至8px。但按照常规设置字体大小后，在chrome下浏览页面会觉得不如想象中小。没错，默认情况下chrome中的字号不能小于12px。 查看有关资料后，找到解决办法： 1234.fz10 &#123;-webkit-text-size-adjust:none; font-size:10px;&#125; 就是这个属性：1-webkit-text-size-adjust:none; 设置之后，chrome下的字体就不会有12px的限制了。 另：中文字体小于12px后会变得难以阅读，一般也不常用。小于12px的字体应该只应用于英文段落或数字。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用text-indent实现图片Logo代替文字Logo]]></title>
+    <url>%2F2017%2F05%2F03%2F%E5%AE%8C%E7%BE%8ELogo%2F</url>
+    <content type="text"><![CDATA[一个网站，logo是肯定少不了的。最常用的就是图片logo或直接打几个字当作logo。 毫无疑问，图片logo远比文字好看，图片可以色彩缤纷变幻无穷，而文字变来变去都那样。但直接用文字logo的还是有很多，因为纯文字更利于搜索引擎识别，图片就不行了。 有没有两全其美的方法呢？有的人使用这种： 1&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/logo.png&quot; title=&quot;图片说明&quot; alt=&quot;图片说明&quot;/&gt;&lt;/a&gt; 搜索引擎无法看到图片，但可以看到图片说明，这样也就相当于文字了————这也是SEO中强调要给图片加上alt的原因。 但其实这种方法并不完美，很多人都不喜欢加alt标记，而且这样对搜索引擎到底有没有妨害也难说清。下面介绍一种国际国内通用的方法. html代码，非常简单： 123456&lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;这是logo&lt;/a&gt;.logo&#123;background:url(images/logo.png) no-repeat;/*把你的logo图片设成背景图*/height:60px; width:150px; /*设置宽高*/text-indent:-9999px; /*设置文字缩进*/&#125; CSS代码最关键的一步就是最后的text-indent，text-indent的意思是文字缩进，它的单位一般是正数，用来将段落前空格。但这里把它的单位设为了负值，-9999px，于是原本在A标签里面的文字就被缩到不知道哪儿去了。 这样一来，用户看到的就是图片logo（背景图），而搜索引擎看到的却是正宗的文字，一举两得。 举一反三，这种方法可以用来制作图片导航栏和标题栏，但我不推荐哈，因为这两者需要做的图片太多了，麻烦，而且修改起来更麻烦。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS总结【一】]]></title>
+    <url>%2F2017%2F04%2F12%2Fcss%E6%80%BB%E7%BB%93%2F</url>
+    <content type="text"><![CDATA[这里总结一些常用的CSS1234567891011121314text-decoration:overline/underline/line-through/blink[浏览器不支持]font-style:iatlic/oblique//斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。 通常情况下，两种效果在浏览器中看上去完全一样。overflow:hidden; white-space:nowrap; text-overflow:ellipsis;//文字溢出隐藏并显示省略号。//自定义文本选中::selection&#123;color:#fff; background:#333;&#125;::-moz-selection&#123;color:#fff;background:#333;&#125;//引用自定义字体@font-face&#123;font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;);//IE9+&#125;div&#123;font-family:xujinglei; font-size:18px; &#125;]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《软技能，代码之外的生存指南》]]></title>
+    <url>%2F2017%2F03%2F22%2F%E8%BD%AF%E6%8A%80%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[这本书分为职业，自我营销，学习，生产力，理财，健身，精神7大板块，这里我仅摘录自己比较有感触的，并谈谈自己的理解。 首先说学习 教育就是当一个人把在学校所学全部忘光之后剩下的东西。教育的首要目标，并不在于“知”而在于“行”。 软件开发的世界总是不断变化的，具体到自己从事的Web前端开发来说，变化更是如此。新技术层出不穷，这就需要我们学会如何学习。本书所提到的十步学习法或多或少的为我们提供了一些借鉴。 了解全局 确定范围 定义目标 寻找资源 创建学习计划 筛选资源 开始学习，浅尝辄止 动手操作，边玩边学 全面掌握，学以致用 乐为人师，融会贯通 前6步只需做一次就好，后面的几步则需要反复练习，直到找到适合自己的方法，这就需要我们不断尝试完善，努力提升自己的开发学习效率。 再说理财 金钱只是一种工具。它会带你去任何你想要去的地方，但不会取代你成为司机。 俗话书“你不理财，财不理你”，理财郑重东西，真不是说说就能做好的，需要自己不断摸索，找到适合自己的。比如说我自己，现在也会尝试买一些基金等理财产品。每次可能并不多，贵在坚持，如果自控力不是太好，可以尝试每月定投，强制自己。但我感觉只要开始了，之后看着收益的增加，也就形成了一种习惯，这种习惯，可真不是拿钱就可以买到的。 什么是期权 期权从根本上说就是赋予你在未来某个日期之前以固定价格购买一定数量股票的选择权。 最后说说健身 人的身体就是人的灵魂的最好写照。 健身不仅是保持健康体魄的关键要素之一，也是灵活的、具有创造性的脑力活动的基础。 健康身体的重要性不言而喻。]]></content>
+      <categories>
+        <category>books</category>
+      </categories>
+      <tags>
+        <tag>books</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用dom方法]]></title>
+    <url>%2F2017%2F03%2F13%2F%E5%B8%B8%E7%94%A8dom%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[DOM常用方法getElementById(id): 获取有指定惟一ID属性值文档中的元素;getElementsByTagName(name): 返回当前元素中有指定标记名的子元素的数组;hasChildNodes(): 返回一个布尔值，指示元素是否有子元素;getAttribute(name): 返回元素的属性值，属性由name指定；appendChild(element): 将element插入到当前元素后面;createElement(element): 创建一个新的element;createTextNode(text): 以text为内容创建一个新的text节点;insertBefore(new_node, old_node): 将new_node插入到old_node前面一个位置.当然，也可以自己创建个insertAfter(),点击产看 DOM的常用属性childNodes: 返回当前元素所有子元素的数组;firstChild: 返回当前元素的第一个下级子元素;lastChild: 返回当前元素的最后一个子元素;nextSibling: 返回当前元素后面一个位置的元素;previousSibling: 返回当前元素前面一个位置的元素;parentNode: 返回当前元素的父节点.]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>DOM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[谈谈闭包]]></title>
+    <url>%2F2017%2F03%2F13%2F%E9%97%AD%E5%8C%85%2F</url>
+    <content type="text"><![CDATA[什么是闭包，如何理解 闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量,利用闭包可以突破作用链域，将函数内部的变量和方法传递到外部。 先看个案例12345678910111213141516&lt;ul&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;2&lt;/li&gt; &lt;li&gt;3&lt;/li&gt; &lt;li&gt;4&lt;/li&gt;&lt;/ul&gt;&lt;script&gt; (function ()&#123; var liArr=document.getElementsByTagName(&apos;li&apos;); for(var i=0;i&lt;liArr.length;i++)&#123; liArr[i].onclick=function ()&#123; console.log(i) &#125; &#125; &#125;)()&lt;/script&gt; 以上代码想输出被点击li的索引号，但结果并非如此，每次输出都是4。 原因在于匿名函数没有变量 i，所以它必须向上查找，在全局环境中找到了 i。 当for循环运行后，全局变量中的 i 变成了4。此时当你点击文字的时候，会调用其绑定的函数，而该函数运行的时候，发现自己没有 i，就会取得全局环境中的 i。 解决办法1 将var更改为let,不知道的点击查看let关键字，干嘛用的？ 解决办法2–采用闭包 12345678910111213141516for(var i=0;i&lt;dom.length;i++)&#123; dom[i].onclick=function(i)&#123; return function()&#123; console.log(i); &#125;; &#125;(i);&#125;//当然也可以这样写for(i = 0;i&lt;nodes.length;i+= 1)&#123; nodes[i].onclick = (function(i)&#123; return function() &#123; console.log(i); &#125; //不用闭包的话，值每次都是4 &#125;)(i);&#125; 来，看看有没有理解 12345678 for(var i=0;i&lt;dom.length;i++)&#123; dom[i].onclick=function(t)&#123; return function()&#123; console.log(t); //1 console.log(i); //3 &#125;; &#125;(i);&#125; 闭包的特性 函数内再嵌套函数 内部函数可以引用外层的参数和变量 参数和变量不会被垃圾回收机制回收 123456789101112 function fn() &#123; // Local variable that ends up within closure var num = 666; var sayAlert = function() &#123; alert(num); &#125; num++; return sayAlert;&#125; var sayAlert = fn(); sayAlert(); //执行结果应该弹出的667 执行fn后,内部变量会存在,而闭包内部函数的内部变量不会存在使得Javascript的垃圾收机制GC不会收回fn所占用的资源因为fn的内部函数的执行需要依赖fn中的变量,这是对闭包作用的非常直白的描述。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我说，你听]]></title>
+    <url>%2F2016%2F10%2F29%2F%E4%B8%80%E4%BB%B6%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[姐，我想对你说。。。 一件事，每当夜深人静的时候，自己脑海中总会莫名其妙的想起往事。犹记得，在我上小学的时候，因为几块钱和你吵闹。最后，在我的哭闹下，你还给了我。现在想来，竟是如此可笑。我想，若是现在，对于钱这种东西，在亲情面前，我将它当成纸一般对待，这里的亲情仅限咋们这一家人，爸妈一辈子吵吵闹闹，最后因为咋们几个孩子，常以冷战收官。这背后，十有八九都是因为对老人的问题，我相信咋妈不是那种无理取闹之人，老爸有时过于敏感，可能有时会因此丧失理性。 不过，我相信，在我们几个孩子之间，绝对不会发生类似事情。咱爸有个不称职的哥哥，但我绝不会有不称职的姐姐。这里，我们不去追究谁对谁错，那并不能解决问题。不知咋妈是否给你说过，在去年1.12号，咱爸妈买了1.2万保险，当时咋妈意思是我6000，你和2姐6000，这也是我的意思。我希望最迟后年这份支出由我们几个承担，你觉得呢？ 通过你和二姐结婚，我也看明白了好多事情，比如，那些所谓的亲戚其实就是个笑话，可能我这样讲过于极端，但事实就是这样。咱爸把亲情看的重，只要亲戚有事便会主动跑过去帮忙，并不会考虑是否有必要。可能有些事你都不知道，这里，我也不想过多说什么。我特别喜欢《赚未来十年的钱》中的一句话“人有时候只能以垃圾来形容”，这本书，每当自己迷路的时候，都会看看，写的很现实很纯粹，让你无力反驳。 我有这样一个不成熟的想法，就是2018年底带爸妈来北京过年，之后每年都带爸妈去不同地方旅游，这是一定要做的，至于老爸说的出国，也会一一实现，我相信，我有这样的实力。 至于你说的想自己开个培训机构，我全力支持，比如说，为你搭建个网站，微信开发交给我就好。我相信你的选择，我哥现在从事类似工作就已经说明了一切，虽然很累，但一定要尝试，就像我对自己的要求，30岁要为自己打工，即使没有，也要在路上。 对于结婚这件事，我不想过早结婚，原因千千万，这里主要说几点比较自认为比较重要的。没有事业，一切都是扯淡，我关注的公众号告诉我30岁结婚才是适龄，并不是找不到合适的，只是优先权靠后。用世俗的眼光来看，这孩子可能找不到对象，爸妈得承受世俗压力，说自己孩子怎么怎么样，但我真的不在乎这些，旁人都希望自己过得比他人好，考虑的爸妈的感受，索性就25左右在结婚吧！这一点，我对自己还是比较有信心的。暑假回去，老爸不止一次的跟我说，想把房子卖了置换成单元楼好让爷爷来住，我想，这种想法更多是出于内心的一种自责吧，觉得不能为父亲提供优质的生活，我相信，孝顺，咱爸做到是很棒的。但对于经济这一块，老爸由于养3个孩子，做事总是前怕虎后怕狼，为此，错过了好多机会，这一点，本身并没有什么。这也算是一个不想早结婚的理由吧！我现在，由于老爸给提供了一定基础，可以承担较大风险，可以好好发展经济。可能这就是所谓的阶级流动吧！ 再说理财这件事，其实我感觉咱爸在他们那个年龄段里，收入还是不错的，但就败在对钱的态度上，不愿承担风险，只求稳定，但把钱存在银行只能被人当韭菜割，没办法，这种事情真不是说说就能改变的。 最后，祝老姐生日快乐，我也相信，很快我会开启人生新篇章。 2017-09-18]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>私密</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HEXO+Github搭建自己的博客]]></title>
+    <url>%2F2016%2F10%2F02%2F%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[这里，记录下自己博客搭建过程中遇到的坑，供给需要的人参考。 软件安装Node-windows 32 位安装包下载地址 Node-windows 64 位安装包下载地址 Git 下载地址 SSH配置12$ cd ~/. ssh$ ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot; Generating public/private rsa key pair.Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt; 打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件,复制以上内容 注意：此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。 点击右上角头像处的下拉列表 Settings-→SSH and GPG keys -→ 右上角 New SSH key添加key 测试1$ ssh -T git@github.com The authenticity of host ‘github.com (207.97.227.239)’can’t be established.RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.Are you sure you want to continue connecting (yes/no)? 输入yes Hi cnfeat! You’ve successfully authenticated, but GitHub does not provide shell access. 设置用户信息$ git config –global user.name “userName”//你的用户名$ git config –global user.email “userName@163.com”//填写自己的邮箱 – 查看用户名密码去掉后面的双引内容 本机已成功连接到github如有问题 , 请重新设置 , 常见错误参考 常见错误参考 常见错误参考 安装HEXO1npm install hexo-cli -g //全局安装 注意Github Pages的Repository名字是特定（两个要一致）的，比如我Github账号是webykj，那么我Github Pages Repository（GitHub仓库）名字就是webykj.github.io。 上传到Github需要执行以下命令 1npm install hexo-deployer-git --save 若没有执行以上命令，将会提醒deloyer not found:git 配置Deployment 在_config.yml文件中，找到Deployment，然后按照如下修改： 1234deploy: type: git repo: git@github.com:yourname/yourname.github.io.git branch: master 1234Permission denied (publickey).fatal: Could not read from remote repository.Please make sure you have the correct access rightsand the repository exists. 原因：没有设置好public key所致。 SSH配置详解 常用命令123456$ hexo n == hexo new --新建文章$ hexo g == hexo generate --生成页面$ hexo s == hexo server --启用本地浏览器预览（localhost:4000）$ hexo d == hexo deploy --部署博客$ hexo d -g #生成部署$ hexo s -g #生成预览 HEXO主题配置及优化 更换字体cdn托管：到\themes\next\layout_partials\head external-fonts.swig文件fonts.googleapis.com 改成 fonts.cat.net hexo官网 博客搭建 hexo安装配置详解 HEXO博客优化 hexo常用特效 hexo常见问题解决方案]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>HEXO,github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[经典语录]]></title>
+    <url>%2F2016%2F10%2F01%2F%E8%AF%AD%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[这里是我无论在书中还是其他地方看到的，很认可，特此记录下来。 一枚GOSPA的前端探索者。GOSPA[目标，目的，策略，计划，行动] 成长，是一个雕琢自己的过程。无论是“雕”还是“琢”，都是得用刀的，想想都疼。 愿得我心如明月,独映寒夜迷途人。我为自己加油。 思想引领行动，行动导致习惯，习惯产生性格，性格决定命运。 第一个五年是作业，第二个五年是管理，第三个五年是经营。 自由是独立，不依附，不恐惧。 我们生儿不同，也必定与众不同。 要么庸俗，要么孤独。 人要有志，也要有识，更要有恒。]]></content>
+      <categories>
+        <category>about</category>
+      </categories>
+      <tags>
+        <tag>about</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[巧记A标签4状态排序]]></title>
+    <url>%2F2016%2F07%2F25%2Fa%E6%A0%87%E7%AD%BE4%E7%A7%8D%E7%8A%B6%E6%80%81%2F</url>
+    <content type="text"><![CDATA[a:link,visited,hover,active.A标签4状态排序原则 HTML中A标签有4种状态，link,visited,hover,active，不过如果写CSS的时候排序错误就会导致状态失效或错乱。 A标签4种状态的排序规律符合一个原则，叫“爱恨原则”，由某国外友人提出，如下： LoVe/HAte 以上分别是爱与讨厌的单词，估计绝大部分人都记得。其中加亮的字母即是A标签4种状态的首字母。怎么样？如此来记，就一目了然了吧？ 感谢原作者的分享，虽然我不知道你是谁。 不过，我也有一个方法“LVHA”:LV：熟悉吗？那不是某个名牌吗。。。HA: 哈哈，记住了没。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+</search>
