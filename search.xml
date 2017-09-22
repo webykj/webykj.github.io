@@ -386,17 +386,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[父元素padding后,子元素absolute定位偏差解决办法]]></title>
-    <url>%2F2017%2F06%2F19%2Fabsolute%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[假设一div已经设置 position:relative及padding:30px，然后要在里面放置一position:absolute的元素，并设置它left:0;top:0——这种效果可用来实现左头像右内容的布局。 在Firefox等标准浏览器下，绝对定位的元素此时真的是左0上0，顶着父div的边，但IE下却是左30上30，只因为父div设置了padding为30。 这个问题很要命，那么解决办法呢？ 只要为父div加上zoom:1，触发其hasLayout，即可在IE下实现和标准浏览器下一样的样式了。此解决方案适合绝大部分情况。 每发现IE一个无厘头BUG，都会让我对IE的恨加深一层。兼容问题，’您’辛苦了…]]></content>
-      <categories>
-        <category>ittech</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[JavaScript中clientX,screenX,pageX,offsetX的异同]]></title>
     <url>%2F2017%2F06%2F19%2Fclient%E5%BC%82%E5%90%8C%2F</url>
     <content type="text"><![CDATA[pageX/pageY:鼠标相对于整个页面的X/Y坐标。整个页面的意思指整个网页的全部，比如说网页很宽很长，宽2000px，高3000px，那pageX,pageY的最大值就是它们了。 特别说明：IE不支持！ offsetX/offsetY:得出的结果跟pageX/pageY一样，既然如此，它有什么存在价值？ 特别说明：只有IE支持！相当于IE下的pageX,pageY. screenX/screenY:顾名思义，就是鼠标在屏幕上的坐标。screenX,screenY的最大值不会超过你的屏幕分辨率。 clientX/clientY：事件发生时鼠标在浏览器内容区域的X/Y坐标（不包含滚动条）。浏览器内容区域即浏览器窗口中用来显示网页的可视区域，注意这个可视，也就是说需要拖动滚动条才能看到的区域不算。当你将浏览器窗口缩小时，clientX/clientY的最大值也会缩小，但始终，它们的最大值不会超过你浏览器可视区域。 特别说明：IE下此属性不规范，它们的最小值不是0而是2，也就是说IE下的clientX/clientY与火狐下的始终大2px 持续完善中。。。]]></content>
@@ -405,6 +394,17 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[父元素padding后,子元素absolute定位偏差解决办法]]></title>
+    <url>%2F2017%2F06%2F19%2Fabsolute%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[假设一div已经设置 position:relative及padding:30px，然后要在里面放置一position:absolute的元素，并设置它left:0;top:0——这种效果可用来实现左头像右内容的布局。 在Firefox等标准浏览器下，绝对定位的元素此时真的是左0上0，顶着父div的边，但IE下却是左30上30，只因为父div设置了padding为30。 这个问题很要命，那么解决办法呢？ 只要为父div加上zoom:1，触发其hasLayout，即可在IE下实现和标准浏览器下一样的样式了。此解决方案适合绝大部分情况。 每发现IE一个无厘头BUG，都会让我对IE的恨加深一层。兼容问题，’您’辛苦了…]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
