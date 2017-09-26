@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[最牛逼的 HTML 和 CSS 代码]]></title>
-    <url>%2F2017%2F09%2F23%2F%E6%9C%80%E7%89%9B%E9%80%BC%E7%9A%84html%E4%B8%8Ecss%E4%BB%A3%E7%A0%81%2F</url>
+    <url>%2F2017%2F09%2F23%2Fi043%2F</url>
     <content type="text"><![CDATA[在前端开发领域，最难的其实是HTML，其次是CSS，最后才是JS。当然这句话是不正确的，然而我们真需要老说那么正确的话吗？正确的话很多时候还不如不正确的话那么对人有用。比对错更重要的是对场景、环境的理解、把控。 “最牛逼”只是修饰语，表示强调，就如我说“最难”的是HTML一样。看到这种微博时，别急着去反驳有更牛逼的HTML，或去思考JS比HTML难呀。 HTML1234&lt;div class=&quot;box&quot;&gt; &lt;div class=&quot;hd&quot;&gt;&lt;/div&gt; &lt;div class=&quot;bd&quot;&gt;&lt;/div&gt;&lt;/div&gt; 为何只有 hd 和 bd？ft 呢？ 为何用 div 而不是 section / header 等？ 为何 hd 里的标签没做约定？ 这段代码，是为了满足什么需求？ 对于复杂需求，这个代码如何变化？ 简单和复杂之间如何权衡？（很多程序员倾向于把事情搞复杂） 为何不是 mod / mod-hd / mod-bd ？ 在什么场景下这段代码不适用？（比如组合命名和长命名之争） 这东西跟性能没关系。 这东西跟可维护性关系很大。 究竟什么是结构与样式的分离？ 衡量一个好的HTML代码的标准是什么？ 结构化设计是什么？ 部分如何构建出整体？砖瓦是怎么变成大厦的？ 关注度分离是个啥东西？ 什么是抽象？抽象的价值究竟是啥？ 什么是创新？什么是超越？ CSS1234567891011.content &#123; width: 980px; margin-left: auto; margin-right auto;&#125;//但大多数情况下，我们会这样写.content &#123; width: 980px; margin: 0 auto;&#125; 上面的代码看上去更多了，但有没有想过这样的问题呢： margin: 0 auto 中的 0 绝大部分情况下是冗余的，页面上早就有 reset.css 或 normalize.css 重置过 margin: 0 auto 不纯粹，你要的是“水平居中”，却顺便把 top / bottom 给重置了 不纯粹会导致顺序和优先级的依赖，比如有另一处要给 margin-top/bottom 赋值时，就必须要提高优先级 CSS中一个最重要的原则：最小影响原则 与HTML代码一样，对CSS代码来说，很重要的两个衡量标准也是稳定和灵活。 JavaScript1&lt;a hreft=&quot;javascript:alert(&apos;清除成功&apos;)&quot;&gt;清除缓存&lt;/a&gt; 这是我见过最牛逼的JS代码，没有之一。对JS代码，我认为有3个段位： 实现业务需求 实现业务需求+代码健壮 实现代码需求+代码健壮+可复用 参见 玉伯]]></content>
       <categories>
         <category>ittech</category>
@@ -24,7 +24,7 @@
   </entry>
   <entry>
     <title><![CDATA[JS数组去重]]></title>
-    <url>%2F2017%2F09%2F20%2Fjs%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%2F</url>
+    <url>%2F2017%2F09%2F20%2Fi042%2F</url>
     <content type="text"><![CDATA[ES6版本ES6提供了新的数据结构Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。这样我们可以理解为，将数组转化为集合，再由集合转化为数组。1[...new Set(arr)] 最简洁12345//利用Array.filtervar arr = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;1&quot;, &quot;3&quot;];arr = arr.filter( function( item, index, inputArray ) &#123; return inputArray.indexOf(item) == index; &#125;);//Output: [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;] 这个写法相对简洁，但效率并不怎么高，不适合太长的数组。 改进版123456function uniq(a) &#123; var seen = &#123;&#125;; return arr.filter(function(item) &#123; return seen.hasOwnProperty(item) ? false : (seen[item] = true); &#125;);&#125; 这个写法比上一个更有效率,但是有两个缺陷，对于Number和String来说，该算法不能区分，比如： 1uniq([1,&quot;1&quot;,2,&quot;2&quot;])//返回[1, 2] 同理，对于对象来说也不能区分，所有对象都被认为相等。所以使用时要明确使用场景。 1uniq([&#123;foo:1&#125;,&#123;foo:2&#125;])//返回[&#123;foo:1&#125;] 最终版12345678910function uniq(a) &#123; var prims = &#123;&quot;boolean&quot;:&#123;&#125;, &quot;number&quot;:&#123;&#125;, &quot;string&quot;:&#123;&#125;&#125;, objs = []; return a.filter(function(item) &#123; var type = typeof item; if(type in prims) return prims[type].hasOwnProperty(item) ? false : (prims[type][item] = true); else return objs.indexOf(item) &gt;= 0 ? false : objs.push(item); &#125;);&#125; 配合babel，嗯，无敌。]]></content>
       <categories>
         <category>ittech</category>
@@ -35,7 +35,7 @@
   </entry>
   <entry>
     <title><![CDATA[同源策略与跨域]]></title>
-    <url>%2F2017%2F09%2F18%2F%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5%2F</url>
+    <url>%2F2017%2F09%2F18%2Fi041%2F</url>
     <content type="text"><![CDATA[同源策略 所谓同源是指2个页面要具有相同的协议，域名，端口，三者缺一不可。 同源策略指的是浏览器对不同源的脚本或文本的访问进行限制，即源a下的js文件无法获取源b下的元素属性。 同源策略限制的是js中XMLHttpRequest请求，以下情况不受同源策略的影响： 页面中的链接，重定向，表单提交 允许跨域资源的嵌入，如果要阻止iframe嵌入我们网站的资源(页面或者js等)，我们可以在web服务器加上一个X-Frame-Options DENY头部来限制。 跨域问题 前提条件是我们在WEB服务器或者服务端脚本中设置ACCESS-CONTROL-ALLOW-ORIGIN头部，如果设置了这些头部并允许某些域名跨域访问，则浏览器就会跳过同源策略的限制返回对应的内容。 AJAX跨域1234567891011121314151617181920212223242526# index.html&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;test cross domain&lt;/title&gt;&lt;script src=&quot;/js/jquery.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;http://www.bar.com/js/test.js&quot;&gt;&lt;/script&gt;&lt;script&gt;$(function()&#123; document.domain = &apos;foo.com&apos;; //1 注释掉则会报错 var ifr = document.getElementById(&quot;testframe&quot;); ifr.onload = function()&#123; var doc = ifr.contentDocument || ifr.contentWindow.document; alert(doc.getElementsByTagName(&quot;h1&quot;)[0].childNodes[0].nodeValue); &#125;&#125;);$.ajax(&quot;http://www.bar.com/js/test.js&quot;); //2 报错&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Test Cross Domain&lt;/h1&gt;&lt;iframe id=&quot;testframe&quot; src=&quot;http://foo.com/test.html&quot;&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt; JSONP跨域实现原理 与AJAX没多大关系，通过动态插入script标签来实现跨域资源访问。 123456789101112131415161718# jsonp.html&lt;script type=&quot;text/javascript&quot;&gt; function callback(data) &#123; alert(data.message); &#125; function addScriptTag(src)&#123; var script = document.createElement(&apos;script&apos;); script.src = src; document.body.appendChild(script); &#125; window.onload = function()&#123; addScriptTag(&quot;http://www.foo.com/js/outer.js&quot;); &#125;&lt;/script&gt;# outer.jscallback(&#123;message:&quot;success&quot;&#125;); 通过动态创建script标签加载outer.js文件，然后outer.js文件返回的内容正好是一个函数调用，如此，实现了数据传递和回调过程。当然，实际的jsonp接口中，会传一个函数名过去，然后返回的数据中回调函数名就是传的函数名，回调函数的参数则是封装的json格式。 参考文章]]></content>
       <categories>
         <category>ittech</category>
@@ -57,7 +57,7 @@
   </entry>
   <entry>
     <title><![CDATA[ES6总结]]></title>
-    <url>%2F2017%2F09%2F15%2Fes6%E6%80%BB%E7%BB%93%2F</url>
+    <url>%2F2017%2F09%2F15%2Fi040%2F</url>
     <content type="text"><![CDATA[ES6新特性 let关键字，用于声明只在块级作用域起作用的变量 const，用于声明一个常亮 结构赋值，一种新的变量赋值方式，常用于交换变量值，提取函数返回值，设置默认值。 symbol数据类型，用于定义一个独一无二的值。 proxy代理，用于编写函数，来拦截目标对象的操作。 for…of遍历，可遍历具有iterator 接口的数据结构。 Set结构，用于存储不重复成员值的的集合。 Map结构，键名可以是任何类型的键值对集合。 Promise对象，更合理、规范地处理异步操作。 Class类定义类和更简便地实现类的继承。 关于Set结构1234let s=new Set();s.add([1]);s.add([1]);console.log(s.size); //2 Set结构不会存储相同的值，但这个例子中，2个数组[1]并不是同一个值，存储在不同的内存中，因此并不是相同的值。 关于Map结构12345let map = new Map();map.set([1],&quot;ES6&quot;);let con = map.get([1]);console.log(con); //undefined 2个数组并不是同一个数组，只不过数值都是1。可通过以下代码实现。 123456let map = new Map();let arr = [1];map.set(arr,&quot;ES6&quot;);let con = map.get(arr);console.log(con); //ES6]]></content>
       <categories>
         <category>ittech</category>
@@ -68,7 +68,7 @@
   </entry>
   <entry>
     <title><![CDATA[jQuery中的事件冒泡]]></title>
-    <url>%2F2017%2F09%2F07%2FjQuery%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1%2F</url>
+    <url>%2F2017%2F09%2F07%2Fi039%2F</url>
     <content type="text"><![CDATA[什么是冒泡1234&lt;div id=&quot;content&quot;&gt; 外层div元素 &lt;span&gt;内层span元素&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;msg&quot;&gt;&lt;/div&gt; 当点击span元素时,会输出内层span元素被点击，外层div元素被点击，body元素被点击3条记录。这就是由于事件冒泡引起的。 冒泡过程 停止事件冒泡123456$(&apos;span&apos;).bind(&apos;click&apos;, function (event) &#123; //event:事件对象 var txt = $(&apos;#msg&apos;).html() + &apos;&lt;p&gt;内层span元素被点击&lt;/p&gt;&apos;; $(&apos;#msg&apos;).html(txt); event.stopPropagation(); //停止事件冒泡&#125;);//这样点击span时，只会输出1条记录。 阻止默认行为 event.preventDefault(); 可以改写为：return false;也可以把事件冒泡中的event.stopPropagation(); 改写为：return false; $(function () { $(ele).bind(&apos;click&apos;, function (event) { var username = $(&apos;#username&apos;).val(); //获取元素的值 if (username == &quot;&quot;) { alert(&apos;文本框的值不能为空&apos;); //event.preventDefault(); //阻止默认行为（表单提交） return false; } }); }); 事件捕获 参考文章1 参考文章2]]></content>
       <categories>
         <category>ittech</category>
@@ -79,7 +79,7 @@
   </entry>
   <entry>
     <title><![CDATA[ES6【三】]]></title>
-    <url>%2F2017%2F09%2F01%2FES63%2F</url>
+    <url>%2F2017%2F09%2F01%2Fi038%2F</url>
     <content type="text"><![CDATA[ES6为数组做的扩展Array.of()函数 作用：将一组值，转换成数组。 Array.from()函数 作用：可以将类似数组的对象或者可遍历的对象转换成真正的数组。 123let str = &apos;hello&apos;;Array.from(str);//结果：[&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;] find()函数 作用: 找出数组中符合条件的第一个元素。若数组中没有符合条件的函数，则返回undefind findIndex()函数 作用： 返回符合条件的第一个数组成员的位置。若没有元素符合条件，则返回-1 fill()函数 用指定的值，填充到数组。 123let arr = [1,2,3];arr.fill(4,1,3);//结果：[1,4,4] 注意：第2个参数和第3个参数的意思是：从位置1的元素开始填充数字4，截止到位置3之前，所以是位置1和位置2的元素被数字4填充了。 entries()函数 作用： 对数组的键值对进行遍历，返回一个遍历器，可以用for..of对其进行遍历。 123456for(let [i,v] of [&apos;a&apos;, &apos;b&apos;].entries()) &#123; console.log(i,v); &#125; //0 &quot;a&quot; //1 &quot;b&quot; keys()函数 作用： 对数组的索引键进行遍历，返回一个遍历器。 123456for(let index of [&apos;a&apos;, &apos;b&apos;].keys()) &#123; console.log(index); &#125; //0 //1 values()函数 对数组的元素进行遍历，返回一个遍历器。 123456for(let value of [&apos;a&apos;, &apos;b&apos;].values()) &#123; console.log(value); &#125; //a //b 数组推导 用简洁的写法，直接通过现有的数组生成新数组。 1234var array1 = [1, 2, 3, 4]; var array2 = [for(i of array1) if(i&gt;3) i]; console.log(array2); //结果： [4] 小结 ES6为数组带来了很多很实用的方法：Array.of( )、Array.from( )、find( )、findIndex( )、fill( )、entries( )、values()，不仅如此，还带来一个更简洁的语法：数组推导，能让我们更方便地生成一个新数组。 ES6为对象带来的扩展 属性简写 12345678910111213141516171819202122232425262728var name = &quot;Zhangsan&quot;; var age = 12; //传统写法 var person = &#123; &quot;name&quot;:name, &quot;age&quot;:age &#125;; console.log(person); //结果：&#123;name: &quot;Zhangsan&quot;, age: 12&#125; //ES6写法 var person = &#123;name,age&#125;; console.log(person); //结果：&#123;name: &quot;Zhangsan&quot;, age: 12&#125;方法简写//传统的表示法 var person = &#123; say:function()&#123; alert(&apos;这是传统的表示法&apos;); &#125; &#125;; //ES6的表示法 var person = &#123; say()&#123; alert(&apos;这是ES6的表示法&apos;); &#125; &#125;; 属性名可以是表达式1234567891011121314var f = &quot;first&quot;; var n = &quot;Name&quot;; var s = &quot;say&quot;; var h = &quot;Hello&quot;; var person = &#123; [ f+n ] : &quot;Zhang&quot;, [ s+h ]()&#123; return &quot;你好吗？&quot;; &#125; &#125;; console.log(person.firstName); //结果：Zhang console.log(person.sayHello()); //结果：你好吗？ Object.is( )函数 作用: 比较两个值是否严格相等，或者说全等。 Object.assign()函数 将源对象的属性赋值到目标对象上。对象的属性出现了相同的名字,后面的属性值会覆盖前面的属性值 123456789 //目标对象let target = &#123;&quot;a&quot;:1&#125;;//源对象let origin1 = &#123;&quot;b&quot;:2,&quot;c&quot;:3&#125;;//源对象let origin2 = &#123;&quot;d&quot;:4,&quot;e&quot;:5&#125;;Object.assign(target,origin1,origin2);console.log(target);//结果 &#123;a: 1, b: 2, c: 3, d: 4, e: 5&#125; Object.getPrototypeOf( )函数 作用： 获取一个对象的prototype属性。 Object.setPrototypeOf()函数1234567891011121314151617181920212223//自定义一个Person类（函数） function Person()&#123; &#125; //函数都有一个预属性prototype对象 Person.prototype = &#123; //给prototype对象添加一个say方法 say()&#123; console.log(&apos;hello&apos;); &#125; &#125;; //实例化Person对象，赋值给变量allen let allen = new Person(); //调用类的say方法 allen.say(); //结果：打印出hello //使用Object.setPrototypeOf Object.setPrototypeOf( allen, &#123;say()&#123;console.log(&apos;hi&apos;)&#125; &#125;); //再次调用类的say方法 allen.say(); //结果：打印出hi javascript的面向对象 Javascript本身不是一种面向对象的编程语言,但可以模拟。 步骤：1、构造函数；2、给prototype对象添加属性和方法；3、实例化；4、通过实例化后的对象调用类的方法或者属性。 12345678910111213141516//构造函数模拟创建一个Dog类 function Dog(name)&#123; this.name = name; &#125; //把一些属性和方法，定义在prototype对象上 Dog.prototype = &#123; &quot;type&quot;:&quot;动物&quot;, &quot;say&quot;:function()&#123; alert(&quot;名字叫&quot;+this.name); &#125; &#125;; //实例化 var dog = new Dog(&apos;旺财&apos;); //调用say方法 dog.say(); //结果：名字叫旺财 小结 ES6给我们带来的新特性包括：简洁的表示法，属性名方法可以是表达式、Object.is( ) 函数、Object.assgin( ) 函数、Object.setPrototypeOf( ) 函数，Object.getPrototypeOf() 函数。]]></content>
       <categories>
         <category>ittech</category>
@@ -90,7 +90,7 @@
   </entry>
   <entry>
     <title><![CDATA[ES6【二】]]></title>
-    <url>%2F2017%2F08%2F28%2FES62%2F</url>
+    <url>%2F2017%2F08%2F28%2Fi037%2F</url>
     <content type="text"><![CDATA[解构赋值 ES6允许按照一定格式，从数组和对象中提取值，对变量进行赋值，这就被称为解构。 数组的解构赋值 解构赋值可嵌套 1var [a,b,c]=[1,2,3] 不完全解构，在解构赋值中，赋值失败，变量的值变成undefined,不会抛出异常。 1var [a,b,c]=[1,2] 允许设定默认值 当新值为undefined时，不会覆盖默认值 1var [a,b,c=3]=[1,2,4] //可被覆盖 对象的解构赋值12var [a,b,c]=&#123;&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3&#125;//对象的解构赋值不会受到属性排序的影响，数组则会受影响。 可被嵌套 1var &#123;a:&#123;b&#125;&#125;=&#123;&quot;a&quot;:&#123;&quot;b&quot;:1&#125;&#125; 可以设定默认值 1var &#123;a,b=2&#125;=&#123;&quot;a&quot;:1&#125; 字符串的解构赋值1var [a,b,c,d,e]=&quot;我是攻城狮&quot;; 解构赋值用途 交换变量的值 123var x=1;var y=2;[x,y]=[y,x] 提取函数返回的多个值 1234function ()&#123; return &#123;&quot;name&quot;:&quot;张三&quot;，&quot;age&quot;:21&#125;&#125;var &#123;name,age&#125;=demo(); 定义函数参数 123456function (a,b,c)&#123; console.log(&quot;name&quot;+a); console.log(&quot;age&quot;+b); console.log(&quot;sex&quot;+c);&#125;demo(&#123;a:&quot;张三&quot;,b:&quot;21&quot;,c:&quot;man&quot;&#125;) 设定函数参数的默认值 1234function (&#123;age=21&#125;)&#123; console.log(&quot;年龄&quot;+age);&#125;demo(&#123;&#125;) 小结 解构赋值是一种全新的变量赋值方式，主要可利用数组解构赋值和对象解构赋值，主要用途：交换变量值，提取函数返回值，函数参数定义，默认值设定等。 ES6字符串新特性 ES6给字符串带来了很多实用性的扩展：模板字符串，标签模板，repeat函数、includes函数，startsWith函数，endsWith函数，codePointAt函数，String.fromCodePoint函数，String.raw函数。 模板字符串123456let name = &quot;Jacky&quot;;let occupation = &quot;doctor&quot;;let str = `He is $&#123;name&#125;,he is a $&#123;occupation&#125;`;//不再需要通过+，“”进行拼接了let str = `write once , run anywhere`; ${ }中可以放任意的javascript表达式，如运算表达式，对象的属性，函数的调用。repeat函数 repeat( )函数：将目标字符串重复N次，返回一个新的字符串，不影响目标字符串。 includes函数 判断字符串中是否含有指定的子字符串，返回true表示含有和false表示未含有。第二个参数选填，表示开始搜索的位置，从0开始。 startsWith函数 判断指定的子字符串是否出现在目标字符串的开头位置，第二个参数选填，表示开始搜索的位置。 endsWith函数 判断子字符串是否出现在目标字符串的尾部位置，第二个参数选填，表示针对前N个字符。 codePointAt函数与String.fromCodePoint函数String.raw函数 返回字符串最原始的样貌，无视转义符的存在。 什么是Unicode编码 Unicode（中文：万国码、国际码、统一码、单一码）是计算机科学领域里的一项业界标准。它对世界上大部分的文字系统进行了整理、编码，使得电脑可以用更为简单的方式来呈现和处理文字。 ES6数值新特性 传统isNaN会将非数值转化为数值在判断，而Number. isNaN只对数值类型有效，其余类型一律返回false 12console.log(isNaN(&apos;abc&apos;)); //trueconsole.log(Number.isNaN(&apos;abc&apos;)) //false 使用Number.isNaN是要注意，返回false时，不一定就是一个数值，有可能是一个非数值类型的参数。 Number.isFinite函数 用来检查一个数值是否非无穷。对，真就是假，假就是真。 123console.log(Number.isFinite(1)); //trueconsole.log(Number.isFinite(Infinity)); //falseconsole.log(Number.isFinite(&apos;abc&apos;)); //false 注意：与Number.isNaN一样，Number.isFinite函数返回false的时候，参数不一定就是一个有穷的数值类型，也有可能是一个非数值类型的参数。 Number.parseInt函数 解析一个字符串，返回一个整数，作用无任何变化。 Number.parseFloat函数 解析一个字符串，返回一个浮点数，作用无任何变化。 Number.isInteger函数 用来判断是否是一个整数，这里要注意一点，若小数点后都是0的浮点数，返回都是true 极小常量【约等于0.00000000000000022204】用来计算误差，若误差小于这个数，表示误差可被接受。 安全整数 能够准确表示的整数范围在-2^53到2^53之间 ES6Math对象扩展Math.trunc函数 用于去除一个数的小数部分，返回整数 Math.sign函数 用于判断一个数是整数，负数，还是0。非数值类型的参数返回NaN 1234Math.sign(3); //结果：1Math.sign(-3); //结果：-1Math.sign(0); //结果：0Math.sign(&apos;abc&apos;); //结果：NaN Math.cbrt函数 用于计算一个数的立方根。 其他一些函数Math.acosh(x) 返回 x 的反双曲余弦。Math.asinh(x) 返回 x 的反双曲正弦。Math.atanh(x) 返回 x 的反双曲正切。Math.clz32(x) 返回 x 的 32 位二进制整数表示形式的前导 0 的个数。Math.sinh(x) 返回x的双曲正弦。Math.cosh(x) 返回 x 的双曲余弦。Math.expm1(x) 返回 e?x - 1。Math.fround(x) 返回 x 的单精度浮点数形式。Math.hypot(…values) 返回所有参数的平方和的平方根。Math.imul(x, y) 返回两个参数以 32 位整数形式相乘的结果。Math.log1p(x) 返回 1 + x 的自然对数。Math.log10(x) 返回以 10 为底的x的对数。Math.log2(x) 返回以 2 为底的 x 的对数。Math.tanh(x) 返回 x 的双曲正切。 小结 ES6对Number对象新增了isInteger函数、极小常量Number.EPSILON、安全整数。将window对象下的4个函数【Number.isNaN Number.isFinite Number.parseInt Number.isInteger】移植到了Number对象。]]></content>
       <categories>
         <category>ittech</category>
@@ -123,7 +123,7 @@
   </entry>
   <entry>
     <title><![CDATA[JSONP]]></title>
-    <url>%2F2017%2F08%2F20%2Fjsonp%2F</url>
+    <url>%2F2017%2F08%2F20%2Fi036%2F</url>
     <content type="text"><![CDATA[JSONP的原理：[json with padding] 引入文件通过回调函数将获取到的数据当成参数传递给回调函数中的变量。 跨域问题： 域顾名思义就是域名，跨域表示一个域名下的文件访问另一个域名下的资源。解决跨域问题的方法[由于AJAX存在跨域限制] 通过JSONP，也就是script标签 通过服务器中转 通过flash,创建一个xml文件 1234567891011function fn(a)&#123; console.log(a.s[0])&#125;window.onload=function ()&#123; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; var olink=document.createElement(&quot;script&quot;); olink.src=&quot;http://suggestion.baidu.com/su?wd=a&amp;cb=fn&quot;; document.body.appendChild(olink); &#125;&#125;]]></content>
       <categories>
         <category>ittech</category>
@@ -145,7 +145,7 @@
   </entry>
   <entry>
     <title><![CDATA[Vue【一】]]></title>
-    <url>%2F2017%2F08%2F12%2F%E5%88%9D%E8%AF%86vue%2F</url>
+    <url>%2F2017%2F08%2F12%2Fi035%2F</url>
     <content type="text"><![CDATA[诞生背景 由于手机的迅速普及及性能的大幅提升，导致移动端需求的大量增加，产生了一种叫Webapp的东西，即移动端网页应用。 什么是MVVM框架MVVM可以拆分成：View — ViewModel — Model三部分，如图所示：View和Model可以通过ViewModel动态进行数据传输，不再需要手动更改。 Vue的核心通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。由于使用了ES5的Object.defineProperty特性，使得无法兼容IE8及以下版本浏览器。 Vue的数据驱动：数据改变驱动了视图的自动更新，传统的做法你得手动改变DOM来改变视图，vue只需要改变数据，就会自动改变视图，再也不用你去操心DOM的更新了，这就是MVVM思想的实现。 视图组件化：把整一个网页的拆分成一个个区块，每个区块我们可以看作成一个组件。网页由多个组件拼接或者嵌套组成。如图所示： 适用场景 替代jquery频繁操作DOM更新页面 对相同部分进行封装，提升开发效率 一个实例 步骤：new Vue()–&gt;设置数据data–&gt;挂载元素–&gt;成功渲染 123456789101112131415161718&lt;div id=&quot;app&quot;&gt; &lt;card&gt;&lt;/card&gt; &lt;card&gt;&lt;/card&gt; &lt;card&gt;&lt;/card&gt;&lt;/div&gt;&lt;script&gt;Vue.component(&apos;card&apos;,&#123; template:`&lt;div&gt; &lt;img src=&quot;img/pic.png&quot; alt=&quot;&quot;&gt; &lt;h2&gt;这是个标题&lt;/h2&gt; &lt;p&gt;这里是描述&lt;/p&gt; &lt;button&gt;这是个按钮&lt;/button&gt; &lt;/div&gt;`&#125;);new Vue(&#123; el:&quot;#app&quot;&#125;);&lt;/script&gt;]]></content>
       <categories>
         <category>ittech</category>
@@ -156,7 +156,7 @@
   </entry>
   <entry>
     <title><![CDATA[实用jq代码片段【一】]]></title>
-    <url>%2F2017%2F08%2F12%2F47-%E5%AE%9E%E7%94%A8jq%E4%BB%A3%E7%A0%811%2F</url>
+    <url>%2F2017%2F08%2F12%2Fi034%2F</url>
     <content type="text"><![CDATA[链式操作1234567$(document).ready(function()&#123; $(&quot;button&quot;).click(function()&#123; $(&quot;#p1&quot;).slideUp(2000).slideDown(2000).css(&quot;color&quot;,&quot;red&quot;); $(&quot;#div-log&quot;).html(&quot;&lt;p&gt;&quot;+&quot;实现链式（Chaining）操作&quot;+&quot;&lt;/p&gt;&quot;); //类似于+= &#125;);&#125;); 区分客户区，页面区，屏幕区 三者的X轴没什么说的，都一样，主要区别在于Y轴上，客户区，屏幕区的最大值固定，不会随着页面的滚动改变。页面区会随着滚动条的改变而变化。 123456789101112131415161718192021222324252627282930313233//客户区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getclient(e); &#125;);&#125;);function getclient(e)&#123; x=e.clientX; //当前可视窗口的距离 y=e.clientY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//屏幕区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getscreen(e); &#125;);&#125;);function getscreen(e)&#123; x=e.screenX; //屏幕的左上角为参考点距离屏幕边缘的距离 y=e.screenY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//页面区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getpage(e); &#125;);&#125;);function getpage(e)&#123; x=e.pageX; //相对于当前页面中的坐标（会随着滚动条的滚动而变化） y=e.pageY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125; 左右自适应高度：1234567891011function $(id)&#123; return document.getElementById(id);&#125;(function autoheight()&#123; if($(&apos;left&apos;).offsetHeight&gt;=$(&apos;right&apos;).offsetHeight)&#123; $(&apos;right&apos;).style.height=$(&apos;left&apos;).offsetHeight+&quot;px&quot;; &#125;else&#123; $(&apos;left&apos;).style.height=$(&apos;right&apos;).offsetHeight+&quot;px&quot;; &#125;&#125;)()//需要注意的是必须自调用函数。 callback()函数 callback()函数在当前效果100%完成之后执行。在一个涉及动画的函数之后来执行语句，用callback()函数。 1234567$(document).ready(function ()&#123; $(&apos;button&apos;).click(function ()&#123; $(&apos;p&apos;).hide(1000,function ()&#123; alert(&quot;回调函数过程，激活一个提示框&quot;); &#125;); &#125;);&#125;); 在新窗口打开链接123456789$(document).ready(function ()&#123; $(&apos;.url&apos;).attr(&#123;target:&quot;_blank&quot;&#125;) $(&apos;a[rel=ext]&apos;).click(function ()&#123; $(this).attr(&apos;target&apos;,&apos;_blank&apos;) &#125;);&#125;);function openurl()&#123; window.open(&apos;http://www.microsoft.com&apos;);&#125; 页面淡入淡出1234567$(document).ready(function ()&#123; $(&apos;#fade&apos;).click(function ()&#123; $(&apos;#div-fade&apos;).fadeToggle(1000); $(&apos;#div-fade&apos;).fadeToggle(1000); $(&quot;#div-fade&quot;).fadeTo(1000,0.2); &#125;);&#125;); 折叠展开123456$(document).ready(function()&#123; $(&quot;.help h3&quot;).click(function()&#123; $(this).next(&quot;p&quot;).slideToggle(&quot;fast&quot;).siblings(&quot;p:visible&quot;).slideUp(&quot;fast&quot;);//siblings表示取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合 &#125;);&#125;); 未完待续。。。]]></content>
       <categories>
         <category>ittech</category>
@@ -167,7 +167,7 @@
   </entry>
   <entry>
     <title><![CDATA[ES6增加的扩展]]></title>
-    <url>%2F2017%2F08%2F11%2FES61%2F</url>
+    <url>%2F2017%2F08%2F11%2Fi033%2F</url>
     <content type="text"><![CDATA[ECMAScript是什么 JavaScript是JavaScript的重要组成部分。简单一句话，ESMAScript是JavaScript的语法规范。与DOM,BOM成为JavaScript的3驾马车。不仅如此，它还定义了语法，类型，原型和继承及内置对象和函数标准库。 ECMAScript 和 JavaScript 的关系 ECMAScript是JavaScript的基础标准部分，前者是后者的规格，后者是前者的一种实现。 ES6 与 ECMAScript 2015 的关系 ES6是一个泛指，是5.1版以后的 JavaScript 的下一代标准，涵盖了ES2015、ES2016、ES2017等.而ES2015 则是正式名称，特指该年发布的正式版本的语言标准。 let命令123&#123;var a=10; let b=1;&#125;a //10b // ReferenceError: b is not defined. 表明let只在它所在的代码块起作用 123456789101112131415161718192021222324var a = [];for (var i = 0; i &lt; 10; i++) &#123; a[i] = function () &#123; console.log(i); &#125;;&#125;a[6](); // 10//i在全局范围内部都有效var b=[];for(let i=0;i&lt;10;i++)&#123; b[i] = function () &#123; console.log(i) &#125;&#125;b[6](); // 6//i只在本轮循环中有效for (let i = 0; i &lt; 3; i++) &#123; let i = &apos;abc&apos;; console.log(i);&#125;// abc// abc// abc//输出了3次abc。表明函数内部的变量i与循环变量i不在同一个作用域，有各自单独的作用域。 let不存在变量提升var命令的变量可在声明前使用，值为undefinedlet命令的变量必须先声明在使用。 123456console.log(foo);var foo=2;//undefinedconsole.log(bar);let bar=2;//ReferenceError: bar is not defined 暂时性死区 ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。 只要块级作用域中存在let命令，所声明的变量就绑定之歌区域，不再受外部影响 123456789101112131415//使用let命令声明变量之前，该变量不可用if (true) &#123; // TDZ开始 tmp = &apos;abc&apos;; // ReferenceError console.log(tmp); // ReferenceError let tmp; // TDZ结束 console.log(tmp); // undefined tmp = 123; console.log(tmp); // 123&#125;// 不报错var x = x;// 报错let x = x;// ReferenceError: x is not defined 小结 ES6 规定暂时性死区和let、const语句不出现变量提升，主要是为了减少运行时错误，防止在变量声明前就使用这个变量，从而导致意料之外的行为。 暂时性死区的本质就是，只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量。 用let声明的变量只在块级作用域起作用，适用于for循坏。在同一个代码块中，不可声明相同的变量，不可重复声明函数内的参数。 不允许重复声明let不允许在相同作用域内，重复声明同一个变量。 123456789101112131415161718// 报错function () &#123; let a = 10; var a = 1;&#125;// 报错function () &#123; let a = 10; let a = 1;&#125;function func(arg) &#123; let arg; // 报错&#125;function func(arg) &#123; &#123; let arg; // 不报错 &#125;&#125; 块级作用域存在原因一：内层变量可能会覆盖外层变量。 123456789var tmp=new Date();function f()&#123; console.log(tmp); if(false)&#123; var tmp=&quot;hello wrold!&quot;; &#125;&#125;f();//由于变量提升，导致内层变量覆盖外层变量，使得输出结果为undefined 存在原因二：用来计数的循环变量泄露为全局变量。123456var s = &apos;hello&apos;;for (var i = 0; i &lt; s.length; i++) &#123; console.log(s[i]);&#125;console.log(i); // 5//变量i用于控制循环，但循环结束后，并没有消失，而成为了全局变量。 ES6块级作用域12345678function f1() &#123; let n = 5; if (true) &#123; let n = 10; &#125; console.log(n); // 5&#125;//表示外层代码块不受内层块级代码快的影响，若使用var声明，结果为10 const 命令 const声明一个只读的常量。一旦声明，常量的值就不能改变。要注意声明引用类型的常量时，是传址赋值1234const PI = 3.1415;PI // 3.1415PI = 3;// TypeError: Assignment to constant variable. 小结： 对于const来说，只声明不赋值，就会报错。 const的作用域与let命令相同：只在声明所在的块级作用域内有效。 const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。 const声明的常量，也与let一样不可重复声明。 本质： const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指针，const只能保证这个指针是固定的，至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。 顶层对象的属性 顶层对象，在浏览器环境指的是window对象，在Node指的是global对象。ES5之中，顶层对象的属性与全局变量是等价的。 var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性,换言之，从ES6开始，全局变量将逐步与顶层对象的属性脱钩。 123456var a = 1;window.a // 1let b = 1;window.b // undefined//以上可看出全局变量a由var命令声明，所以它是顶层对象的属性；全局变量b由let命令声明，所以它不是顶层对象的属性，返回undefined。 不断加深理解并加以完善。。。]]></content>
       <categories>
         <category>ittech</category>
@@ -200,7 +200,7 @@
   </entry>
   <entry>
     <title><![CDATA[浅谈JavaScript中this]]></title>
-    <url>%2F2017%2F08%2F06%2Fjs%E4%B8%AD%E7%9A%84this%2F</url>
+    <url>%2F2017%2F08%2F06%2Fi032%2F</url>
     <content type="text"><![CDATA[作为函数调用this关键字指定的对象取决于函数的调用方式，JavaScript 中的函数的调用有以下几种方式： 作为函数调用 作为对象方法调用 作为构造函数调用 1234567891011var n = &quot;Hello World!&quot;;function example()&#123; console.log(this.n);&#125;example(); //Hello World!var n = &apos;Hello World!&apos;;function example()&#123; this.n=0;&#125;example();console.log(n); //0 结论：当函数直接调用时，该函数的this关键字指向的就是全局对象window。 作为对象方法调用1234567891011121314151617181920212223function getAge()&#123; var y = new Date().getFullYear(); return y - this.birth;&#125;var zhangsan = &#123; name: &apos;张三&apos;, birth: 1990, age: getAge&#125;;console.log(zhangsan.age());//27console.log(getAge()); //NaNvar fn = zhangsan.age;console.log(fn()); //NaNvar name = &apos;Akita&apos;;var dogs = &#123; name:&apos;Collie&apos;, showName: function()&#123; console.log(this.name); &#125;&#125;;console.log(dogs.showName()); //Collievar otherNmae = dogs.showName;console.log(otherName()); //Akita 结论：当使用obj.xxx()的形式调用函数时，里面的this关键字指向的就是对象本身。但是需要注意：在对象方法内部再次定义一个方法，该方法的this关键字又会重新指向全局对象window！这点需要特别注意比如下面这段代码： 123456789101112var zhangsan = &#123; name: &apos;张三&apos;, birth: 1990, age: function()&#123; function getAgeFromBirth()&#123; var y = new Date().getFullYear(); return y - this.birth; &#125; return getAgeFromBirth(); &#125;&#125;;console.log(zhangsan.age()); //NaN 在 strict 模式下你会得到的错误就不是 NaN，而是TypeError：Cannot read property ‘birth’ of undefined。 作为构造函数调用12345function Student(name)&#123; this.name=name;&#125;var xiaoming = new Student(&apos;小明&apos;);console.log(xiaoming.name); //小明 指定 this 指向 指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。 1234567891011function getAge() &#123; var y = new Date().getFullYear(); return y - this.birth;&#125;var xiaoming = &#123; name: &apos;张三&apos;, birth: 1990, age: getAge&#125;;zhangsan.age(); // 25getAge.apply(zhangsan, []); // 25 利用apply()将getAge()的this指向了xiaoming这个对象，因此函数执行正确。]]></content>
       <categories>
         <category>ittech</category>
@@ -211,7 +211,7 @@
   </entry>
   <entry>
     <title><![CDATA[JS 相等性判断]]></title>
-    <url>%2F2017%2F08%2F03%2Fjs%E7%9B%B8%E7%AD%89%E6%80%A7%E5%88%A4%E6%96%AD%2F</url>
+    <url>%2F2017%2F08%2F03%2Fi031%2F</url>
     <content type="text"><![CDATA[关于 JS 相等性判断，很容易想到严格相等（===）和非严格相等（==），前者在比较前不会进行隐式转换，即若比较的两个值不是相同的类型，比较结果一定是不等的。而后者在进行比较前可能会根据具体情况进行相应的类型转换然后再按照严格比较规则进行比较。 通常情况下使用严格相等是没有问题的，但存在两个例外。一个是+0和-0的比较，另一个是NaN的比较。 在严格相等中，+0 === -0 返回 true，NaN === NaN 返回 false，这与直观判断是不一致的。为了避免这类特殊情况，可以通过 ES6 新特性 Object.is 来进行判断。代码如下： 123456789101112if (!Object.is) &#123; Object.is = function(x, y) &#123; // SameValue algorithm if (x === y) &#123; // Steps 1-5, 7-10 // Steps 6.b-6.e: +0 != -0 return x !== 0 || 1 / x === 1 / y; &#125; else &#123; // Step 6.a: NaN == NaN return x !== x &amp;&amp; y !== y; &#125; &#125;;&#125; Polyfill 也很容易实现，对于+0和-0比较，首先严格相等，再判断倒数是否不相等即可，因为+0/0结果是Infinity，-0/0结果是-Infinity。而对于NaN比较问题，只需要判断二者分别不等于自身即可。（isNaN仅可判断当前数是否是NaN） 总结： JavaScript 提供三种不同的比较操作符：严格相等、非严格相等、Object.is。 ES2015标准提供以下四种比较操作符：严格相等、非严格相等、零值相等、同值相等。 同值相等参考JavaScript 中相等性判断中 Object.defineProperty 实例，当试图对不可变属性进行修改时可能会发生错误。同值相等由 Object.is 方法提供。 零值相等和同值相等类似，不过会认为 +0 与 -0 相等。 参考： JavaScript 中相等性判断 Object.is 从 V8 的单元测试源码看“同值相等”]]></content>
       <categories>
         <category>ittech</category>
@@ -222,7 +222,7 @@
   </entry>
   <entry>
     <title><![CDATA[CPU占比探测]]></title>
-    <url>%2F2017%2F07%2F13%2FCPU%E5%8D%A0%E6%AF%94%E6%8E%A2%E6%B5%8B%2F</url>
+    <url>%2F2017%2F07%2F13%2Fi030%2F</url>
     <content type="text"><![CDATA[实现原理： 12345678910var data = []var tfunction pulse() &#123; t &amp;&amp; data.push(Date.now() - t) t = Date.now() setTimeout(pulse, 50)&#125;pulse() 理想情况下，data=[50,50,50…],实际可能是[50,54,53,50,53…],在CPU较高时，数据可能变成[50,60,100,87…]]]></content>
       <categories>
         <category>ittech</category>
@@ -233,7 +233,7 @@
   </entry>
   <entry>
     <title><![CDATA[GET与POST区别]]></title>
-    <url>%2F2017%2F07%2F11%2Fget%E4%B8%8Epost%E5%8C%BA%E5%88%AB%2F</url>
+    <url>%2F2017%2F07%2F11%2Fi029%2F</url>
     <content type="text"><![CDATA[以前我们是可能是这样认为的： GET使用URL或Cookie传参。而POST将数据放在BODY中。 GET的URL会有长度上的限制，则POST的数据则可以非常大。 POST比GET安全，因为数据在地址栏上不可见。 可是，经过查证，They’re wrong，我也感觉不可思议，以前我就这样认为啊！ GET和POST与数据如何传递没有关系 GET和POST是由HTTP协议定义的。在HTTP协议中，Method和Data（URL， Body， Header）是正交的两个概念，也就是说，使用哪个Method与应用层的数据如何传输是没有相互关系的。 HTTP没有要求，如果Method是POST数据就要放在BODY中。也没有要求，如果Method是GET，数据（参数）就一定要放在URL中而不能放在BODY中。 HTTP协议对GET和POST都没有对长度的限制 HTTP协议明确地指出了，HTTP头和Body都没有长度的要求。而对于URL长度上的限制，有两方面的原因造成： 浏览器。据说早期的浏览器会对URL长度做限制。据说IE对URL长度会限制在2048个字符内（流传很广，而且无数同事都表示认同）。但我自己试了一下，我构造了90K的URL通过IE9访问live.com，是正常的。网上的东西，哪怕是Wikipedia上的，也不能信。 服务器。URL长了，对服务器处理也是一种负担。原本一个会话就没有多少数据，现在如果有人恶意地构造几个几M大小的URL，并不停地访问你的服务器。服务器的最大并发数显然会下降。另一种攻击方式是，把告诉服务器Content-Length是一个很大的数，然后只给服务器发一点儿数据，嘿嘿，服务器你就傻等着去吧。哪怕你有超时设置，这种故意的次次访问超时也能让服务器吃不了兜着走。有鉴于此，多数服务器出于安全啦、稳定啦方面的考虑，会给URL长度加限制。但是这个限制是针对所有HTTP请求的，与GET、POST没有关系。 安全不安全和GET、POST可能并不是我们认为的那种关系。]]></content>
       <categories>
         <category>ittech</category>
@@ -244,7 +244,7 @@
   </entry>
   <entry>
     <title><![CDATA[常用Git命令收录]]></title>
-    <url>%2F2017%2F07%2F09%2Fgit%2F</url>
+    <url>%2F2017%2F07%2F09%2Fi028%2F</url>
     <content type="text"><![CDATA[Git命令速查表 生成SSH 1$ ssh-keygen -t ras -C &quot;email@xxx&quot; 设置用户名 12$ git config --global user.name &quot;webykj&quot;$ git config --global user.email &quot;stormykj@163.com&quot; 初始化当前项目 1$ git init 在该目录下新建一个文件，然后查看，将修改添加到暂存区 12345echo &quot;# test&quot; &gt;&gt; README.mdgit add * //将工作区所有修改添加到暂存区git add . //将工作区所有修改添加到暂存区git add filename //将指定文件添加到暂存区git status //列出变更文件 将暂存区修改添加到本地仓库 1git commit -m &apos;备注信息&apos; 创建仓库，并将上诉改动push到远程 12git remote add origin https://github.com/webykj/test.gitgit push -u origin master 去除push时每次都要输入账号密码 12git remote rm origin //移除git remote add origin git@github.com:gitname/test.git //添加 从远程clone项目 1git clone url 放弃暂存区修改 12345git checkout -- filename //放弃暂存区修改（修改不在）git rm --cached filename //放弃add（修改还在，但产生一条delete记录）git reset HEAD filename //同上（没有delete记录）git stash //暂时放弃未提交的修改git stash pop //恢复 分支操作 1234567891011121314151617/*查看分支*/git branch //所有本地分支git branch -r //所有远程分支git branch -a //所有远程分支和本地分支/*创建分支*/ git branch branchName //留在当前分支git checkout -b branchName //创建并切换分支git branch --set-upstream-to=&lt;remote&gt;/branchName //建立本地分支与远程分支的追踪关系git branch --track branchName [remote branch] //新建一个分支，并与远程建立追踪关系 git checkout branchName //切到指定分支 /*分支合并*/ git pull origin branch //取回远程更新并与本地分支合并 git fetch origin branch //取回远程更新 git merge branch //合并指定分支到当前分支(产生提交记录) git rebase branch //合并指定分支到当前分支(不产生提交记录，比较适合有强迫症的) git cherry-pick commitId //将与commitId对应的提交合进当前分支]]></content>
       <categories>
         <category>ittech</category>
@@ -255,7 +255,7 @@
   </entry>
   <entry>
     <title><![CDATA[AJAX的封装]]></title>
-    <url>%2F2017%2F07%2F08%2Fajax%E7%9A%84%E5%B0%81%E8%A3%85%2F</url>
+    <url>%2F2017%2F07%2F08%2Fi027%2F</url>
     <content type="text"><![CDATA[ajax的封装: 123456789101112131415161718192021222324252627282930313233343536function ajax(method,url,data,success)&#123; var xhr; try&#123; //尝试执行try中的代码，如有错误，执行catch中的代码并返回错误信息 xhr=new XMLHttpRequest(); //throw new Error(&apos;手动报错&apos;); &#125;catch(e)&#123; xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;); //alert(e); &#125; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; setInterval(function ()&#123; var xhr=new XMLHttpRequest(); if(method == &quot;get&quot; &amp;&amp; data)&#123; url+=&quot;?&quot;+data; &#125; xhr.open(method,url,true); if(method == &quot;get&quot;)&#123; xhr.send(); &#125;else&#123; xhr.setRequestHeader(&apos;content-type&apos;,&apos;application/x-www-form-urlencoded&apos;); xhr.send(data); &#125; xhr.onreadystatechange=function ()&#123; if(xhr.readyState == 4)&#123; if(xhr.status == 200)&#123; success &amp;&amp; success(xhr.responseText) &#125;else&#123; alert(&quot;出错了&quot;+xhr.status); &#125; &#125; &#125;; &#125;,1000) &#125;&#125; 数据:123456789101112&lt;?phpheader(&apos;content-type:text.html;charset:&quot;utf-8&quot;&apos;);error_reporting(0);$news=array( array(&quot;title&quot;=&gt;&quot;中国又一工程惊艳世界:世界最深高铁站&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;院士:让中国转基因鲤鱼尽快游向餐桌 &quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;中戏老师怒怼战狼2:一文不值心理变态&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;陕西一区委书记赴宴被富豪打 纪委披露&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;), array(&quot;title&quot;=&gt;&quot;2.3公里路司机绕成30公里 滴滴愿赔1千&quot;,&quot;date&quot;=&gt;&quot;[2017-7-5]&quot;));echo json_encode($news);?&gt;]]></content>
       <categories>
         <category>ittech</category>
@@ -266,7 +266,7 @@
   </entry>
   <entry>
     <title><![CDATA[AJAX中open()方法与表单]]></title>
-    <url>%2F2017%2F07%2F03%2Fajax%E4%B8%AD%E7%9A%84open%2F</url>
+    <url>%2F2017%2F07%2F03%2Fi025%2F</url>
     <content type="text"><![CDATA[12var xhr=new XMLHttpRequest();xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true); //打开方式，地址，是否异步 注意： 异步：非阻塞模式，表示前面代码不会影响后面代码的执行。同步：非阻塞模式，表示前面代码会会影响后面代码的执行。在选择同步还是异步的过程中，需要判断前面的代码是否会影响后面的代码，如果会，那么就必须选择同步，否则，便是异步。 表单1234567891011121314151617&lt;form action=&quot;get.php&quot; method=&quot;get&quot;&gt; &lt;input type=&quot;text&quot; name=&quot;user&quot; value=&quot;john&quot;&gt; &lt;input type=&quot;text&quot; name=&quot;age&quot; value=&quot;20&quot;&gt; &lt;input type=&quot;password&quot; name=&quot;pwd&quot;&gt; &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;&lt;/form&gt;&lt;?php header(&apos;content-type:text.html;charset:&quot;utf-8&quot;&apos;); error_reporting(0); /*$user=$_GET[&apos;user&apos;]; $age=$_GET[&apos;age&apos;]; $pwd=$_GET[&apos;pwd&apos;];*/ $user=$_POST[&apos;user&apos;]; $age=$_POST[&apos;age&apos;]; $pwd=$_POST[&apos;pwd&apos;]; echo &quot;&#123;$user&#125;,&#123;$age&#125;,$&#123;pwd&#125;&quot;;?&gt; 区分get与post1234xxx.open(&apos;get&apos;,&apos;get.php?username=&apos;+encodeURL(&apos;张三&apos;)+&apos;&amp;age=30&apos;+new Date().getTime(),true);xxx.open(&apos;post&apos;,&apos;post.php&apos;,true);xxx.setRequestHeader(&apos;content-type&apos;,&apos;application/x-www-form-urlencoded&apos;);xxx.send(&apos;username=zhangsan&apos;&amp;age=22); 缓存问题需要在？后添加一个随记函数或时间戳。 post,数据放在send()方法里，作为参数传递。 编码问题需用encodeURL()解决。 持续更新完善中。。。]]></content>
       <categories>
         <category>ittech</category>
@@ -277,7 +277,7 @@
   </entry>
   <entry>
     <title><![CDATA[AJAX【一】]]></title>
-    <url>%2F2017%2F07%2F01%2Fajax%2F</url>
+    <url>%2F2017%2F07%2F01%2Fi024%2F</url>
     <content type="text"><![CDATA[Asynchronous JavaScript and XML（异步JavaScript和XML)，是一种创建交互式网页应用的网页开发技术。 AJAX工作原理： AJAX的工作原理：Ajax的工作原理相当于在用户和服务器之间加了—个中间层(AJAX引擎),使用户操作与服务器响应异步化。并不是所有的用户请求都提交给服务器,像—些数据验证和数据处理等都交给Ajax引擎自己来做,只有确定需要从服务器读取新数据时再由Ajax引擎代为向服务器提交请求。 Ajax其核心有JavaScript、XMLHTTPRequest、DOM对象组成，通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用JavaScript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。让我们来了解这几个对象。 AJAX优点： 节省用户操作，提高用户体验，减少数据请求 无刷新更新数据 异步与服务器通信 基于标准被广泛支持 。。。 AJAX缺点： 没有了Back和History功能，即对浏览器机制的破坏 AJAX的安全问题 对搜索引擎支持较弱 。。。 Ajax适用场景 表单验证 快速的用户与用户间的交流响应 对数据进行过滤和操纵相关数据的场景 普通的文本输入提示和自动完成的场景 。。。 Ajax不适用场景 搜索 基本的导航 替换大量的文本 。。。 第一个Ajax应用：12345678910111213141516171819202122232425262728293031323334353637&lt;input type=&quot;button&quot; value=&quot;提交&quot; id=&quot;btn&quot;&gt;&lt;script&gt; window.onload=function ()&#123; //ie兼容问题 new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;) var xhr; //方法一 /*if(window.XMLHttpRequest)&#123; xhr=new XMLHttpRequest(); &#125;else&#123; xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;); &#125;*/ //方法二： try&#123; //尝试执行try中的代码，如有错误，执行catch中的代码并返回错误信息 xhr=new XMLHttpRequest(); //throw new Error(&apos;手动报错&apos;); &#125;catch(e)&#123; xhr=new ActiveXObject(&apos;Microsoft.XMLHTTP&apos;); //alert(e); &#125; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; var xhr=new XMLHttpRequest(); xhr.open(&apos;get&apos;,&apos;msg/msg.txt&apos;,true); xhr.send(); xhr.onreadystatechange=function ()&#123; if(xhr.readyState ==4)&#123; if(xhr.status ==200)&#123; alert(xhr.responseText); &#125;else&#123; alert(&quot;出错了&quot;+xhr.status); &#125; &#125; &#125; &#125; &#125;&lt;/script&gt;]]></content>
       <categories>
         <category>ittech</category>
@@ -288,7 +288,7 @@
   </entry>
   <entry>
     <title><![CDATA[document.body.scrollTop与document.documentElement.scrollTop的兼容]]></title>
-    <url>%2F2017%2F06%2F28%2Fscrolltop%E7%9A%84%E5%85%BC%E5%AE%B9%2F</url>
+    <url>%2F2017%2F06%2F28%2Fi023%2F</url>
     <content type="text"><![CDATA[这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！ 看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，chrome也只认识document.body.scrollTop. 由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？ 解决办法： 12345678//方法一：var sTop=document.body.scrollTop+document.documentElement.scrollTop;//方法二：function getscroll()&#123; var scrollTop=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; return scrollTop; &#125; 理由如下： 因为document.body.scrollTop与document.documentElement.scrollTop两者有个特点，就是同时只会有一个值生效。比如document.body.scrollTop能取到值的时候，document.documentElement.scrollTop就会始终为0；反之亦然。所以，如果要得到网页的真正的scrollTop值,这两个值总会有一个恒为0，所以不用担心会对真正的scrollTop造成影响。]]></content>
       <categories>
         <category>ittech</category>
@@ -310,7 +310,7 @@
   </entry>
   <entry>
     <title><![CDATA[Web App、Hybrid App、 Native App各自优缺点]]></title>
-    <url>%2F2017%2F05%2F26%2Fwebapp%2F</url>
+    <url>%2F2017%2F05%2F26%2Fi022%2F</url>
     <content type="text"><![CDATA[Web AppWeb App 指采用Html5语言写出的App,无需下载安装，可以说是触屏版的网页应用。优点: 开发成本低， 更新快， 更新无需通知用户，不需要手动升级， 能够跨多个平台和终端。 缺点： 临时性的入口 无法获取系统级别的通知，提醒，动效等等 用户留存率低 设计受限制诸多 体验较差 Hybrid App Hybrid APP指的是半原生半Web的混合类App,需要下载，访问的内容是 Web。 Hybrid App 极力去打造类似于Native App 的体验，但仍受限于技术，网速，等等很多因素。尚不完美。 Native AppNative APP 指的是原生程序，一般依托于操作系统，有很强的交互，是一个完整的App，可拓展性强。需要用户下载安装使用。优点： 打造完美的用户体验 性能稳定 操作速度快，上手流畅 访问本地资源（通讯录，相册） 设计出色的动效，转场， 拥有系统级别的贴心通知或提醒 用户留存率高缺点： 分发成本高（不同平台有不同的开发语言和界面适配） 维护成本高（例如一款App已更新至V5版本，但仍有用户在使用V2， V3， V4版本，需要更多的开发人员维护之前的版本） 更新缓慢，根据不同平台，提交–审核–上线 等等不同的流程，需要经过的流程较复杂 个人理解3种App都有各自的优缺点，主要还是看具体业务要求，比如说我们现在要做一个产品，主要展示些产品的特性，功能，用Native APP可能就不是最好的选择，Web App就比较适合。可能在若干年后，随着技术的发展Hybrid APP可能就是最好的选择。总之一句话，适合的才是王道。]]></content>
       <categories>
         <category>ittech</category>
@@ -333,7 +333,7 @@
   </entry>
   <entry>
     <title><![CDATA[js获取访问者ip信息脚本]]></title>
-    <url>%2F2017%2F04%2F20%2Fjs%E8%8E%B7%E5%8F%96ip%2F</url>
+    <url>%2F2017%2F04%2F20%2Fi021%2F</url>
     <content type="text"><![CDATA[以下是新浪脚本代码 12345678910111213&lt;script type=&quot;text/javascript&quot;src=&quot;http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;//&lt;![CDATA[ alert([ remote_ip_info.country, remote_ip_info.province, remote_ip_info.city, remote_ip_info.isp, remote_ip_info.start, remote_ip_info.end ].join(&apos;&apos;));//]]&gt;&lt;/script&gt; 知乎讨论:怎样用 JavaScript 程序获取客户的 IP 地址？]]></content>
       <categories>
         <category>ittech</category>
@@ -365,19 +365,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[$(document).ready()与window.onload()的区别]]></title>
-    <url>%2F2016%2F12%2F22%2F%24(document).ready()%E4%B8%8Ewindow.onload()%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
-    <content type="text"><![CDATA[$(document).ready()的表示在DOM加载完之后执行一个函数【这里DOM加载完不代表全部文件加载完，例如图片文件，虽然图的src的地址加载好了，但是图本身还没加载完】。 与window.onload的区别：1.执行时间： window.onload是在DOM加载完成 + DOM相关的文件下载完成 之后再执行函数。 $(document).ready()是在DOM加载完之后执行一个函数。 $(document).ready()要比window.onload先执行；有时候页面还没有完全加载完毕而用户已经在操作页面，在技术上很多情况下，只要DOM已完全加载好了，JS就可以运行去操作DOM了，没必要等到全部加载完成,所以用$(document).ready()来提前，但是当使用的JS依赖 CSS 属性值时，或者需要在元素被加载之后才能使用时（例如，取得图片的大小需要在图片被加载完后才能知道），就需要将这样的JS放到load事件中，以免因为贪图快而带来麻烦。 能够添加的数量： window.onload不能同时编写多个，因为我查看W3C的时候，window.onload是一种原生的DOM的事件，决定了在window上只能添加一个，后续的会覆盖掉前面的。 $(document).ready()可以同时编写多个，我查看jQuery中文档，他是这么介绍的.ready()方法只能被匹配当前文档的jQuery对象调用，也就是说他是jQuery的方法，本质是一个函数，就可以执行多次。 能否简写： $(document).ready()可以简写 window.onload 不能简写 $(document).ready()的简写: $(document).ready(handler) $(handler) $().ready(handler) //一般不推荐使用]]></content>
-      <categories>
-        <category>ittech</category>
-      </categories>
-      <tags>
-        <tag>ittech</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[AJAX总结]]></title>
-    <url>%2F2016%2F12%2F20%2Fajax%E6%80%BB%E7%BB%93%2F</url>
+    <url>%2F2016%2F12%2F20%2Fi020%2F</url>
     <content type="text"><![CDATA[什么是AJAX AJAX = 异步 JavaScript 和 XML，是一种用于创建快速动态网页的技术，可实现局部刷新。主要应用于表单验证、按需获取数据、自动刷新页面。 标准XmlHttpRequest的属性 onreadystatechange: 每个状态改变时都会触发这个事件处理器，通常指向一个JavaScript函数; readyState: 请求的状态。有5个可取值：0=未初始化，1=正在加载，2=已加载，3=交互中，4=完成; responseText: 服务器的响应，表示为一个串; responseXML: 服务器的响应，表示为XML。这个对象可以解析为一个DOM对象; status: 服务器的HTTP状态码（200对应OK，404表示Not Found(未找到)，等等); statusText: HTTP状态码的相应文本(OK或Not Found等等). XmlHttpRequest的方法 abort(): 停止当前请求; getAllResponseHeaders(): 把HTTP请求的所有响应作为键/值对返回; getResponseHeader(“header”): 返回指定首部的串值; open(method, url): 建立对服务器的调用。method参数可以是GET, POST或PUT。 url参数可以是相对的或者绝对的URL。该方法还包括3个可选参数; send(content): 向服务器发送请求; setRequestHeader(header, value): 把指定首部设置为所提供的值。在设置任何首部之前必须先调用open(). AJAX常用方法 get() post() load() 只能用于静态html页面 json jsonp() 最底层： ajax第二层： load/get/post 高频使用第三层： json/jsonp jQuery中的AJAX123456789101112131415161718192021222324252627$.ajax(&#123; url:&apos;/comm/test1.php&apos;, type:&apos;POST&apos;, //GET async:true, //或false,是否异步 data:&#123; name:&apos;yang&apos;,age:25 &#125;, timeout:5000, //超时时间 dataType:&apos;json&apos;, //返回的数据格式：json/xml/html/script/jsonp/text beforeSend:function(xhr)&#123; console.log(xhr) console.log(&apos;发送前&apos;) &#125;, success:function(data,textStatus,jqXHR)&#123; console.log(data) console.log(textStatus) console.log(jqXHR) &#125;, error:function(xhr,textStatus)&#123; console.log(&apos;错误&apos;) console.log(xhr) console.log(textStatus) &#125;, complete:function()&#123; console.log(&apos;结束&apos;) &#125;&#125;) 常用参数123456789var configObj = &#123; method //数据的提交方式：get和post url //数据的提交路劲 async //是否支持异步刷新，默认是true data //需要提交的数据 dataType //服务器返回数据的类型，例如xml,String,Json等 success //请求成功后的回调函数 error //请求失败后的回调函数 &#125; JavaScript中的AJAX123456789101112131415161718192021$(&apos;#send&apos;).click(function()&#123; //请求的5个阶段，对应readyState的值 //0: 未初始化，send方法未调用； //1: 正在发送请求，send方法已调用； //2: 请求发送完毕，send方法执行完毕； //3: 正在解析响应内容； //4: 响应内容解析完毕； var data = &apos;name=yang&apos;; var xhr = new XMLHttpRequest(); //创建一个ajax对象 xhr.onreadystatechange = function(event)&#123; //对ajax对象进行监听 if(xhr.readyState == 4)&#123; //4表示解析完毕 if(xhr.status == 200)&#123; //200为正常返回 console.log(xhr) &#125; &#125; &#125;; xhr.open(&apos;POST&apos;,&apos;url&apos;,true); //建立连接，参数一：发送方式，二：请求地址，三：是否异步，true为异步 xhr.setRequestHeader(&apos;Content-type&apos;,&apos;application/x-www-form-urlencoded&apos;); //可有可无 xhr.send(data); //发送&#125;); AJAX参考文章 AJAX之XMLHttpRequest方法和属性详解]]></content>
       <categories>
         <category>ittech</category>
@@ -388,7 +377,7 @@
   </entry>
   <entry>
     <title><![CDATA[vh与vw知多少]]></title>
-    <url>%2F2016%2F12%2F08%2Fvh%E4%B8%8Evw%2F</url>
+    <url>%2F2016%2F12%2F08%2Fi019%2F</url>
     <content type="text"><![CDATA[都知道响应式布局需要通过rem进行适配，但还需要以下一段js代码动态计算元素大小，但通过vh,vw就可直接通过css直接控制。 1234567891011(function (doc, win) &#123; let docEl = doc.documentElement let resizeEvt = &apos;orientationchange&apos; in window ? &apos;orientationchange&apos; : &apos;resize&apos; let recalc = function () &#123; var clientWidth = docEl.clientWidth if (!clientWidth) return docEl.style.fontSize = 14 * (clientWidth / 320) + &apos;px&apos;; &#125; if (!doc.addEventListener) return win.addEventListener(resizeEvt, recalc, false) doc.addEventListener(&apos;DOMContentLoaded&apos;, recalc, false) 什么是视口在客户端，视口指浏览器的可视区域；在移动端，涉及3个视口：Layout Viewport（布局视口），Visual Viewport（视觉视口），Ideal Viewport（理想视口），而这里所说的视口是布局视口。 vh/vw与%区别 最优做法——vw和rem配合使用 12345678910111213141516171819202122// rem 单位换算：定为 75px 只是方便运算，750px-75px、640-64px、1080px-108px，如此类推$vm_fontsize: 75; // iPhone 6尺寸的根元素大小基准值@function rem($px) &#123; @return ($px / $vm_fontsize ) * 1rem;&#125;// 根元素大小使用 vw 单位$vm_design: 750;html &#123; font-size: ($vm_fontsize / ($vm_design / 2)) * 100vw; // 同时，通过Media Queries 限制根元素最大最小值 @media screen and (max-width: 320px) &#123; font-size: 64px; &#125; @media screen and (min-width: 540px) &#123; font-size: 108px; &#125;&#125;// body 也增加最大最小宽度限制，避免默认100%宽度的 block 元素跟随 body 而过大过小body &#123; max-width: 540px; min-width: 320px;&#125;]]></content>
       <categories>
         <category>ittech</category>
@@ -399,7 +388,7 @@
   </entry>
   <entry>
     <title><![CDATA[JavaScript中clientX,screenX,pageX,offsetX的异同]]></title>
-    <url>%2F2016%2F12%2F03%2Fclient%E5%BC%82%E5%90%8C%2F</url>
+    <url>%2F2016%2F12%2F03%2Fi018%2F</url>
     <content type="text"><![CDATA[pageX/pageY:鼠标相对于整个页面的X/Y坐标。整个页面的意思指整个网页的全部，比如说网页很宽很长，宽2000px，高3000px，那pageX,pageY的最大值就是它们了。 特别说明：IE不支持！ offsetX/offsetY:得出的结果跟pageX/pageY一样，既然如此，它有什么存在价值？ 特别说明：只有IE支持！相当于IE下的pageX,pageY. screenX/screenY:顾名思义，就是鼠标在屏幕上的坐标。screenX,screenY的最大值不会超过你的屏幕分辨率。 clientX/clientY：事件发生时鼠标在浏览器内容区域的X/Y坐标（不包含滚动条）。浏览器内容区域即浏览器窗口中用来显示网页的可视区域，注意这个可视，也就是说需要拖动滚动条才能看到的区域不算。当你将浏览器窗口缩小时，clientX/clientY的最大值也会缩小，但始终，它们的最大值不会超过你浏览器可视区域。 特别说明：IE下此属性不规范，它们的最小值不是0而是2，也就是说IE下的clientX/clientY与火狐下的始终大2px 持续完善中。。。]]></content>
       <categories>
         <category>ittech</category>
@@ -410,7 +399,7 @@
   </entry>
   <entry>
     <title><![CDATA[实用js代码片段【一】]]></title>
-    <url>%2F2016%2F11%2F28%2F%E5%AE%9E%E7%94%A8js%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%2F</url>
+    <url>%2F2016%2F11%2F28%2Fi017%2F</url>
     <content type="text"><![CDATA[表单验证获取单选值1234567891011function getSex()&#123; var value=&quot;&quot;; var radio=document.getElementsByName(&quot;gender&quot;); for(var i=0;i&lt;radio.length;i++)&#123; if(radio[i].checked==true)&#123; value=radio[i].value; break; &#125; &#125; alert(value);&#125; 过滤数字,自符1234567891011121314151617window.onload=function ()&#123; var id=document.getElementById(&apos;id&apos;); var clearNumber=function (tThis)&#123; var _v=tThis.value; tThis.value=_v.replace(/\D/g,&quot;&quot;); //过滤数字 tThis.value=_v.replace(/[^\u4e00-\u9fa5]/g,&quot;&quot;); //过滤中文 &#125; txt.onblur = function()&#123; clearNumber(this); &#125; txt.onfocus = function()&#123; clearNumber(this); &#125; txt.onkeyup = function()&#123; clearNumber(this); &#125;&#125; 限制用户输入的字符数12345678910111213141516171819window.onload=function ()&#123; var id=document.getElementById(&quot;id&quot;); clearmaxlength=function (tThis)&#123; var _v=tThis.value, _vLen=_v.length, dataLen=tThis.getAttribute(&apos;data-length&apos;), subLen=dataLen; if(_vLen&gt;dataLen) tThis.value=_v.substr(0,subLen); &#125; txt.onblur = function()&#123; clearmaxlength(this); &#125; txt.onfocus = function()&#123; clearmaxlength(this); &#125; txt.onkeyup = function()&#123; clearmaxlength(this); &#125;&#125; 回车提交12345678910window.onload=function ()&#123; var txt=document.getElementById(&quot;txt&quot;); txt.onkeyup=function (e)&#123; e= e || window.event; var keycode=e.keyCode || e.which || e.charCode; if(keycode===13)&#123; alert(&quot;回车提交成功！&quot;) &#125; &#125;&#125; 关键字过滤1234567891011121314window.onload=function ()&#123; var txtfilter=document.getElementById(&quot;id&quot;); txtfilter.onclick=function ()&#123; words=[ &quot;JavaScript&quot;, &quot;美女&quot;, /[外]&#123;1&#125;.&#123;0,3&#125;[挂]&#123;1&#125;/ ], txtLen=words.length; for(var i=0;i&lt;txtLen;i++)&#123; txtfilter.value=txtfilter.value.replace(words[i],&quot;***&quot;); &#125; &#125;&#125; 未完待续。。。 当然，你也可以查看这里。 点击查看更多]]></content>
       <categories>
         <category>ittech</category>
@@ -443,7 +432,7 @@
   </entry>
   <entry>
     <title><![CDATA[在响应式布局下，保证不同元素的相同高度]]></title>
-    <url>%2F2016%2F10%2F24%2F%E5%93%8D%E5%BA%94%E5%BC%8F%E5%AE%9E%E7%8E%B0%E7%9B%B8%E5%90%8C%E9%AB%98%E5%BA%A6%2F</url>
+    <url>%2F2016%2F10%2F24%2Fi016%2F</url>
     <content type="text"><![CDATA[在响应式布局中限制不同元素的高度依靠单纯的css恐怕是无能为力了，但我们可以通过jQuery中的matchHeight.js可以将全部所选元素等高。 再有就是将处在同一行的元素等高。原理就是在在同一行元素中选择最高的，然后将所有元素的高度设置成该数值，代码如下： 12345678910111213141516171819202122232425262728293031323334equalheight = function(container)&#123;var currentTallest = 0, currentRowStart = 0, rowDivs = new Array(), $el, topPosition = 0; $(container).each(function() &#123; $el = $(this); $($el).height(&apos;auto&apos;) topPostion = $el.position().top; if (currentRowStart != topPostion) &#123; for (currentDiv = 0 ; currentDiv &lt; rowDivs.length ; currentDiv++) &#123; rowDivs[currentDiv].height(currentTallest); &#125; rowDivs.length = 0; // empty the array currentRowStart = topPostion; currentTallest = $el.height(); rowDivs.push($el); &#125; else &#123; rowDivs.push($el); currentTallest = (currentTallest &lt; $el.height()) ? ($el.height()) : (currentTallest); &#125; for (currentDiv = 0 ; currentDiv &lt; rowDivs.length ; currentDiv++) &#123; rowDivs[currentDiv].height(currentTallest); &#125; &#125;);&#125;//eg比如想具有相同的class的元素有相等的高度$(window).load(function() &#123; equalheight(&apos;.eqheight&apos;);&#125;);$(window).resize(function()&#123; equalheight(&apos;.eqheight&apos;);&#125;);]]></content>
       <categories>
         <category>ittech</category>
@@ -454,7 +443,7 @@
   </entry>
   <entry>
     <title><![CDATA[获取网页宽高]]></title>
-    <url>%2F2016%2F10%2F12%2Fscreen%2F</url>
+    <url>%2F2016%2F10%2F12%2Fi015%2F</url>
     <content type="text"><![CDATA[Javascript: 网页可见区域宽： document.body.clientWidth 网页可见区域高： document.body.clientHeight 网页可见区域宽： document.body.offsetWidth (包括边线的宽) 网页可见区域高： document.body.offsetHeight (包括边线的高) 网页正文全文宽： document.body.scrollWidth 网页正文全文高： document.body.scrollHeight 网页被卷去的高： document.body.scrollTop 网页被卷去的左： document.body.scrollLeft 网页正文部分上： window.screenTop 网页正文部分左： window.screenLeft 屏幕分辨率的高： window.screen.height 屏幕分辨率的宽： window.screen.width 屏幕可用工作区高度： window.screen.availHeight 屏幕可用工作区宽度： window.screen.availWidth JQuery:$(document).ready(function(){alert($(window).height()); //浏览器当前窗口可视区域高度alert($(document).height()); //浏览器当前窗口文档的高度alert($(document.body).height());//浏览器当前窗口文档body的高度alert($(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin}) 用jQuery监听浏览器窗口的变化$(window).resize(function () { //当浏览器大小变化时 alert($(window).height()); //浏览器时下窗口可视区域高度 alert($(document).height()); //浏览器时下窗口文档的高度 alert($(document.body).height()); //浏览器时下窗口文档body的高度 alert($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin});]]></content>
       <categories>
         <category>ittech</category>
@@ -465,7 +454,7 @@
   </entry>
   <entry>
     <title><![CDATA[jQuery【一】]]></title>
-    <url>%2F2016%2F10%2F03%2F%E5%88%9D%E8%AF%86jq%2F</url>
+    <url>%2F2016%2F10%2F03%2Fi014%2F</url>
     <content type="text"><![CDATA[jQuery中的节点操作追加元素12$(&apos;#p&apos;).append(&apos;向p中追加元素&apos;);$(&apos;追加元素到p&apos;).appendTo(&quot;#p&quot;); 前置元素12$(&apos;#a&apos;).prepend(&apos;向p中前置元素&apos;);$(&apos;前置元素到p中&apos;).appendTo(&apos;p&apos;);*/ 插入元素12$(&apos;#a&apos;).before(&apos;节点元素前插入节点元素&apos;);$(&apos;#a&apos;).after(&apos;在p之后插入元素&apos;); 插入节点元素前后必须用标签包起来123$(&quot;&lt;b&gt;插入到节点元素后&lt;/b&gt;&quot;).insertAfter(&quot;#a&quot;);$(&quot;&lt;b&gt;插入到节点元素前&lt;/b&gt;&quot;).insertBefore(&quot;#a&quot;);//区分insertAfter,insertBefore与after,before 几种删除节点的方法1234var $li=$(&quot;ul li:eq(1)&quot;).remove();$(&quot;ul&quot;).append($li);//把刚删除的元素节点从新添加到ul元素中去$(&quot;ul li&quot;).remove(&quot;li[title!=a]&quot;);//将ul元素下title属性不等于&quot;a&quot;的li元素删除 $(&quot;ul li:eq(1)&quot;).empty();//清空ul节点下第2个li元素的内容 复制节点1$(this).clone(true).appendTo(&quot;ul&quot;); 替换节点12$(&quot;p&quot;).replaceWith(&quot;&lt;strong&gt;你最不喜欢的水果是？&lt;/Strong&gt;&quot;);$(&quot;[name=&apos;rp&apos;]&quot;).replaceWith(&quot;&lt;tr&gt;&lt;td&gt;gg&lt;/td&gt;&lt;/tr&gt;&quot;); jQuery中的属性过滤器[attribute=value] 属性过滤器，全字符匹配1$(&apos;#a&apos;).attr(&apos;value&apos;,&apos;aa&apos;); [attribute!=value] 同 not([attr=”value”])1$(&quot;a&quot;).not(&quot;[href*=&apos;http://&apos;]&quot;).append(&quot;更改内容&quot;); [attribute^=value] 取出属性以指定字符串开头的元素1$(&quot;a[href^=&apos;http:&apos;]&quot;).attr(&quot;target&quot;,&quot;_blank&quot;).css(&quot;background-color&quot;,&quot;gray&quot;); [attribute$=value] 取出属性以指定字符串结尾的元素12$(&quot;a[href$=&apos;edu.cn&apos;]&quot;).css(&quot;background-color&quot;,&quot;red&quot;).append(&quot;单属性过滤器&quot;);$(&quot;a[rel=&apos;google&apos;][target=&apos;_blank&apos;]&quot;).css(&quot;background-color&quot;,&quot;green&quot;).append(&quot;多属性过滤器&quot;);]]></content>
       <categories>
         <category>ittech</category>
@@ -487,7 +476,7 @@
   </entry>
   <entry>
     <title><![CDATA[JavaScript中call,apply,bind联系与区别]]></title>
-    <url>%2F2016%2F09%2F28%2Fcall%2F</url>
+    <url>%2F2016%2F09%2F28%2Fi013%2F</url>
     <content type="text"><![CDATA[call/apply/bind方法的来源: call,apply,bind这三个方法都是继承自Function.prototype中的，属于实例方法。 123console.log(Function.prototype.hasOwnProperty(&apos;call&apos;)) //trueconsole.log(Function.prototype.hasOwnProperty(&apos;apply&apos;)) //trueconsole.log(Function.prototype.hasOwnProperty(&apos;bind&apos;)) //true Function.prototype.call()函数实例的call方法，可以指定该函数内部this的指向，然后在所指定的作用域中，调用该函数。并且会立即执行该函数。如： 12345678910111213var zhangsan = &#123; age: 20 //;会报错Uncaught SyntaxError: Unexpected token&#125;;var age = 22;function a() &#123; console.log(this.age);&#125;a(); //22a.call(); //22a.call(null); //22a.call(undefined); //22a.call(this); //22a.call(zhangsan); //20 上述代码中，this如果指向全局对象，则返回22,否则返回20。 call()方法可以传递2个参数，第一个参数是函数执行时所在的作用域，第二个是函数调用时需要传递的参数。第一个参数时必须的，可以是null,undefined,this,其表示函数此时处于全局作用域，第二个参数必须一个个添加。而在apply()方法中，第二个参数必须为数组。 call()方法的应用：调用对象的原生方法或将类数组对象转换为数组1234567var obj = &#123;&#125;; console.log(obj.hasOwnProperty(&apos;toString&apos;)); //false obj.hasOwnProperty = function() &#123; return true; &#125; console.log(obj.hasOwnProperty(&apos;toString&apos;)); //true console.log(Object.prototype.hasOwnProperty.call(obj, &apos;toString&apos;)); //false hasOwnProperty是obj对象继承的方法，如果这个方法一旦被覆盖，就不会得到正确结果。call方法可以解决这个方法，它将hasOwnProperty方法的原始定义放到obj对象上执行，这样无论obj上有没有同名方法，都不会影响结果。要注意的是，hasOwnProperty是Object.prototype原生对象的方法，而call是继承自Function.prototype的方法。 Function.prototype.apply() apply方法的作用与call方法类似，也是改变this指向（函数执行时所在的作用域），然后在指定的作用域中，调用该函数。同时也会立即执行该函数。唯一的区别就是，它接收一个数组作为函数执行时的参数 call与apply的区别：12345function keith(a, b) &#123; console.log(a + b); &#125; keith.call(null, 2, 3); //5 keith.apply(null, [2, 3]); //5 有必要再说一遍：call()第二个参数必须一个个添加【可同时添加多个】，二apply()必须以数组的形式添加。 apply()应用： 找出数组中的最大数 1234var a = [2, 4, 5, 7, 8, 10];console.log(Math.max.apply(null, a)); //10console.log(Math.max.call(null,2, 4, 5, 7, 8, 10)); //10Javascript中是没有提供找出数组中最大值的方法的，使用继承自Function.prototype的apply和Math.max方法，就可以返回数组的最大值。 将数组的空元素变为undefined【利用Array构造函数将数组的空元素变成undefined。】 1console.log(Array.apply(null, [1, , 3])); // [1, undefined, 3] 空元素与undefined的区别在于，数组的forEach()会跳过空元素，但不会跳过undefined和null。 1234567var a = [1, , 3]; a.forEach(function(index) &#123; console.log(index); //1,3 ，跳过了空元素。 &#125;) Array.apply(null,a).forEach(function(index)&#123; console.log(index); ////1,undefined,3 ，将空元素设置为undefined &#125;) 利用数组对象的slice方法，可以将一个类似数组的对象（比如arguments对象）转为真正的数组。当然，slice方法的一个重要应用，就是将类似数组的对象转为真正的数组。call和apply都可以实现该应用。 1234567891011console.log(Array.prototype.slice.apply(&#123;0:1,length:1&#125;)); //[1]console.log(Array.prototype.slice.call(&#123;0:1,length:1&#125;)); //[1]console.log(Array.prototype.slice.apply(&#123;0:1,length:2&#125;)); //[1,undefined×1]console.log(Array.prototype.slice.call(&#123;0:1,length:2&#125;)); //[1,undefined×1]//n为任意数字console.log(Array.prototype.slice.apply(&#123;0:1,length:n&#125;)); //[1,undefined×(n-1)]console.log(Array.prototype.slice.call(&#123;0:1,length:n&#125;)); //[1,undefined×(n-1)]function keith(a,b,c)&#123; return arguments; &#125;console.log(Array.prototype.slice.call(keith(2,3,4))); //[2,3,4] 该方法起作用的前提：被处理的对象必须有length属性，以及相对应的数字键。 Function.prototype.bind()bind方法用于指定函数内部的this指向（执行时所在的作用域），然后返回一个新函数。bind方法并非立即执行一个函数。 123456789var keith = &#123; a: 1, count: function() &#123; console.log(this.a++); &#125; &#125;; keith.count(); //1 keith.count(); //2 keith.count(); //3 上面代码中，如果this.a指向keith对象内部的a属性，如果这个方法赋值给另外一个变量，调用时就会出错. 12345678var keith = &#123; a: 1, count: function() &#123; console.log(this.a++); &#125;&#125;;var f = keith.count;f(); //NaN 上面代码中，如果把count方法赋值给f变量，那么this对象指向不再是keith对象了，而是window对象。而window.a默认为undefined，进行递增运算之后undefined++就等于NaN。 为了解决这个问题，可以使用bind方法，将keith对象里的this绑定到keith对象上，或者是直接调用。 1234567var f = keith.count.bind(keith);f(); //1f(); //2f(); //3keith.count.bind(keith)() //1keith.count.bind(keith)() //2keith.count.bind(keith)() //3 当然，this也可以绑定到其他对象上。 1234567var obj = &#123; a: 100&#125;;var f = keith.count.bind(obj);f(); //100f(); //101f(); //102 同样，我们也可以给bind方法传递参数，第一个参数如果为null或者undefined或者this，会将函数内部的this对象指向全局环境；第二个为调用时需要的参数，并且传递参数的形式与call方法相同。 1234567function keith(a, b) &#123; return a + b;&#125;console.log(keith.apply(null,[1,4])); //5console.log(keith.call(null,1,4)); //5console.log(keith.bind(null, 1, 4)); //keith()console.log(keith.bind(null, 1, 4)()); //5 绑定回调函数的对象: 如果在回掉函数中使用this对象，那么this对象是会指向DOM对象，也就是button对象。如果要解决回调函数中this指向问题，可以用如下方法。 12345678910var o = &#123; f: function() &#123; console.log(this === o); &#125; &#125; $(&apos;#button&apos;).on(&apos;click&apos;, function() &#123; o.f.apply(o); //或者 o.f.call(o); //或者 o.f.bind(o)(); &#125;); 点击按钮以后，控制台将会显示true。由于apply方法（或者call方法）不仅绑定函数执行时所在的对象，还会立即执行函数（而bind方法不会立即执行，注意区别），因此不得不把绑定语句写在一个函数体内。 call，apply，bind方法的联系和区别:第一个参数都是指定函数内部中this的指向（函数执行时所在的作用域），然后根据指定的作用域，调用该函数。都可以在函数调用时传递参数。call，bind方法需要直接传入，而apply方法需要以数组的形式传入。call，apply方法是在调用之后立即执行函数，而bind方法没有立即执行，需要将函数再执行一遍。有点闭包的味道。改变this对象的指向问题不仅有call，apply，bind方法，也可以使用that变量来固定this的指向。[原文链接]：(http://www.cnblogs.com/Uncle-Keith/p/5822549.html)]]></content>
       <categories>
         <category>ittech</category>
@@ -498,8 +487,8 @@
   </entry>
   <entry>
     <title><![CDATA[CSS总结]]></title>
-    <url>%2F2016%2F09%2F21%2Fcss%E6%80%BB%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[这里总结一些常用的CSS1234567891011121314text-decoration:overline/underline/line-through/blink[浏览器不支持]font-style:iatlic/oblique//斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。 通常情况下，两种效果在浏览器中看上去完全一样。overflow:hidden; white-space:nowrap; text-overflow:ellipsis;//文字溢出隐藏并显示省略号。//自定义文本选中::selection&#123;color:#fff; background:#333;&#125;::-moz-selection&#123;color:#fff;background:#333;&#125;//引用自定义字体@font-face&#123;font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;);//IE9+&#125;div&#123;font-family:xujinglei; font-size:18px; &#125;]]></content>
+    <url>%2F2016%2F09%2F21%2Fi012%2F</url>
+    <content type="text"><![CDATA[CSS实用代码汇总 多行文本未知高度垂直居中12345678910111213141516171819202122232425262728//css*&#123;margin:0;padding:0;&#125;.box&#123; height:200px; width:300px; background:pink; margin:30px auto; font-size:0;&#125;.box:before&#123; content: &apos;&apos;; display: inline-block; vertical-align: middle; width: 0; height: 100%;&#125;.text&#123; display: inline-block; font-size:16px; vertical-align: middle;/* 保证文字垂直居中 */&#125;//html&lt;div class=&quot;box&quot;&gt; &lt;p class=&quot;text&quot;&gt; 多行文本未知高度垂直居中-by 一丝多行文本未知高度垂直居中-by 一丝多行文本未知高度垂直 居中-by 一丝 &lt;/p&gt;&lt;/div&gt; 实现原理：vertical-align的对齐是需要有参照物的，那么box 容器通过 before 生成一个高度 100% 的「备胎」，他的高度和容器的高度是一致的，相对于「备胎」垂直居中，在视觉上表现出来也就是相对于容器垂直居中了。 12text-decoration:overline/underline/line-through/blink [浏览器不支持]font-style:iatlic/oblique 斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。 通常情况下，两种效果在浏览器中看上去完全一样。 文字溢出隐藏并显示省略号。1overflow:hidden; white-space:nowrap; text-overflow:ellipsis; 自定义文本选中12::selection&#123;color:#fff; background:#333;&#125;::-moz-selection&#123;color:#fff;background:#333;&#125; 引用自定义字体12345@font-face&#123;font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;); //IE9+&#125;div&#123;font-family:xujinglei; font-size:18px; &#125;]]></content>
       <categories>
         <category>ittech</category>
       </categories>
@@ -509,7 +498,7 @@
   </entry>
   <entry>
     <title><![CDATA[网页字体em的使用]]></title>
-    <url>%2F2016%2F09%2F20%2Fem%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <url>%2F2016%2F09%2F20%2Fi011%2F</url>
     <content type="text"><![CDATA[关于em这个字体单位，我一直比较纠结。只知道它是一种相对长度单位，默认1em=16px(即浏览器默认字体大小）。但em使用时并不是简单的1em=16px这么算，以下为引用内容： 任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明 Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。看了这个我非常纳闷，默认1em＝16px，但这却不合设计者的要求，又手动调整为1em＝10px，这样12px=1.2em。。。这样绕来绕去的，不如直接设置为12px得了。使用em据说是它可以自动调整，对用户体验好，但我觉得，与其让它自动调整，不如就把字体设置大点。 看到有些文章推荐网页使用em作为字体单位，并列举了这样做的几点好处，其中有一条是“国外的大部分网站能够调整的原因在于其使用了em作为字体单位”，但网页设计者们不要忘了，国外都是英文网站,英文默认10px就可以阅读，而汉字则要12px以上才能看清楚，所以适合的才是最好的。 我们按照上文引用中的用法，来做个测试： 12body&#123;font-size:62.5%;&#125;p&#123;font-size:1.2em;text-indent:2.4em;width:600px;&#125; 在firefox截图如下： 可以很明显地看到字体由于小于12px而模糊不清。如果你网页上大段大段的文字都是这个样子，用户感觉是很糟糕的。 注：IE及chrome正常，都为12px左右，其中chrome有一个bug：不能显示12px以下大小的字体，所以到底兼容性如何还是未知数。 鉴于em使用的麻烦度与不兼容性，我觉得网页字体还是不要用em的好，要用就把它相对设大点，以免出现上图的情况。另外，如果觉得小字体对用户不好的话，就设置font-size:14px吧，这样在什么分辨率下都足以看清了。]]></content>
       <categories>
         <category>ittech</category>
@@ -553,7 +542,7 @@
   </entry>
   <entry>
     <title><![CDATA[常用dom方法]]></title>
-    <url>%2F2016%2F08%2F15%2F%E5%B8%B8%E7%94%A8dom%E6%96%B9%E6%B3%95%2F</url>
+    <url>%2F2016%2F08%2F15%2Fi010%2F</url>
     <content type="text"><![CDATA[DOM常用方法 getElementById(id): 获取有指定惟一ID属性值文档中的元素; getElementsByTagName(name): 返回当前元素中有指定标记名的子元素的数组; hasChildNodes(): 返回一个布尔值，指示元素是否有子元素; getAttribute(name): 返回元素的属性值，属性由name指定； appendChild(element): 将element插入到当前元素后面; createElement(element): 创建一个新的element; createTextNode(text): 以text为内容创建一个新的text节点; insertBefore(new_node, old_node): 将new_node插入到old_node前面一个位置.当然，也可以自己创建个insertAfter(),点击产看 DOM的常用属性 childNodes: 返回当前元素所有子元素的数组; firstChild: 返回当前元素的第一个下级子元素; lastChild: 返回当前元素的最后一个子元素; nextSibling: 返回当前元素后面一个位置的元素; previousSibling: 返回当前元素前面一个位置的元素; parentNode: 返回当前元素的父节点.]]></content>
       <categories>
         <category>ittech</category>
@@ -564,7 +553,7 @@
   </entry>
   <entry>
     <title><![CDATA[setTimeout与setInterval的使用]]></title>
-    <url>%2F2016%2F08%2F05%2Fsettimeout%2F</url>
+    <url>%2F2016%2F08%2F05%2Fi009%2F</url>
     <content type="text"><![CDATA[setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过创建一个函数循环重复调用setTimeout，以实现重复的操作： setTimeOut123456showTime();function showTime()&#123; var today = new Date(); alert(&quot;The time is: &quot; + today.toString()); setTimeout(&quot;showTime()&quot;, 5000);&#125; setInterval12345setInterval(&quot;showTime()&quot;, 5000);function showTime()&#123; var today = new Date(); alert(&quot;The time is: &quot; + today.toString());&#125; setTimeout方法不会每隔5秒钟就执行一次showTime函数，它是在每次调用setTimeout后过5秒钟再去执行showTime函数,而setInterval却可以每隔一定时间就重复执行一次那个函数。 用法： 需要每隔一个固定的时间间隔后就精确地执行某动作，那么最好使用setInterval，而如果不想由于连续调用产生互相干扰的问题，尤其是每次函数的调用需要繁重的计算以及很长的处理时间，那么最好使用setTimeout。]]></content>
       <categories>
         <category>ittech</category>
@@ -575,7 +564,7 @@
   </entry>
   <entry>
     <title><![CDATA[谈谈闭包]]></title>
-    <url>%2F2016%2F08%2F05%2F%E9%97%AD%E5%8C%85%2F</url>
+    <url>%2F2016%2F08%2F05%2Fi008%2F</url>
     <content type="text"><![CDATA[什么是闭包，如何理解 闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量,利用闭包可以突破作用链域，将函数内部的变量和方法传递到外部。 先看个案例12345678910111213141516&lt;ul&gt; &lt;li&gt;1&lt;/li&gt; &lt;li&gt;2&lt;/li&gt; &lt;li&gt;3&lt;/li&gt; &lt;li&gt;4&lt;/li&gt;&lt;/ul&gt;&lt;script&gt; (function ()&#123; var liArr=document.getElementsByTagName(&apos;li&apos;); for(var i=0;i&lt;liArr.length;i++)&#123; liArr[i].onclick=function ()&#123; console.log(i) &#125; &#125; &#125;)()&lt;/script&gt; 以上代码想输出被点击li的索引号，但结果并非如此，每次输出都是4。 原因在于匿名函数没有变量 i，所以它必须向上查找，在全局环境中找到了 i。 当for循环运行后，全局变量中的 i 变成了4。此时当你点击文字的时候，会调用其绑定的函数，而该函数运行的时候，发现自己没有 i，就会取得全局环境中的 i。 解决办法1 将var更改为let,不知道的点击查看let关键字，干嘛用的？ 解决办法2–采用闭包 12345678910111213141516for(var i=0;i&lt;dom.length;i++)&#123; dom[i].onclick=function(i)&#123; return function()&#123; console.log(i); &#125;; &#125;(i);&#125;//当然也可以这样写for(i = 0;i&lt;nodes.length;i+= 1)&#123; nodes[i].onclick = (function(i)&#123; return function() &#123; console.log(i); &#125; //不用闭包的话，值每次都是4 &#125;)(i);&#125; 来，看看有没有理解 12345678 for(var i=0;i&lt;dom.length;i++)&#123; dom[i].onclick=function(t)&#123; return function()&#123; console.log(t); //1 console.log(i); //3 &#125;; &#125;(i);&#125; 闭包的特性 函数内再嵌套函数 内部函数可以引用外层的参数和变量 参数和变量不会被垃圾回收机制回收 123456789101112 function fn() &#123; // Local variable that ends up within closure var num = 666; var sayAlert = function() &#123; alert(num); &#125; num++; return sayAlert;&#125; var sayAlert = fn(); sayAlert(); //执行结果应该弹出的667 执行fn后,内部变量会存在,而闭包内部函数的内部变量不会存在使得Javascript的垃圾收机制GC不会收回fn所占用的资源因为fn的内部函数的执行需要依赖fn中的变量,这是对闭包作用的非常直白的描述。]]></content>
       <categories>
         <category>ittech</category>
@@ -585,19 +574,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[前端开发网站收录]]></title>
-    <url>%2F2016%2F07%2F29%2Fweb%E5%89%8D%E7%AB%AF%2F</url>
-    <content type="text"><![CDATA[程序员垂直导航 程序员垂直导航 前端导航 面试 MD文件简历在线编辑器 前端社区 大前端 技匠社 百度前端技术社区 720云 前端收录 Glup中文网 手册网 Node爱好者 JQuery在线手册 w3cplus 前端学习网站推荐 极客标签 码农周刊 前端周刊 慕课网 div.io Hacker News Hacker News InfoQ w3cplus Stack Overflow w3school mozilla 优秀博客 前端英雄榜 前端名录 开发工具 网站载入速度测试 多种MD文件编辑器 MD文件编辑器 开发教程SVG教程]]></content>
-      <categories>
-        <category>ittech</category>
-      </categories>
-      <tags>
-        <tag>Web前端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[chrome无法显示12px以下字体]]></title>
-    <url>%2F2016%2F07%2F29%2Fgoogle%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA12px%E5%AD%97%E4%BD%93%2F</url>
+    <url>%2F2016%2F07%2F29%2Fi007%2F</url>
     <content type="text"><![CDATA[今天在写页面的时候遇到个小bug，比如设置字体为10px甚至8px。但按照常规设置字体大小后，在chrome下浏览页面会觉得不如想象中小。没错，默认情况下chrome中的字号不能小于12px。 查看有关资料后，找到解决办法： 1234.fz10 &#123;-webkit-text-size-adjust:none; font-size:10px;&#125; 就是这个属性：1-webkit-text-size-adjust:none; 设置之后，chrome下的字体就不会有12px的限制了。 另：中文字体小于12px后会变得难以阅读，一般也不常用。小于12px的字体应该只应用于英文段落或数字。]]></content>
       <categories>
         <category>ittech</category>
@@ -619,7 +597,7 @@
   </entry>
   <entry>
     <title><![CDATA[巧记A标签4状态排序]]></title>
-    <url>%2F2016%2F07%2F25%2Fa%E6%A0%87%E7%AD%BE4%E7%A7%8D%E7%8A%B6%E6%80%81%2F</url>
+    <url>%2F2016%2F07%2F25%2Fi006%2F</url>
     <content type="text"><![CDATA[a:link,visited,hover,active.A标签4状态排序原则 HTML中A标签有4种状态，link,visited,hover,active，不过如果写CSS的时候排序错误就会导致状态失效或错乱。 A标签4种状态的排序规律符合一个原则，叫“爱恨原则”，由某国外友人提出，如下： LoVe/HAte 以上分别是爱与讨厌的单词，估计绝大部分人都记得。其中加亮的字母即是A标签4种状态的首字母。怎么样？如此来记，就一目了然了吧？ 感谢原作者的分享，虽然我不知道你是谁。 不过，我也有一个方法“LVHA”:LV：熟悉吗？那不是某个名牌吗。。。HA: 哈哈，记住了没。。。]]></content>
       <categories>
         <category>ittech</category>
@@ -629,8 +607,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[$(document).ready()与window.onload()的区别]]></title>
+    <url>%2F2016%2F07%2F22%2Fi005%2F</url>
+    <content type="text"><![CDATA[$(document).ready()的表示在DOM加载完之后执行一个函数【这里DOM加载完不代表全部文件加载完，例如图片文件，虽然图的src的地址加载好了，但是图本身还没加载完】。 与window.onload的区别：1.执行时间： window.onload是在DOM加载完成 + DOM相关的文件下载完成 之后再执行函数。 $(document).ready()是在DOM加载完之后执行一个函数。 $(document).ready()要比window.onload先执行；有时候页面还没有完全加载完毕而用户已经在操作页面，在技术上很多情况下，只要DOM已完全加载好了，JS就可以运行去操作DOM了，没必要等到全部加载完成,所以用$(document).ready()来提前，但是当使用的JS依赖 CSS 属性值时，或者需要在元素被加载之后才能使用时（例如，取得图片的大小需要在图片被加载完后才能知道），就需要将这样的JS放到load事件中，以免因为贪图快而带来麻烦。 能够添加的数量： window.onload不能同时编写多个，因为我查看W3C的时候，window.onload是一种原生的DOM的事件，决定了在window上只能添加一个，后续的会覆盖掉前面的。 $(document).ready()可以同时编写多个，我查看jQuery中文档，他是这么介绍的.ready()方法只能被匹配当前文档的jQuery对象调用，也就是说他是jQuery的方法，本质是一个函数，就可以执行多次。 能否简写： $(document).ready()可以简写 window.onload 不能简写 $(document).ready()的简写: $(document).ready(handler) $(handler) $().ready(handler) //一般不推荐使用]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[父元素padding后,子元素absolute定位偏差解决办法]]></title>
-    <url>%2F2016%2F07%2F19%2Fabsolute%E9%97%AE%E9%A2%98%2F</url>
+    <url>%2F2016%2F07%2F19%2Fi004%2F</url>
     <content type="text"><![CDATA[假设一div已经设置 position:relative及padding:30px，然后要在里面放置一position:absolute的元素，并设置它left:0;top:0——这种效果可用来实现左头像右内容的布局。 在Firefox等标准浏览器下，绝对定位的元素此时真的是左0上0，顶着父div的边，但IE下却是左30上30，只因为父div设置了padding为30。 这个问题很要命，那么解决办法呢？ 只要为父div加上zoom:1，触发其hasLayout，即可在IE下实现和标准浏览器下一样的样式了。此解决方案适合绝大部分情况。 每发现IE一个无厘头BUG，都会让我对IE的恨加深一层。兼容问题，’您’辛苦了…]]></content>
       <categories>
         <category>ittech</category>
@@ -651,8 +640,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[前端开发网站收录]]></title>
+    <url>%2F2016%2F07%2F08%2Fi003%2F</url>
+    <content type="text"><![CDATA[程序员垂直导航 程序员垂直导航 前端导航 面试 MD文件简历在线编辑器 前端社区 大前端 技匠社 百度前端技术社区 720云 前端收录 Glup中文网 手册网 Node爱好者 JQuery在线手册 w3cplus 前端学习网站推荐 极客标签 码农周刊 前端周刊 慕课网 div.io Hacker News Hacker News InfoQ w3cplus Stack Overflow w3school mozilla 优秀博客 前端英雄榜 前端名录 开发工具 网站载入速度测试 多种MD文件编辑器 MD文件编辑器 开发教程SVG教程]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JavaScript中中elm.style.xxx无法获取到CSS值]]></title>
-    <url>%2F2016%2F06%2F25%2Fele.style%2F</url>
+    <url>%2F2016%2F06%2F25%2Fi002%2F</url>
     <content type="text"><![CDATA[javascript中elm.style.xxx无法获取到CSS值 示例代码如下： 12345.d1&#123;color:#f00;&#125;&lt;div id=”d1″ class=”d1″&gt;获取css值&lt;/div&gt;//此时使用JS的style获取他的color属性：var d1=document.getElementById(‘d1’);alert(d1.style.color); 奇怪的是，弹出一个空值，没有任何内容，也不报错。但如果用d1.style.color=”#00f”来设置d1的CSS却正确执行。 百思不得其解，上网一搜。 解释说elm.style只能获取到elm标签上类似style=””定义的CSS属性，我靠，那怎么得到通过class来声明的属性呢？ IE中用elm.currentStyle.color的语句来获得——这种方法还能接受。 但自诩标准的W3C获取方法如下： 12var d1 =document.getElementById(‘d1’);alert(window.getComputedStyle(d1,null).color); 要用到一个很生的JS语句：getComputedStyle。这不重要，重要的是这个语句的使用方法，居然要通过window对象调用！参数居然是两个而且第二个就算是空的也不能省略！这条语句对比起elm.style甚至elm.currentStyle都要繁琐的多，而且打乱了一般的JS编程习惯。虽然通过getComputedStyle真的能取到对应的CSS值，但这个方法不得不说很是无语!]]></content>
       <categories>
         <category>ittech</category>
@@ -674,7 +674,7 @@
   </entry>
   <entry>
     <title><![CDATA[使用text-indent实现图片Logo代替文字Logo]]></title>
-    <url>%2F2016%2F06%2F23%2F%E5%AE%8C%E7%BE%8ELogo%2F</url>
+    <url>%2F2016%2F06%2F23%2Fi001%2F</url>
     <content type="text"><![CDATA[一个网站，logo是肯定少不了的。最常用的就是图片logo或直接打几个字当作logo。 毫无疑问，图片logo远比文字好看，图片可以色彩缤纷变幻无穷，而文字变来变去都那样。但直接用文字logo的还是有很多，因为纯文字更利于搜索引擎识别，图片就不行了。 有没有两全其美的方法呢？有的人使用这种： 1&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/logo.png&quot; title=&quot;图片说明&quot; alt=&quot;图片说明&quot;/&gt;&lt;/a&gt; 搜索引擎无法看到图片，但可以看到图片说明，这样也就相当于文字了————这也是SEO中强调要给图片加上alt的原因。 但其实这种方法并不完美，很多人都不喜欢加alt标记，而且这样对搜索引擎到底有没有妨害也难说清。下面介绍一种国际国内通用的方法. html代码，非常简单： 123456&lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;这是logo&lt;/a&gt;.logo&#123;background:url(images/logo.png) no-repeat;/*把你的logo图片设成背景图*/height:60px; width:150px; /*设置宽高*/text-indent:-9999px; /*设置文字缩进*/&#125; CSS代码最关键的一步就是最后的text-indent，text-indent的意思是文字缩进，它的单位一般是正数，用来将段落前空格。但这里把它的单位设为了负值，-9999px，于是原本在A标签里面的文字就被缩到不知道哪儿去了。 这样一来，用户看到的就是图片logo（背景图），而搜索引擎看到的却是正宗的文字，一举两得。 举一反三，这种方法可以用来制作图片导航栏和标题栏，但我不推荐哈，因为这两者需要做的图片太多了，麻烦，而且修改起来更麻烦。]]></content>
       <categories>
         <category>ittech</category>
