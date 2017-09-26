@@ -22,19 +22,6 @@
     })();
 </script>
 
-<script type="text/javascript" id="hexo.configuration">
-  var CONFIG = {
-    root: '/',
-    algolia: {
-          applicationID: 'I041Z1WFK3',
-          apiKey: 'ac99f0c5464a525d18e789d7213d1b65',
-          indexName: 'webykj',
-          hits: {"per_page":10},
-          labels: {"input_placeholder":"搜索...","hits_empty":"未发现与 「${query}」相关的内容","hits_stats":"${hits} 条相关条目，使用了 ${time} 毫秒"}
-        }
-  };
-</script>
-
 
 
 
@@ -110,23 +97,23 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="http://oub61fw66.bkt.clouddn.com/favicon.ico" />
 
 
 
 
 
 
-<meta name="description" content="一个前端小白的进阶史">
+<meta name="description" content="Less is more">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hero">
 <meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Hero">
-<meta property="og:description" content="一个前端小白的进阶史">
+<meta property="og:description" content="Less is more">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hero">
-<meta name="twitter:description" content="一个前端小白的进阶史">
+<meta name="twitter:description" content="Less is more">
 
 
 
@@ -347,7 +334,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/28/我与书的故事/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/13/CPU占比探测/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -366,7 +353,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/28/我与书的故事/" itemprop="url">我和书的故事</a></h1>
+                <a class="post-title-link" href="/2017/07/13/CPU占比探测/" itemprop="url">CPU占比探测</a></h1>
         
 
         <div class="post-meta">
@@ -378,8 +365,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-28T15:09:50+08:00">
-                2017-07-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-13T17:09:50+08:00">
+                2017-07-13
               </time>
             
 
@@ -401,8 +388,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/books/" itemprop="url" rel="index">
-                    <span itemprop="name">books</span>
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
                   </a>
                 </span>
 
@@ -439,14 +426,12 @@
 
       
         
-          <p>开卷有益，书，带给我们知识的时候，也逐渐强壮了我们的心智。在我的书单中，不仅限于专业书，更多的是我个人喜欢的方面。哈哈，暴露了我的读书观，不过也罢，实话实说嘛。专业书开拓了我的专业广度与深度。比如《JavaScriptDOM编程艺术》这本，我知道了“insertAfter”,以前只知道它不向insertBefore那样，本身就存在的直接用就可以，这是就需要自己创建。在我的书单中，《富爸爸，穷爸爸》，《富同学，穷同学》，《赚未来十年的钱》，《优秀的人都敢对自己下狠手》,《基金投资》等启蒙了我的金钱观，价值观。总之，每本书，在你读完后，总会有几个地方不时出现在你的脑海中，引起你的思考。每本书之间思维的碰撞，终将深刻地影响这你的行为。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/28/我与书的故事/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <p>实现原理：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">var data = []</div><div class="line">var t</div><div class="line"></div><div class="line">function pulse() &#123;</div><div class="line">  t &amp;&amp; data.push(Date.now() - t)</div><div class="line">  t = Date.now()</div><div class="line">  setTimeout(pulse, 50)</div><div class="line">&#125;</div><div class="line"></div><div class="line">pulse()</div></pre></td></tr></table></figure>
+<p>理想情况下，data=[50,50,50…],实际可能是[50,54,53,50,53…],在CPU较高时，数据可能变成[50,60,100,87…]</p>
+
+          
         
       
     </div>
@@ -978,153 +963,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/08/JavaScript DOM编程艺术2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Webykj">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hero">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/08/JavaScript DOM编程艺术2/" itemprop="url">《JavaScript DOM编程艺术》【二】</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T17:29:54+08:00">
-                2017-07-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/books/" itemprop="url" rel="index">
-                    <span itemprop="name">books</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="图片库改进："><a href="#图片库改进：" class="headerlink" title="图片库改进："></a>图片库改进：</h2><p>如果想用Javascript给某个网页添加一些行为，就不应该让Javascript代码对这个网页的结构有任何依赖，凸显了采取预防性措施的必要性。<br>结构化程序设计原则之一：函数应该只有一个入口和一个出口。但集中将出口集中在函数的开头是可以接受的。</p>
-<p>Javascript与HTML标记分离：element.event = function(){…}，这里的event不限onclick、onkeypress。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/07/08/JavaScript DOM编程艺术2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/03/ajax中的open/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1273,7 +1111,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/01/初识ajax/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/01/ajax/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -1292,7 +1130,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/07/01/初识ajax/" itemprop="url">初识AJAX</a></h1>
+                <a class="post-title-link" href="/2017/07/01/ajax/" itemprop="url">AJAX【一】</a></h1>
         
 
         <div class="post-meta">
@@ -1372,7 +1210,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/07/01/初识ajax/#more" rel="contents">
+            <a class="btn" href="/2017/07/01/ajax/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1719,7 +1557,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/25/JavaScript DOM编程艺术/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/26/webapp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -1738,7 +1576,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/25/JavaScript DOM编程艺术/" itemprop="url">《JavaScript DOM编程艺术》【一】</a></h1>
+                <a class="post-title-link" href="/2017/05/26/webapp/" itemprop="url">Web App、Hybrid App、 Native App各自优缺点</a></h1>
         
 
         <div class="post-meta">
@@ -1750,8 +1588,168 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-25T18:39:23+08:00">
-                2017-06-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-26T18:09:45+08:00">
+                2017-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="Web-App"><a href="#Web-App" class="headerlink" title="Web App"></a>Web App</h2><p>Web App 指采用Html5语言写出的App,无需下载安装，可以说是触屏版的网页应用。<br>优点:</p>
+<ul>
+<li>开发成本低，</li>
+<li>更新快，</li>
+<li>更新无需通知用户，不需要手动升级，</li>
+<li>能够跨多个平台和终端。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>临时性的入口</li>
+<li>无法获取系统级别的通知，提醒，动效等等</li>
+<li>用户留存率低</li>
+<li>设计受限制诸多</li>
+<li>体验较差</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/26/webapp/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/09/b005/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/09/b005/" itemprop="url">《赚未来十年的钱》</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T18:09:50+08:00">
+                2017-05-09
               </time>
             
 
@@ -1811,22 +1809,14 @@
 
       
         
-          <h2 id="先看个小例子："><a href="#先看个小例子：" class="headerlink" title="先看个小例子："></a>先看个小例子：</h2><p><a href="https://webykj.github.io/insertAfter/" target="_blank" rel="external">创建insertAfter方法</a></p>
-<h2 id="DOM常用的5个方法："><a href="#DOM常用的5个方法：" class="headerlink" title="DOM常用的5个方法："></a>DOM常用的5个方法：</h2><ul>
-<li><p>getElementById</p>
-</li>
-<li><p>getElementsByTagName</p>
-</li>
-<li><p>gettElemensByClassName</p>
-</li>
-<li><p>getAttribute</p>
-</li>
-<li><p>setAttribute</p>
-</li>
-</ul>
+          <p>《赚未来十年的钱》如果你没过这本书可能认为只是本鸡汤书，其实，我没看之前也是这样认为的。但你读后，你会发现自己错了。并不是自己想的那样。强烈推荐。这本书是今年我看的所有书里面让我感触最深的！作者在经历了人生的三起三落后，从此人生走向正轨。我欣赏作者的魄力。其实，我把他当做我的偶像。恩，对，就是这样，下面进入正题。</p>
+<blockquote>
+<p>人在年轻时候的苦不是苦，老来苦才真的可怕。</p>
+</blockquote>
+<p>年少时的苦是历练，年老时的苦是凄惨，少一些抱怨，多一些努力付出比什么都重要。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/06/25/JavaScript DOM编程艺术/#more" rel="contents">
+            <a class="btn" href="/2017/05/09/b005/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1868,7 +1858,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1907,7 +1897,7 @@
               alt="Webykj" />
           
             <p class="site-author-name" itemprop="name">Webykj</p>
-            <p class="site-description motion-element" itemprop="description">一个前端小白的进阶史</p>
+            <p class="site-description motion-element" itemprop="description">Less is more</p>
         </div>
 
         <nav class="site-state motion-element">
@@ -1917,7 +1907,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">59</span>
+                <span class="site-state-item-count">64</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1939,7 +1929,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
