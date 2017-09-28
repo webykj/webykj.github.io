@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="JSONP的原理：[json with padding] 引入文件通过回调函数将获取到的数据当成参数传递给回调函数中的变量。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-24T13:03:09.479Z">
+<meta property="og:updated_time" content="2017-09-28T08:29:26.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSONP">
 <meta name="twitter:description" content="JSONP的原理：[json with padding] 引入文件通过回调函数将获取到的数据当成参数传递给回调函数中的变量。">
@@ -437,6 +437,14 @@
 <li>通过flash,创建一个xml文件</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">function fn(a)&#123;</div><div class="line">    console.log(a.s[0])</div><div class="line">&#125;</div><div class="line">window.onload=function ()&#123;</div><div class="line">    var btn=document.getElementById(&quot;btn&quot;);</div><div class="line">    btn.onclick=function ()&#123;</div><div class="line">        var olink=document.createElement(&quot;script&quot;);</div><div class="line">        olink.src=&quot;http://suggestion.baidu.com/su?wd=a&amp;cb=fn&quot;;</div><div class="line">        document.body.appendChild(olink);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="AJAX与JSONP的异同"><a href="#AJAX与JSONP的异同" class="headerlink" title="AJAX与JSONP的异同"></a>AJAX与JSONP的异同</h2><ol>
+<li>这2种调用方式在技术上看起来很像，都是请求一个URL,再把返回的数据进行处理，因此也可以这样说，jQuery是把JSONP作为AJAX的一种方式进行了封装。</li>
+<li>但本质上而言，2者是不同的东西，AJAX是通过XMLHttpRequest获取非本页面的内容，而JSONP则是通过动态创建script获取服务器返回的数据【js脚本】。</li>
+<li>两者的数据格式不一定非得是json格式，可以是任何格式，只不过json格式更为简便明了。</li>
+<li>总而言之，jsonp不是ajax的一个特例，哪怕jquery把jsonp封装进ajax，也不能改变这一点！</li>
+</ol>
+<p><a href="http://www.qdfuns.com/notes/16738/1b6ad6125747d28592a53a960b44c6f4.html" target="_blank" rel="external">参考文章</a></p>
+
       
     </div>
     
@@ -589,7 +597,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">66</span>
+                <span class="site-state-item-count">67</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -660,7 +668,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JSONP的原理：-json-with-padding"><span class="nav-number">1.</span> <span class="nav-text">JSONP的原理：[json with padding]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨域问题："><span class="nav-number">2.</span> <span class="nav-text">跨域问题：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JSONP的原理：-json-with-padding"><span class="nav-number">1.</span> <span class="nav-text">JSONP的原理：[json with padding]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨域问题："><span class="nav-number">2.</span> <span class="nav-text">跨域问题：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AJAX与JSONP的异同"><span class="nav-number">3.</span> <span class="nav-text">AJAX与JSONP的异同</span></a></li></ol></div>
             
 
           </div>
