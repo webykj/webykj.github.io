@@ -122,17 +122,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[个人后花园的第一步]]></title>
-    <url>%2F2017%2F08%2F20%2F%E4%B8%AA%E4%BA%BA%E5%90%8E%E8%8A%B1%E5%9B%AD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5%2F</url>
-    <content type="text"><![CDATA[在开始正题之前，我觉得我有必要说个事情，我推荐个JS前端开发联盟群。群号【76099500】，声明一下，这是个跳板群，无论是这个群还是其他高级群前辈们挺多的，技术氛围也是挺浓的，适合技术人。。。是的，今天我开通了后花园，灵感就是来自‘JS前端开发联盟群’,希望给自己一定的约束。主要分为2块，周结与月报。我会不断回顾过去，总结过去，并不断制定下一阶段的学习情况。]]></content>
-      <categories>
-        <category>back-yard</category>
-      </categories>
-      <tags>
-        <tag>后花园</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[JSONP]]></title>
     <url>%2F2017%2F08%2F20%2Fi036%2F</url>
     <content type="text"><![CDATA[JSONP的原理：[json with padding] 引入文件通过回调函数将获取到的数据当成参数传递给回调函数中的变量。 跨域问题： 域顾名思义就是域名，跨域表示一个域名下的文件访问另一个域名下的资源。解决跨域问题的方法[由于AJAX存在跨域限制] 通过JSONP，也就是script标签 通过服务器中转 通过flash,创建一个xml文件 1234567891011function fn(a)&#123; console.log(a.s[0])&#125;window.onload=function ()&#123; var btn=document.getElementById(&quot;btn&quot;); btn.onclick=function ()&#123; var olink=document.createElement(&quot;script&quot;); olink.src=&quot;http://suggestion.baidu.com/su?wd=a&amp;cb=fn&quot;; document.body.appendChild(olink); &#125;&#125; AJAX与JSONP的异同 这2种调用方式在技术上看起来很像，都是请求一个URL,再把返回的数据进行处理，因此也可以这样说，jQuery是把JSONP作为AJAX的一种方式进行了封装。 但本质上而言，2者是不同的东西，AJAX是通过XMLHttpRequest获取非本页面的内容，而JSONP则是通过动态创建script获取服务器返回的数据【js脚本】。 两者的数据格式不一定非得是json格式，可以是任何格式，只不过json格式更为简便明了。 总而言之，jsonp不是ajax的一个特例，哪怕jquery把jsonp封装进ajax，也不能改变这一点！ 参考文章]]></content>
@@ -510,7 +499,7 @@
   <entry>
     <title><![CDATA[CSS总结]]></title>
     <url>%2F2016%2F09%2F21%2Fi012%2F</url>
-    <content type="text"><![CDATA[CSS实用代码汇总 多行文本未知高度垂直居中12345678910111213141516171819202122232425262728//css*&#123;margin:0;padding:0;&#125;.box&#123; height:200px; width:300px; background:pink; margin:30px auto; font-size:0;&#125;.box:before&#123; content: &apos;&apos;; display: inline-block; vertical-align: middle; width: 0; height: 100%;&#125;.text&#123; display: inline-block; font-size:16px; vertical-align: middle;/* 保证文字垂直居中 */&#125;//html&lt;div class=&quot;box&quot;&gt; &lt;p class=&quot;text&quot;&gt; 多行文本未知高度垂直居中-by 一丝多行文本未知高度垂直居中-by 一丝多行文本未知高度垂直 居中-by 一丝 &lt;/p&gt;&lt;/div&gt; 实现原理：vertical-align的对齐是需要有参照物的，那么box 容器通过 before 生成一个高度 100% 的「备胎」，他的高度和容器的高度是一致的，相对于「备胎」垂直居中，在视觉上表现出来也就是相对于容器垂直居中了。 12text-decoration:overline/underline/line-through/blink [浏览器不支持]font-style:iatlic/oblique 斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。 通常情况下，两种效果在浏览器中看上去完全一样。 文字溢出隐藏并显示省略号。1overflow:hidden; white-space:nowrap; text-overflow:ellipsis; 自定义文本选中12::selection&#123;color:#fff; background:#333;&#125;::-moz-selection&#123;color:#fff;background:#333;&#125; 引用自定义字体12345@font-face&#123;font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;); //IE9+&#125;div&#123;font-family:xujinglei; font-size:18px; &#125;]]></content>
+    <content type="text"><![CDATA[CSS实用代码汇总 多行文本未知高度垂直居中12345678910111213141516171819202122232425262728//css*&#123;margin:0;padding:0;&#125;.box&#123; height:200px; width:300px; background:pink; margin:30px auto; font-size:0;&#125;.box:before&#123; content: &apos;&apos;; display: inline-block; vertical-align: middle; width: 0; height: 100%;&#125;.text&#123; display: inline-block; font-size:16px; vertical-align: middle;/* 保证文字垂直居中 */&#125;//html&lt;div class=&quot;box&quot;&gt; &lt;p class=&quot;text&quot;&gt; 多行文本未知高度垂直居中-by 一丝多行文本未知高度垂直居中-by 一丝多行文本未知高度垂直 居中-by 一丝 &lt;/p&gt;&lt;/div&gt; 实现原理：vertical-align的对齐是需要有参照物的，那么box 容器通过 before 生成一个高度 100% 的「备胎」，他的高度和容器的高度是一致的，相对于「备胎」垂直居中，在视觉上表现出来也就是相对于容器垂直居中了。 12text-decoration:overline/underline/line-through/blink [浏览器不支持]font-style:iatlic/oblique 斜体（italic）是一种简单的字体风格，对每个字母的结构有一些小改动，来反映变化的外观。倾斜（oblique）文本则是正常竖直文本的一个倾斜版本。 通常情况下，两种效果在浏览器中看上去完全一样。 如何让height100%起作用我们都知道，要想让页面width:100%;可以通过直接设置width:100%实现，但如果是高度呢？直接设置height:100%;无法起作用。 这就需要我们理解浏览器的计算原理了。 事实上，浏览器根本就不计算内容的高度，除非内容超出了视窗范围(导致滚动条出现)。或者你给整个页面设置一个绝对高度。否则，浏览器就会简单的让内容往下堆砌，页面的高度根本就无需考虑。 但这并不意味着我们不能没有办法实现： 123456789&lt;html style=&quot;height: 100%;&quot;&gt; &lt;body style=&quot;height: 100%;&quot;&gt; &lt;div style=&quot;height: 100%;&quot;&gt; &lt;p&gt; 这样这个div的高度就会100%了 &lt;/p&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; 可以通过给html,body设置height:100%;实现。但随之也带了一系列问题： Margins 和 padding 会让你的页面出现滚动条，也许这是你不希望的。 如果你的元素实际高度大于你设定的百分比高度，那元素的高度会自动扩展。 文字溢出隐藏并显示省略号。1overflow:hidden; white-space:nowrap; text-overflow:ellipsis; 自定义文本选中12::selection&#123;color:#fff; background:#333;&#125;::-moz-selection&#123;color:#fff;background:#333;&#125; 引用自定义字体12345@font-face&#123;font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;); //IE9+&#125;div&#123;font-family:xujinglei; font-size:18px; &#125;]]></content>
       <categories>
         <category>ittech</category>
       </categories>
@@ -560,6 +549,17 @@
       </categories>
       <tags>
         <tag>about</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[个人后花园的第一步]]></title>
+    <url>%2F2016%2F08%2F20%2F%E4%B8%AA%E4%BA%BA%E5%90%8E%E8%8A%B1%E5%9B%AD%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5%2F</url>
+    <content type="text"><![CDATA[在开始正题之前，我觉得我有必要说个事情，我推荐个JS前端开发联盟群。群号【76099500】，声明一下，这是个跳板群，无论是这个群还是其他高级群前辈们挺多的，技术氛围也是挺浓的，适合技术人。。。是的，今天我开通了后花园，灵感就是来自‘JS前端开发联盟群’,希望给自己一定的约束。主要分为2块，周结与月报。我会不断回顾过去，总结过去，并不断制定下一阶段的学习情况。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>后花园</tag>
       </tags>
   </entry>
   <entry>
