@@ -334,7 +334,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/28/i013/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/06/25/b002/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -353,7 +353,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/09/28/i013/" itemprop="url">JavaScript中call,apply,bind联系与区别</a></h1>
+                <a class="post-title-link" href="/2016/06/25/b002/" itemprop="url">《JavaScript DOM编程艺术》【一】</a></h1>
         
 
         <div class="post-meta">
@@ -365,8 +365,166 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-28T18:09:50+08:00">
-                2016-09-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-25T18:39:23+08:00">
+                2016-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/books/" itemprop="url" rel="index">
+                    <span itemprop="name">books</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="先看个小例子："><a href="#先看个小例子：" class="headerlink" title="先看个小例子："></a>先看个小例子：</h2><p><a href="https://webykj.github.io/insertAfter/" target="_blank" rel="external">创建insertAfter方法</a></p>
+<h2 id="DOM常用的5个方法："><a href="#DOM常用的5个方法：" class="headerlink" title="DOM常用的5个方法："></a>DOM常用的5个方法：</h2><ul>
+<li><p>getElementById</p>
+</li>
+<li><p>getElementsByTagName</p>
+</li>
+<li><p>gettElemensByClassName</p>
+</li>
+<li><p>getAttribute</p>
+</li>
+<li><p>setAttribute</p>
+</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/06/25/b002/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/06/20/i023/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/06/20/i023/" itemprop="url">document.body.scrollTop与document.documentElement.scrollTop的兼容</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-20T19:39:50+08:00">
+                2016-06-20
               </time>
             
 
@@ -426,13 +584,12 @@
 
       
         
-          <h2 id="call-apply-bind方法的来源"><a href="#call-apply-bind方法的来源" class="headerlink" title="call/apply/bind方法的来源:"></a>call/apply/bind方法的来源:</h2><blockquote>
-<p>call,apply,bind这三个方法都是继承自Function.prototype中的，属于实例方法。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">console.log(Function.prototype.hasOwnProperty(&apos;call&apos;)) //true</div><div class="line">console.log(Function.prototype.hasOwnProperty(&apos;apply&apos;)) //true</div><div class="line">console.log(Function.prototype.hasOwnProperty(&apos;bind&apos;)) //true</div></pre></td></tr></table></figure>
+          <p>这两天在写一个JS滚动监听，在[display]的时候发现了这个问题：chrome居然不认识document.documentElement.scrollTop！</p>
+<p>看前辈们的文章，纷纷表示如果有文档声明（即网页第一句的docType）的情况下，标准浏览器是只认识documentElement.scrollTop的，但chrome虽然我感觉比firefox还标准，但却不认识这个，在有文档声明时，chrome也只认识document.body.scrollTop.</p>
+<p>由于在不同情况下，document.body.scrollTop与document.documentElement.scrollTop都有可能取不到值，那到底网页的scrollTop值怎么得到呢？<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/09/28/i013/#more" rel="contents">
+            <a class="btn" href="/2016/06/20/i023/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -483,7 +640,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/21/i012/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/06/12/i015/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -502,7 +659,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/09/21/i012/" itemprop="url">CSS总结</a></h1>
+                <a class="post-title-link" href="/2016/06/12/i015/" itemprop="url">获取网页宽高</a></h1>
         
 
         <div class="post-meta">
@@ -514,8 +671,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-21T18:39:50+08:00">
-                2016-09-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-12T18:09:45+08:00">
+                2016-06-12
               </time>
             
 
@@ -575,14 +732,27 @@
 
       
         
-          <p>CSS实用代码汇总<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/09/21/i012/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript:"></a>Javascript:</h2><ul>
+<li>网页可见区域宽： document.body.clientWidth</li>
+<li>网页可见区域高： document.body.clientHeight</li>
+<li>网页可见区域宽： document.body.offsetWidth (包括边线的宽)</li>
+<li>网页可见区域高： document.body.offsetHeight (包括边线的高)</li>
+<li>网页正文全文宽： document.body.scrollWidth</li>
+<li>网页正文全文高： document.body.scrollHeight</li>
+<li>网页被卷去的高： document.body.scrollTop</li>
+<li>网页被卷去的左： document.body.scrollLeft</li>
+<li>网页正文部分上： window.screenTop</li>
+<li>网页正文部分左： window.screenLeft</li>
+<li>屏幕分辨率的高： window.screen.height</li>
+<li>屏幕分辨率的宽： window.screen.width</li>
+<li>屏幕可用工作区高度： window.screen.availHeight</li>
+<li>屏幕可用工作区宽度： window.screen.availWidth</li>
+</ul>
+<h2 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery:"></a>JQuery:</h2><p>$(document).ready(function(){<br>alert($(window).height()); //浏览器当前窗口可视区域高度<br>alert($(document).height()); //浏览器当前窗口文档的高度<br>alert($(document.body).height());//浏览器当前窗口文档body的高度<br>alert($(document.body).outerHeight(true));//浏览器当前窗口文档body的总高度 包括border padding margin<br>})</p>
+<h2 id="用jQuery监听浏览器窗口的变化"><a href="#用jQuery监听浏览器窗口的变化" class="headerlink" title="用jQuery监听浏览器窗口的变化"></a>用jQuery监听浏览器窗口的变化</h2><p>$(window).resize(function () {          //当浏览器大小变化时<br>    alert($(window).height());          //浏览器时下窗口可视区域高度<br>    alert($(document).height());        //浏览器时下窗口文档的高度<br>    alert($(document.body).height());   //浏览器时下窗口文档body的高度<br>    alert($(document.body).outerHeight(true)); //浏览器时下窗口文档body的总高度 包括border padding margin<br>});</p>
+
+          
         
       
     </div>
@@ -629,7 +799,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/20/i011/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/06/01/i011/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -648,7 +818,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/09/20/i011/" itemprop="url">网页字体em的使用</a></h1>
+                <a class="post-title-link" href="/2016/06/01/i011/" itemprop="url">网页字体em的使用</a></h1>
         
 
         <div class="post-meta">
@@ -660,8 +830,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-20T19:09:50+08:00">
-                2016-09-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-01T19:09:50+08:00">
+                2016-06-01
               </time>
             
 
@@ -724,7 +894,7 @@
           <p>关于em这个字体单位，我一直比较纠结。只知道它是一种相对长度单位，默认1em=16px(即浏览器默认字体大小）。<br>但em使用时并不是简单的1em=16px这么算，以下为引用内容：<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/09/20/i011/#more" rel="contents">
+            <a class="btn" href="/2016/06/01/i011/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -775,7 +945,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/17/前端面试/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/31/b001/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -794,7 +964,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/09/17/前端面试/" itemprop="url">面试，你必须做的</a></h1>
+                <a class="post-title-link" href="/2016/05/31/b001/" itemprop="url">《高性能HTML5》</a></h1>
         
 
         <div class="post-meta">
@@ -806,158 +976,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-17T14:09:50+08:00">
-                2016-09-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/back-yard/" itemprop="url" rel="index">
-                    <span itemprop="name">back-yard</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="面试前"><a href="#面试前" class="headerlink" title="面试前"></a>面试前</h2><ul>
-<li>人脉的积累【六度分割现象】狠重要。</li>
-<li>简历的准备，推荐star法则。</li>
-<li>模拟面试中可能遇到的问题。</li>
-</ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/09/17/前端面试/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/25/b003/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Webykj">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hero">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/08/25/b003/" itemprop="url">《程序员的自我修养》</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-25T20:09:12+08:00">
-                2016-08-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-31T19:09:50+08:00">
+                2016-05-31
               </time>
             
 
@@ -1017,10 +1037,10 @@
 
       
         
-          <p>这两天，看完了这本书，作者以他多年一线编程经验告诉后人作为一个软件开发人员应注意的地方。其中，提到了很多中肯的建议。这里，我仅摘录自己比较有感触的，并谈谈自己的理解。</p>
+          <h2 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章 概述"></a>第一章 概述</h2><p>HTML5 概念：不仅仅是指最新版本的 HTML 标记语言，还包含了很多被现代浏览器所支持的新技术，例如 CSS3、嵌入式音频/视频、Canvas、WebSocket、应用程序缓存、本地存储、索引数据库、文件API、地理位置等。<br>什么是高性能<br>页面加载时间<br>浏览器性能<br>网络性能<br>开发效率</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/08/25/b003/#more" rel="contents">
+            <a class="btn" href="/2016/05/31/b001/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1071,7 +1091,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/23/git/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/26/我眼中的全栈工程师/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -1090,7 +1110,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/08/23/git/" itemprop="url">Git or SVN</a></h1>
+                <a class="post-title-link" href="/2016/05/26/我眼中的全栈工程师/" itemprop="url">我眼中的全栈工程师</a></h1>
         
 
         <div class="post-meta">
@@ -1102,305 +1122,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-23T17:09:50+08:00">
-                2016-08-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ittech/" itemprop="url" rel="index">
-                    <span itemprop="name">ittech</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="什么是SVN"><a href="#什么是SVN" class="headerlink" title="什么是SVN"></a>什么是SVN</h2><p>简单来说，SVN是一种版本控制工具，尤其在企业中，应用广泛。</p>
-<h3 id="SVN与CVS"><a href="#SVN与CVS" class="headerlink" title="SVN与CVS"></a>SVN与CVS</h3><ol>
-<li>CVS不支持文件重命名，如果重命名一个文件的话，之前的修订历史记录就会丢失。</li>
-<li>CVS没有原子性提交，如果提交很多文件，提交到一半的时候出错，那就尴尬了。 </li>
-<li>CVS只支持文本文件，无法提交二进制文件。 </li>
-</ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/08/23/git/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/20/致自己/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Webykj">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hero">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/08/20/致自己/" itemprop="url">致自己</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-20T20:09:21+08:00">
-                2016-08-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/about/" itemprop="url" rel="index">
-                    <span itemprop="name">about</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="对话一"><a href="#对话一" class="headerlink" title="对话一"></a>对话一</h2><p>拿什么拯救我这颗躁动的心，我不甘平庸，却流于平庸。难道这就是人们常说的浮躁吗？常听人们说现在的年轻人都比较浮躁，有时候我也反思自己。我不知道自己该归于哪一类，对于这一点，我认为，去到外面看看，体验下真实的世界，也许，就会得到结果。比如说租房，这几天自己就在找房子，或多或少有些收获吧！</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/08/20/致自己/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/20/个人后花园的第一步/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Webykj">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hero">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/08/20/个人后花园的第一步/" itemprop="url">个人后花园的第一步</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-20T19:09:50+08:00">
-                2016-08-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-26T13:39:50+08:00">
+                2016-05-26
               </time>
             
 
@@ -1460,10 +1183,21 @@
 
       
         
-          
-            <p>在开始正题之前，我觉得我有必要说个事情，我推荐个JS前端开发联盟群。群号【76099500】，声明一下，这是个跳板群，无论是这个群还是其他高级群前辈们挺多的，技术氛围也是挺浓的，适合技术人。。。<br>是的，今天我开通了后花园，灵感就是来自<a href="https://github.com/jsfront" target="_blank" rel="external">‘JS前端开发联盟群’</a>,<br>希望给自己一定的约束。主要分为2块，周结与月报。我会不断回顾过去，总结过去，并不断制定下一阶段的学习情况。</p>
-
-          
+          <h2 id="全栈工程师的利"><a href="#全栈工程师的利" class="headerlink" title="全栈工程师的利"></a>全栈工程师的利</h2><ul>
+<li>在自由职业市场，全栈工程师是最闪耀的明星。</li>
+<li>全栈工程师还是天生的创业者。</li>
+</ul>
+<h2 id="全栈工程师的弊"><a href="#全栈工程师的弊" class="headerlink" title="全栈工程师的弊"></a>全栈工程师的弊</h2><ul>
+<li>容易贪大求全，导致迷失自我。</li>
+<li>容易掉进技术的深渊，痴迷技术是好事，但技术存在的原因是解决问题。</li>
+</ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/05/26/我眼中的全栈工程师/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1510,7 +1244,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/15/i010/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/25/i012/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -1529,7 +1263,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/08/15/i010/" itemprop="url">常用dom方法</a></h1>
+                <a class="post-title-link" href="/2016/05/25/i012/" itemprop="url">CSS总结</a></h1>
         
 
         <div class="post-meta">
@@ -1541,8 +1275,154 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-15T19:09:50+08:00">
-                2016-08-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-25T18:39:50+08:00">
+                2016-05-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>CSS实用代码汇总<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/05/25/i012/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/19/i010/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/05/19/i010/" itemprop="url">常用dom方法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-19T19:09:50+08:00">
+                2016-05-19
               </time>
             
 
@@ -1614,7 +1494,7 @@
 </ul>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/08/15/i010/#more" rel="contents">
+            <a class="btn" href="/2016/05/19/i010/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1665,7 +1545,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/05/i009/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/13/前端攻城狮/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Webykj">
@@ -1684,7 +1564,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/08/05/i009/" itemprop="url">setTimeout与setInterval的使用</a></h1>
+                <a class="post-title-link" href="/2016/05/13/前端攻城狮/" itemprop="url">如何成为一名卓越的前端工程师</a></h1>
         
 
         <div class="post-meta">
@@ -1696,8 +1576,154 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-05T18:59:50+08:00">
-                2016-08-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-13T18:09:50+08:00">
+                2016-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/back-yard/" itemprop="url" rel="index">
+                    <span itemprop="name">back-yard</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>原文为勾三股四翻译<a href="http://jiongks.name/blog/how-tobecome-a-great-front-end-engineer/#comment-105937" target="_blank" rel="external">如何成为一名卓越的前端工程师</a>，这是篇好文章，这里仅摘录我认同部分，并践行。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/05/13/前端攻城狮/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/05/08/i007/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/05/08/i007/" itemprop="url">chrome无法显示12px以下字体</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-08T16:09:50+08:00">
+                2016-05-08
               </time>
             
 
@@ -1757,11 +1783,11 @@
 
       
         
-          <blockquote>
-<p>setTimeout和setInterval的语法相同。都有两个参数，一个是将要执行的代码字符串，还有一个是以毫秒为单位的时间间隔，当过了某个时间段之后就将执行那段代码。两者的区别在于，setInterval在执行完一次代码之后，经过了那个固定的时间间隔，它还会自动重复执行代码，而setTimeout只执行一次那段代码。但这并不意味着setTimeout只能用于on-off方式的动作上，可以通过创建一个函数循环重复调用setTimeout，以实现重复的操作：<br>
+          <p>今天在写页面的时候遇到个小bug，比如设置字体为10px甚至8px。但按照常规设置字体大小后，在chrome下浏览页面会觉得不如想象中小。没错，默认情况下chrome中的字号不能小于12px。</p>
+<p>查看有关资料后，找到解决办法：</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/08/05/i009/#more" rel="contents">
+            <a class="btn" href="/2016/05/08/i007/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
