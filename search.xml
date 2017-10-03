@@ -243,6 +243,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[假如我有100W]]></title>
+    <url>%2F2017%2F07%2F12%2F100W%2F</url>
+    <content type="text"><![CDATA[如果你也认为仅凭勤奋和诚实就能获得财富，赶紧打消这种想法吧！它是错误的！巨额财富向来都不是靠努力勤奋得来的！如果可以得到财富，那么它必定是明确需求的回应，基于应用明确的原则而得来，完全不是依靠运气或机会！ 如果这个条件存在，那么我会留5万应急，5万带家人游玩一圈。比如，去西藏、云南等等。剩下的90万用于投资，比如买商铺，但绝对不会买住宅，车也不会。要开车，我可以租，事实上，自己花钱买一辆车也无非自己在自己手上租了一辆罢了。我始终相信一点，就是“有钱一定有车，但有车不一定有钱”。 有时候，我问自己，自己赚100W需要多长时间，5年？还是更长时间。曾看过一句话，说你要想赚100万就要忍受价值100万的代价。 机会是留给有准备的人的，祝自己好运，可以通过自己的努力尽快实现这个小目标？？？]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>back-yard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[常用Git命令收录]]></title>
     <url>%2F2017%2F07%2F09%2Fi028%2F</url>
     <content type="text"><![CDATA[Git命令速查表 生成SSH 1$ ssh-keygen -t ras -C &quot;email@xxx&quot; 设置用户名 12$ git config --global user.name &quot;webykj&quot;$ git config --global user.email &quot;stormykj@163.com&quot; 初始化当前项目 1$ git init 在该目录下新建一个文件，然后查看，将修改添加到暂存区 12345echo &quot;# test&quot; &gt;&gt; README.mdgit add * //将工作区所有修改添加到暂存区git add . //将工作区所有修改添加到暂存区git add filename //将指定文件添加到暂存区git status //列出变更文件 将暂存区修改添加到本地仓库 1git commit -m &apos;备注信息&apos; 创建仓库，并将上诉改动push到远程 12git remote add origin https://github.com/webykj/test.gitgit push -u origin master 去除push时每次都要输入账号密码 12git remote rm origin //移除git remote add origin git@github.com:gitname/test.git //添加 从远程clone项目 1git clone url 放弃暂存区修改 12345git checkout -- filename //放弃暂存区修改（修改不在）git rm --cached filename //放弃add（修改还在，但产生一条delete记录）git reset HEAD filename //同上（没有delete记录）git stash //暂时放弃未提交的修改git stash pop //恢复 分支操作 1234567891011121314151617/*查看分支*/git branch //所有本地分支git branch -r //所有远程分支git branch -a //所有远程分支和本地分支/*创建分支*/ git branch branchName //留在当前分支git checkout -b branchName //创建并切换分支git branch --set-upstream-to=&lt;remote&gt;/branchName //建立本地分支与远程分支的追踪关系git branch --track branchName [remote branch] //新建一个分支，并与远程建立追踪关系 git checkout branchName //切到指定分支 /*分支合并*/ git pull origin branch //取回远程更新并与本地分支合并 git fetch origin branch //取回远程更新 git merge branch //合并指定分支到当前分支(产生提交记录) git rebase branch //合并指定分支到当前分支(不产生提交记录，比较适合有强迫症的) git cherry-pick commitId //将与commitId对应的提交合进当前分支]]></content>
@@ -692,6 +703,17 @@
       </categories>
       <tags>
         <tag>DOM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[北京，是我的福地]]></title>
+    <url>%2F2016%2F05%2F17%2F%E5%8C%97%E4%BA%AC%EF%BC%8C%E6%88%91%E7%9A%84%E7%A6%8F%E5%9C%B0%2F</url>
+    <content type="text"><![CDATA[北京，是我的福地； 北京，是我的福地； 北京，是我的福地。 我愿用我的青春奉献给这座城市。我，在路上。。。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>back-yard</tag>
       </tags>
   </entry>
   <entry>
