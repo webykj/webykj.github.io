@@ -112,10 +112,12 @@
 <meta property="og:site_name" content="Hero">
 <meta property="og:description" content="CSS实用代码汇总">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-02T04:49:07.468Z">
+<meta property="og:image" content="http://oub61fw66.bkt.clouddn.com/%E6%A0%87%E9%A2%98.png">
+<meta property="og:updated_time" content="2017-10-10T10:53:22.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS总结">
 <meta name="twitter:description" content="CSS实用代码汇总">
+<meta name="twitter:image" content="http://oub61fw66.bkt.clouddn.com/%E6%A0%87%E9%A2%98.png">
 
 
 
@@ -448,6 +450,8 @@
 <h3 id="文字溢出隐藏并显示省略号。"><a href="#文字溢出隐藏并显示省略号。" class="headerlink" title="文字溢出隐藏并显示省略号。"></a>文字溢出隐藏并显示省略号。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">overflow:hidden; white-space:nowrap; text-overflow:ellipsis;</div></pre></td></tr></table></figure>
 <h3 id="自定义文本选中"><a href="#自定义文本选中" class="headerlink" title="自定义文本选中"></a>自定义文本选中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">::selection&#123;color:#fff; background:#333;&#125;</div><div class="line">::-moz-selection&#123;color:#fff;background:#333;&#125;</div></pre></td></tr></table></figure>
 <h3 id="引用自定义字体"><a href="#引用自定义字体" class="headerlink" title="引用自定义字体"></a>引用自定义字体</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@font-face</div><div class="line">&#123;</div><div class="line">font-family: xujinglei; src: url(&apos;xujinglei.ttf&apos;),url(&apos;xujinglei.eot&apos;); //IE9+</div><div class="line">&#125;</div><div class="line">div&#123;font-family:xujinglei; font-size:18px; &#125;</div></pre></td></tr></table></figure>
+<h3 id="常用标题"><a href="#常用标题" class="headerlink" title="常用标题"></a>常用标题</h3><p><img src="http://oub61fw66.bkt.clouddn.com/%E6%A0%87%E9%A2%98.png" alt="title"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line">&lt;h2 class=&quot;title&quot; data-text=&quot;hello world&quot;&gt;&lt;/h2&gt;</div><div class="line"></div><div class="line">.title&#123;</div><div class="line">	width:1000px;</div><div class="line">	margin:20px auto;</div><div class="line">	position:relative;			</div><div class="line">&#125;</div><div class="line">.title:before&#123;</div><div class="line">	content:&apos;&apos;;</div><div class="line">	display:block;</div><div class="line">	border-top:1px solid #ccc;</div><div class="line">&#125;</div><div class="line">.title:after&#123;</div><div class="line">	content:attr(data-text);</div><div class="line">	display:block;</div><div class="line">	position:absolute;</div><div class="line">	padding:0 20px;</div><div class="line">	background:#fff;</div><div class="line">	color:#666;</div><div class="line">	top:0;</div><div class="line">	left:50%;</div><div class="line">	transform:translate(-50%,-50%);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//less写法</div><div class="line">.title(@bg:white)&#123;</div><div class="line">    width:1000px;</div><div class="line">    margin:20px auto;</div><div class="line">    position:relative;</div><div class="line">    text-transform:uppercase;</div><div class="line">    white-space:nowrap;  </div><div class="line">    &amp;:before&#123;</div><div class="line">        content:&apos;&apos;;</div><div class="line">        display:block;</div><div class="line">        border-top:1px solid #ccc;</div><div class="line">    &#125;</div><div class="line">    &amp;:after&#123;</div><div class="line">        content:attr(data-text);</div><div class="line">        position:absolute;</div><div class="line">        top:0;</div><div class="line">        left:50%;</div><div class="line">        padding:0 20px;</div><div class="line">        background:@bg;</div><div class="line">        transform:translate(-50%,-50%);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -487,24 +491,6 @@
       </div>
     
 
-    
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者：</strong>
-    Webykj
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2016/05/25/i012/" title="CSS总结">http://yoursite.com/2016/05/25/i012/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-
-      </div>
     
 
     <footer class="post-footer">
@@ -618,7 +604,7 @@
             
               <a href="/archives">
             
-                <span class="site-state-item-count">84</span>
+                <span class="site-state-item-count">92</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -639,10 +625,10 @@
             
             
             <div class="site-state-item site-state-tags">
-              
-                <span class="site-state-item-count">29</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
@@ -689,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#多行文本未知高度垂直居中"><span class="nav-number">1.</span> <span class="nav-text">多行文本未知高度垂直居中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让height100-起作用"><span class="nav-number">2.</span> <span class="nav-text">如何让height100%起作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字溢出隐藏并显示省略号。"><span class="nav-number">3.</span> <span class="nav-text">文字溢出隐藏并显示省略号。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义文本选中"><span class="nav-number">4.</span> <span class="nav-text">自定义文本选中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用自定义字体"><span class="nav-number">5.</span> <span class="nav-text">引用自定义字体</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#多行文本未知高度垂直居中"><span class="nav-number">1.</span> <span class="nav-text">多行文本未知高度垂直居中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让height100-起作用"><span class="nav-number">2.</span> <span class="nav-text">如何让height100%起作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字溢出隐藏并显示省略号。"><span class="nav-number">3.</span> <span class="nav-text">文字溢出隐藏并显示省略号。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义文本选中"><span class="nav-number">4.</span> <span class="nav-text">自定义文本选中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用自定义字体"><span class="nav-number">5.</span> <span class="nav-text">引用自定义字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用标题"><span class="nav-number">6.</span> <span class="nav-text">常用标题</span></a></li></ol></div>
             
 
           </div>
