@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="books," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://oub61fw66.bkt.clouddn.com/favicon.ico" />
+
+
+
+
+
+
+<meta name="description" content="一个人牛逼不是因为他做了什么，而是他可以选择不做什么。同样的，一个合格的全栈工程师应该从能力和思维方式两方面来判定。 什么是全栈工程师 全栈工程师是指，一个能处理数据库、服务器、系统工程和客户端的所有工作的工程师。根据项目的不同，客户需要的可能是移动栈、Web栈，或者原生应用程序栈。">
+<meta name="keywords" content="books">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Web全栈工程师的自我修养》">
+<meta property="og:url" content="http://yoursite.com/2017/08/24/Web全栈工程师的自我修养/index.html">
+<meta property="og:site_name" content="Hero">
+<meta property="og:description" content="一个人牛逼不是因为他做了什么，而是他可以选择不做什么。同样的，一个合格的全栈工程师应该从能力和思维方式两方面来判定。 什么是全栈工程师 全栈工程师是指，一个能处理数据库、服务器、系统工程和客户端的所有工作的工程师。根据项目的不同，客户需要的可能是移动栈、Web栈，或者原生应用程序栈。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-15T02:22:50.950Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《Web全栈工程师的自我修养》">
+<meta name="twitter:description" content="一个人牛逼不是因为他做了什么，而是他可以选择不做什么。同样的，一个合格的全栈工程师应该从能力和思维方式两方面来判定。 什么是全栈工程师 全栈工程师是指，一个能处理数据库、服务器、系统工程和客户端的所有工作的工程师。根据项目的不同，客户需要的可能是移动栈、Web栈，或者原生应用程序栈。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'I041Z1WFK3',
+      apiKey: 'ac99f0c5464a525d18e789d7213d1b65',
+      indexName: 'webykj',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"输入关键字进行搜索","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/24/Web全栈工程师的自我修养/"/>
+
+
+
+
+
+  <title>《Web全栈工程师的自我修养》 | Hero</title>
+  
+
+
+
+
+
+
+
+
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+		<a href="https://github.com/webykj"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hero</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一枚前端攻城狮</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+   
+  
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-ittech">
+          <a href="/categories/ittech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-back-yard">
+          <a href="/categories/back-yard" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
+            
+            后花园
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/categories/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            我的书单
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/categories/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+	
+			
+			
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+
+
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/24/Web全栈工程师的自我修养/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《Web全栈工程师的自我修养》</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-24T18:09:50+08:00">
+                2017-08-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/books/" itemprop="url" rel="index">
+                    <span itemprop="name">books</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>一个人牛逼不是因为他做了什么，而是他可以选择不做什么。同样的，一个合格的全栈工程师应该从能力和思维方式两方面来判定。</p>
+<h2 id="什么是全栈工程师"><a href="#什么是全栈工程师" class="headerlink" title="什么是全栈工程师"></a>什么是全栈工程师</h2><blockquote>
+<p>全栈工程师是指，一个能处理数据库、服务器、系统工程和客户端的所有工作的工程师。根据项目的不同，客户需要的可能是移动栈、Web栈，或者原生应用程序栈。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="加班"><a href="#加班" class="headerlink" title="加班"></a>加班</h2><p>加班的一个原则就是不加班做白天遗留下的工作。赚钱有两种方式，一种是降低成本【节流】，另一种是赚更多的钱【开源】。同样的，导致加班的原因也不外乎效率低，任务紧。效率可以自己不断摸索，达到最佳实践。任务可以团队合作，达到1+1&gt;&gt;2效果。还有一种说法是团伙，这时候就体现出一个有魄力的领导者的魅力了。</p>
+<p><strong>对加班的看法</strong></p>
+<p>讨厌任何形式的为加班而加班的加班，这是在感动自我，没任何意义。若项目紧，或因自我原因导致项目进展缓慢，加班到深夜我绝不会说什么，这是我的责任。但千万别为了加班而加班。正如网上说的“加班就像借钱，救急不救穷”。</p>
+<h2 id="X理论与Y理论"><a href="#X理论与Y理论" class="headerlink" title="X理论与Y理论"></a>X理论与Y理论</h2><blockquote>
+<p>一种假设“人性本恶”，即所有的员工都讨厌工作，只要没有监督，就一定会偷懒怠工，绝大多数人没有雄心壮志，怕担责任，宁可被领导骂。多数人必须用强制办法乃至惩罚、威胁，使他们为达到组织目标而努力。这叫做X理论。</p>
+<p>另一种假设“人性本善”，即所有的员工都热爱工作，只要给他们创造舒适的环境、合理的授权和适当的激励，他们就会发挥很高的生产力，能力的限制和惩罚不是让人为组织目标而努力的唯一办法。这叫做Y理论。</p>
+</blockquote>
+<h2 id="用户体验"><a href="#用户体验" class="headerlink" title="用户体验"></a>用户体验</h2><blockquote>
+<p>stay hungry,stay foolish.</p>
+<p>真正聪明的人，不会显露自己，反而从表面看好像还很笨拙。</p>
+</blockquote>
+<p>关注用户体验，关注用户体验，关注用户体验。自己做得东西，自己一定要喜欢，自己都不喜欢还指望别人会喜欢？</p>
+<h2 id="性格"><a href="#性格" class="headerlink" title="性格"></a>性格</h2><blockquote>
+<p>不要为了迎合主流社会，而伪装成一个外向、热情、合群的人。内向并不是一个贬义词，它是中立的，懂得扬长避短就好。所谓自我提升就是接纳接纳自我，而不是贬低自己的性格特征。</p>
+</blockquote>
+<h3 id="内向性格的竞争力"><a href="#内向性格的竞争力" class="headerlink" title="内向性格的竞争力"></a>内向性格的竞争力</h3><ol>
+<li><p>内向性格的人更容易沉下心来读书、思考，做一些安静的事。</p>
+</li>
+<li><p>内向性格的人跟人交往是对精力的消耗，但这并不代表情商低。情商低是无法察觉自己和他人情绪的波动，也许很外向，但很让人讨厌。内向但情商高的人，能够感知周围人的情绪，并敏锐的捕获到周围发生的事情。</p>
+</li>
+<li><p>其实，能灵活自如地适应各种社交场合的内向者往往有很强的自我意识、社会意识、自我管理和关系管理能力，加上自我学习能力，是很强的一种性格特征。 </p>
+</li>
+<li><p>性格来自自己的基因，保持纯粹就好。</p>
+</li>
+</ol>
+<ul>
+<li>自我意识，是指您能够精准地觉察自己的情绪波动。 </li>
+<li>社会意识，是指您能感知周围人的情绪，并敏锐捕捉到周围发生的事情。 </li>
+<li>自我管理，是指您能根据自我情绪的感知，灵活积极地调控自身行为。 </li>
+<li>关系管理，是指您感知到周遭的“情绪场”之后，能够掌控自我情绪并把握他人情绪值，来让双方进行更好的互动。 </li>
+</ul>
+<h2 id="金字塔原则"><a href="#金字塔原则" class="headerlink" title="金字塔原则"></a>金字塔原则</h2><blockquote>
+<p>任何事情都可得出一个中心论点，而此中心论点可由3至7个论据支持，这些一级论据本身也可以是论点，被二级的3至7个论据支持，如此延伸，状如金字塔。</p>
+</blockquote>
+<p>使用金字塔方法的前提是，只能有一个中心目标。比如，先赚它120W。</p>
+<h2 id="聊聊管理"><a href="#聊聊管理" class="headerlink" title="聊聊管理"></a>聊聊管理</h2><p>引用下《卓有成效的管理者》中的思维核心的习惯。</p>
+<ol>
+<li><p>有效的管理者知道他们的时间用在什么地方。</p>
+</li>
+<li><p>有效的管理者重视对外界的贡献。 </p>
+</li>
+<li><p>有效的管理者善于利用长处，包括自己的长处、上司的长处、同事的长处和下属的长处。 </p>
+</li>
+<li><p>有效的管理者集中精力于少数重要的领域，在这少数重要的领域中，如果能有优秀的绩效就可以产生卓越的成果。 </p>
+</li>
+<li><p>有效的管理者必须善于做有效的决策。</p>
+</li>
+</ol>
+<h2 id="科学家与工程师"><a href="#科学家与工程师" class="headerlink" title="科学家与工程师"></a>科学家与工程师</h2><blockquote>
+<p>过去的工程师普遍不在意设计。有意或者无意，他们忽视设计的重要性。</p>
+<p>“我发现程序员大致可以分为科学家和工程师两类，科学家关注技术是否优越，而工程师关注产品是否完美。和科学家类型的程序员合作项目往往是件痛苦的事情，他们太过关注自己手中的锤子是否先进，却不在意自己敲进去的钉子是否平整光滑不扎屁股，更不要说这颗钉子是不是跟其他钉子对齐了。那些“资深”程序员更是如此，那个年代很多用户体验的技术不成熟，能做出一个能用的东西已经不易，更不要说做出一个性能还算不错的产品了。抱着这个想法走到今天，大多数应该被淘汰的程序员却反而坐到了更高的位置，开始拿这种过时的想法熏陶小弟。”（来自陈鑫的回答）</p>
+</blockquote>
+<p>简直不能再同意。</p>
+<h2 id="本书目录索引，有惊喜哦！"><a href="#本书目录索引，有惊喜哦！" class="headerlink" title="本书目录索引，有惊喜哦！"></a>本书目录索引，有惊喜哦！</h2><h3 id="如何成为全栈工程师"><a href="#如何成为全栈工程师" class="headerlink" title="如何成为全栈工程师"></a>如何成为全栈工程师</h3><p>不断打怪升级，不断打怪升级，不断打怪升级。</p>
+<h3 id="从学生到工程师"><a href="#从学生到工程师" class="headerlink" title="从学生到工程师"></a>从学生到工程师</h3><p>其实就是打怪升级的历程。</p>
+<h3 id="野生程序员"><a href="#野生程序员" class="headerlink" title="野生程序员"></a>野生程序员</h3><p>这种标签不属于我。</p>
+<h3 id="工程师事业指南"><a href="#工程师事业指南" class="headerlink" title="工程师事业指南"></a>工程师事业指南</h3><p>用心做好每件事，把自己当成公司思考，嗯，说大了。</p>
+<h3 id="全栈工程师眼中的HTTP"><a href="#全栈工程师眼中的HTTP" class="headerlink" title="全栈工程师眼中的HTTP"></a>全栈工程师眼中的HTTP</h3><p>必须学习，不要问我为什么。</p>
+<h3 id="高性能网站的关键：缓存"><a href="#高性能网站的关键：缓存" class="headerlink" title="高性能网站的关键：缓存"></a>高性能网站的关键：缓存</h3><p>这不，HTML5增加了离线缓存。</p>
+<h3 id="大前端"><a href="#大前端" class="headerlink" title="大前端"></a>大前端</h3><p>前端水很深，入坑需谨慎。</p>
+<h3 id="向移动端转型"><a href="#向移动端转型" class="headerlink" title="向移动端转型"></a>向移动端转型</h3><p>比如，自己做的WebApp。</p>
+<h3 id="持续集成"><a href="#持续集成" class="headerlink" title="持续集成"></a>持续集成</h3><p>团队与团伙，遵循最佳实践。</p>
+<h3 id="理解编程语言"><a href="#理解编程语言" class="headerlink" title="理解编程语言"></a>理解编程语言</h3><p>那就慢慢理解吧！</p>
+<h3 id="全栈游乐场"><a href="#全栈游乐场" class="headerlink" title="全栈游乐场"></a>全栈游乐场</h3><p>玩的玩的就无法自拔了。</p>
+<h3 id="高效工程师"><a href="#高效工程师" class="headerlink" title="高效工程师"></a>高效工程师</h3><p>高效才是王道。</p>
+<h3 id="facebook的品牌设计故事"><a href="#facebook的品牌设计故事" class="headerlink" title="facebook的品牌设计故事"></a>facebook的品牌设计故事</h3><p>要相信品牌的力量。</p>
+<h3 id="全栈思维"><a href="#全栈思维" class="headerlink" title="全栈思维"></a>全栈思维</h3><p>“一专多长”，努力成为T型人才。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>据说帅的人都赏给博主几块钱零花钱。</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://oub61fw66.bkt.clouddn.com/wpay.jpg" alt="Webykj 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://oub61fw66.bkt.clouddn.com/apay.jpg" alt="Webykj 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/books/" rel="tag"># books</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/22/战狼/" rel="next" title="战狼I VS 战狼II">
+                <i class="fa fa-chevron-left"></i> 战狼I VS 战狼II
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/26/i040/" rel="prev" title="ES6总结">
+                ES6总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oub61fw66.bkt.clouddn.com/logo.jpg"
+              alt="Webykj" />
+          
+            <p class="site-author-name" itemprop="name">Webykj</p>
+            <p class="site-description motion-element" itemprop="description">Less is more</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives">
+            
+                <span class="site-state-item-count">105</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/webykj" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/u/b80403a1b91a" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-heartbeat"></i>简书</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是全栈工程师"><span class="nav-number">1.</span> <span class="nav-text">什么是全栈工程师</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加班"><span class="nav-number">2.</span> <span class="nav-text">加班</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#X理论与Y理论"><span class="nav-number">3.</span> <span class="nav-text">X理论与Y理论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户体验"><span class="nav-number">4.</span> <span class="nav-text">用户体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性格"><span class="nav-number">5.</span> <span class="nav-text">性格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内向性格的竞争力"><span class="nav-number">5.1.</span> <span class="nav-text">内向性格的竞争力</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#金字塔原则"><span class="nav-number">6.</span> <span class="nav-text">金字塔原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#聊聊管理"><span class="nav-number">7.</span> <span class="nav-text">聊聊管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#科学家与工程师"><span class="nav-number">8.</span> <span class="nav-text">科学家与工程师</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本书目录索引，有惊喜哦！"><span class="nav-number">9.</span> <span class="nav-text">本书目录索引，有惊喜哦！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何成为全栈工程师"><span class="nav-number">9.1.</span> <span class="nav-text">如何成为全栈工程师</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从学生到工程师"><span class="nav-number">9.2.</span> <span class="nav-text">从学生到工程师</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#野生程序员"><span class="nav-number">9.3.</span> <span class="nav-text">野生程序员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工程师事业指南"><span class="nav-number">9.4.</span> <span class="nav-text">工程师事业指南</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全栈工程师眼中的HTTP"><span class="nav-number">9.5.</span> <span class="nav-text">全栈工程师眼中的HTTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高性能网站的关键：缓存"><span class="nav-number">9.6.</span> <span class="nav-text">高性能网站的关键：缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大前端"><span class="nav-number">9.7.</span> <span class="nav-text">大前端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向移动端转型"><span class="nav-number">9.8.</span> <span class="nav-text">向移动端转型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持续集成"><span class="nav-number">9.9.</span> <span class="nav-text">持续集成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#理解编程语言"><span class="nav-number">9.10.</span> <span class="nav-text">理解编程语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全栈游乐场"><span class="nav-number">9.11.</span> <span class="nav-text">全栈游乐场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高效工程师"><span class="nav-number">9.12.</span> <span class="nav-text">高效工程师</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#facebook的品牌设计故事"><span class="nav-number">9.13.</span> <span class="nav-text">facebook的品牌设计故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全栈思维"><span class="nav-number">9.14.</span> <span class="nav-text">全栈思维</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Webykj</span>
+
+  
+</div>
+
+
+  <div class="powered-by"> <a class="theme-link" href="https://hexo.io"></a> 个人专属</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">博客 &mdash; <a class="theme-link" href="https://webykj.github.io/">Webykj</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
