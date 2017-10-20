@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端实用代码合集]]></title>
+    <url>%2F2017%2F10%2F20%2F%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E5%90%88%E9%9B%86%2F</url>
+    <content type="text"><![CDATA[无论代码写的好与坏，都在心里默念3遍： 写的就是坨屎； 写的就是坨屎； 写的就是坨屎； 这样你会有源源不断的动力完善自己的代码，反正我就是这样。同事A君：真是个欠货。 JavaScriptTab切换123456789101112131415161718192021222324252627282930313233343536373839//eg1var tabs=document.getElementById(&quot;tab&quot;).getElementsByTagName(&quot;li&quot;);var divs=document.getElementById(&quot;tabCon&quot;).getElementsByTagName(&quot;div&quot;); for(var i=0;i&lt;tabs.length;i++)&#123; tabs[i].onclick=function()&#123;change(this);&#125;&#125; function change(obj)&#123; for(var i=0;i&lt;tabs.length;i++)&#123; if(tabs[i]==obj)&#123; tabs[i].className=&quot;fli&quot;; divs[i].className=&quot;fdiv&quot;; &#125;else&#123; tabs[i].className=&quot;&quot;; divs[i].className=&quot;&quot;; &#125; &#125;&#125;//这是我最认可的实现方式，你也可以通过传参实现，但那造成结构与功能的不分离。//eg2$(&apos;.box li&apos;).mouseover(function()&#123; var $this = $(this); var $num = $this.index(); $(&apos;.box section&apos;).css(&apos;display&apos;,&apos;none&apos;); $(&apos;.box section&apos;).eq($num).css(&apos;display&apos;,&apos;block&apos;);&#125;);//eg3$(&apos;.tab&apos;).css(&apos;display&apos;,&apos;none&apos;).eq(0).css(&apos;display&apos;,&apos;block&apos;);$(&apos;li&apos;).click(function ()&#123; $(this).addClass(&apos;active&apos;).siblings().removeClass(&apos;active&apos;); for (var i=0;i&lt;3;i++) &#123; $(&apos;#content div&apos;).eq(i).css(&apos;display&apos;,&apos;none&apos;) &#125; $(&apos;#content div&apos;).eq($(this).index()).css(&apos;display&apos;,&apos;block&apos;)&#125;); 手风琴效果123456789101112131415161718192021//eg1for(var j=0;j&lt;4;j++)&#123; show[j].onclick=function ()&#123; var ul=this.getElementsByTagName(&apos;ul&apos;)[0]; var h2=this.getElementsByTagName(&apos;h2&apos;)[0]; arr(); h2.className=&quot;bg&quot;; ul.style.height=&quot;170px&quot;; &#125;&#125;function arr()&#123; for(var i=0;i&lt;show.length;i++)&#123; show[i].getElementsByTagName(&apos;h2&apos;)[0].className=&apos;&apos;; show[i].getElementsByTagName(&apos;ul&apos;)[0].style.height=&apos;0&apos;; &#125;&#125;//eg2$(this).parent().siblings().find(&apos;ul&apos;).removeClass(&apos;on&apos;);$(this).parent().find(&apos;ul&apos;).toggleClass(&apos;on&apos;);//你也可以通过动态添加类来实现。 轮播图1234567891011121314151617//无缝轮播$(&quot;.oraign&quot;).clone().appendTo(&apos;.list&apos;);if(!$(&apos;.list&apos;).is(&quot;:animated&quot;) )&#123; if($(&apos;.list&apos;).css(&apos;left&apos;)==&apos;-3294px&apos;)&#123; $(&apos;.list&apos;).css(&#123;left:&apos;-0px&apos;&#125;,500) &#125; $(&apos;.list&apos;).stop(true,true).animate(&#123;left:&apos;-=&apos;+$width&#125;,500)&#125;//这里要注意的一点是结构一定要正确，它应该是这样：&lt;div&gt; &lt;div&gt; &lt;ul&gt; &lt;li&gt;&lt;/li&gt; ... &lt;/ul&gt; &lt;/div&gt;&lt;/div&gt; 至于其他嘛，无论是通过fadeIn、fadeOut实现还是通过定位实现，还是使用其他控件实现都无可厚非，完成功能就OK。但自己还是喜欢通过自己写的代码实现，这是件很有成就感的事情。 使用FileReader实现前端图片预览12345678910111213&lt;input type=&quot;file&quot;&gt;&lt;br&gt;&lt;img src=&quot;&quot; height=&quot;200&quot; alt=&quot;Image preview area...&quot; title=&quot;preview-img&quot;&gt;var fileInput = document.querySelector(&apos;input[type=file]&apos;);var previewImg = document.querySelector(&apos;img&apos;);fileInput.addEventListener(&apos;change&apos;, function () &#123; var file = this.files[0]; var reader = new FileReader(); reader.addEventListener(&apos;load&apos;, function () &#123; previewImg.src = reader.result; &#125;, false); reader.readAsDataURL(file);&#125;, false); 取到页面中所有的checkbox123456789var doc = document, domList = doc.getElementsByTagName(&apos;input&apos;), checkBoxList = [], len = domList.length;while (len--) &#123; if (domList[len].type === &apos;checkbox&apos;) &#123; checkBoxList.push(domList[len]); &#125;&#125; 判断某变量是否为数组数据类型12345if (typeof Array.isArray === &quot;undefined&quot;) &#123; Array.isArray = function (arg) &#123; return Object.prototype.toString.call(arg) === &quot;[object Array]&quot; &#125;;&#125; 对象拷贝与赋值123456789var obj = &#123; name: &apos;xiaoming&apos;, age: 23&#125;;var newObj = obj;newObj.name = &apos;xiaohua&apos;;console.log(obj.name);//xiaohuaconsole.log(newObj.name);//xiaohua//newObj对象获得的只是一个内存地址，而不是真正的拷贝。 深拷贝123456789var obj = &#123; name: &apos;xiaoming&apos;, age: 23&#125;;var newObj = Object.create(obj);newObj.name = &apos;xiaohua&apos;;console.log(obj.name);//xiaomingconsole.log(newObj.name);//xiaohua//Object.create()方法可以创建一个具有指定原型对象和属性的新对象。 闭包实现封装123456789101112131415var person = function () &#123; var name = &quot;Default&quot;; return &#123; getName: function () &#123; return name; &#125;, setName: function (newName) &#123; name = newName; &#125; &#125;&#125;();console.log(person.name);//undefinedconsole.log(person.getName());//Defaultperson.setName(&quot;GoodMan&quot;);console.log(person.getName());//GoodMan 写到这里又让我想到了之前遇到的一个问题：获取li的索引 1234567891011121314151617181920212223242526var liArr = document.querySelectorAll(&apos;li&apos;);var len = liArr.length;for (var i = 0; i &lt; len; i++) &#123; btns[i].onclick = function (index) &#123; // 闭包可以将变量驻留在内存中，防止被垃圾回收机制回收 return function () &#123; console.log(index); &#125; &#125;(i);&#125;//也可以这样window.onload=function()&#123; var ul=document.getElementById(&apos;test&apos;); var ul_lis=ul.getElementsByTagName(&apos;li&apos;); for (var i = 0;i &lt; ul_lis.length; i++) &#123; ul_lis[i].index = i; ul_lis[i].onclick=function()&#123; var j=this.index+1; alert(j); &#125; &#125;&#125;;//还可以这样$(this).index(); 条条大路通罗马，选择最高效的，遵循最佳实践。 jQuery设置等高的列1234567891011121314151617181920212223&lt;div class=&quot;equalHeight&quot; style=&quot;border: 1px solid&quot;&gt; &lt;p&gt;First Line&lt;/p&gt; &lt;p&gt;Second Line&lt;/p&gt; &lt;p&gt;Third Line&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;equalHeight&quot; style=&quot;border: 1px solid&quot;&gt; &lt;p&gt;Column Two&lt;/p&gt;&lt;/div&gt;$(function () &#123; equalHeight(&quot;.equalHeight&quot;);&#125;);var maxHeight = 0;function equalHeight(col) &#123; col = $(col); col.each(function () &#123; if ($(this).height() &gt; maxHeight) &#123; maxHeight = $(this).height() &#125; &#125;); col.height(maxHeight);&#125; 参考文章]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>ittech</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[顿悟【二】]]></title>
     <url>%2F2017%2F10%2F13%2F%E9%A1%BF%E6%82%9F2%2F</url>
     <content type="text"><![CDATA[今天看到一篇文章，很有感触，原文在这里，自己看 家庭矛盾，大都来源于自作自受 这里我只说自己的婚姻观，两点： 做不到孝，免谈； 彼此支持、理解对方的选择，做不到，免谈； 不管对方有多优秀，以上是我的底线。可能，有时会因为对方很漂亮 很温柔等原因，但这如果不满足以上2点，只适合谈恋爱，不适合做灵魂伴侣。 WOW，这位小伙子很XXX啊，没办法，一代好母亲，3代好家庭，这件事，我必须慎重考虑。正如Spenser说的:结婚前要擦亮双眼，结婚后就是睁一只眼，闭一只眼。这句话包含3个意思： 第一，结婚是人生最重要的一笔投资，你所有的时间、财富、精力、快乐，都和这笔投资息息相关。所以结婚前擦亮双眼，要谨慎，用你的智慧去判断这个人值不值得信任。 第二，睁一只眼，就是要看到爱情和婚姻里的可能性风险，最好用制度和协议的方式来规范和约束两者的关系，比如管好各自的边界和权益，比如定下家里的财政大权谁掌管，当出现隐形的第三者风险的时候，如何巧妙的处理，等等。 第三，闭一只眼的意思，就是要选择主动信任对方。大家都知道，在一段关系里，如果某一方真想要出轨的话，是根本不可能通过监视的手段来避免。也就是说，技术手段不是万无一失的。 我始终坚信一点，最好的关系是价值对等。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>back-yard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[三个M引发的思考]]></title>
+    <url>%2F2017%2F10%2F05%2F3M%2F</url>
+    <content type="text"><![CDATA[这里要说到一款强大的移动端编辑工具HBuilder，自带Mui框架，真是无敌，敲了3个M移动端的基本模型出来了，什么轮播图、Tab切换、折叠面板应有尽有。这让我想到了自己的前端开发之路。从更开始的小红本，到后来的DW，再到HBilder，Webstorm，现在又在尝试sublime。编辑器的升级又何尝不是自己成长之路呢。 选择一个工具的原因很多，但最主要的原因应是可以提高开发效率，而不是盲目追新。一项技术被人们推崇是因为解决了某种问题而不是因为使用了多么牛逼的技术。我始终坚信一点技术是为产品服务的。 这样的例子太多太多。比如在做某一个项目的时候用到了XX技术，由于之前写过一个Demo,直接引用文件就OK了。总而言之，一句话，遵循最佳实践。 啊啊啊，写不下去了，没灵感了。那就写一个Demo吧！我就只想静静的敲会代码。 灵感聚集地： 传送门 优秀个站： 个人网站 个人网站2 两个天蝎座的老前辈，哎，我也是天蝎男可技术咋就这么垃圾呢？前方路途遥远，少年仍需努力。]]></content>
       <categories>
         <category>back-yard</category>
       </categories>
@@ -991,17 +1013,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[收藏的面试题]]></title>
-    <url>%2F2016%2F05%2F01%2F%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[以下是自己收藏网友的面试题，很实用；这只能帮你一般都会问什么，关键看自己平时的积累。临时抱佛脚没什么用，剩下的就看自己了。]]></content>
-      <categories>
-        <category>back-yard</category>
-      </categories>
-      <tags>
-        <tag>Job</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[实用jq代码片段【一】]]></title>
     <url>%2F2016%2F05%2F01%2Fi034%2F</url>
     <content type="text"><![CDATA[链式操作1234567$(document).ready(function()&#123; $(&quot;button&quot;).click(function()&#123; $(&quot;#p1&quot;).slideUp(2000).slideDown(2000).css(&quot;color&quot;,&quot;red&quot;); $(&quot;#div-log&quot;).html(&quot;&lt;p&gt;&quot;+&quot;实现链式（Chaining）操作&quot;+&quot;&lt;/p&gt;&quot;); //类似于+= &#125;);&#125;); 区分客户区，页面区，屏幕区 三者的X轴没什么说的，都一样，主要区别在于Y轴上，客户区，屏幕区的最大值固定，不会随着页面的滚动改变。页面区会随着滚动条的改变而变化。 123456789101112131415161718192021222324252627282930313233//客户区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getclient(e); &#125;);&#125;);function getclient(e)&#123; x=e.clientX; //当前可视窗口的距离 y=e.clientY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//屏幕区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getscreen(e); &#125;);&#125;);function getscreen(e)&#123; x=e.screenX; //屏幕的左上角为参考点距离屏幕边缘的距离 y=e.screenY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//页面区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getpage(e); &#125;);&#125;);function getpage(e)&#123; x=e.pageX; //相对于当前页面中的坐标（会随着滚动条的滚动而变化） y=e.pageY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125; 左右自适应高度：1234567891011function $(id)&#123; return document.getElementById(id);&#125;(function autoheight()&#123; if($(&apos;left&apos;).offsetHeight&gt;=$(&apos;right&apos;).offsetHeight)&#123; $(&apos;right&apos;).style.height=$(&apos;left&apos;).offsetHeight+&quot;px&quot;; &#125;else&#123; $(&apos;left&apos;).style.height=$(&apos;right&apos;).offsetHeight+&quot;px&quot;; &#125;&#125;)()//需要注意的是必须自调用函数。 callback()函数 callback()函数在当前效果100%完成之后执行。在一个涉及动画的函数之后来执行语句，用callback()函数。 1234567$(document).ready(function ()&#123; $(&apos;button&apos;).click(function ()&#123; $(&apos;p&apos;).hide(1000,function ()&#123; alert(&quot;回调函数过程，激活一个提示框&quot;); &#125;); &#125;);&#125;); 在新窗口打开链接123456789$(document).ready(function ()&#123; $(&apos;.url&apos;).attr(&#123;target:&quot;_blank&quot;&#125;) $(&apos;a[rel=ext]&apos;).click(function ()&#123; $(this).attr(&apos;target&apos;,&apos;_blank&apos;) &#125;);&#125;);function openurl()&#123; window.open(&apos;http://www.microsoft.com&apos;);&#125; 页面淡入淡出1234567$(document).ready(function ()&#123; $(&apos;#fade&apos;).click(function ()&#123; $(&apos;#div-fade&apos;).fadeToggle(1000); $(&apos;#div-fade&apos;).fadeToggle(1000); $(&quot;#div-fade&quot;).fadeTo(1000,0.2); &#125;);&#125;); 折叠展开123456$(document).ready(function()&#123; $(&quot;.help h3&quot;).click(function()&#123; $(this).next(&quot;p&quot;).slideToggle(&quot;fast&quot;).siblings(&quot;p:visible&quot;).slideUp(&quot;fast&quot;);//siblings表示取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合 &#125;);&#125;); 未完待续。。。]]></content>
@@ -1010,6 +1021,17 @@
       </categories>
       <tags>
         <tag>jQuery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[收藏的面试题]]></title>
+    <url>%2F2016%2F05%2F01%2F%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[以下是自己收藏网友的面试题，很实用；这只能帮你一般都会问什么，关键看自己平时的积累。临时抱佛脚没什么用，剩下的就看自己了。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>Job</tag>
       </tags>
   </entry>
   <entry>
