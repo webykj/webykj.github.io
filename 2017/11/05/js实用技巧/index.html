@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JavaScript," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="http://oub61fw66.bkt.clouddn.com/favicon.ico" />
+
+
+
+
+
+
+<meta name="description" content="给一个未声明的变量赋值，该变量会被自动创建为全局变量，在JS开发中，应该避免使用全局变量。所以，在给一个变量赋值时，一定要var声明后再使用。 避免使用eval()或Function构造函数；eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这种操作代价挺大的。 不要向setTimeout()和setInterval()方法里传递字符串。如果">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些JS实用技巧">
+<meta property="og:url" content="http://yoursite.com/2017/11/05/js实用技巧/index.html">
+<meta property="og:site_name" content="Hero">
+<meta property="og:description" content="给一个未声明的变量赋值，该变量会被自动创建为全局变量，在JS开发中，应该避免使用全局变量。所以，在给一个变量赋值时，一定要var声明后再使用。 避免使用eval()或Function构造函数；eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这种操作代价挺大的。 不要向setTimeout()和setInterval()方法里传递字符串。如果">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-07T06:21:33.931Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一些JS实用技巧">
+<meta name="twitter:description" content="给一个未声明的变量赋值，该变量会被自动创建为全局变量，在JS开发中，应该避免使用全局变量。所以，在给一个变量赋值时，一定要var声明后再使用。 避免使用eval()或Function构造函数；eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这种操作代价挺大的。 不要向setTimeout()和setInterval()方法里传递字符串。如果">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'I041Z1WFK3',
+      apiKey: 'ac99f0c5464a525d18e789d7213d1b65',
+      indexName: 'webykj',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"输入关键字进行搜索","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/11/05/js实用技巧/"/>
+
+
+
+
+
+  <title>一些JS实用技巧 | Hero</title>
+  
+
+
+
+
+
+
+
+
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+		<a href="https://github.com/webykj"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hero</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">技术那么垃圾，还不滚去撸码</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+   
+  
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-ittech">
+          <a href="/categories/ittech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-back-yard">
+          <a href="/categories/back-yard" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />
+            
+            后花园
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/categories/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            我的书单
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/categories/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+	
+			
+			
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+
+
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/05/js实用技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Webykj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oub61fw66.bkt.clouddn.com/logo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hero">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">一些JS实用技巧</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-05T16:29:50+08:00">
+                2017-11-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ittech/" itemprop="url" rel="index">
+                    <span itemprop="name">ittech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li>给一个未声明的变量赋值，该变量会被自动创建为全局变量，在JS开发中，应该避免使用全局变量。所以，在给一个变量赋值时，一定要var声明后再使用。</li>
+<li>避免使用eval()或Function构造函数；eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这种操作代价挺大的。</li>
+<li>不要向setTimeout()和setInterval()方法里传递字符串。如果在这两个方法里传递字符串，那么字符串会像eval那样重新计算，这样速度就会变慢。</li>
+<li>如果在全局区域里使用with()插入变量，那么，万一有一个变量名字和它名字一样，就很容易混淆和重写，应该避免这种写法。</li>
+</ul>
+<p><strong>话说踩100个坑就算是打怪升级成功了。前端这条路很长，需要自己不断雕琢……</strong></p>
+<a id="more"></a>
+<h3 id="No1-使用-替换-，隐患有时候就是这样出现的。"><a href="#No1-使用-替换-，隐患有时候就是这样出现的。" class="headerlink" title="No1:使用===替换==，隐患有时候就是这样出现的。"></a>No1:使用===替换==，隐患有时候就是这样出现的。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">[10] === 10  //false</div><div class="line">[10] == 10   //true</div><div class="line">&apos;10&apos; == 10   //true</div><div class="line">&apos;10&apos; === 10  //false</div><div class="line">[] == 0      //true</div><div class="line">[] === 0     //false</div><div class="line">&apos;&apos; == false  //true but true == &quot;a&quot; is false</div><div class="line">&apos;&apos; === false //false</div></pre></td></tr></table></figure>
+<h3 id="No2-给数组创建一个随机项"><a href="#No2-给数组创建一个随机项" class="headerlink" title="No2:给数组创建一个随机项"></a>No2:给数组创建一个随机项</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var items = [12, 548 , &apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; , 2145 , 119];</div><div class="line">var  randomItem = items[Math.floor(Math.random() * items.length)];</div></pre></td></tr></table></figure>
+<h3 id="No3-在特定范围里获得一个随机数"><a href="#No3-在特定范围里获得一个随机数" class="headerlink" title="No3:在特定范围里获得一个随机数"></a>No3:在特定范围里获得一个随机数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var x = Math.floor(Math.random() * (max - min + 1)) + min;</div></pre></td></tr></table></figure>
+<h3 id="No4-在数字0和最大数之间生成一组随机数"><a href="#No4-在数字0和最大数之间生成一组随机数" class="headerlink" title="No4:在数字0和最大数之间生成一组随机数"></a>No4:在数字0和最大数之间生成一组随机数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var numbersArray = [] , max = 100;</div><div class="line">for( var i=1; numbersArray.push(i++) &lt; max;i+=2);  // numbers = [0,1,2,3 ... 100]</div><div class="line">console.log(numbersArray)</div></pre></td></tr></table></figure>
+<h3 id="No5-数字数组随机排序"><a href="#No5-数字数组随机排序" class="headerlink" title="No5:数字数组随机排序"></a>No5:数字数组随机排序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];</div><div class="line">numbers = numbers.sort(function()&#123; return Math.random() - 0.5&#125;);</div></pre></td></tr></table></figure>
+<h3 id="No6-数组追加"><a href="#No6-数组追加" class="headerlink" title="No6:数组追加"></a>No6:数组追加</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var array1 = [12 , &quot;foo&quot; , &#123;name:&quot;Joe&quot;&#125; , -2458];</div><div class="line">var array2 = [&quot;Doe&quot; , 555 , 100];</div><div class="line">Array.prototype.push.apply(array1, array2);</div></pre></td></tr></table></figure>
+<h3 id="No7-将参数对象转换为数组"><a href="#No7-将参数对象转换为数组" class="headerlink" title="No7:将参数对象转换为数组"></a>No7:将参数对象转换为数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var argArray = Array.prototype.slice.call(arguments);</div></pre></td></tr></table></figure>
+<h3 id="No8-验证一个给定参数是否为数字"><a href="#No8-验证一个给定参数是否为数字" class="headerlink" title="No8:验证一个给定参数是否为数字"></a>No8:验证一个给定参数是否为数字</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function isNumber(n)&#123;</div><div class="line">    return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="No9-验证一个给定的参数为数组"><a href="#No9-验证一个给定的参数为数组" class="headerlink" title="No9:验证一个给定的参数为数组"></a>No9:验证一个给定的参数为数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function isArray(obj)&#123;</div><div class="line">    return Object.prototype.toString.call(obj) === &apos;[object Array]&apos; ;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="No10-从数字数组中获得最大值和最小值"><a href="#No10-从数字数组中获得最大值和最小值" class="headerlink" title="No10:从数字数组中获得最大值和最小值"></a>No10:从数字数组中获得最大值和最小值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var  numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];</div><div class="line">var maxInNumbers = Math.max.apply(Math, numbers);</div><div class="line">var minInNumbers = Math.min.apply(Math, numbers);</div></pre></td></tr></table></figure>
+<h3 id="No11-清空数组"><a href="#No11-清空数组" class="headerlink" title="No11:清空数组"></a>No11:清空数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">var myArray = [12 , 222 , 1000 ];</div><div class="line">myArray.length = 0;</div><div class="line">//不要用delete从数组中删除项目</div><div class="line">//我们可以使用split来代替使用delete来删除数组项。与其删除数组中未定义项目，还不如使用delete来替代。</div><div class="line"></div><div class="line">var items = [12, 548 ,&apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; ,2154 , 119 ];</div><div class="line">items.length; // return 11</div><div class="line">delete items[3]; // return true</div><div class="line">items.length; // return 11</div><div class="line">//items will be equal to [12, 548, &quot;a&quot;, undefined × 1, 5478, &quot;foo&quot;, 8852, undefined × 1, &quot;Doe&quot;, 2154, 119] </div><div class="line"></div><div class="line">var items = [12, 548 ,&apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; ,2154 , 119 ];</div><div class="line">items.length; // return 11</div><div class="line">items.splice(3,1) ;</div><div class="line">items.length; // return 10</div><div class="line">//items will be equal to [12, 548, &quot;a&quot;, 5478, &quot;foo&quot;, 8852, undefined × 1, &quot;Doe&quot;, 2154,119] </div><div class="line">//delete方法应该删除一个对象属性</div><div class="line"></div><div class="line">//使用length属性缩短数组,还可以使用length属性缩短数组</div><div class="line"></div><div class="line">var myArray = [12 , 222 , 1000 , 124 , 98 , 10 ];</div><div class="line">myArray.length = 4; // myArray will be equal to [12 , 222 , 1000 , 124]</div><div class="line"></div><div class="line">//如果你所定义的数组长度值过高，那么数组的长度将会改变，并且会填充一些未定义的值到数组里，数组的length属性不是只读的。</div><div class="line">myArray.length = 10; // the new array length is 10</div><div class="line">myArray[myArray.length - 1] ; // undefined</div></pre></td></tr></table></figure>
+<h3 id="No12-使用逻辑符号进行判断"><a href="#No12-使用逻辑符号进行判断" class="headerlink" title="No12:使用逻辑符号进行判断"></a>No12:使用逻辑符号进行判断</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var foo=10;</div><div class="line">foo == 10 &amp;&amp; fn();</div><div class="line">foo == 5 || fn2();</div></pre></td></tr></table></figure>
+<h3 id="No13-And设置默认值"><a href="#No13-And设置默认值" class="headerlink" title="No13:And设置默认值"></a>No13:And设置默认值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">function fn3(val)&#123;</div><div class="line">	val = val || 20;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="No14-使用map遍历数组"><a href="#No14-使用map遍历数组" class="headerlink" title="No14:使用map遍历数组"></a>No14:使用map遍历数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var arr=[1,2,3,4,5].map(function (val)&#123;</div><div class="line">	return val*val;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="No15-对小数进行取舍"><a href="#No15-对小数进行取舍" class="headerlink" title="No15:对小数进行取舍"></a>No15:对小数进行取舍</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var num=3.1415926;</div><div class="line">num=num.toFixed(4);</div><div class="line"></div><div class="line">//好比0.1+0.2===0.3  //false,应该是0.30000000000000004</div></pre></td></tr></table></figure>
+<h3 id="No16-逗号操作符"><a href="#No16-逗号操作符" class="headerlink" title="No16:逗号操作符"></a>No16:逗号操作符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var a = 0; </div><div class="line">var b = ( a++, 99 );</div></pre></td></tr></table></figure>
+<h3 id="No17-计算或查询缓存变量"><a href="#No17-计算或查询缓存变量" class="headerlink" title="No17:计算或查询缓存变量"></a>No17:计算或查询缓存变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var item=document.querySelector(&apos;#item&apos;);</div><div class="line">console.log(item);</div></pre></td></tr></table></figure>
+<h3 id="No18-避免负向索引"><a href="#No18-避免负向索引" class="headerlink" title="No18:避免负向索引"></a>No18:避免负向索引</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var numbersArray = [1,2,3,4,5]; </div><div class="line">var from = numbersArray.indexOf(&quot;foo&quot;);</div></pre></td></tr></table></figure>
+<h3 id="No19-避免使用eval-或Function构造函数"><a href="#No19-避免使用eval-或Function构造函数" class="headerlink" title="No19:避免使用eval()或Function构造函数"></a>No19:避免使用eval()或Function构造函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var func1 = new Function(functionCode);</div><div class="line">var func2 = eval(functionCode);</div><div class="line">//eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这是非常昂过的操作。</div></pre></td></tr></table></figure>
+<h3 id="No20-不要向setTimeout-和setInterval-方法里传递字符串"><a href="#No20-不要向setTimeout-和setInterval-方法里传递字符串" class="headerlink" title="No20:不要向setTimeout()和setInterval()方法里传递字符串"></a>No20:不要向setTimeout()和setInterval()方法里传递字符串</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//如果在这两个方法里传递字符串，那么字符串会像eval那样重新计算，这样速度就会变慢，而不是这样使用：		</div><div class="line">setInterval(&apos;doSomethingPeriodically()&apos;, 1000);  </div><div class="line">setTimeOut(&apos;doSomethingAfterFiveSeconds()&apos;, 5000);</div><div class="line">//相反，应该这样用：</div><div class="line">setInterval(doSomethingPeriodically, 1000);  </div><div class="line">setTimeOut(doSomethingAfterFiveSeconds, 5000);</div></pre></td></tr></table></figure>
+<h3 id="No21-给XMLHttpRequests设置timeouts"><a href="#No21-给XMLHttpRequests设置timeouts" class="headerlink" title="No21:给XMLHttpRequests设置timeouts"></a>No21:给XMLHttpRequests设置timeouts</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var xhr = new XMLHttpRequest (); </div><div class="line">xhr.onreadystatechange = function () &#123;  </div><div class="line">    if (this.readyState == 4) &#123;  </div><div class="line">        clearTimeout(timeout);  </div><div class="line">        // do something with response data </div><div class="line">    &#125;  </div><div class="line">&#125;  </div><div class="line">var timeout = setTimeout( function () &#123;  </div><div class="line">    xhr.abort(); // call error callback  </div><div class="line">&#125;, 60*1000 /* timeout after a minute */ ); </div><div class="line">xhr.open(&apos;GET&apos;, url, true);  </div><div class="line">			</div><div class="line">xhr.send();</div></pre></td></tr></table></figure>
+<h3 id="No22-多级判断用switch语句"><a href="#No22-多级判断用switch语句" class="headerlink" title="No22:多级判断用switch语句"></a>No22:多级判断用switch语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">function getCategory(age) &#123;  </div><div class="line">    var category = &quot;&quot;;  </div><div class="line">    switch (true) &#123;  </div><div class="line">        case isNaN(age):  </div><div class="line">            category = &quot;not an age&quot;;  </div><div class="line">            break;  </div><div class="line">        case (age &gt;= 50):  </div><div class="line">            category = &quot;Old&quot;;  </div><div class="line">            break;  </div><div class="line">        case (age &lt;= 20):  </div><div class="line">            category = &quot;Baby&quot;;  </div><div class="line">            break;  </div><div class="line">        default:  </div><div class="line">            category = &quot;Young&quot;;  </div><div class="line">            break;  </div><div class="line">    &#125;;  </div><div class="line">    return category;  </div><div class="line">&#125;  </div><div class="line">getCategory(5);  //Baby</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>据说帅的人都赏给博主几块钱零花钱。</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://oub61fw66.bkt.clouddn.com/wpay.jpg" alt="Webykj 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://oub61fw66.bkt.clouddn.com/apay.jpg" alt="Webykj 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/20/前端代码合集/" rel="next" title="前端实用代码合集">
+                <i class="fa fa-chevron-left"></i> 前端实用代码合集
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oub61fw66.bkt.clouddn.com/logo.jpg"
+              alt="Webykj" />
+          
+            <p class="site-author-name" itemprop="name">Webykj</p>
+            <p class="site-description motion-element" itemprop="description">一枚前端攻城狮</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives">
+            
+                <span class="site-state-item-count">107</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#No1-使用-替换-，隐患有时候就是这样出现的。"><span class="nav-number">1.</span> <span class="nav-text">No1:使用===替换==，隐患有时候就是这样出现的。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No2-给数组创建一个随机项"><span class="nav-number">2.</span> <span class="nav-text">No2:给数组创建一个随机项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No3-在特定范围里获得一个随机数"><span class="nav-number">3.</span> <span class="nav-text">No3:在特定范围里获得一个随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No4-在数字0和最大数之间生成一组随机数"><span class="nav-number">4.</span> <span class="nav-text">No4:在数字0和最大数之间生成一组随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No5-数字数组随机排序"><span class="nav-number">5.</span> <span class="nav-text">No5:数字数组随机排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No6-数组追加"><span class="nav-number">6.</span> <span class="nav-text">No6:数组追加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No7-将参数对象转换为数组"><span class="nav-number">7.</span> <span class="nav-text">No7:将参数对象转换为数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No8-验证一个给定参数是否为数字"><span class="nav-number">8.</span> <span class="nav-text">No8:验证一个给定参数是否为数字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No9-验证一个给定的参数为数组"><span class="nav-number">9.</span> <span class="nav-text">No9:验证一个给定的参数为数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No10-从数字数组中获得最大值和最小值"><span class="nav-number">10.</span> <span class="nav-text">No10:从数字数组中获得最大值和最小值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No11-清空数组"><span class="nav-number">11.</span> <span class="nav-text">No11:清空数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No12-使用逻辑符号进行判断"><span class="nav-number">12.</span> <span class="nav-text">No12:使用逻辑符号进行判断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No13-And设置默认值"><span class="nav-number">13.</span> <span class="nav-text">No13:And设置默认值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No14-使用map遍历数组"><span class="nav-number">14.</span> <span class="nav-text">No14:使用map遍历数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No15-对小数进行取舍"><span class="nav-number">15.</span> <span class="nav-text">No15:对小数进行取舍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No16-逗号操作符"><span class="nav-number">16.</span> <span class="nav-text">No16:逗号操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No17-计算或查询缓存变量"><span class="nav-number">17.</span> <span class="nav-text">No17:计算或查询缓存变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No18-避免负向索引"><span class="nav-number">18.</span> <span class="nav-text">No18:避免负向索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No19-避免使用eval-或Function构造函数"><span class="nav-number">19.</span> <span class="nav-text">No19:避免使用eval()或Function构造函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No20-不要向setTimeout-和setInterval-方法里传递字符串"><span class="nav-number">20.</span> <span class="nav-text">No20:不要向setTimeout()和setInterval()方法里传递字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No21-给XMLHttpRequests设置timeouts"><span class="nav-number">21.</span> <span class="nav-text">No21:给XMLHttpRequests设置timeouts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#No22-多级判断用switch语句"><span class="nav-number">22.</span> <span class="nav-text">No22:多级判断用switch语句</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Webykj</span>
+
+  
+</div>
+
+
+  <div class="powered-by"> <a class="theme-link" href="https://hexo.io"></a> 个人专属</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">博客 &mdash; <a class="theme-link" href="https://webykj.github.io/">Webykj</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
