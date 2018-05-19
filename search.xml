@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[����]]></title>
+    <url>%2F2018%2F05%2F19%2F%E4%BB%96%E4%BB%AC%2F</url>
+    <content type="text"><![CDATA[��������https://www.zhuwenlong.com/blog �����ˣ�http://bh-lay.com/]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>back-yard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[一些JS实用技巧]]></title>
     <url>%2F2017%2F11%2F05%2Fjs%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%2F</url>
     <content type="text"><![CDATA[给一个未声明的变量赋值，该变量会被自动创建为全局变量，在JS开发中，应该避免使用全局变量。所以，在给一个变量赋值时，一定要var声明后再使用。 避免使用eval()或Function构造函数；eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这种操作代价挺大的。 不要向setTimeout()和setInterval()方法里传递字符串。如果在这两个方法里传递字符串，那么字符串会像eval那样重新计算，这样速度就会变慢。 如果在全局区域里使用with()插入变量，那么，万一有一个变量名字和它名字一样，就很容易混淆和重写，应该避免这种写法。 话说踩100个坑就算是打怪升级成功了。前端这条路很长，需要自己不断雕琢…… No1:使用===替换==，隐患有时候就是这样出现的。12345678[10] === 10 //false[10] == 10 //true&apos;10&apos; == 10 //true&apos;10&apos; === 10 //false[] == 0 //true[] === 0 //false&apos;&apos; == false //true but true == &quot;a&quot; is false&apos;&apos; === false //false No2:给数组创建一个随机项12var items = [12, 548 , &apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; , 2145 , 119];var randomItem = items[Math.floor(Math.random() * items.length)]; No3:在特定范围里获得一个随机数1var x = Math.floor(Math.random() * (max - min + 1)) + min; No4:在数字0和最大数之间生成一组随机数123var numbersArray = [] , max = 100;for( var i=1; numbersArray.push(i++) &lt; max;i+=2); // numbers = [0,1,2,3 ... 100]console.log(numbersArray) No5:数字数组随机排序12var numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];numbers = numbers.sort(function()&#123; return Math.random() - 0.5&#125;); No6:数组追加123var array1 = [12 , &quot;foo&quot; , &#123;name:&quot;Joe&quot;&#125; , -2458];var array2 = [&quot;Doe&quot; , 555 , 100];Array.prototype.push.apply(array1, array2); No7:将参数对象转换为数组1var argArray = Array.prototype.slice.call(arguments); No8:验证一个给定参数是否为数字123function isNumber(n)&#123; return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);&#125; No9:验证一个给定的参数为数组123function isArray(obj)&#123; return Object.prototype.toString.call(obj) === &apos;[object Array]&apos; ;&#125; No10:从数字数组中获得最大值和最小值123var numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];var maxInNumbers = Math.max.apply(Math, numbers);var minInNumbers = Math.min.apply(Math, numbers); No11:清空数组1234567891011121314151617181920212223242526var myArray = [12 , 222 , 1000 ];myArray.length = 0;//不要用delete从数组中删除项目//我们可以使用split来代替使用delete来删除数组项。与其删除数组中未定义项目，还不如使用delete来替代。var items = [12, 548 ,&apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; ,2154 , 119 ];items.length; // return 11delete items[3]; // return trueitems.length; // return 11//items will be equal to [12, 548, &quot;a&quot;, undefined × 1, 5478, &quot;foo&quot;, 8852, undefined × 1, &quot;Doe&quot;, 2154, 119] var items = [12, 548 ,&apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; ,2154 , 119 ];items.length; // return 11items.splice(3,1) ;items.length; // return 10//items will be equal to [12, 548, &quot;a&quot;, 5478, &quot;foo&quot;, 8852, undefined × 1, &quot;Doe&quot;, 2154,119] //delete方法应该删除一个对象属性//使用length属性缩短数组,还可以使用length属性缩短数组var myArray = [12 , 222 , 1000 , 124 , 98 , 10 ];myArray.length = 4; // myArray will be equal to [12 , 222 , 1000 , 124]//如果你所定义的数组长度值过高，那么数组的长度将会改变，并且会填充一些未定义的值到数组里，数组的length属性不是只读的。myArray.length = 10; // the new array length is 10myArray[myArray.length - 1] ; // undefined No12:使用逻辑符号进行判断123var foo=10;foo == 10 &amp;&amp; fn();foo == 5 || fn2(); No13:And设置默认值123function fn3(val)&#123; val = val || 20;&#125; No14:使用map遍历数组123var arr=[1,2,3,4,5].map(function (val)&#123; return val*val;&#125;) No15:对小数进行取舍1234var num=3.1415926;num=num.toFixed(4);//好比0.1+0.2===0.3 //false,应该是0.30000000000000004 No16:逗号操作符12var a = 0; var b = ( a++, 99 ); No17:计算或查询缓存变量12var item=document.querySelector(&apos;#item&apos;);console.log(item); No18:避免负向索引12var numbersArray = [1,2,3,4,5]; var from = numbersArray.indexOf(&quot;foo&quot;); No19:避免使用eval()或Function构造函数123var func1 = new Function(functionCode);var func2 = eval(functionCode);//eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这是非常昂过的操作。 No20:不要向setTimeout()和setInterval()方法里传递字符串123456//如果在这两个方法里传递字符串，那么字符串会像eval那样重新计算，这样速度就会变慢，而不是这样使用： setInterval(&apos;doSomethingPeriodically()&apos;, 1000); setTimeOut(&apos;doSomethingAfterFiveSeconds()&apos;, 5000);//相反，应该这样用：setInterval(doSomethingPeriodically, 1000); setTimeOut(doSomethingAfterFiveSeconds, 5000); No21:给XMLHttpRequests设置timeouts12345678910111213var xhr = new XMLHttpRequest (); xhr.onreadystatechange = function () &#123; if (this.readyState == 4) &#123; clearTimeout(timeout); // do something with response data &#125; &#125; var timeout = setTimeout( function () &#123; xhr.abort(); // call error callback &#125;, 60*1000 /* timeout after a minute */ ); xhr.open(&apos;GET&apos;, url, true); xhr.send(); No22:多级判断用switch语句12345678910111213141516171819function getCategory(age) &#123; var category = &quot;&quot;; switch (true) &#123; case isNaN(age): category = &quot;not an age&quot;; break; case (age &gt;= 50): category = &quot;Old&quot;; break; case (age &lt;= 20): category = &quot;Baby&quot;; break; default: category = &quot;Young&quot;; break; &#125;; return category; &#125; getCategory(5); //Baby]]></content>
@@ -34,9 +45,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[三个M引发的思考]]></title>
-    <url>%2F2017%2F10%2F05%2F3M%2F</url>
-    <content type="text"><![CDATA[这里要说到一款强大的移动端编辑工具HBuilder，自带Mui框架，真是无敌，敲了3个M移动端的基本模型出来了，什么轮播图、Tab切换、折叠面板应有尽有。这让我想到了自己的前端开发之路。从更开始的小红本，到后来的DW，再到HBilder，Webstorm，现在又在尝试sublime。编辑器的升级又何尝不是自己成长之路呢。 选择一个工具的原因很多，但最主要的原因应是可以提高开发效率，而不是盲目追新。一项技术被人们推崇是因为解决了某种问题而不是因为使用了多么牛逼的技术。我始终坚信一点技术是为产品服务的。 这样的例子太多太多。比如在做某一个项目的时候用到了XX技术，由于之前写过一个Demo,直接引用文件就OK了。总而言之，一句话，遵循最佳实践。 啊啊啊，写不下去了，没灵感了。那就写一个Demo吧！我就只想静静的敲会代码。 灵感聚集地： 传送门 优秀个站： 个人网站 个人网站2 两个天蝎座的老前辈，哎，我也是天蝎男可技术咋就这么垃圾呢？前方路途遥远，少年仍需努力。]]></content>
+    <title><![CDATA[One hundred]]></title>
+    <url>%2F2017%2F10%2F05%2F%E5%8D%9A%E5%AE%A2100%2F</url>
+    <content type="text"><![CDATA[写给第100篇博客，有时候我在想，100篇带给我什么，技术的长进？总结能力？还是其他什么。在这中间，有过凑字数的想法，但后来还是放弃了。即使这样，还是有些写的不是太理想，这就需要日后不断改善。自己做的东西，一定要喜欢，不然就没什么意义了。 时刻提醒自己，少即是多。从自己关注的公众号就可体现出来。从之前三四十个，到现在的10多个，我给自己设的上线就是绝不超过20个。这已经很多了，就像网上说的，看100篇文章不如自己写一篇。它只能拓展自己的眼界，但这是必不可少的。一天30分钟足够。 今天很巧，又发现一个自己喜欢的公号。讲的很纯粹，值得深思。 片段1你遇到的男人贪图的是色，付出的是荷尔蒙，与爱情啊什么的根本没有什么关系。而你，却是动了心动了情，你付出的是爱。 男人要的是一时欢虞，女人要的是一世相守，不在一个频道上，当然一言不合就分开了。这种感情，开始的时候，大多带着耀眼的光环，让人看到的都是美好。但最终，带给人的，一定是锥心刺骨的疼痛。梦醒时分会非常痛，非常痛。 片段2这一生，谁是我们最重要的人？我认为，除却父母子女不能。当然还有夫妻，还有兄弟姊妹，但我觉得都比不上父母子女的骨肉亲情。 一个人，无论多么自私冷漠，在身为父母后，也会变得柔软而温暖。如果说让他们变成孩子脚下的水泥路，可以带孩子走向更好更大的世界，他们一定会躬身伏地，无怨无悔。 我们小的时候，父母是大树，给我们一地荫凉为我们遮风挡雨。父母在的地方，就是我们的家。而等父母老去的时候，我们就成了父母的保护伞，你在哪，哪就是他们的家。 片段3一个人真爱你的时候，他会站在你的角度考虑问题，他宁可伤害自己，也不愿伤害自己爱的人。是的。每一个人在成年后，都在寻找真爱，寻找自己的另一半。而这个找的过程中，会遇到烦恼，遇到忧愁，也会遇到伤害。可是，一个真正值得爱的人并不是很容易找到，更多的是穷极一生也遇不到。 片段4爱从眼角出发，奔向鬓角，这貌似很短的距离，却需要一生的跋涉才能抵达。所有的情，都是从耳鬓厮磨中走出来，最终变成心疼和牵挂。 是啊，世间所有的爱，都指向团聚，唯有父母的爱，指向别离…… 孩子，我让你去飞翔，不是让你和别人比什么，而是因为，我希望你将来拥有选择的权利，选择有意义、有时间的工作，而不是被迫谋生。当你的工作在自己觉得有意义的时候，你才能快乐，才能有勇气去攀登更高的山峰，去看更美的风景。 但人生路上，难免会遇到风雨，妈妈会为你准备一个爱的港湾，让你，随时可以停靠。当你遇到挫折与困难，不必惊慌，我一直都在家里等你回来，我会像你小时候那样，牵着你的手，带你走过风风雨雨，人生路上，我会努力多伴你一程，再一程。 宝贝，趁你还在我身边，还未曾长大，让我好好疼你，爱你吧。终有一天，你也会拥有蓬勃的力量，张开翅膀，去属于你的天空飞翔。 愿你，眼中有光芒，活成，你想要的模样。 片段5真正的修养，不仅是宏观的道德，更有那些细节的温度。其实，幸福，根本不是惊天动地，轰轰烈烈，而是那些细微的，让我们置身其中，感受不到存在甚至感到无聊的东西，真的等到失去它时，才发现，那一切是多么多么的美好。 幸福，不是拿到了世界上最好的东西，而是，珍惜了生命中的所有。 终有一天，你会发现，你寻找的幸福，根本不是什么浓烈的罗曼蒂克，而是一个个平淡如水的日子，是一个来了再也没走的人。 片段6多年前看过一个电视剧，里面有一段剧情印象很深。 美丽的女主爱上了一位已婚男人，那个男的也喜欢她，二人只是暗生情愫，并无挑明。一次，女主喝多了，让男人送她回家。二人独处一室，女主在男人怀里哭得一塌糊涂。男人的脸上是百般克制的表情，看得出，他是在拼命压抑住自己的欲望。后来，女主睡着了，他为她盖好被子悄悄走了。那一刻，我看到了真爱。 围城里的人想出来，外面的人想进去。生活本来就是这样。有人做过一个测试，在一个80万人的城市，遇见灵魂伴侣的几率是0.53，甚至不到1人。 尊重，是发自内心把对方当回事，给人体面的同时，也流露出自己高贵的人格，和良好的教养。有时，越是微不足道的细节，越会自然流露。 北京是我的福地 人生在世不过数十年，要明白一点，赚钱是为家人提供更好的生活。看过太多为赚钱与亲人分离，这是很不应该的。“别在秀你加班到深夜了，除了证明你可替代性强以外再也不能证明什么”，努力提升自己，让自己变得不可替代或者说难以替代才是我们每个人都应考虑的。 你要你的孩子接受什么样的教育，当北漂吗？那给予欠发达地区的孩子提供实现梦想的机会。北京，承载了无数人的梦想，也破碎了无数人的梦想。总之，我要为我的家人提供我理想的生活，不管自己多么艰辛，一定要为家人提供优质的生活。]]></content>
       <categories>
         <category>back-yard</category>
       </categories>
@@ -45,9 +56,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[One hundred]]></title>
-    <url>%2F2017%2F10%2F05%2F%E5%8D%9A%E5%AE%A2100%2F</url>
-    <content type="text"><![CDATA[写给第100篇博客，有时候我在想，100篇带给我什么，技术的长进？总结能力？还是其他什么。在这中间，有过凑字数的想法，但后来还是放弃了。即使这样，还是有些写的不是太理想，这就需要日后不断改善。自己做的东西，一定要喜欢，不然就没什么意义了。 时刻提醒自己，少即是多。从自己关注的公众号就可体现出来。从之前三四十个，到现在的10多个，我给自己设的上线就是绝不超过20个。这已经很多了，就像网上说的，看100篇文章不如自己写一篇。它只能拓展自己的眼界，但这是必不可少的。一天30分钟足够。 今天很巧，又发现一个自己喜欢的公号。讲的很纯粹，值得深思。 片段1你遇到的男人贪图的是色，付出的是荷尔蒙，与爱情啊什么的根本没有什么关系。而你，却是动了心动了情，你付出的是爱。 男人要的是一时欢虞，女人要的是一世相守，不在一个频道上，当然一言不合就分开了。这种感情，开始的时候，大多带着耀眼的光环，让人看到的都是美好。但最终，带给人的，一定是锥心刺骨的疼痛。梦醒时分会非常痛，非常痛。 片段2这一生，谁是我们最重要的人？我认为，除却父母子女不能。当然还有夫妻，还有兄弟姊妹，但我觉得都比不上父母子女的骨肉亲情。 一个人，无论多么自私冷漠，在身为父母后，也会变得柔软而温暖。如果说让他们变成孩子脚下的水泥路，可以带孩子走向更好更大的世界，他们一定会躬身伏地，无怨无悔。 我们小的时候，父母是大树，给我们一地荫凉为我们遮风挡雨。父母在的地方，就是我们的家。而等父母老去的时候，我们就成了父母的保护伞，你在哪，哪就是他们的家。 片段3一个人真爱你的时候，他会站在你的角度考虑问题，他宁可伤害自己，也不愿伤害自己爱的人。是的。每一个人在成年后，都在寻找真爱，寻找自己的另一半。而这个找的过程中，会遇到烦恼，遇到忧愁，也会遇到伤害。可是，一个真正值得爱的人并不是很容易找到，更多的是穷极一生也遇不到。 片段4爱从眼角出发，奔向鬓角，这貌似很短的距离，却需要一生的跋涉才能抵达。所有的情，都是从耳鬓厮磨中走出来，最终变成心疼和牵挂。 是啊，世间所有的爱，都指向团聚，唯有父母的爱，指向别离…… 孩子，我让你去飞翔，不是让你和别人比什么，而是因为，我希望你将来拥有选择的权利，选择有意义、有时间的工作，而不是被迫谋生。当你的工作在自己觉得有意义的时候，你才能快乐，才能有勇气去攀登更高的山峰，去看更美的风景。 但人生路上，难免会遇到风雨，妈妈会为你准备一个爱的港湾，让你，随时可以停靠。当你遇到挫折与困难，不必惊慌，我一直都在家里等你回来，我会像你小时候那样，牵着你的手，带你走过风风雨雨，人生路上，我会努力多伴你一程，再一程。 宝贝，趁你还在我身边，还未曾长大，让我好好疼你，爱你吧。终有一天，你也会拥有蓬勃的力量，张开翅膀，去属于你的天空飞翔。 愿你，眼中有光芒，活成，你想要的模样。 片段5真正的修养，不仅是宏观的道德，更有那些细节的温度。其实，幸福，根本不是惊天动地，轰轰烈烈，而是那些细微的，让我们置身其中，感受不到存在甚至感到无聊的东西，真的等到失去它时，才发现，那一切是多么多么的美好。 幸福，不是拿到了世界上最好的东西，而是，珍惜了生命中的所有。 终有一天，你会发现，你寻找的幸福，根本不是什么浓烈的罗曼蒂克，而是一个个平淡如水的日子，是一个来了再也没走的人。 片段6多年前看过一个电视剧，里面有一段剧情印象很深。 美丽的女主爱上了一位已婚男人，那个男的也喜欢她，二人只是暗生情愫，并无挑明。一次，女主喝多了，让男人送她回家。二人独处一室，女主在男人怀里哭得一塌糊涂。男人的脸上是百般克制的表情，看得出，他是在拼命压抑住自己的欲望。后来，女主睡着了，他为她盖好被子悄悄走了。那一刻，我看到了真爱。 围城里的人想出来，外面的人想进去。生活本来就是这样。有人做过一个测试，在一个80万人的城市，遇见灵魂伴侣的几率是0.53，甚至不到1人。 尊重，是发自内心把对方当回事，给人体面的同时，也流露出自己高贵的人格，和良好的教养。有时，越是微不足道的细节，越会自然流露。 北京是我的福地 人生在世不过数十年，要明白一点，赚钱是为家人提供更好的生活。看过太多为赚钱与亲人分离，这是很不应该的。“别在秀你加班到深夜了，除了证明你可替代性强以外再也不能证明什么”，努力提升自己，让自己变得不可替代或者说难以替代才是我们每个人都应考虑的。 你要你的孩子接受什么样的教育，当北漂吗？那给予欠发达地区的孩子提供实现梦想的机会。北京，承载了无数人的梦想，也破碎了无数人的梦想。总之，我要为我的家人提供我理想的生活，不管自己多么艰辛，一定要为家人提供优质的生活。]]></content>
+    <title><![CDATA[三个M引发的思考]]></title>
+    <url>%2F2017%2F10%2F05%2F3M%2F</url>
+    <content type="text"><![CDATA[这里要说到一款强大的移动端编辑工具HBuilder，自带Mui框架，真是无敌，敲了3个M移动端的基本模型出来了，什么轮播图、Tab切换、折叠面板应有尽有。这让我想到了自己的前端开发之路。从更开始的小红本，到后来的DW，再到HBilder，Webstorm，现在又在尝试sublime。编辑器的升级又何尝不是自己成长之路呢。 选择一个工具的原因很多，但最主要的原因应是可以提高开发效率，而不是盲目追新。一项技术被人们推崇是因为解决了某种问题而不是因为使用了多么牛逼的技术。我始终坚信一点技术是为产品服务的。 这样的例子太多太多。比如在做某一个项目的时候用到了XX技术，由于之前写过一个Demo,直接引用文件就OK了。总而言之，一句话，遵循最佳实践。 啊啊啊，写不下去了，没灵感了。那就写一个Demo吧！我就只想静静的敲会代码。 灵感聚集地： 传送门 优秀个站： 个人网站 个人网站2 两个天蝎座的老前辈，哎，我也是天蝎男可技术咋就这么垃圾呢？前方路途遥远，少年仍需努力。]]></content>
       <categories>
         <category>back-yard</category>
       </categories>
@@ -196,17 +207,6 @@
       </categories>
       <tags>
         <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[商城项目]]></title>
-    <url>%2F2017%2F05%2F27%2F%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93%2F</url>
-    <content type="text"><![CDATA[Preview: https://webykj.github.io/Shop 一个网站中常用到的特效：轮播图、TAB切换、手风琴、滚动字幕、3级联动、弹出层等等。该项目用到了滚动字幕、TAB切换、轮播图、无缝轮播、星星评价等网页常用特效。也用到了一个图片放大插件。最大的特色就是特效全部都是自己写的。 开发中遇到的问题1.clearfix&#123;overflow:auto; _height:1%;&#125; 这不就是清除浮动吗？有什么好说的。先别急，让我说完。 解决方案嘛，也很简单： 1.clearfix&#123;overflow:hidden; _zoom:1;&#125; 但这样又会遇到这样一个问题，当你导航有下拉菜单时，由于使用了overflow:hidden;使得下拉菜单无法显示。所以，还是老老实实用常规伪类清浮吧。 项目收获： 明白了项目架构的重要性，看似仅仅只有几个页面，但考虑到后期改版、维护的话就不是这样了； 加深了对JavaScript的理解； Tab切换核心代码12345$(this).addClass(&apos;active&apos;).siblings().removeClass(&apos;active&apos;);for(var i=0;i&lt;3;i++)&#123; $(&apos;#content div&apos;).eq(i).css(&apos;display&apos;,&apos;none&apos;);&#125;$(&apos;#content div&apos;).eq($(this).index()).css(&apos;display&apos;,&apos;block&apos;); 滚动字幕核心代码123var lineHeight=-($(ele).find(&apos;li:first&apos;).height());$(ele).animate(&#123;&quot;marginTop&quot;:lineHeight+&quot;px&quot;&#125;,600,function ()&#123;$(this).css(&#123;marginTop:0&#125;).find(&apos;li:first&apos;).appendTo(ele)&#125;); 无缝轮播核心代码1234567$(&quot;.oraign&quot;).clone().appendTo(&apos;.list&apos;);if( !$(&apos;.list&apos;).is(&quot;:animated&quot;) )&#123; if($(&apos;.list&apos;).css(&apos;left&apos;)==&apos;-3294px&apos;)&#123; $(&apos;.list&apos;).css(&#123;left:&apos;-0px&apos;&#125;,500) &#125; $(&apos;.list&apos;).stop(true,true).animate(&#123;left:&apos;-=&apos;+$width&#125;,500)&#125; 项目总结：写的就是一坨屎，正因为这样，才让自己有动力不断完善。用最少的代码实现业务需求。减少代码冗余，实现代码的复用，提高开发效率。]]></content>
-      <categories>
-        <category>ittech</category>
-      </categories>
-      <tags>
-        <tag>ittech</tag>
       </tags>
   </entry>
   <entry>
@@ -815,17 +815,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[实用jq代码片段【一】]]></title>
-    <url>%2F2016%2F05%2F01%2Fi034%2F</url>
-    <content type="text"><![CDATA[链式操作1234567$(document).ready(function()&#123; $(&quot;button&quot;).click(function()&#123; $(&quot;#p1&quot;).slideUp(2000).slideDown(2000).css(&quot;color&quot;,&quot;red&quot;); $(&quot;#div-log&quot;).html(&quot;&lt;p&gt;&quot;+&quot;实现链式（Chaining）操作&quot;+&quot;&lt;/p&gt;&quot;); //类似于+= &#125;);&#125;); 区分客户区，页面区，屏幕区 三者的X轴没什么说的，都一样，主要区别在于Y轴上，客户区，屏幕区的最大值固定，不会随着页面的滚动改变。页面区会随着滚动条的改变而变化。 123456789101112131415161718192021222324252627282930313233//客户区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getclient(e); &#125;);&#125;);function getclient(e)&#123; x=e.clientX; //当前可视窗口的距离 y=e.clientY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//屏幕区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getscreen(e); &#125;);&#125;);function getscreen(e)&#123; x=e.screenX; //屏幕的左上角为参考点距离屏幕边缘的距离 y=e.screenY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//页面区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getpage(e); &#125;);&#125;);function getpage(e)&#123; x=e.pageX; //相对于当前页面中的坐标（会随着滚动条的滚动而变化） y=e.pageY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125; 左右自适应高度：1234567891011function $(id)&#123; return document.getElementById(id);&#125;(function autoheight()&#123; if($(&apos;left&apos;).offsetHeight&gt;=$(&apos;right&apos;).offsetHeight)&#123; $(&apos;right&apos;).style.height=$(&apos;left&apos;).offsetHeight+&quot;px&quot;; &#125;else&#123; $(&apos;left&apos;).style.height=$(&apos;right&apos;).offsetHeight+&quot;px&quot;; &#125;&#125;)()//需要注意的是必须自调用函数。 callback()函数 callback()函数在当前效果100%完成之后执行。在一个涉及动画的函数之后来执行语句，用callback()函数。 1234567$(document).ready(function ()&#123; $(&apos;button&apos;).click(function ()&#123; $(&apos;p&apos;).hide(1000,function ()&#123; alert(&quot;回调函数过程，激活一个提示框&quot;); &#125;); &#125;);&#125;); 在新窗口打开链接123456789$(document).ready(function ()&#123; $(&apos;.url&apos;).attr(&#123;target:&quot;_blank&quot;&#125;) $(&apos;a[rel=ext]&apos;).click(function ()&#123; $(this).attr(&apos;target&apos;,&apos;_blank&apos;) &#125;);&#125;);function openurl()&#123; window.open(&apos;http://www.microsoft.com&apos;);&#125; 页面淡入淡出1234567$(document).ready(function ()&#123; $(&apos;#fade&apos;).click(function ()&#123; $(&apos;#div-fade&apos;).fadeToggle(1000); $(&apos;#div-fade&apos;).fadeToggle(1000); $(&quot;#div-fade&quot;).fadeTo(1000,0.2); &#125;);&#125;); 折叠展开123456$(document).ready(function()&#123; $(&quot;.help h3&quot;).click(function()&#123; $(this).next(&quot;p&quot;).slideToggle(&quot;fast&quot;).siblings(&quot;p:visible&quot;).slideUp(&quot;fast&quot;);//siblings表示取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合 &#125;);&#125;); 未完待续。。。]]></content>
-      <categories>
-        <category>ittech</category>
-      </categories>
-      <tags>
-        <tag>jQuery</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[收藏的面试题]]></title>
     <url>%2F2016%2F05%2F01%2F%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
     <content type="text"><![CDATA[以下是自己收藏网友的面试题，很实用；这只能帮你一般都会问什么，关键看自己平时的积累。临时抱佛脚没什么用，剩下的就看自己了。]]></content>
@@ -834,6 +823,17 @@
       </categories>
       <tags>
         <tag>Job</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[实用jq代码片段【一】]]></title>
+    <url>%2F2016%2F05%2F01%2Fi034%2F</url>
+    <content type="text"><![CDATA[链式操作1234567$(document).ready(function()&#123; $(&quot;button&quot;).click(function()&#123; $(&quot;#p1&quot;).slideUp(2000).slideDown(2000).css(&quot;color&quot;,&quot;red&quot;); $(&quot;#div-log&quot;).html(&quot;&lt;p&gt;&quot;+&quot;实现链式（Chaining）操作&quot;+&quot;&lt;/p&gt;&quot;); //类似于+= &#125;);&#125;); 区分客户区，页面区，屏幕区 三者的X轴没什么说的，都一样，主要区别在于Y轴上，客户区，屏幕区的最大值固定，不会随着页面的滚动改变。页面区会随着滚动条的改变而变化。 123456789101112131415161718192021222324252627282930313233//客户区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getclient(e); &#125;);&#125;);function getclient(e)&#123; x=e.clientX; //当前可视窗口的距离 y=e.clientY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//屏幕区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getscreen(e); &#125;);&#125;);function getscreen(e)&#123; x=e.screenX; //屏幕的左上角为参考点距离屏幕边缘的距离 y=e.screenY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//页面区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getpage(e); &#125;);&#125;);function getpage(e)&#123; x=e.pageX; //相对于当前页面中的坐标（会随着滚动条的滚动而变化） y=e.pageY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125; 左右自适应高度：1234567891011function $(id)&#123; return document.getElementById(id);&#125;(function autoheight()&#123; if($(&apos;left&apos;).offsetHeight&gt;=$(&apos;right&apos;).offsetHeight)&#123; $(&apos;right&apos;).style.height=$(&apos;left&apos;).offsetHeight+&quot;px&quot;; &#125;else&#123; $(&apos;left&apos;).style.height=$(&apos;right&apos;).offsetHeight+&quot;px&quot;; &#125;&#125;)()//需要注意的是必须自调用函数。 callback()函数 callback()函数在当前效果100%完成之后执行。在一个涉及动画的函数之后来执行语句，用callback()函数。 1234567$(document).ready(function ()&#123; $(&apos;button&apos;).click(function ()&#123; $(&apos;p&apos;).hide(1000,function ()&#123; alert(&quot;回调函数过程，激活一个提示框&quot;); &#125;); &#125;);&#125;); 在新窗口打开链接123456789$(document).ready(function ()&#123; $(&apos;.url&apos;).attr(&#123;target:&quot;_blank&quot;&#125;) $(&apos;a[rel=ext]&apos;).click(function ()&#123; $(this).attr(&apos;target&apos;,&apos;_blank&apos;) &#125;);&#125;);function openurl()&#123; window.open(&apos;http://www.microsoft.com&apos;);&#125; 页面淡入淡出1234567$(document).ready(function ()&#123; $(&apos;#fade&apos;).click(function ()&#123; $(&apos;#div-fade&apos;).fadeToggle(1000); $(&apos;#div-fade&apos;).fadeToggle(1000); $(&quot;#div-fade&quot;).fadeTo(1000,0.2); &#125;);&#125;); 折叠展开123456$(document).ready(function()&#123; $(&quot;.help h3&quot;).click(function()&#123; $(this).next(&quot;p&quot;).slideToggle(&quot;fast&quot;).siblings(&quot;p:visible&quot;).slideUp(&quot;fast&quot;);//siblings表示取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合 &#125;);&#125;); 未完待续。。。]]></content>
+      <categories>
+        <category>ittech</category>
+      </categories>
+      <tags>
+        <tag>jQuery</tag>
       </tags>
   </entry>
   <entry>
@@ -911,17 +911,6 @@
       </categories>
       <tags>
         <tag>Web前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[书]]></title>
-    <url>%2F2016%2F03%2F28%2F%E6%88%91%E4%B8%8E%E4%B9%A6%E7%9A%84%E6%95%85%E4%BA%8B%2F</url>
-    <content type="text"><![CDATA[开卷有益，书，带给我们知识的时候，也逐渐强壮了我们的心智。在我的书单中，不仅限于专业书，更多的是我个人喜欢的方面。哈哈，暴露了我的读书观，不过也罢，实话实说嘛。专业书开拓了我的专业广度与深度。比如《JavaScriptDOM编程艺术》这本，我知道了“insertAfter”,以前只知道它不向insertBefore那样，本身就存在的直接用就可以，这是就需要自己创建。在我的书单中，《富爸爸，穷爸爸》，《富同学，穷同学》，《赚未来十年的钱》，《优秀的人都敢对自己下狠手》,《基金投资》等启蒙了我的金钱观，价值观。总之，每本书，在你读完后，总会有几个地方不时出现在你的脑海中，引起你的思考。每本书之间思维的碰撞，终将深刻地影响这你的行为。 弗朗西斯·培根在《论读书》里说道： 有些书只需浅尝，有些书可以狼吞，有些书要细嚼慢咽，慢慢消化。也就是说，有的书只需选读，有的书只需浏览，有的书却必须全部精读。有的书不必去读原文，读读它们的节本就够了，但这仅限于内容不大重要的二流书籍：否则，删节过的往往就像蒸馏水一样，淡而无味。 以下是我个人推崇的： 《软技能，代码之外的生存指南》 《驱动力》 《优秀的人都敢对自己下狠手》 《富爸爸，穷爸爸》 《富同学，穷同学》 《赚未来十年的钱》 《自控力》 《把时间当做朋友》]]></content>
-      <categories>
-        <category>books</category>
-      </categories>
-      <tags>
-        <tag>books</tag>
       </tags>
   </entry>
   <entry>
