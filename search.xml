@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[那些年薪百万的人]]></title>
+    <url>%2F2018%2F06%2F23%2F%E9%82%A3%E4%BA%9B%E5%B9%B4%E8%96%AA%E7%99%BE%E4%B8%87%E7%9A%84%E4%BA%BA%2F</url>
+    <content type="text"><![CDATA[今天看到一篇文章，提到年薪百万的人都具备这样的共同点： 野心和抱负 强大的执行力 聪明，但肯下笨功夫 近乎冷酷的韧性 开放心态与持续进化 在我看来，这些都是必要不充分条件。只能说，拥有了以上特质，会离成功更近一些。我一年赚100万需要多长时间，5年？10年？如果说这些离自己比较遥远，那资产达到100万总该容易些吧。 为此，我常常问自己这么2件事： 如果你是老板，你会为自己开多少工资？ 如果给你100万，你能不能5年甚至长期年化投资收益率达到10%以上？ 回到最初的问题 我有足够的野心和抱负吗？嗯，还凑合，比如要赚以亿计的财富。不为别的，只想让自己有更自主的选择权。在想陪家人的时候可以陪在他们身边；想出国旅游那就去；金钱不再是我的绊脚石，我可以尽可能地按照自己的想法做事。嗯，有钱真好，虽然现在活得很粗糙，但我在努力让自己变得更好。 我有强大的执行力吗？嗯，想了半天，没有。但如果，有人这样告诉你，你怎么怎么了，我给你100万，那我估计都做得到。我们总是很短视，哦，不，是我很短视。这点，需要自己注意并彻底改变。 聪明，但肯下笨功夫聪明，固然重要，但万事万物总有方法。正如李笑来老师说的“做正确的事远比把事做正确重要的多”。掌握正确的做事方法，遵循最佳实践，我相信，你也可以。 近乎冷酷的韧性这点，自己并没有太多的体会，待以后再来。 开放心态与持续进化心态要开放，要接受多元化的思维。站在他人的角度思考问题，你可能会收到意向不到的收获。]]></content>
+      <categories>
+        <category>about</category>
+      </categories>
+      <tags>
+        <tag>about</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[一些JS实用技巧]]></title>
     <url>%2F2017%2F11%2F05%2Fjs%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%2F</url>
     <content type="text"><![CDATA[给一个未声明的变量赋值，该变量会被自动创建为全局变量，在JS开发中，应该避免使用全局变量。所以，在给一个变量赋值时，一定要var声明后再使用。 避免使用eval()或Function构造函数；eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这种操作代价挺大的。 不要向setTimeout()和setInterval()方法里传递字符串。如果在这两个方法里传递字符串，那么字符串会像eval那样重新计算，这样速度就会变慢。 如果在全局区域里使用with()插入变量，那么，万一有一个变量名字和它名字一样，就很容易混淆和重写，应该避免这种写法。 话说踩100个坑就算是打怪升级成功了。前端这条路很长，需要自己不断雕琢…… No1:使用===替换==，隐患有时候就是这样出现的。12345678[10] === 10 //false[10] == 10 //true&apos;10&apos; == 10 //true&apos;10&apos; === 10 //false[] == 0 //true[] === 0 //false&apos;&apos; == false //true but true == &quot;a&quot; is false&apos;&apos; === false //false No2:给数组创建一个随机项12var items = [12, 548 , &apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; , 2145 , 119];var randomItem = items[Math.floor(Math.random() * items.length)]; No3:在特定范围里获得一个随机数1var x = Math.floor(Math.random() * (max - min + 1)) + min; No4:在数字0和最大数之间生成一组随机数123var numbersArray = [] , max = 100;for( var i=1; numbersArray.push(i++) &lt; max;i+=2); // numbers = [0,1,2,3 ... 100]console.log(numbersArray) No5:数字数组随机排序12var numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];numbers = numbers.sort(function()&#123; return Math.random() - 0.5&#125;); No6:数组追加123var array1 = [12 , &quot;foo&quot; , &#123;name:&quot;Joe&quot;&#125; , -2458];var array2 = [&quot;Doe&quot; , 555 , 100];Array.prototype.push.apply(array1, array2); No7:将参数对象转换为数组1var argArray = Array.prototype.slice.call(arguments); No8:验证一个给定参数是否为数字123function isNumber(n)&#123; return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);&#125; No9:验证一个给定的参数为数组123function isArray(obj)&#123; return Object.prototype.toString.call(obj) === &apos;[object Array]&apos; ;&#125; No10:从数字数组中获得最大值和最小值123var numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];var maxInNumbers = Math.max.apply(Math, numbers);var minInNumbers = Math.min.apply(Math, numbers); No11:清空数组1234567891011121314151617181920212223242526var myArray = [12 , 222 , 1000 ];myArray.length = 0;//不要用delete从数组中删除项目//我们可以使用split来代替使用delete来删除数组项。与其删除数组中未定义项目，还不如使用delete来替代。var items = [12, 548 ,&apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; ,2154 , 119 ];items.length; // return 11delete items[3]; // return trueitems.length; // return 11//items will be equal to [12, 548, &quot;a&quot;, undefined × 1, 5478, &quot;foo&quot;, 8852, undefined × 1, &quot;Doe&quot;, 2154, 119] var items = [12, 548 ,&apos;a&apos; , 2 , 5478 , &apos;foo&apos; , 8852, , &apos;Doe&apos; ,2154 , 119 ];items.length; // return 11items.splice(3,1) ;items.length; // return 10//items will be equal to [12, 548, &quot;a&quot;, 5478, &quot;foo&quot;, 8852, undefined × 1, &quot;Doe&quot;, 2154,119] //delete方法应该删除一个对象属性//使用length属性缩短数组,还可以使用length属性缩短数组var myArray = [12 , 222 , 1000 , 124 , 98 , 10 ];myArray.length = 4; // myArray will be equal to [12 , 222 , 1000 , 124]//如果你所定义的数组长度值过高，那么数组的长度将会改变，并且会填充一些未定义的值到数组里，数组的length属性不是只读的。myArray.length = 10; // the new array length is 10myArray[myArray.length - 1] ; // undefined No12:使用逻辑符号进行判断123var foo=10;foo == 10 &amp;&amp; fn();foo == 5 || fn2(); No13:And设置默认值123function fn3(val)&#123; val = val || 20;&#125; No14:使用map遍历数组123var arr=[1,2,3,4,5].map(function (val)&#123; return val*val;&#125;) No15:对小数进行取舍1234var num=3.1415926;num=num.toFixed(4);//好比0.1+0.2===0.3 //false,应该是0.30000000000000004 No16:逗号操作符12var a = 0; var b = ( a++, 99 ); No17:计算或查询缓存变量12var item=document.querySelector(&apos;#item&apos;);console.log(item); No18:避免负向索引12var numbersArray = [1,2,3,4,5]; var from = numbersArray.indexOf(&quot;foo&quot;); No19:避免使用eval()或Function构造函数123var func1 = new Function(functionCode);var func2 = eval(functionCode);//eval()和Function构造函数被称为脚本引擎，每次执行它们的时候都必须把源码转换成可执行的代码，这是非常昂过的操作。 No20:不要向setTimeout()和setInterval()方法里传递字符串123456//如果在这两个方法里传递字符串，那么字符串会像eval那样重新计算，这样速度就会变慢，而不是这样使用： setInterval(&apos;doSomethingPeriodically()&apos;, 1000); setTimeOut(&apos;doSomethingAfterFiveSeconds()&apos;, 5000);//相反，应该这样用：setInterval(doSomethingPeriodically, 1000); setTimeOut(doSomethingAfterFiveSeconds, 5000); No21:给XMLHttpRequests设置timeouts12345678910111213var xhr = new XMLHttpRequest (); xhr.onreadystatechange = function () &#123; if (this.readyState == 4) &#123; clearTimeout(timeout); // do something with response data &#125; &#125; var timeout = setTimeout( function () &#123; xhr.abort(); // call error callback &#125;, 60*1000 /* timeout after a minute */ ); xhr.open(&apos;GET&apos;, url, true); xhr.send(); No22:多级判断用switch语句12345678910111213141516171819function getCategory(age) &#123; var category = &quot;&quot;; switch (true) &#123; case isNaN(age): category = &quot;not an age&quot;; break; case (age &gt;= 50): category = &quot;Old&quot;; break; case (age &lt;= 20): category = &quot;Baby&quot;; break; default: category = &quot;Young&quot;; break; &#125;; return category; &#125; getCategory(5); //Baby]]></content>
@@ -152,6 +163,17 @@
       </categories>
       <tags>
         <tag>back-yard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[甜言蜜语]]></title>
+    <url>%2F2017%2F06%2F23%2F%E8%AF%AD%E5%BD%95%2F</url>
+    <content type="text"><![CDATA[做事真诚些，说话坦诚些 一枚GOSPA的前端探索者。GOSPA[目标，目的，策略，计划，行动]。 思想引领行动，行动导致习惯，习惯产生性格，性格决定命运。 第一个五年是作业，第二个五年是管理，第三个五年是经营。 自由是独立，不依附，不恐惧。 机会成本是指为了得到某种东西而所要放弃另一些东西的最大价值。 一代好母亲，三代好家庭。 世间所有的爱，都指向团聚；唯有父母的爱，指向别离… 幸福，不是拿到世界上最好的东西，而是，珍惜生命中的所有。 好好爱自己的父母，他们是最爱你的人，也值得你用心去爱。]]></content>
+      <categories>
+        <category>about</category>
+      </categories>
+      <tags>
+        <tag>about</tag>
       </tags>
   </entry>
   <entry>
@@ -331,9 +353,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[GET与POST区别]]></title>
-    <url>%2F2016%2F11%2F10%2Fi029%2F</url>
-    <content type="text"><![CDATA[以前我们是可能是这样认为的： GET使用URL或Cookie传参。而POST将数据放在BODY中。 GET的URL会有长度上的限制，则POST的数据则可以非常大。 POST比GET安全，因为数据在地址栏上不可见。 可是，经过查证，They’re wrong，我也感觉不可思议，以前我就这样认为啊！ GET和POST与数据如何传递没有关系 GET和POST是由HTTP协议定义的。在HTTP协议中，Method和Data（URL， Body， Header）是正交的两个概念，也就是说，使用哪个Method与应用层的数据如何传输是没有相互关系的。 HTTP没有要求，如果Method是POST数据就要放在BODY中。也没有要求，如果Method是GET，数据（参数）就一定要放在URL中而不能放在BODY中。 HTTP协议对GET和POST都没有对长度的限制 HTTP协议明确地指出了，HTTP头和Body都没有长度的要求。而对于URL长度上的限制，有两方面的原因造成： 浏览器。据说早期的浏览器会对URL长度做限制。据说IE对URL长度会限制在2048个字符内（流传很广，而且无数同事都表示认同）。但我自己试了一下，我构造了90K的URL通过IE9访问live.com，是正常的。网上的东西，哪怕是Wikipedia上的，也不能信。 服务器。URL长了，对服务器处理也是一种负担。原本一个会话就没有多少数据，现在如果有人恶意地构造几个几M大小的URL，并不停地访问你的服务器。服务器的最大并发数显然会下降。另一种攻击方式是，把告诉服务器Content-Length是一个很大的数，然后只给服务器发一点儿数据，嘿嘿，服务器你就傻等着去吧。哪怕你有超时设置，这种故意的次次访问超时也能让服务器吃不了兜着走。有鉴于此，多数服务器出于安全啦、稳定啦方面的考虑，会给URL长度加限制。但是这个限制是针对所有HTTP请求的，与GET、POST没有关系。 安全不安全和GET、POST可能并不是我们认为的那种关系。]]></content>
+    <title><![CDATA[同源策略与跨域]]></title>
+    <url>%2F2016%2F11%2F10%2Fi041%2F</url>
+    <content type="text"><![CDATA[同源策略 所谓同源是指2个页面要具有相同的协议，域名，端口，三者缺一不可。 同源策略指的是浏览器对不同源的脚本或文本的访问进行限制，即源a下的js文件无法获取源b下的元素属性。 同源策略限制的是js中XMLHttpRequest请求，以下情况不受同源策略的影响： 页面中的链接，重定向，表单提交 允许跨域资源的嵌入，如果要阻止iframe嵌入我们网站的资源(页面或者js等)，我们可以在web服务器加上一个X-Frame-Options DENY头部来限制。 跨域问题 前提条件是我们在WEB服务器或者服务端脚本中设置ACCESS-CONTROL-ALLOW-ORIGIN头部，如果设置了这些头部并允许某些域名跨域访问，则浏览器就会跳过同源策略的限制返回对应的内容。 AJAX跨域1234567891011121314151617181920212223242526# index.html&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;test cross domain&lt;/title&gt;&lt;script src=&quot;/js/jquery.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;http://www.bar.com/js/test.js&quot;&gt;&lt;/script&gt;&lt;script&gt;$(function()&#123; document.domain = &apos;foo.com&apos;; //1 注释掉则会报错 var ifr = document.getElementById(&quot;testframe&quot;); ifr.onload = function()&#123; var doc = ifr.contentDocument || ifr.contentWindow.document; alert(doc.getElementsByTagName(&quot;h1&quot;)[0].childNodes[0].nodeValue); &#125;&#125;);$.ajax(&quot;http://www.bar.com/js/test.js&quot;); //2 报错&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Test Cross Domain&lt;/h1&gt;&lt;iframe id=&quot;testframe&quot; src=&quot;http://foo.com/test.html&quot;&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt; JSONP跨域实现原理 与AJAX没多大关系，通过动态插入script标签来实现跨域资源访问。 123456789101112131415161718# jsonp.html&lt;script type=&quot;text/javascript&quot;&gt; function callback(data) &#123; alert(data.message); &#125; function addScriptTag(src)&#123; var script = document.createElement(&apos;script&apos;); script.src = src; document.body.appendChild(script); &#125; window.onload = function()&#123; addScriptTag(&quot;http://www.foo.com/js/outer.js&quot;); &#125;&lt;/script&gt;# outer.jscallback(&#123;message:&quot;success&quot;&#125;); 通过动态创建script标签加载outer.js文件，然后outer.js文件返回的内容正好是一个函数调用，如此，实现了数据传递和回调过程。当然，实际的jsonp接口中，会传一个函数名过去，然后返回的数据中回调函数名就是传的函数名，回调函数的参数则是封装的json格式。 参考文章]]></content>
       <categories>
         <category>ittech</category>
       </categories>
@@ -342,9 +364,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[同源策略与跨域]]></title>
-    <url>%2F2016%2F11%2F10%2Fi041%2F</url>
-    <content type="text"><![CDATA[同源策略 所谓同源是指2个页面要具有相同的协议，域名，端口，三者缺一不可。 同源策略指的是浏览器对不同源的脚本或文本的访问进行限制，即源a下的js文件无法获取源b下的元素属性。 同源策略限制的是js中XMLHttpRequest请求，以下情况不受同源策略的影响： 页面中的链接，重定向，表单提交 允许跨域资源的嵌入，如果要阻止iframe嵌入我们网站的资源(页面或者js等)，我们可以在web服务器加上一个X-Frame-Options DENY头部来限制。 跨域问题 前提条件是我们在WEB服务器或者服务端脚本中设置ACCESS-CONTROL-ALLOW-ORIGIN头部，如果设置了这些头部并允许某些域名跨域访问，则浏览器就会跳过同源策略的限制返回对应的内容。 AJAX跨域1234567891011121314151617181920212223242526# index.html&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;test cross domain&lt;/title&gt;&lt;script src=&quot;/js/jquery.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;http://www.bar.com/js/test.js&quot;&gt;&lt;/script&gt;&lt;script&gt;$(function()&#123; document.domain = &apos;foo.com&apos;; //1 注释掉则会报错 var ifr = document.getElementById(&quot;testframe&quot;); ifr.onload = function()&#123; var doc = ifr.contentDocument || ifr.contentWindow.document; alert(doc.getElementsByTagName(&quot;h1&quot;)[0].childNodes[0].nodeValue); &#125;&#125;);$.ajax(&quot;http://www.bar.com/js/test.js&quot;); //2 报错&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Test Cross Domain&lt;/h1&gt;&lt;iframe id=&quot;testframe&quot; src=&quot;http://foo.com/test.html&quot;&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt; JSONP跨域实现原理 与AJAX没多大关系，通过动态插入script标签来实现跨域资源访问。 123456789101112131415161718# jsonp.html&lt;script type=&quot;text/javascript&quot;&gt; function callback(data) &#123; alert(data.message); &#125; function addScriptTag(src)&#123; var script = document.createElement(&apos;script&apos;); script.src = src; document.body.appendChild(script); &#125; window.onload = function()&#123; addScriptTag(&quot;http://www.foo.com/js/outer.js&quot;); &#125;&lt;/script&gt;# outer.jscallback(&#123;message:&quot;success&quot;&#125;); 通过动态创建script标签加载outer.js文件，然后outer.js文件返回的内容正好是一个函数调用，如此，实现了数据传递和回调过程。当然，实际的jsonp接口中，会传一个函数名过去，然后返回的数据中回调函数名就是传的函数名，回调函数的参数则是封装的json格式。 参考文章]]></content>
+    <title><![CDATA[GET与POST区别]]></title>
+    <url>%2F2016%2F11%2F10%2Fi029%2F</url>
+    <content type="text"><![CDATA[以前我们是可能是这样认为的： GET使用URL或Cookie传参。而POST将数据放在BODY中。 GET的URL会有长度上的限制，则POST的数据则可以非常大。 POST比GET安全，因为数据在地址栏上不可见。 可是，经过查证，They’re wrong，我也感觉不可思议，以前我就这样认为啊！ GET和POST与数据如何传递没有关系 GET和POST是由HTTP协议定义的。在HTTP协议中，Method和Data（URL， Body， Header）是正交的两个概念，也就是说，使用哪个Method与应用层的数据如何传输是没有相互关系的。 HTTP没有要求，如果Method是POST数据就要放在BODY中。也没有要求，如果Method是GET，数据（参数）就一定要放在URL中而不能放在BODY中。 HTTP协议对GET和POST都没有对长度的限制 HTTP协议明确地指出了，HTTP头和Body都没有长度的要求。而对于URL长度上的限制，有两方面的原因造成： 浏览器。据说早期的浏览器会对URL长度做限制。据说IE对URL长度会限制在2048个字符内（流传很广，而且无数同事都表示认同）。但我自己试了一下，我构造了90K的URL通过IE9访问live.com，是正常的。网上的东西，哪怕是Wikipedia上的，也不能信。 服务器。URL长了，对服务器处理也是一种负担。原本一个会话就没有多少数据，现在如果有人恶意地构造几个几M大小的URL，并不停地访问你的服务器。服务器的最大并发数显然会下降。另一种攻击方式是，把告诉服务器Content-Length是一个很大的数，然后只给服务器发一点儿数据，嘿嘿，服务器你就傻等着去吧。哪怕你有超时设置，这种故意的次次访问超时也能让服务器吃不了兜着走。有鉴于此，多数服务器出于安全啦、稳定啦方面的考虑，会给URL长度加限制。但是这个限制是针对所有HTTP请求的，与GET、POST没有关系。 安全不安全和GET、POST可能并不是我们认为的那种关系。]]></content>
       <categories>
         <category>ittech</category>
       </categories>
@@ -705,17 +727,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[收藏的面试题]]></title>
-    <url>%2F2016%2F05%2F01%2F%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[以下是自己收藏网友的面试题，很实用；这只能帮你一般都会问什么，关键看自己平时的积累。临时抱佛脚没什么用，剩下的就看自己了。]]></content>
-      <categories>
-        <category>back-yard</category>
-      </categories>
-      <tags>
-        <tag>Job</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[实用jq代码片段【一】]]></title>
     <url>%2F2016%2F05%2F01%2Fi034%2F</url>
     <content type="text"><![CDATA[链式操作1234567$(document).ready(function()&#123; $(&quot;button&quot;).click(function()&#123; $(&quot;#p1&quot;).slideUp(2000).slideDown(2000).css(&quot;color&quot;,&quot;red&quot;); $(&quot;#div-log&quot;).html(&quot;&lt;p&gt;&quot;+&quot;实现链式（Chaining）操作&quot;+&quot;&lt;/p&gt;&quot;); //类似于+= &#125;);&#125;); 区分客户区，页面区，屏幕区 三者的X轴没什么说的，都一样，主要区别在于Y轴上，客户区，屏幕区的最大值固定，不会随着页面的滚动改变。页面区会随着滚动条的改变而变化。 123456789101112131415161718192021222324252627282930313233//客户区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getclient(e); &#125;);&#125;);function getclient(e)&#123; x=e.clientX; //当前可视窗口的距离 y=e.clientY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//屏幕区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getscreen(e); &#125;);&#125;);function getscreen(e)&#123; x=e.screenX; //屏幕的左上角为参考点距离屏幕边缘的距离 y=e.screenY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125;//页面区$(document).ready(function ()&#123; $(document).mousemove(function(e)&#123; getpage(e); &#125;);&#125;);function getpage(e)&#123; x=e.pageX; //相对于当前页面中的坐标（会随着滚动条的滚动而变化） y=e.pageY; $(&apos;#x&apos;).html(&quot;X:&quot;+x+&quot;Y:&quot;+y);&#125; 左右自适应高度：1234567891011function $(id)&#123; return document.getElementById(id);&#125;(function autoheight()&#123; if($(&apos;left&apos;).offsetHeight&gt;=$(&apos;right&apos;).offsetHeight)&#123; $(&apos;right&apos;).style.height=$(&apos;left&apos;).offsetHeight+&quot;px&quot;; &#125;else&#123; $(&apos;left&apos;).style.height=$(&apos;right&apos;).offsetHeight+&quot;px&quot;; &#125;&#125;)()//需要注意的是必须自调用函数。 callback()函数 callback()函数在当前效果100%完成之后执行。在一个涉及动画的函数之后来执行语句，用callback()函数。 1234567$(document).ready(function ()&#123; $(&apos;button&apos;).click(function ()&#123; $(&apos;p&apos;).hide(1000,function ()&#123; alert(&quot;回调函数过程，激活一个提示框&quot;); &#125;); &#125;);&#125;); 在新窗口打开链接123456789$(document).ready(function ()&#123; $(&apos;.url&apos;).attr(&#123;target:&quot;_blank&quot;&#125;) $(&apos;a[rel=ext]&apos;).click(function ()&#123; $(this).attr(&apos;target&apos;,&apos;_blank&apos;) &#125;);&#125;);function openurl()&#123; window.open(&apos;http://www.microsoft.com&apos;);&#125; 页面淡入淡出1234567$(document).ready(function ()&#123; $(&apos;#fade&apos;).click(function ()&#123; $(&apos;#div-fade&apos;).fadeToggle(1000); $(&apos;#div-fade&apos;).fadeToggle(1000); $(&quot;#div-fade&quot;).fadeTo(1000,0.2); &#125;);&#125;); 折叠展开123456$(document).ready(function()&#123; $(&quot;.help h3&quot;).click(function()&#123; $(this).next(&quot;p&quot;).slideToggle(&quot;fast&quot;).siblings(&quot;p:visible&quot;).slideUp(&quot;fast&quot;);//siblings表示取得一个包含匹配的元素集合中每一个元素的所有唯一同辈元素的元素集合 &#125;);&#125;); 未完待续。。。]]></content>
@@ -724,6 +735,17 @@
       </categories>
       <tags>
         <tag>jQuery</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[收藏的面试题]]></title>
+    <url>%2F2016%2F05%2F01%2F%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[以下是自己收藏网友的面试题，很实用；这只能帮你一般都会问什么，关键看自己平时的积累。临时抱佛脚没什么用，剩下的就看自己了。]]></content>
+      <categories>
+        <category>back-yard</category>
+      </categories>
+      <tags>
+        <tag>Job</tag>
       </tags>
   </entry>
   <entry>
